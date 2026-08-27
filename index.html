@@ -185,6 +185,7 @@ tbody tr:last-child td{border-bottom:none;}
     </nav>
     <div class="foot">
       <div class="updated" id="lastUpdated">sem dados carregados</div>
+      <button id="btnRecarregarSidebar" style="margin-top:10px;width:100%;font-size:10.5px;padding:7px 10px;background:transparent;border:1px solid var(--line-dark);color:#a9b1bd;border-radius:6px;font-family:'Oswald',sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;">↻ Recarregar dados</button>
     </div>
   </aside>
 
@@ -392,7 +393,7 @@ function aggregateLojas(visitas, filtroColaborador){
   const byLoja = new Map();
   for (const v of filtradas) {
     if (!v.loja) continue;
-    if (!byLoja.has(v.loja)) byLoja.set(v.loja, { loja:v.loja, cidade:v.cidade, total:0, finalizadas:0, faltas:0, curtas:0, recuperadas:0, semReposicao:0, rows:[] });
+    if (!byLoja.has(v.loja)) byLoja.set(v.loja, { loja:v.loja, cidade:v.cidade, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, rows:[] });
     const a = byLoja.get(v.loja);
     a.total++;
     if (v.status === STATUS_FINALIZADO) a.finalizadas++;
@@ -402,9 +403,10 @@ function aggregateLojas(visitas, filtroColaborador){
   for (const a of byLoja.values()) {
     for (const v of a.rows) {
       if (v.status !== STATUS_FINALIZADO) {
+        a.naoCumpridas++;
         const rec = recuperadaEm3Dias(v, a.rows);
         if (rec === true) a.recuperadas++;
-        else if (rec === false) { a.faltas++; a.semReposicao++; }
+        else if (rec === false) a.semReposicao++;
       }
     }
     delete a.rows;
@@ -435,7 +437,7 @@ function weekdayLabelPT(dateStr){
 function aggregateDiario(visitas, semanaKey){
   const diasOrdem = ['Seg','Ter','Qua','Qui','Sex'];
   const porDia = {};
-  diasOrdem.forEach(d => porDia[d] = { dia:d, total:0, curtas:0, longas:0, faltas:0, corte:0 });
+  diasOrdem.forEach(d => porDia[d] = { dia:d, total:0, curtas:0, longas:0, faltas:0, corte:0, rows:[] });
   for (const v of visitas) {
     if (weekKey(v.data) !== semanaKey) continue;
     const wd = weekdayLabelPT(v.data);
@@ -446,8 +448,17 @@ function aggregateDiario(visitas, semanaKey){
     if (isLonga(v)) a.longas++;
     if (isFalta(v)) a.faltas++;
     if (isCorte(v)) a.corte++;
+    a.rows.push(v);
   }
   return diasOrdem.map(d => porDia[d]);
+}
+function flagVisita(v){
+  if (isCurta(v)) return {label:'Curta', cls:'warn'};
+  if (isLonga(v)) return {label:'Longa', cls:''};
+  if (v.status === STATUS_FINALIZADO) return {label:'Normal', cls:''};
+  if (isFalta(v)) return {label:'Falta', cls:'warn'};
+  if (isCorte(v)) return {label:'Fech. Corte', cls:'warn'};
+  return {label:v.status || '—', cls:''};
 }
 
 function aggregateFotos(fotos, filtroPromotor){
@@ -499,7 +510,10 @@ async function ghPutFile(path, obj, sha, message){
   return await res.json();
 }
 
+let lastLoadError = null;
+
 async function loadAllData(){
+  lastLoadError = null;
   try {
     const idx = await ghGetFile('data/index.json');
     const names = idx.content?.distribuidoras || [];
@@ -510,12 +524,13 @@ async function loadAllData(){
     }
     DB = { distribuidoras: dists, updatedAt: idx.content?.updatedAt || null };
   } catch(e) {
-    console.warn("Não consegui carregar dados do GitHub (normal se ainda não subiu nada):", e);
+    console.warn("Não consegui carregar dados do GitHub:", e);
+    lastLoadError = e.message || String(e);
     DB = { distribuidoras: {}, updatedAt: null };
   }
-  const cached = localStorage.getItem('db_cache');
-  if (Object.keys(DB.distribuidoras).length === 0 && cached) {
-    try { DB = JSON.parse(cached); } catch(e){}
+  if (lastLoadError) {
+    const cached = localStorage.getItem('db_cache');
+    if (cached) { try { DB = JSON.parse(cached); } catch(e){} }
   }
 }
 function cacheLocally(){
@@ -539,6 +554,25 @@ function renderShell(){
     ? `atualizado em ${new Date(DB.updatedAt).toLocaleString('pt-BR')}`
     : 'sem dados carregados';
   renderTab();
+  renderLoadBanner();
+}
+
+function renderLoadBanner(){
+  const old = document.getElementById('loadBanner');
+  if (old) old.remove();
+  if (!lastLoadError) return;
+  const banner = document.createElement('div');
+  banner.id = 'loadBanner';
+  banner.style.cssText = 'background:#f6dcd4;border:1px solid var(--alto);color:#7a2c1c;border-radius:8px;padding:12px 16px;margin-bottom:18px;font-size:13px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;';
+  banner.innerHTML = `<span>⚠️ Não consegui buscar a versão mais recente do GitHub agora (${escapeHtml(lastLoadError)}). Mostrando a última cópia salva neste navegador — pode estar desatualizada.</span>
+    <button class="btn ghost" id="btnRecarregar" style="white-space:nowrap;">Tentar de novo</button>`;
+  document.getElementById('main').prepend(banner);
+  document.getElementById('btnRecarregar').addEventListener('click', async ()=>{
+    document.getElementById('btnRecarregar').textContent = 'Carregando...';
+    await loadAllData();
+    cacheLocally();
+    renderShell();
+  });
 }
 
 function escapeHtml(s){ return (s??"").toString().replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
@@ -677,6 +711,13 @@ function renderVisitas(main){
       <table><thead><tr id="periodoHead"></tr></thead>
       <tbody id="periodoBody"></tbody></table>
       </div>
+    </div>
+    <div class="panel" id="diaDetalhePanel" style="display:none;">
+      <div class="panel-head"><h3 id="diaDetalheTitulo">Lojas do dia</h3></div>
+      <div class="table-scroll">
+      <table><thead><tr><th>Loja</th><th>Cidade</th><th>Duração</th><th>Status</th><th>Motivo</th><th>Flag</th></tr></thead>
+      <tbody id="diaDetalheBody"></tbody></table>
+      </div>
     </div>`;
 
   document.getElementById('visitasPromotorFiltro').addEventListener('change', e=>{
@@ -718,16 +759,25 @@ function redrawVisitas(todasVisitas){
 
 function drawDiario(visitas){
   document.getElementById('visitasTituloGrafico').textContent = `Semana ${visitasSemanaSel || ''} — segunda a sexta`;
-  document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por dia';
+  document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por dia — clique num dia pra ver as lojas';
   const agg = visitasSemanaSel ? aggregateDiario(visitas, visitasSemanaSel) : [];
   document.getElementById('periodoHead').innerHTML = `<th>Dia</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Visitas Longas</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
-  document.getElementById('periodoBody').innerHTML = agg.map(a=>`
-    <tr><td class="mono">${a.dia}</td><td class="num mono">${a.total}</td>
+  document.getElementById('periodoBody').innerHTML = agg.map((a,i)=>`
+    <tr class="dia-row" data-i="${i}" style="cursor:${a.total>0?'pointer':'default'};">
+    <td class="mono">${a.dia} ${a.total>0?'🔎':''}</td><td class="num mono">${a.total}</td>
     <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
     <td class="num mono">${a.longas}</td>
     <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
     <td class="num mono">${a.corte}</td></tr>
   `).join('');
+  document.querySelectorAll('.dia-row').forEach(tr=>{
+    tr.addEventListener('click', ()=>{
+      const a = agg[+tr.dataset.i];
+      if (!a || !a.total) return;
+      mostrarDetalheDia(a);
+    });
+  });
+  document.getElementById('diaDetalhePanel').style.display = 'none';
   const ctx = document.getElementById('visitasCanvas');
   if (visitasChart) visitasChart.destroy();
   visitasChart = new Chart(ctx, {
@@ -744,7 +794,31 @@ function drawDiario(visitas){
   });
 }
 
+function fmtMin(m){
+  if (m == null) return '—';
+  const h = Math.floor(m/60), mm = Math.round(m%60);
+  return h>0 ? `${h}h${String(mm).padStart(2,'0')}` : `${mm}min`;
+}
+function mostrarDetalheDia(diaAgg){
+  const panel = document.getElementById('diaDetalhePanel');
+  document.getElementById('diaDetalheTitulo').textContent = `${diaAgg.dia} — ${diaAgg.rows.length} loja(s)`;
+  const rowsOrdenadas = [...diaAgg.rows].sort((a,b)=> (a.loja||'').localeCompare(b.loja||''));
+  document.getElementById('diaDetalheBody').innerHTML = rowsOrdenadas.map(v=>{
+    const f = flagVisita(v);
+    return `<tr>
+      <td>${escapeHtml(v.loja)}</td><td>${escapeHtml(v.cidade)}</td>
+      <td class="num mono">${fmtMin(v.duracaoMin)}</td>
+      <td>${escapeHtml(v.status)}</td>
+      <td>${escapeHtml(v.motivo||'—')}</td>
+      <td class="${f.cls==='warn'?'flagcell warn':'flagcell'}">${f.label}</td>
+    </tr>`;
+  }).join('');
+  panel.style.display = 'block';
+  panel.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
 function drawVisitasChart(visitas){
+  document.getElementById('diaDetalhePanel').style.display = 'none';
   document.getElementById('visitasTituloGrafico').textContent = 'Visitas curtas, longas e faltas ao longo do tempo';
   document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por período';
   const agg = aggregatePeriodo(visitas, visitasPeriodo);
@@ -785,13 +859,13 @@ function renderLojas(main){
       <select id="lojaPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
     </div>
     <div class="panel">
-      <div class="panel-head"><h3>Cobertura por loja</h3><span class="hint">"Sem reposição" = faltou e ninguém cobriu em até 3 dias</span></div>
+      <div class="panel-head"><h3>Cobertura por loja</h3><span class="hint">"Não cumpridas" = qualquer visita não finalizada, seja qual for o motivo (inclui Falta, Problema com App, Maior Demanda etc). "Sem reposição" = dessas, quantas ninguém cobriu em até 3 dias.</span></div>
       <div class="table-scroll">
       <table id="tblLojas">
         <thead><tr>
           <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th>
           <th data-k="total" class="num">Roteiros</th><th data-k="finalizadas" class="num">Finalizadas</th>
-          <th data-k="curtas" class="num">Curtas</th><th data-k="faltas" class="num">Faltas</th>
+          <th data-k="curtas" class="num">Curtas</th><th data-k="naoCumpridas" class="num">Não Cumpridas</th>
           <th data-k="recuperadas" class="num">Recuperadas (3d)</th><th data-k="semReposicao" class="num">Sem Reposição</th>
         </tr></thead>
         <tbody id="lojasBody"></tbody>
@@ -812,7 +886,7 @@ function rowLoja(a){
     <td>${escapeHtml(a.loja)}</td><td>${escapeHtml(a.cidade)}</td>
     <td class="num mono">${a.total}</td><td class="num mono">${a.finalizadas}</td>
     <td class="num mono">${a.curtas}</td>
-    <td class="num mono">${a.faltas}</td>
+    <td class="num mono">${a.naoCumpridas}</td>
     <td class="num mono">${a.recuperadas}</td>
     <td class="num mono ${a.semReposicao>0?'flagcell warn':''}">${a.semReposicao}</td>
   </tr>`;
@@ -877,7 +951,8 @@ function renderDados(main){
           <input type="password" id="ghPatInput" placeholder="ghp_xxx..." value="${escapeHtml(ghToken())}">
         </div>
         <button class="btn ghost" id="saveTokenBtn">Salvar token neste navegador</button>
-        <p class="note">O token fica só no seu navegador (localStorage), nunca é enviado a mim nem a ninguém além do GitHub. Se você usar outro computador, precisa colar de novo.</p>
+        <p class="note">O token fica só no seu navegador (localStorage), nunca é enviado a mim nem a ninguém além do GitHub. Se você usar outro computador, precisa colar de novo.
+        <br><br><b>Dica:</b> mesmo quem só vai olhar os dados (sem subir arquivo novo) se beneficia de colar o token aqui — sem ele, o GitHub limita a 60 carregamentos por hora por rede, e com token esse limite sobe pra 5.000. Se o site aparentar estar "travado" numa versão antiga, geralmente é isso.</p>
       </div>
     </div>
 
@@ -1054,6 +1129,14 @@ function wireSort(tableId, list, redraw){
 /* ---------------------------------------------------------------------- */
 /* Boot                                                                     */
 /* ---------------------------------------------------------------------- */
+document.getElementById('btnRecarregarSidebar').addEventListener('click', async (e)=>{
+  e.target.textContent = 'Carregando...';
+  await loadAllData();
+  cacheLocally();
+  renderShell();
+  e.target.textContent = '↻ Recarregar dados';
+});
+
 (async function boot(){
   await loadAllData();
   cacheLocally();
