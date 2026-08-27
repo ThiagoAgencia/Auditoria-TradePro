@@ -173,6 +173,10 @@ tbody tr:last-child td{border-bottom:none;}
       <div class="sub" id="repoTag">github.com/ThiagoAgencia/Auditoria-TradePro</div>
     </div>
     <div class="dist-select-wrap">
+      <label for="periodoSelect">Período</label>
+      <select id="periodoSelect"><option value="">Sem período específico</option></select>
+    </div>
+    <div class="dist-select-wrap">
       <label for="distSelect">Distribuidora</label>
       <select id="distSelect"></select>
     </div>
@@ -208,10 +212,30 @@ const LIMIAR_CURTA_MIN = 30;
 const JANELA_RECUPERACAO_DIAS = 3;
 
 let DB = { distribuidoras: {}, updatedAt: null };
+let AFILIAIS = {}; // { "LOJA NORMALIZADA": "Nome da Afiliada" }
+let AFILIAIS_SHA = null;
 let currentDist = null;
 let currentTab = "promotores";
+let globalPeriodoFiltro = ""; // "" = sem período específico | "YYYY-MM" = só esse mês, vale pra Promotores/Visitas/Lojas/Fotos
 let lojaFiltroPromotor = "";
+let lojaFiltroAfiliada = "";
 let visitasPeriodo = "mensal"; // diario | semanal | mensal | anual
+
+function normLoja(s){ return (s||"").toString().toUpperCase().trim().replace(/\s+/g, ' '); }
+
+// Retorna as visitas da distribuidora atual já cortadas pelo filtro global de período.
+// Todas as abas (Promotores/Visitas/Lojas) devem ler daqui, nunca de currentVisitas() direto,
+// pra respeitar o filtro global.
+function visitasEscopo(){
+  const todas = currentVisitas();
+  if (!globalPeriodoFiltro) return todas;
+  return todas.filter(v => monthKey(v.data) === globalPeriodoFiltro);
+}
+function fotosEscopo(){
+  const todas = currentFotos();
+  if (!globalPeriodoFiltro) return todas;
+  return todas.filter(f => f.data && monthKey(f.data) === globalPeriodoFiltro);
+}
 
 /* ---------------------------------------------------------------------- */
 /* Utilidades de data                                                      */
@@ -413,7 +437,7 @@ function aggregateLojas(visitas, filtroColaborador, refDate){
   const byLoja = new Map();
   for (const v of filtradas) {
     if (!v.loja) continue;
-    if (!byLoja.has(v.loja)) byLoja.set(v.loja, { loja:v.loja, cidade:v.cidade, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, ultimaVisita:null, rows:[] });
+    if (!byLoja.has(v.loja)) byLoja.set(v.loja, { loja:v.loja, cidade:v.cidade, afiliada:AFILIAIS[normLoja(v.loja)]||null, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, ultimaVisita:null, rows:[] });
     const a = byLoja.get(v.loja);
     a.total++;
     if (v.status === STATUS_FINALIZADO) {
@@ -548,6 +572,9 @@ async function loadAllData(){
       if (f.content) dists[nome] = f.content;
     }
     DB = { distribuidoras: dists, updatedAt: idx.content?.updatedAt || null };
+    const afil = await ghGetFile('data/afiliais.json');
+    AFILIAIS = afil.content || {};
+    AFILIAIS_SHA = afil.sha || null;
   } catch(e) {
     console.warn("Não consegui carregar dados do GitHub:", e);
     lastLoadError = e.message || String(e);
@@ -555,11 +582,18 @@ async function loadAllData(){
   }
   if (lastLoadError) {
     const cached = localStorage.getItem('db_cache');
-    if (cached) { try { DB = JSON.parse(cached); } catch(e){} }
+    if (cached) { try { const c = JSON.parse(cached); DB = c.DB || c; AFILIAIS = c.AFILIAIS || {}; } catch(e){} }
   }
 }
 function cacheLocally(){
-  localStorage.setItem('db_cache', JSON.stringify(DB));
+  localStorage.setItem('db_cache', JSON.stringify({ DB, AFILIAIS }));
+}
+async function salvarAfiliais(novasEntradas){
+  // novasEntradas: { "LOJA NORMALIZADA": "Nome Afiliada", ... }
+  Object.assign(AFILIAIS, novasEntradas);
+  const res = await ghPutFile('data/afiliais.json', AFILIAIS, AFILIAIS_SHA, `Classifica ${Object.keys(novasEntradas).length} loja(s) em afiliadas`);
+  AFILIAIS_SHA = res?.content?.sha || AFILIAIS_SHA;
+  cacheLocally();
 }
 
 /* ---------------------------------------------------------------------- */
@@ -575,6 +609,20 @@ function renderShell(){
     : `<option value="">— nenhuma ainda —</option>`;
   if (!currentDist || !names.includes(currentDist)) currentDist = names[0] || null;
   sel.value = currentDist || "";
+
+  const periodoSel = document.getElementById('periodoSelect');
+  const meses = Array.from(new Set(currentVisitas().map(v=>monthKey(v.data)))).sort();
+  periodoSel.innerHTML = `<option value="">Sem período específico</option>` +
+    meses.map(m=>`<option value="${m}">${m}</option>`).join('');
+  if (globalPeriodoFiltro && !meses.includes(globalPeriodoFiltro)) {
+    // a distribuidora atual não tem esse mês — mantém selecionado mesmo assim fora da lista,
+    // pra deixar claro (tela em branco) que falta subir esse período dela
+    const opt = document.createElement('option');
+    opt.value = globalPeriodoFiltro; opt.textContent = `${globalPeriodoFiltro} (sem dados aqui)`;
+    periodoSel.appendChild(opt);
+  }
+  periodoSel.value = globalPeriodoFiltro || "";
+
   document.getElementById('lastUpdated').textContent = DB.updatedAt
     ? `atualizado em ${new Date(DB.updatedAt).toLocaleString('pt-BR')}`
     : 'sem dados carregados';
@@ -604,6 +652,10 @@ function escapeHtml(s){ return (s??"").toString().replace(/[&<>"']/g, c=>({'&':'
 
 document.getElementById('distSelect').addEventListener('change', e=>{
   currentDist = e.target.value || null;
+  renderShell(); // precisa refazer o seletor de período também (Opção A: lista muda por distribuidora)
+});
+document.getElementById('periodoSelect').addEventListener('change', e=>{
+  globalPeriodoFiltro = e.target.value || "";
   renderTab();
 });
 document.querySelectorAll('#tabs button').forEach(btn=>{
@@ -646,8 +698,14 @@ function emptyState(title, html){
 /* Tab: Promotores                                                         */
 /* ---------------------------------------------------------------------- */
 function renderPromotores(main){
-  const visitas = currentVisitas();
-  if (!visitas.length) { main.innerHTML = pageHeader('Promotores', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
+  const todasSemFiltro = currentVisitas();
+  const visitas = visitasEscopo();
+  if (!visitas.length) {
+    const msg = todasSemFiltro.length
+      ? emptyState("Sem visitas nesse período", `Essa distribuidora não tem dado pra <b>${escapeHtml(globalPeriodoFiltro)}</b> — talvez falte subir o Relatório de Roteiro desse mês.`)
+      : emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados.");
+    main.innerHTML = pageHeader('Promotores', currentDist) + msg; return;
+  }
   const list = aggregatePromotores(visitas);
   const totalFaltas = list.reduce((s,a)=>s+a.falta,0);
   const totalCurtas = list.reduce((s,a)=>s+a.curtas,0);
@@ -704,8 +762,14 @@ let visitasPromotorFiltro = "";
 let visitasSemanaSel = null;
 
 function renderVisitas(main){
-  const todas = currentVisitas();
-  if (!todas.length) { main.innerHTML = pageHeader('Visitas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
+  const todasSemFiltro = currentVisitas();
+  const todas = visitasEscopo();
+  if (!todas.length) {
+    const msg = todasSemFiltro.length
+      ? emptyState("Sem visitas nesse período", `Essa distribuidora não tem dado pra <b>${escapeHtml(globalPeriodoFiltro)}</b> — talvez falte subir o Relatório de Roteiro desse mês.`)
+      : emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados.");
+    main.innerHTML = pageHeader('Visitas', currentDist) + msg; return;
+  }
   const promotores = Array.from(new Set(todas.map(v=>v.colaborador))).sort();
 
   main.innerHTML = pageHeader('Visitas', currentDist) + `
@@ -877,25 +941,138 @@ function drawVisitasChart(visitas){
 const LIMIAR_DIAS_ATENCAO = 7;
 const LIMIAR_DIAS_CRITICO = 14;
 
+function lojasSemAfiliada(todasVisitasSemFiltro){
+  // usa histórico completo da distribuidora (não só o período em foco), pra sempre
+  // classificar todo mundo de uma vez, independente de qual período você tá vendo agora
+  const nomes = new Map(); // normLoja -> nome original (o mais recente encontrado)
+  for (const v of todasVisitasSemFiltro) {
+    if (!v.loja) continue;
+    nomes.set(normLoja(v.loja), v.loja);
+  }
+  const faltando = [];
+  for (const [key, nomeOriginal] of nomes) {
+    if (!AFILIAIS[key]) faltando.push(nomeOriginal);
+  }
+  return faltando.sort();
+}
+
+function sugerirAfiliada(nomeLoja){
+  const norm = normLoja(nomeLoja);
+  const afiliadasConhecidas = Array.from(new Set(Object.values(AFILIAIS))).sort();
+  const candidatos = afiliadasConhecidas.filter(af => norm.startsWith(normLoja(af)) && normLoja(af).length >= 4);
+  return candidatos.length === 1 ? candidatos[0] : null;
+}
+
 function renderLojas(main){
-  const visitas = currentVisitas();
-  if (!visitas.length) { main.innerHTML = pageHeader('Lojas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
-  const promotores = Array.from(new Set(visitas.map(v=>v.colaborador))).sort();
+  const todasSemFiltro = currentVisitas();
+  const visitas = visitasEscopo();
+  if (!todasSemFiltro.length) { main.innerHTML = pageHeader('Lojas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
+
+  main.innerHTML = pageHeader('Lojas', currentDist) + `<div id="lojasClassificarWrap"></div><div id="lojasConteudo"></div>`;
+
+  const faltando = lojasSemAfiliada(todasSemFiltro);
+  if (faltando.length) {
+    renderPainelClassificacao(faltando);
+  } else {
+    renderLojasConteudo(todasSemFiltro, visitas);
+  }
+}
+
+function renderPainelClassificacao(faltando){
+  const afiliadasConhecidas = Array.from(new Set(Object.values(AFILIAIS))).sort();
+  const wrap = document.getElementById('lojasClassificarWrap');
+  wrap.innerHTML = `
+    <div class="panel" style="border-color:var(--amber);">
+      <div class="panel-head"><h3>📋 ${faltando.length} loja(s) sem afiliada — classifique antes de continuar</h3>
+        <span class="hint">Escolha uma afiliada já existente ou digite uma nova. Fica salvo pra sempre, só pergunta de novo se aparecer loja nova.</span></div>
+      <div class="table-scroll" style="max-height:420px;">
+      <table><thead><tr><th>Loja</th><th>Afiliada</th></tr></thead>
+      <tbody id="classificarBody">
+        ${faltando.map((loja,i)=>{
+          const sugestao = sugerirAfiliada(loja);
+          return `<tr>
+            <td>${escapeHtml(loja)}</td>
+            <td>
+              <select class="classSelect" data-loja="${escapeHtml(loja)}" style="padding:6px 8px;border:1px solid var(--line);border-radius:5px;font-family:'Inter',sans-serif;font-size:13px;">
+                <option value="">— escolher —</option>
+                ${afiliadasConhecidas.map(a=>`<option value="${escapeHtml(a)}" ${a===sugestao?'selected':''}>${escapeHtml(a)}</option>`).join('')}
+                <option value="__nova__">+ Nova afiliada...</option>
+              </select>
+              <input type="text" class="classNova" data-loja="${escapeHtml(loja)}" placeholder="nome da nova afiliada" style="display:none;margin-left:6px;padding:6px 8px;border:1px solid var(--line);border-radius:5px;font-size:13px;">
+            </td>
+          </tr>`;
+        }).join('')}
+      </tbody></table>
+      </div>
+      <div style="padding:14px 18px;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;">
+        <button class="btn amber" id="btnSalvarClassificacao">Salvar classificação</button>
+        <span class="note" id="classificarStatus"></span>
+      </div>
+    </div>`;
+
+  wrap.querySelectorAll('.classSelect').forEach(sel=>{
+    sel.addEventListener('change', ()=>{
+      const nova = wrap.querySelector(`.classNova[data-loja="${CSS.escape(sel.dataset.loja)}"]`);
+      nova.style.display = sel.value === '__nova__' ? 'inline-block' : 'none';
+    });
+  });
+
+  document.getElementById('btnSalvarClassificacao').addEventListener('click', async ()=>{
+    const btn = document.getElementById('btnSalvarClassificacao');
+    const status = document.getElementById('classificarStatus');
+    const novasEntradas = {};
+    let faltaAlgum = false;
+    wrap.querySelectorAll('.classSelect').forEach(sel=>{
+      const loja = sel.dataset.loja;
+      let valor = sel.value;
+      if (valor === '__nova__') {
+        const novaInput = wrap.querySelector(`.classNova[data-loja="${CSS.escape(loja)}"]`);
+        valor = novaInput.value.trim();
+      }
+      if (!valor) { faltaAlgum = true; return; }
+      novasEntradas[normLoja(loja)] = valor;
+    });
+    if (faltaAlgum) { status.textContent = 'Falta escolher a afiliada de alguma loja.'; status.style.color = 'var(--alto)'; return; }
+    btn.disabled = true; status.textContent = 'Salvando no GitHub...'; status.style.color = '';
+    try {
+      await salvarAfiliais(novasEntradas);
+      status.textContent = 'Salvo!'; status.style.color = 'var(--baixo)';
+      renderTab();
+    } catch(err) {
+      status.textContent = 'Erro ao salvar: ' + err.message; status.style.color = 'var(--alto)';
+      btn.disabled = false;
+    }
+  });
+}
+
+function renderLojasConteudo(todasSemFiltro, visitas){
+  const conteudo = document.getElementById('lojasConteudo');
+  const promotores = Array.from(new Set(todasSemFiltro.map(v=>v.colaborador))).sort();
+  const afiliadasDaDistribuidora = Array.from(new Set(
+    Array.from(new Set(todasSemFiltro.map(v=>v.loja))).map(l => AFILIAIS[normLoja(l)]).filter(Boolean)
+  )).sort();
+
+  if (!visitas.length) {
+    conteudo.innerHTML = emptyState("Sem visitas nesse período", `Essa distribuidora não tem dado pra <b>${escapeHtml(globalPeriodoFiltro)}</b> — talvez falte subir o Relatório de Roteiro desse mês.`);
+    return;
+  }
   const refDate = visitas.reduce((max,v)=> v.data > max ? v.data : max, visitas[0].data);
 
-  main.innerHTML = pageHeader('Lojas', currentDist) + `
+  conteudo.innerHTML = `
     <div class="filter-row">
-      <label for="lojaPromotorFiltro">Filtrar por promotor</label>
+      <label for="lojaPromotorFiltro">Promotor</label>
       <select id="lojaPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
-      <span class="note" style="margin-left:auto;">"hoje" considerado = ${fmtBR(refDate)} (data mais recente nos dados)</span>
+      <label for="lojaAfiliadaFiltro">Afiliada</label>
+      <select id="lojaAfiliadaFiltro"><option value="">Todas</option>${afiliadasDaDistribuidora.map(a=>`<option value="${escapeHtml(a)}">${escapeHtml(a)}</option>`).join('')}</select>
+      <span class="note" style="margin-left:auto;">"hoje" considerado = ${fmtBR(refDate)} (data mais recente no escopo atual)</span>
     </div>
     <div class="kpi-row" id="lojasKpiRow"></div>
     <div class="panel">
-      <div class="panel-head"><h3>Cobertura por loja</h3><span class="hint">"Não cumpridas" = visita não finalizada, qualquer motivo. "Sem reposição" = ninguém cobriu em até 3 dias. "Padrão" = dias fixos detectados no histórico da loja; "Recuperada" só conta visita EXTRA fora desses dias fixos.</span></div>
+      <div class="panel-head"><h3>Cobertura por loja</h3><span class="hint">"Não cumpridas" = visita não finalizada, qualquer motivo. "Sem reposição" = ninguém cobriu em até 3 dias. "Padrão" = dias fixos detectados no histórico da loja (dentro do período em foco); "Recuperada" só conta visita EXTRA fora desses dias fixos.</span></div>
       <div class="table-scroll">
       <table id="tblLojas">
         <thead><tr>
-          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th><th>Padrão</th>
+          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th><th data-k="afiliada">Afiliada</th><th>Padrão</th>
           <th data-k="total" class="num">Roteiros</th><th data-k="finalizadas" class="num">Finalizadas</th>
           <th data-k="curtas" class="num">Curtas</th><th data-k="naoCumpridas" class="num">Não Cumpridas</th>
           <th data-k="recuperadas" class="num">Recuperadas (extra)</th><th data-k="semReposicao" class="num">Sem Reposição</th>
@@ -906,8 +1083,10 @@ function renderLojas(main){
       </div>
     </div>`;
   const draw = () => {
-    const filtro = document.getElementById('lojaPromotorFiltro').value;
-    const list = aggregateLojas(visitas, filtro, refDate);
+    const filtroPromotor = document.getElementById('lojaPromotorFiltro').value;
+    const filtroAfiliada = document.getElementById('lojaAfiliadaFiltro').value;
+    let list = aggregateLojas(visitas, filtroPromotor, refDate);
+    if (filtroAfiliada) list = list.filter(a => a.afiliada === filtroAfiliada);
     const critico = list.filter(a=>a.diasSemVisita==null || a.diasSemVisita>=LIMIAR_DIAS_CRITICO).length;
     const atencao = list.filter(a=>a.diasSemVisita!=null && a.diasSemVisita>=LIMIAR_DIAS_ATENCAO && a.diasSemVisita<LIMIAR_DIAS_CRITICO).length;
     document.getElementById('lojasKpiRow').innerHTML = `
@@ -920,21 +1099,19 @@ function renderLojas(main){
     wireSort('tblLojas', list, l => document.getElementById('lojasBody').innerHTML = l.map(rowLoja).join(''));
   };
   document.getElementById('lojaPromotorFiltro').addEventListener('change', draw);
+  document.getElementById('lojaAfiliadaFiltro').addEventListener('change', draw);
   draw();
 }
 function rowLoja(a){
-  let diasCls = '', diasTxt = '—';
-  if (a.diasSemVisita == null) { diasCls = 'flagcell warn'; diasTxt = 'nunca visitada'; }
-  else {
-    diasTxt = `${a.diasSemVisita}d`;
-    if (a.diasSemVisita >= LIMIAR_DIAS_CRITICO) diasCls = 'flagcell warn';
-    else if (a.diasSemVisita >= LIMIAR_DIAS_ATENCAO) diasCls = 'flagcell';
-  }
+  let diasTxt = '—';
+  if (a.diasSemVisita == null) { diasTxt = 'nunca visitada'; }
+  else diasTxt = `${a.diasSemVisita}d`;
   const diasStyle = a.diasSemVisita == null || a.diasSemVisita >= LIMIAR_DIAS_CRITICO
     ? 'color:var(--alto);font-weight:600;'
     : (a.diasSemVisita >= LIMIAR_DIAS_ATENCAO ? 'color:var(--medio);font-weight:600;' : '');
   return `<tr>
     <td>${escapeHtml(a.loja)}</td><td>${escapeHtml(a.cidade)}</td>
+    <td style="font-size:12px;color:var(--ink-soft);">${escapeHtml(a.afiliada||'—')}</td>
     <td class="mono" style="font-size:11.5px;color:var(--ink-soft);">${a.padrao ? a.padrao.join(', ') : 'única / sem padrão'}</td>
     <td class="num mono">${a.total}</td><td class="num mono">${a.finalizadas}</td>
     <td class="num mono">${a.curtas}</td>
@@ -949,12 +1126,14 @@ function rowLoja(a){
 /* Tab: Fotos                                                              */
 /* ---------------------------------------------------------------------- */
 function renderFotos(main){
-  const fotos = currentFotos();
-  const visitas = currentVisitas();
+  const fotos = fotosEscopo();
+  const visitas = visitasEscopo();
   const promotores = Array.from(new Set(visitas.map(v=>v.colaborador))).sort();
   if (!fotos.length) {
-    main.innerHTML = pageHeader('Fotos', currentDist) + emptyState("Nenhum flag de foto cadastrado",
-      "As fotos em si não ficam guardadas aqui — só os alertas (tela, preta, duplicada) que o Claude identifica ao revisar o álbum. Suba o arquivo de flags na aba Atualizar Dados.");
+    const msg = currentFotos().length
+      ? emptyState("Sem flags de foto nesse período", `Não tem flag de foto registrado pra <b>${escapeHtml(globalPeriodoFiltro)}</b> nessa distribuidora.`)
+      : emptyState("Nenhum flag de foto cadastrado", "As fotos em si não ficam guardadas aqui — só os alertas (tela, preta, duplicada) que o Claude identifica ao revisar o álbum. Suba o arquivo de flags na aba Atualizar Dados.");
+    main.innerHTML = pageHeader('Fotos', currentDist) + msg;
     return;
   }
   main.innerHTML = pageHeader('Fotos', currentDist) + `
@@ -1159,7 +1338,8 @@ async function saveDistribuidoraData(nome, partial){
 /* Helpers de UI genéricos                                                 */
 /* ---------------------------------------------------------------------- */
 function pageHeader(title, dist){
-  return `<div class="page-title"><div><h2>${title}</h2><div class="desc">${escapeHtml(dist||'')}</div></div></div>`;
+  const periodoTxt = globalPeriodoFiltro ? ` · período: ${escapeHtml(globalPeriodoFiltro)}` : ' · histórico completo';
+  return `<div class="page-title"><div><h2>${title}</h2><div class="desc">${escapeHtml(dist||'')}${periodoTxt}</div></div></div>`;
 }
 function wireSort(tableId, list, redraw){
   const table = document.getElementById(tableId);
