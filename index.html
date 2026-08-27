@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auditoria TradePro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="./vendor/xlsx.full.min.js"></script>
+<script src="./vendor/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg-app:#171b21;
+  --bg-app2:#1f252d;
+  --paper:#f4f2ec;
+  --paper2:#ffffff;
+  --ink:#1b2430;
+  --ink-soft:#5b6472;
+  --line:#e4dfd3;
+  --line-dark:#2c333d;
+  --amber:#d98e28;
+  --amber-soft:#f4e4c8;
+  --alto:#b3432b;
+  --alto-soft:#f6dcd4;
+  --medio:#d98e28;
+  --medio-soft:#f7e6c6;
+  --baixo:#3f7d6b;
+  --baixo-soft:#dcede7;
+}
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);}
+h1,h2,h3,.display{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.03em;}
+.mono{font-family:'IBM Plex Mono',monospace;}
+a{color:inherit;}
+
+/* ---------- layout ---------- */
+#app{display:flex;min-height:100vh;}
+#sidebar{
+  width:250px;flex-shrink:0;background:var(--bg-app);color:#cdd3db;
+  display:flex;flex-direction:column;padding:20px 0;
+}
+#sidebar .brand{
+  padding:0 20px 18px 20px;border-bottom:1px solid var(--line-dark);margin-bottom:16px;
+}
+#sidebar .brand .tag{
+  display:inline-block;background:var(--amber);color:#1b1400;font-family:'Oswald',sans-serif;
+  font-weight:600;font-size:11px;letter-spacing:.12em;padding:2px 7px;border-radius:2px;margin-bottom:8px;
+}
+#sidebar .brand h1{font-size:19px;margin:0;color:#fff;letter-spacing:.02em;line-height:1.15;}
+#sidebar .brand .sub{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#7c8797;margin-top:6px;}
+
+.dist-select-wrap{padding:0 20px 18px 20px;border-bottom:1px solid var(--line-dark);margin-bottom:8px;}
+.dist-select-wrap label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#7c8797;margin-bottom:6px;font-family:'Oswald',sans-serif;}
+#distSelect{
+  width:100%;background:var(--bg-app2);color:#fff;border:1px solid var(--line-dark);border-radius:4px;
+  padding:9px 10px;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;
+}
+#distSelect:focus{outline:2px solid var(--amber);outline-offset:1px;}
+
+nav#tabs{display:flex;flex-direction:column;padding:8px 10px;gap:2px;flex:1;}
+nav#tabs button{
+  display:flex;align-items:center;gap:10px;background:transparent;border:none;color:#a9b1bd;
+  padding:11px 12px;border-radius:6px;font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.06em;
+  text-transform:uppercase;cursor:pointer;text-align:left;transition:background .12s,color .12s;
+}
+nav#tabs button:hover{background:var(--bg-app2);color:#fff;}
+nav#tabs button.active{background:var(--amber);color:#1b1400;font-weight:600;}
+nav#tabs button .ic{width:16px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:13px;}
+
+#sidebar .foot{padding:14px 20px 0 20px;border-top:1px solid var(--line-dark);margin-top:8px;}
+#sidebar .foot .updated{font-size:10.5px;color:#6b7482;font-family:'IBM Plex Mono',monospace;}
+
+#main{flex:1;padding:28px 36px 60px 36px;max-width:1400px;}
+.page-title{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:22px;flex-wrap:wrap;gap:10px;}
+.page-title h2{font-size:26px;margin:0;color:var(--ink);}
+.page-title .desc{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;color:var(--ink-soft);font-size:13px;margin-top:4px;}
+
+/* ---------- cards / kpis ---------- */
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:26px;}
+.kpi{
+  background:var(--paper2);border:1px solid var(--line);border-radius:8px;padding:16px 18px;
+  position:relative;overflow:hidden;
+}
+.kpi::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--amber);}
+.kpi .lbl{font-family:'Oswald',sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);}
+.kpi .val{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;margin-top:4px;color:var(--ink);}
+
+/* ---------- tables ---------- */
+.panel{background:var(--paper2);border:1px solid var(--line);border-radius:8px;padding:0;margin-bottom:24px;overflow:hidden;}
+.panel .panel-head{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.panel .panel-head h3{margin:0;font-size:15px;}
+.panel .panel-head .hint{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-size:11.5px;color:var(--ink-soft);}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+thead th{
+  text-align:left;font-family:'Oswald',sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--ink-soft);padding:9px 14px;border-bottom:1px solid var(--line);background:#faf9f5;position:sticky;top:0;
+  cursor:pointer;user-select:none;white-space:nowrap;
+}
+thead th:hover{color:var(--ink);}
+tbody td{padding:9px 14px;border-bottom:1px solid var(--line);vertical-align:middle;}
+tbody tr:hover{background:#faf8f2;}
+tbody tr:last-child td{border-bottom:none;}
+.num{font-family:'IBM Plex Mono',monospace;text-align:right;}
+.table-scroll{max-height:560px;overflow:auto;}
+
+/* ---------- stamp badges ---------- */
+.stamp{
+  display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 9px;border-radius:3px;border:1.5px solid currentColor;transform:rotate(-1.5deg);
+}
+.stamp.alto{color:var(--alto);background:var(--alto-soft);}
+.stamp.medio{color:var(--medio);background:var(--medio-soft);}
+.stamp.baixo{color:var(--baixo);background:var(--baixo-soft);}
+.flagcell{font-family:'IBM Plex Mono',monospace;}
+.flagcell.warn{color:var(--alto);font-weight:600;}
+
+/* ---------- filters ---------- */
+.filter-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;align-items:center;}
+.filter-row select,.filter-row input{
+  font-family:'Inter',sans-serif;font-size:13px;padding:8px 11px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);
+}
+.filter-row label{font-family:'Oswald',sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-right:-4px;}
+
+/* ---------- empty state ---------- */
+.empty{padding:60px 20px;text-align:center;color:var(--ink-soft);}
+.empty .ic{font-size:34px;margin-bottom:10px;}
+.empty h3{margin:0 0 6px 0;color:var(--ink);}
+.empty p{max-width:420px;margin:0 auto;font-size:13.5px;line-height:1.5;}
+
+/* ---------- upload page ---------- */
+.upload-box{border:2px dashed var(--line);border-radius:10px;padding:34px;text-align:center;background:#fbfaf6;}
+.upload-box.drag{border-color:var(--amber);background:var(--amber-soft);}
+.upload-box input[type=file]{display:none;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:none;border-radius:6px;
+  padding:10px 18px;font-family:'Oswald',sans-serif;font-size:12.5px;text-transform:uppercase;letter-spacing:.07em;
+  cursor:pointer;font-weight:600;
+}
+.btn:hover{background:#000;}
+.btn.amber{background:var(--amber);color:#1b1400;}
+.btn.amber:hover{background:#c17f1f;}
+.btn:disabled{opacity:.5;cursor:not-allowed;}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);}
+.field{margin-bottom:14px;}
+.field label{display:block;font-family:'Oswald',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-bottom:6px;}
+.field input,.field select{width:100%;max-width:420px;padding:9px 11px;border:1px solid var(--line);border-radius:6px;font-family:'Inter',sans-serif;font-size:13.5px;}
+.note{font-size:12.5px;color:var(--ink-soft);line-height:1.5;margin-top:8px;}
+.log{font-family:'IBM Plex Mono',monospace;font-size:12px;background:#141821;color:#c9e4c9;border-radius:6px;padding:12px 14px;margin-top:14px;max-height:220px;overflow:auto;white-space:pre-wrap;}
+.log .err{color:#ff9a8a;}
+.log .ok{color:#8ce0a0;}
+
+.chart-wrap{padding:18px;}
+.pill-toggle{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+.pill-toggle button{background:#fff;border:none;padding:7px 14px;font-family:'Oswald',sans-serif;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;color:var(--ink-soft);}
+.pill-toggle button.active{background:var(--ink);color:#fff;}
+.pill-toggle button:not(:last-child){border-right:1px solid var(--line);}
+
+@media(max-width:880px){
+  #app{flex-direction:column;}
+  #sidebar{width:100%;}
+  nav#tabs{flex-direction:row;overflow-x:auto;}
+  #main{padding:20px;}
+}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <span class="tag">Agência Mult</span>
+      <h1>Auditoria<br>TradePro</h1>
+      <div class="sub" id="repoTag">github.com/ThiagoAgencia/Auditoria-TradePro</div>
+    </div>
+    <div class="dist-select-wrap">
+      <label for="distSelect">Distribuidora</label>
+      <select id="distSelect"></select>
+    </div>
+    <nav id="tabs">
+      <button data-tab="promotores" class="active"><span class="ic">01</span> Promotores</button>
+      <button data-tab="visitas"><span class="ic">02</span> Visitas</button>
+      <button data-tab="lojas"><span class="ic">03</span> Lojas</button>
+      <button data-tab="fotos"><span class="ic">04</span> Fotos</button>
+      <button data-tab="dados"><span class="ic">05</span> Atualizar Dados</button>
+    </nav>
+    <div class="foot">
+      <div class="updated" id="lastUpdated">sem dados carregados</div>
+    </div>
+  </aside>
+
+  <main id="main"></main>
+</div>
+
+<script>
+/* =========================================================================
+   AUDITORIA TRADEPRO — app estático, roda 100% no navegador.
+   Dados ficam em /data/<distribuidora>.json dentro do próprio repositório.
+   ========================================================================= */
+
+const REPO_OWNER = "ThiagoAgencia";
+const REPO_NAME  = "Auditoria-TradePro";
+const DATA_BRANCH = "main";
+
+const STATUS_FINALIZADO = "Finalizado pelo Colaborador";
+const STATUS_CORTE = "Finalizado pelo Corte";
+const LIMIAR_CURTA_MIN = 30;
+const JANELA_RECUPERACAO_DIAS = 3;
+
+let DB = { distribuidoras: {}, updatedAt: null };
+let currentDist = null;
+let currentTab = "promotores";
+let lojaFiltroPromotor = "";
+let visitasPeriodo = "mensal"; // semanal | mensal | anual
+
+/* ---------------------------------------------------------------------- */
+/* Utilidades de data                                                      */
+/* ---------------------------------------------------------------------- */
+function parseBRDate(v){
+  // aceita "DD/MM/AAAA", Date do SheetJS, ou serial excel
+  if (v instanceof Date) return v;
+  if (typeof v === "number") {
+    const d = XLSX.SSF.parse_date_code(v);
+    if (d) return new Date(Date.UTC(d.y, d.m-1, d.d));
+  }
+  if (typeof v === "string") {
+    const m = v.trim().match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+    if (m) return new Date(Date.UTC(+m[3], +m[2]-1, +m[1]));
+  }
+  return null;
+}
+function isoDate(d){ return d ? d.toISOString().slice(0,10) : null; }
+function fmtBR(d){
+  if (!d) return "";
+  const dt = new Date(d);
+  return dt.toLocaleDateString('pt-BR', {timeZone:'UTC'});
+}
+function parseTimeToMinutes(v, baseDate){
+  // v pode ser Date (com hora), string HH:MM:SS, ou serial excel fracionário
+  if (v == null || v === "") return null;
+  let totalMin = null;
+  if (v instanceof Date) {
+    totalMin = v.getUTCHours()*60 + v.getUTCMinutes() + v.getUTCSeconds()/60;
+  } else if (typeof v === "number") {
+    const frac = v % 1;
+    totalMin = frac * 24 * 60;
+  } else if (typeof v === "string") {
+    const m = v.trim().match(/(\d{1,2}):(\d{2})(:(\d{2}))?/);
+    if (m) totalMin = (+m[1])*60 + (+m[2]) + (m[4]? (+m[4])/60 : 0);
+  }
+  return totalMin;
+}
+function weekKey(dateStr){
+  const d = new Date(dateStr);
+  const onejan = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+  const week = Math.ceil((((d - onejan) / 86400000) + onejan.getUTCDay()+1)/7);
+  return `${d.getUTCFullYear()}-S${String(week).padStart(2,'0')}`;
+}
+function monthKey(dateStr){
+  const d = new Date(dateStr);
+  return `${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,'0')}`;
+}
+function yearKey(dateStr){
+  return `${new Date(dateStr).getUTCFullYear()}`;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Parsing do Relatório de Roteiro (.xls / .xlsx do TradePro)              */
+/* ---------------------------------------------------------------------- */
+function parseRoteiroWorkbook(workbook, log){
+  const sheetName = workbook.SheetNames[0];
+  const sheet = workbook.Sheets[sheetName];
+  // header real fica na linha 2 (index 1) nos exports do TradePro
+  const rows = XLSX.utils.sheet_to_json(sheet, {header:1, raw:true, defval:null});
+  if (rows.length < 3) { log("Arquivo não parece um Relatório de Roteiro válido.", true); return []; }
+  const headerRow = rows[1].map(h => (h||"").toString().trim());
+  const idx = name => headerRow.findIndex(h => h.toLowerCase() === name.toLowerCase());
+
+  const col = {
+    colaborador: idx("Colaborador"),
+    cidade: idx("Cidade"),
+    fantasia: idx("Fantasia"),
+    data: idx("Data Visita"),
+    horaIni: idx("Hora Início"),
+    horaFim: idx("Hora Final"),
+    motivo: idx("Motivo Não Visita"),
+    status: idx("Status Roteiros"),
+  };
+  if (col.colaborador === -1 || col.status === -1) {
+    log("Não encontrei as colunas esperadas (Colaborador / Status Roteiros). Confira se é o arquivo certo.", true);
+    return [];
+  }
+
+  const out = [];
+  for (let i = 2; i < rows.length; i++) {
+    const r = rows[i];
+    if (!r || !r[col.colaborador]) continue;
+    const colaborador = (r[col.colaborador]||"").toString().trim();
+    if (!colaborador || colaborador.toLowerCase().includes("suporte tradepro")) continue;
+    const dataObj = parseBRDate(r[col.data]);
+    if (!dataObj) continue;
+    const horaIniMin = parseTimeToMinutes(r[col.horaIni]);
+    const horaFimMin = parseTimeToMinutes(r[col.horaFim]);
+    let duracaoMin = null;
+    if (horaIniMin != null && horaFimMin != null) {
+      duracaoMin = horaFimMin - horaIniMin;
+      if (duracaoMin < 0) duracaoMin += 24*60;
+    }
+    out.push({
+      colaborador,
+      cidade: col.cidade!==-1 ? (r[col.cidade]||"").toString().trim() : "",
+      loja: col.fantasia!==-1 ? (r[col.fantasia]||"").toString().trim() : "",
+      data: isoDate(dataObj),
+      duracaoMin,
+      motivo: col.motivo!==-1 ? (r[col.motivo]||"").toString().trim() : "",
+      status: (r[col.status]||"").toString().trim(),
+    });
+  }
+  return out;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Merge de dados (upload incremental, sem duplicar)                       */
+/* ---------------------------------------------------------------------- */
+function mergeVisitas(existing, novas){
+  const map = new Map();
+  for (const v of existing) map.set(`${v.colaborador}|${v.loja}|${v.data}`, v);
+  for (const v of novas) map.set(`${v.colaborador}|${v.loja}|${v.data}`, v);
+  return Array.from(map.values());
+}
+function mergeFotos(existing, novas){
+  const map = new Map();
+  for (const f of existing) map.set(`${f.colaborador}|${f.loja}|${f.data}|${f.tipo}`, f);
+  for (const f of novas) map.set(`${f.colaborador}|${f.loja}|${f.data}|${f.tipo}`, f);
+  return Array.from(map.values());
+}
+
+/* ---------------------------------------------------------------------- */
+/* Cálculos                                                                 */
+/* ---------------------------------------------------------------------- */
+function isCurta(v){ return v.status === STATUS_FINALIZADO && v.duracaoMin != null && v.duracaoMin < LIMIAR_CURTA_MIN; }
+function isCorte(v){ return v.status === STATUS_CORTE; }
+function isFalta(v){ return /^falta$/i.test(v.motivo||""); }
+function isApp(v){ return /problemas?\s*com\s*app/i.test(v.motivo||""); }
+function isAtestado(v){ return /atestado m[eé]dico|consulta m[eé]dica/i.test(v.motivo||""); }
+
+function recuperadaEm3Dias(visita, todasDoMesmaLoja){
+  if (visita.status === STATUS_FINALIZADO) return null; // não se aplica
+  const d0 = new Date(visita.data);
+  for (const v2 of todasDoMesmaLoja) {
+    if (v2.status !== STATUS_FINALIZADO) continue;
+    const d1 = new Date(v2.data);
+    const diffDias = (d1 - d0) / 86400000;
+    if (diffDias >= 0 && diffDias <= JANELA_RECUPERACAO_DIAS) return true;
+  }
+  return false;
+}
+
+function computeScore(agg){
+  const pctCurtas = agg.finalizadas ? agg.curtas/agg.finalizadas : 0;
+  const score = pctCurtas*40 + agg.corte*3 + agg.falta*5 + agg.app*1;
+  let classe = "baixo";
+  if (score >= 20) classe = "alto"; else if (score >= 10) classe = "medio";
+  return { score: Math.round(score*10)/10, classe, pctCurtas };
+}
+
+function aggregatePromotores(visitas){
+  const byColab = new Map();
+  for (const v of visitas) {
+    if (!byColab.has(v.colaborador)) byColab.set(v.colaborador, { colaborador:v.colaborador, cidade:v.cidade, total:0, finalizadas:0, curtas:0, corte:0, falta:0, app:0, atestadoDias:new Set() });
+    const a = byColab.get(v.colaborador);
+    a.total++;
+    if (v.status === STATUS_FINALIZADO) a.finalizadas++;
+    if (isCurta(v)) a.curtas++;
+    if (isCorte(v)) a.corte++;
+    if (isFalta(v)) a.falta++;
+    if (isApp(v)) a.app++;
+    if (isAtestado(v)) a.atestadoDias.add(v.data);
+  }
+  const list = [];
+  for (const a of byColab.values()) {
+    const { score, classe, pctCurtas } = computeScore(a);
+    list.push({ ...a, atestado: a.atestadoDias.size, score, classe, pctCurtas });
+  }
+  list.sort((x,y)=> y.score - x.score);
+  return list;
+}
+
+function aggregateLojas(visitas, filtroColaborador){
+  const filtradas = filtroColaborador ? visitas.filter(v=>v.colaborador===filtroColaborador) : visitas;
+  const byLoja = new Map();
+  for (const v of filtradas) {
+    if (!v.loja) continue;
+    if (!byLoja.has(v.loja)) byLoja.set(v.loja, { loja:v.loja, cidade:v.cidade, total:0, finalizadas:0, faltas:0, curtas:0, recuperadas:0, semReposicao:0, rows:[] });
+    const a = byLoja.get(v.loja);
+    a.total++;
+    if (v.status === STATUS_FINALIZADO) a.finalizadas++;
+    if (isCurta(v)) a.curtas++;
+    a.rows.push(v);
+  }
+  for (const a of byLoja.values()) {
+    for (const v of a.rows) {
+      if (v.status !== STATUS_FINALIZADO) {
+        const rec = recuperadaEm3Dias(v, a.rows);
+        if (rec === true) a.recuperadas++;
+        else if (rec === false) { a.faltas++; a.semReposicao++; }
+      }
+    }
+    delete a.rows;
+  }
+  return Array.from(byLoja.values()).sort((x,y)=> y.semReposicao - x.semReposicao);
+}
+
+function aggregatePeriodo(visitas, granularidade){
+  const keyFn = granularidade === "semanal" ? weekKey : granularidade === "anual" ? yearKey : monthKey;
+  const map = new Map();
+  for (const v of visitas) {
+    const k = keyFn(v.data);
+    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, faltas:0, corte:0, total:0 });
+    const a = map.get(k);
+    a.total++;
+    if (isCurta(v)) a.curtas++;
+    if (isFalta(v)) a.faltas++;
+    if (isCorte(v)) a.corte++;
+  }
+  return Array.from(map.values()).sort((x,y)=> x.periodo.localeCompare(y.periodo));
+}
+
+function aggregateFotos(fotos, filtroPromotor){
+  const filtradas = filtroPromotor ? fotos.filter(f=>f.colaborador===filtroPromotor) : fotos;
+  const byLoja = new Map();
+  for (const f of filtradas) {
+    if (!byLoja.has(f.loja)) byLoja.set(f.loja, { loja:f.loja, tela:0, preta:0, duplicada:0, outro:0, total:0 });
+    const a = byLoja.get(f.loja);
+    a.total++;
+    if (f.tipo in a) a[f.tipo]++; else a.outro++;
+  }
+  return Array.from(byLoja.values()).sort((x,y)=> y.total-x.total);
+}
+
+/* ---------------------------------------------------------------------- */
+/* GitHub API (leitura pública + escrita autenticada opcional)             */
+/* ---------------------------------------------------------------------- */
+function ghToken(){ return localStorage.getItem('gh_pat') || ""; }
+function setGhToken(t){ localStorage.setItem('gh_pat', t); }
+
+async function ghGetFile(path){
+  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}?ref=${DATA_BRANCH}`;
+  const headers = {};
+  const tok = ghToken();
+  if (tok) headers['Authorization'] = `Bearer ${tok}`;
+  const res = await fetch(url, {headers});
+  if (res.status === 404) return { content:null, sha:null };
+  if (!res.ok) throw new Error(`GitHub GET ${path}: ${res.status}`);
+  const j = await res.json();
+  const content = JSON.parse(decodeURIComponent(escape(atob(j.content))));
+  return { content, sha:j.sha };
+}
+async function ghPutFile(path, obj, sha, message){
+  const tok = ghToken();
+  if (!tok) throw new Error("Nenhum token do GitHub configurado. Vá em Atualizar Dados → Conexão com GitHub.");
+  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}`;
+  const body = {
+    message: message || `Atualiza ${path}`,
+    content: btoa(unescape(encodeURIComponent(JSON.stringify(obj, null, 2)))),
+    branch: DATA_BRANCH,
+  };
+  if (sha) body.sha = sha;
+  const res = await fetch(url, {
+    method:'PUT',
+    headers:{ 'Authorization':`Bearer ${tok}`, 'Content-Type':'application/json' },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) { const t = await res.text(); throw new Error(`GitHub PUT ${path}: ${res.status} ${t}`); }
+  return await res.json();
+}
+
+async function loadAllData(){
+  try {
+    const idx = await ghGetFile('data/index.json');
+    const names = idx.content?.distribuidoras || [];
+    const dists = {};
+    for (const nome of names) {
+      const f = await ghGetFile(`data/${encodeURIComponent(nome)}.json`);
+      if (f.content) dists[nome] = f.content;
+    }
+    DB = { distribuidoras: dists, updatedAt: idx.content?.updatedAt || null };
+  } catch(e) {
+    console.warn("Não consegui carregar dados do GitHub (normal se ainda não subiu nada):", e);
+    DB = { distribuidoras: {}, updatedAt: null };
+  }
+  const cached = localStorage.getItem('db_cache');
+  if (Object.keys(DB.distribuidoras).length === 0 && cached) {
+    try { DB = JSON.parse(cached); } catch(e){}
+  }
+}
+function cacheLocally(){
+  localStorage.setItem('db_cache', JSON.stringify(DB));
+}
+
+/* ---------------------------------------------------------------------- */
+/* Render: shell / navegação                                               */
+/* ---------------------------------------------------------------------- */
+function distNames(){ return Object.keys(DB.distribuidoras).sort(); }
+
+function renderShell(){
+  const sel = document.getElementById('distSelect');
+  const names = distNames();
+  sel.innerHTML = names.length
+    ? names.map(n=>`<option value="${escapeHtml(n)}">${escapeHtml(n)}</option>`).join('')
+    : `<option value="">— nenhuma ainda —</option>`;
+  if (!currentDist || !names.includes(currentDist)) currentDist = names[0] || null;
+  sel.value = currentDist || "";
+  document.getElementById('lastUpdated').textContent = DB.updatedAt
+    ? `atualizado em ${new Date(DB.updatedAt).toLocaleString('pt-BR')}`
+    : 'sem dados carregados';
+  renderTab();
+}
+
+function escapeHtml(s){ return (s??"").toString().replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+document.getElementById('distSelect').addEventListener('change', e=>{
+  currentDist = e.target.value || null;
+  renderTab();
+});
+document.querySelectorAll('#tabs button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('#tabs button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    currentTab = btn.dataset.tab;
+    renderTab();
+  });
+});
+
+function currentVisitas(){
+  if (!currentDist || !DB.distribuidoras[currentDist]) return [];
+  return DB.distribuidoras[currentDist].visitas || [];
+}
+function currentFotos(){
+  if (!currentDist || !DB.distribuidoras[currentDist]) return [];
+  return DB.distribuidoras[currentDist].fotos || [];
+}
+
+function renderTab(){
+  const main = document.getElementById('main');
+  if (!currentDist && currentTab !== 'dados') {
+    main.innerHTML = emptyState("Nenhuma distribuidora cadastrada ainda",
+      "Vá até a aba <b>Atualizar Dados</b> pra subir o primeiro Relatório de Roteiro e criar sua primeira distribuidora.");
+    return;
+  }
+  if (currentTab === 'promotores') renderPromotores(main);
+  else if (currentTab === 'visitas') renderVisitas(main);
+  else if (currentTab === 'lojas') renderLojas(main);
+  else if (currentTab === 'fotos') renderFotos(main);
+  else if (currentTab === 'dados') renderDados(main);
+}
+
+function emptyState(title, html){
+  return `<div class="empty"><div class="ic">◇</div><h3>${title}</h3><p>${html}</p></div>`;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Promotores                                                         */
+/* ---------------------------------------------------------------------- */
+function renderPromotores(main){
+  const visitas = currentVisitas();
+  if (!visitas.length) { main.innerHTML = pageHeader('Promotores', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
+  const list = aggregatePromotores(visitas);
+  const totalFaltas = list.reduce((s,a)=>s+a.falta,0);
+  const totalCurtas = list.reduce((s,a)=>s+a.curtas,0);
+  const altos = list.filter(a=>a.classe==='alto').length;
+
+  main.innerHTML = pageHeader('Promotores', currentDist) + `
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">Promotores</div><div class="val">${list.length}</div></div>
+      <div class="kpi"><div class="lbl">Faltas reais</div><div class="val">${totalFaltas}</div></div>
+      <div class="kpi"><div class="lbl">Visitas curtas (total)</div><div class="val">${totalCurtas}</div></div>
+      <div class="kpi"><div class="lbl">Risco alto</div><div class="val">${altos}</div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Ranking de risco</h3><span class="hint">clique no cabeçalho pra ordenar · score = %curtas×40 + corte×3 + falta×5 + app×1</span></div>
+      <div class="table-scroll">
+      <table id="tblPromotores">
+        <thead><tr>
+          <th data-k="colaborador">Colaborador</th><th data-k="cidade">Cidade</th>
+          <th data-k="total" class="num">Roteiros</th><th data-k="finalizadas" class="num">Finalizadas</th>
+          <th data-k="curtas" class="num">Curtas &lt;30min</th><th data-k="pctCurtas" class="num">% Curtas</th>
+          <th data-k="corte" class="num">Fech. Corte</th><th data-k="falta" class="num">Faltas</th>
+          <th data-k="atestado" class="num">Atestado (dias)</th><th data-k="app" class="num">Problema App</th>
+          <th data-k="score" class="num">Score</th><th>Classe</th>
+        </tr></thead>
+        <tbody>${list.map(rowPromotor).join('')}</tbody>
+      </table>
+      </div>
+    </div>`;
+  wireSort('tblPromotores', list, renderPromotorRowsInto);
+}
+function rowPromotor(a){
+  return `<tr>
+    <td>${escapeHtml(a.colaborador)}</td><td>${escapeHtml(a.cidade)}</td>
+    <td class="num mono">${a.total}</td><td class="num mono">${a.finalizadas}</td>
+    <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
+    <td class="num mono">${(a.pctCurtas*100).toFixed(0)}%</td>
+    <td class="num mono">${a.corte}</td>
+    <td class="num mono ${a.falta>0?'flagcell warn':''}">${a.falta}</td>
+    <td class="num mono">${a.atestado}</td>
+    <td class="num mono">${a.app}</td>
+    <td class="num mono">${a.score}</td>
+    <td><span class="stamp ${a.classe}">${a.classe}</span></td>
+  </tr>`;
+}
+function renderPromotorRowsInto(list){
+  document.querySelector('#tblPromotores tbody').innerHTML = list.map(rowPromotor).join('');
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Visitas (série temporal)                                           */
+/* ---------------------------------------------------------------------- */
+let visitasChart = null;
+function renderVisitas(main){
+  const visitas = currentVisitas();
+  if (!visitas.length) { main.innerHTML = pageHeader('Visitas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
+  main.innerHTML = pageHeader('Visitas', currentDist) + `
+    <div class="panel">
+      <div class="panel-head">
+        <h3>Faltas e visitas curtas ao longo do tempo</h3>
+        <div class="pill-toggle" id="periodoToggle">
+          <button data-p="semanal">Semanal</button>
+          <button data-p="mensal" class="active">Mensal</button>
+          <button data-p="anual">Anual</button>
+        </div>
+      </div>
+      <div class="chart-wrap"><canvas id="visitasCanvas" height="90"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Detalhamento por período</h3></div>
+      <div class="table-scroll">
+      <table><thead><tr><th>Período</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th></tr></thead>
+      <tbody id="periodoBody"></tbody></table>
+      </div>
+    </div>`;
+  document.querySelectorAll('#periodoToggle button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      document.querySelectorAll('#periodoToggle button').forEach(x=>x.classList.remove('active'));
+      b.classList.add('active');
+      visitasPeriodo = b.dataset.p;
+      drawVisitasChart(visitas);
+    });
+  });
+  drawVisitasChart(visitas);
+}
+function drawVisitasChart(visitas){
+  const agg = aggregatePeriodo(visitas, visitasPeriodo);
+  document.getElementById('periodoBody').innerHTML = agg.map(a=>`
+    <tr><td class="mono">${a.periodo}</td><td class="num mono">${a.total}</td>
+    <td class="num mono">${a.curtas}</td><td class="num mono">${a.faltas}</td><td class="num mono">${a.corte}</td></tr>
+  `).join('');
+  const ctx = document.getElementById('visitasCanvas');
+  if (visitasChart) visitasChart.destroy();
+  visitasChart = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels: agg.map(a=>a.periodo),
+      datasets:[
+        {label:'Visitas curtas', data:agg.map(a=>a.curtas), backgroundColor:'#d98e28'},
+        {label:'Faltas', data:agg.map(a=>a.faltas), backgroundColor:'#b3432b'},
+      ]
+    },
+    options:{ responsive:true, plugins:{legend:{position:'bottom', labels:{font:{family:'Inter'}}}}, scales:{x:{ticks:{font:{family:'IBM Plex Mono', size:11}}}, y:{beginAtZero:true}} }
+  });
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Lojas                                                              */
+/* ---------------------------------------------------------------------- */
+function renderLojas(main){
+  const visitas = currentVisitas();
+  if (!visitas.length) { main.innerHTML = pageHeader('Lojas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
+  const promotores = Array.from(new Set(visitas.map(v=>v.colaborador))).sort();
+  main.innerHTML = pageHeader('Lojas', currentDist) + `
+    <div class="filter-row">
+      <label for="lojaPromotorFiltro">Filtrar por promotor</label>
+      <select id="lojaPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Cobertura por loja</h3><span class="hint">"Sem reposição" = faltou e ninguém cobriu em até 3 dias</span></div>
+      <div class="table-scroll">
+      <table id="tblLojas">
+        <thead><tr>
+          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th>
+          <th data-k="total" class="num">Roteiros</th><th data-k="finalizadas" class="num">Finalizadas</th>
+          <th data-k="curtas" class="num">Curtas</th><th data-k="faltas" class="num">Faltas</th>
+          <th data-k="recuperadas" class="num">Recuperadas (3d)</th><th data-k="semReposicao" class="num">Sem Reposição</th>
+        </tr></thead>
+        <tbody id="lojasBody"></tbody>
+      </table>
+      </div>
+    </div>`;
+  const draw = () => {
+    const filtro = document.getElementById('lojaPromotorFiltro').value;
+    const list = aggregateLojas(visitas, filtro);
+    document.getElementById('lojasBody').innerHTML = list.map(rowLoja).join('');
+    wireSort('tblLojas', list, l => document.getElementById('lojasBody').innerHTML = l.map(rowLoja).join(''));
+  };
+  document.getElementById('lojaPromotorFiltro').addEventListener('change', draw);
+  draw();
+}
+function rowLoja(a){
+  return `<tr>
+    <td>${escapeHtml(a.loja)}</td><td>${escapeHtml(a.cidade)}</td>
+    <td class="num mono">${a.total}</td><td class="num mono">${a.finalizadas}</td>
+    <td class="num mono">${a.curtas}</td>
+    <td class="num mono">${a.faltas}</td>
+    <td class="num mono">${a.recuperadas}</td>
+    <td class="num mono ${a.semReposicao>0?'flagcell warn':''}">${a.semReposicao}</td>
+  </tr>`;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Fotos                                                              */
+/* ---------------------------------------------------------------------- */
+function renderFotos(main){
+  const fotos = currentFotos();
+  const visitas = currentVisitas();
+  const promotores = Array.from(new Set(visitas.map(v=>v.colaborador))).sort();
+  if (!fotos.length) {
+    main.innerHTML = pageHeader('Fotos', currentDist) + emptyState("Nenhum flag de foto cadastrado",
+      "As fotos em si não ficam guardadas aqui — só os alertas (tela, preta, duplicada) que o Claude identifica ao revisar o álbum. Suba o arquivo de flags na aba Atualizar Dados.");
+    return;
+  }
+  main.innerHTML = pageHeader('Fotos', currentDist) + `
+    <div class="filter-row">
+      <label for="fotoPromotorFiltro">Filtrar por promotor</label>
+      <select id="fotoPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Fotos suspeitas por loja</h3></div>
+      <div class="table-scroll">
+      <table id="tblFotos">
+        <thead><tr><th data-k="loja">Loja</th><th data-k="tela" class="num">Foto de Tela</th><th data-k="preta" class="num">Foto Preta</th><th data-k="duplicada" class="num">Duplicada</th><th data-k="outro" class="num">Outro</th><th data-k="total" class="num">Total</th></tr></thead>
+        <tbody id="fotosBody"></tbody>
+      </table>
+      </div>
+    </div>`;
+  const draw = () => {
+    const filtro = document.getElementById('fotoPromotorFiltro').value;
+    const list = aggregateFotos(fotos, filtro);
+    document.getElementById('fotosBody').innerHTML = list.map(rowFoto).join('');
+    wireSort('tblFotos', list, l => document.getElementById('fotosBody').innerHTML = l.map(rowFoto).join(''));
+  };
+  document.getElementById('fotoPromotorFiltro').addEventListener('change', draw);
+  draw();
+}
+function rowFoto(a){
+  return `<tr><td>${escapeHtml(a.loja)}</td>
+    <td class="num mono ${a.tela>0?'flagcell warn':''}">${a.tela}</td>
+    <td class="num mono ${a.preta>0?'flagcell warn':''}">${a.preta}</td>
+    <td class="num mono ${a.duplicada>0?'flagcell warn':''}">${a.duplicada}</td>
+    <td class="num mono">${a.outro}</td><td class="num mono">${a.total}</td></tr>`;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Atualizar Dados                                                    */
+/* ---------------------------------------------------------------------- */
+function renderDados(main){
+  const names = distNames();
+  main.innerHTML = `
+    <div class="page-title"><div><h2>Atualizar Dados</h2><div class="desc">Suba os arquivos exportados do TradePro. Tudo é processado aqui no navegador — nenhum arquivo sai da sua máquina, exceto o resultado calculado, que é salvo no repositório.</div></div></div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>1. Conexão com GitHub</h3><span class="hint">necessário só pra SALVAR. Ver os dados funciona sem token.</span></div>
+      <div style="padding:18px;">
+        <div class="field">
+          <label for="ghPatInput">Personal Access Token (fine-grained, com permissão de escrita neste repositório)</label>
+          <input type="password" id="ghPatInput" placeholder="ghp_xxx..." value="${escapeHtml(ghToken())}">
+        </div>
+        <button class="btn ghost" id="saveTokenBtn">Salvar token neste navegador</button>
+        <p class="note">O token fica só no seu navegador (localStorage), nunca é enviado a mim nem a ninguém além do GitHub. Se você usar outro computador, precisa colar de novo.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>2. Relatório de Roteiro</h3></div>
+      <div style="padding:18px;">
+        <div class="field">
+          <label for="distNameInput">Nome da distribuidora</label>
+          <input list="distList" id="distNameInput" placeholder="Ex: Ritter, Uau, Bahia/Sergipe...">
+          <datalist id="distList">${names.map(n=>`<option value="${escapeHtml(n)}">`).join('')}</datalist>
+        </div>
+        <div class="upload-box" id="roteiroDrop">
+          <input type="file" id="roteiroFile" accept=".xls,.xlsx">
+          <div>📄 Arraste o arquivo <b>relatorio_roteiro.xls</b> aqui, ou <button class="btn amber" id="roteiroBrowse" type="button">escolher arquivo</button></div>
+        </div>
+        <div id="roteiroLog" class="log" style="display:none;"></div>
+        <div style="margin-top:14px;">
+          <button class="btn" id="saveRoteiroBtn" disabled>Salvar no GitHub</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>3. Flags de fotos suspeitas</h3><span class="hint">arquivo .json gerado pelo Claude após revisar o álbum</span></div>
+      <div style="padding:18px;">
+        <div class="field">
+          <label for="distNameInputFotos">Distribuidora</label>
+          <input list="distList" id="distNameInputFotos" placeholder="Ex: Ritter, Uau, Bahia/Sergipe...">
+        </div>
+        <div class="upload-box" id="fotosDrop">
+          <input type="file" id="fotosFile" accept=".json">
+          <div>🖼️ Arraste o arquivo de flags (.json) aqui, ou <button class="btn amber" id="fotosBrowse" type="button">escolher arquivo</button></div>
+        </div>
+        <div id="fotosLog" class="log" style="display:none;"></div>
+        <div style="margin-top:14px;">
+          <button class="btn" id="saveFotosBtn" disabled>Salvar no GitHub</button>
+        </div>
+        <p class="note">Formato esperado: uma lista de objetos <span class="mono">{"colaborador","loja","data","tipo"}</span>, onde tipo é <span class="mono">tela</span>, <span class="mono">preta</span>, <span class="mono">duplicada</span> ou <span class="mono">outro</span>.</p>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('saveTokenBtn').addEventListener('click', ()=>{
+    setGhToken(document.getElementById('ghPatInput').value.trim());
+    alert('Token salvo neste navegador.');
+  });
+
+  setupUploadBox('roteiroDrop','roteiroFile','roteiroBrowse', handleRoteiroFile);
+  setupUploadBox('fotosDrop','fotosFile','fotosBrowse', handleFotosFile);
+}
+
+function setupUploadBox(boxId, inputId, browseBtnId, handler){
+  const box = document.getElementById(boxId);
+  const input = document.getElementById(inputId);
+  document.getElementById(browseBtnId).addEventListener('click', ()=> input.click());
+  input.addEventListener('change', ()=> input.files[0] && handler(input.files[0]));
+  ['dragenter','dragover'].forEach(ev=> box.addEventListener(ev, e=>{ e.preventDefault(); box.classList.add('drag'); }));
+  ['dragleave','drop'].forEach(ev=> box.addEventListener(ev, e=>{ e.preventDefault(); box.classList.remove('drag'); }));
+  box.addEventListener('drop', e=>{ const f = e.dataTransfer.files[0]; if (f) handler(f); });
+}
+
+let pendingRoteiro = null;
+function handleRoteiroFile(file){
+  const logEl = document.getElementById('roteiroLog');
+  logEl.style.display = 'block';
+  logEl.innerHTML = '';
+  const log = (msg, isErr) => { logEl.innerHTML += `<div class="${isErr?'err':'ok'}">${msg}</div>`; logEl.scrollTop = logEl.scrollHeight; };
+  log(`Lendo ${file.name}...`);
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const wb = XLSX.read(e.target.result, {type:'array', cellDates:true});
+      const parsed = parseRoteiroWorkbook(wb, log);
+      if (!parsed.length) { log('Nenhuma linha válida encontrada.', true); return; }
+      log(`✓ ${parsed.length} visitas lidas de ${new Set(parsed.map(p=>p.colaborador)).size} promotores.`);
+      pendingRoteiro = parsed;
+      document.getElementById('saveRoteiroBtn').disabled = false;
+    } catch(err){ log('Erro lendo o arquivo: ' + err.message, true); }
+  };
+  reader.readAsArrayBuffer(file);
+}
+document.addEventListener('click', async (e)=>{
+  if (e.target && e.target.id === 'saveRoteiroBtn') {
+    const nome = document.getElementById('distNameInput').value.trim();
+    if (!nome) { alert('Digite o nome da distribuidora.'); return; }
+    if (!pendingRoteiro) return;
+    const btn = e.target; btn.disabled = true; btn.textContent = 'Salvando...';
+    try {
+      await saveDistribuidoraData(nome, { visitas: pendingRoteiro });
+      alert(`Dados de "${nome}" salvos no GitHub!`);
+      currentDist = nome;
+      await loadAllData();
+      renderShell();
+    } catch(err){ alert('Erro ao salvar: ' + err.message); }
+    btn.disabled = false; btn.textContent = 'Salvar no GitHub';
+  }
+});
+
+let pendingFotos = null;
+function handleFotosFile(file){
+  const logEl = document.getElementById('fotosLog');
+  logEl.style.display = 'block'; logEl.innerHTML = '';
+  const log = (msg, isErr) => { logEl.innerHTML += `<div class="${isErr?'err':'ok'}">${msg}</div>`; };
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const arr = JSON.parse(e.target.result);
+      if (!Array.isArray(arr)) throw new Error('O JSON precisa ser uma lista.');
+      log(`✓ ${arr.length} flags de foto lidas.`);
+      pendingFotos = arr;
+      document.getElementById('saveFotosBtn').disabled = false;
+    } catch(err){ log('Erro lendo o JSON: ' + err.message, true); }
+  };
+  reader.readAsText(file);
+}
+document.addEventListener('click', async (e)=>{
+  if (e.target && e.target.id === 'saveFotosBtn') {
+    const nome = document.getElementById('distNameInputFotos').value.trim();
+    if (!nome) { alert('Digite o nome da distribuidora.'); return; }
+    if (!pendingFotos) return;
+    const btn = e.target; btn.disabled = true; btn.textContent = 'Salvando...';
+    try {
+      await saveDistribuidoraData(nome, { fotos: pendingFotos });
+      alert(`Flags de foto de "${nome}" salvos no GitHub!`);
+      currentDist = nome;
+      await loadAllData();
+      renderShell();
+    } catch(err){ alert('Erro ao salvar: ' + err.message); }
+    btn.disabled = false; btn.textContent = 'Salvar no GitHub';
+  }
+});
+
+async function saveDistribuidoraData(nome, partial){
+  const path = `data/${encodeURIComponent(nome)}.json`;
+  const existing = await ghGetFile(path);
+  const base = existing.content || { visitas:[], fotos:[] };
+  const merged = {
+    visitas: partial.visitas ? mergeVisitas(base.visitas||[], partial.visitas) : (base.visitas||[]),
+    fotos: partial.fotos ? mergeFotos(base.fotos||[], partial.fotos) : (base.fotos||[]),
+  };
+  await ghPutFile(path, merged, existing.sha, `Atualiza dados de ${nome}`);
+
+  const idxPath = 'data/index.json';
+  const idx = await ghGetFile(idxPath);
+  const names = new Set(idx.content?.distribuidoras || []);
+  names.add(nome);
+  await ghPutFile(idxPath, { distribuidoras: Array.from(names), updatedAt: new Date().toISOString() }, idx.sha, `Atualiza índice (${nome})`);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Helpers de UI genéricos                                                 */
+/* ---------------------------------------------------------------------- */
+function pageHeader(title, dist){
+  return `<div class="page-title"><div><h2>${title}</h2><div class="desc">${escapeHtml(dist||'')}</div></div></div>`;
+}
+function wireSort(tableId, list, redraw){
+  const table = document.getElementById(tableId);
+  if (!table) return;
+  let dir = {};
+  table.querySelectorAll('thead th[data-k]').forEach(th=>{
+    th.addEventListener('click', ()=>{
+      const k = th.dataset.k;
+      dir[k] = !dir[k];
+      const sorted = [...list].sort((a,b)=>{
+        const va = a[k], vb = b[k];
+        if (typeof va === 'string') return dir[k] ? va.localeCompare(vb) : vb.localeCompare(va);
+        return dir[k] ? va-vb : vb-va;
+      });
+      redraw(sorted);
+    });
+  });
+}
+
+/* ---------------------------------------------------------------------- */
+/* Boot                                                                     */
+/* ---------------------------------------------------------------------- */
+(async function boot(){
+  await loadAllData();
+  cacheLocally();
+  renderShell();
+})();
+</script>
+</body>
+</html>
