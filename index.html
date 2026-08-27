@@ -446,12 +446,15 @@ function aggregateLojas(visitas, filtroColaborador, refDate){
   for (const v of filtradas) {
     if (!v.loja) continue;
     const key = normLoja(v.loja);
-    if (!byLoja.has(key)) byLoja.set(key, { loja:v.loja, cidade:v.cidade, afiliada:AFILIAIS[key]||null, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, ultimaVisita:null, rows:[], _nomeVariantes:{} });
+    if (!byLoja.has(key)) byLoja.set(key, { loja:v.loja, cidade:v.cidade, afiliada:AFILIAIS[key]||null, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, ultimaVisita:null, rows:[], _nomeVariantes:{}, _promotores:{} });
     const a = byLoja.get(key);
     a._nomeVariantes[v.loja] = (a._nomeVariantes[v.loja]||0) + 1; // pra escolher o nome mais usado na hora de exibir
+    if (v.colaborador) a._promotores[v.colaborador] = (a._promotores[v.colaborador]||0) + 1;
     a.total++;
-    if (v.status === STATUS_FINALIZADO) {
-      a.finalizadas++;
+    if (v.status === STATUS_FINALIZADO) a.finalizadas++;
+    // conta como "visita de verdade" pra fins de dias-sem-visita tanto o fechamento normal quanto
+    // o fechado pelo corte (a promotora provavelmente esteve lá, só não fechou certo) — Justificado/Aberto não contam
+    if (v.status === STATUS_FINALIZADO || v.status === STATUS_CORTE) {
       if (!a.ultimaVisita || v.data > a.ultimaVisita) a.ultimaVisita = v.data;
     }
     if (isCurta(v)) a.curtas++;
@@ -463,6 +466,15 @@ function aggregateLojas(visitas, filtroColaborador, refDate){
     for (const [nome, cont] of Object.entries(a._nomeVariantes)) { if (cont > melhorCont) { melhorCont = cont; melhorNome = nome; } }
     a.loja = melhorNome;
     delete a._nomeVariantes;
+    // promotor responsável = quem mais aparece no roteiro dessa loja (se mais de um dividir igual, lista os empatados)
+    const totalPromotorEntries = Object.entries(a._promotores);
+    if (totalPromotorEntries.length) {
+      const maxCont = Math.max(...totalPromotorEntries.map(([,c])=>c));
+      a.promotorResponsavel = totalPromotorEntries.filter(([,c])=>c===maxCont).map(([nome])=>nome).join(' / ');
+    } else {
+      a.promotorResponsavel = null;
+    }
+    delete a._promotores;
     const diasRegulares = lojaDiasRegulares(a.rows);
     a.padrao = diasRegulares.size ? ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].filter(d=>diasRegulares.has(d)) : null;
     for (const v of a.rows) {
@@ -1112,7 +1124,7 @@ function renderLojasConteudo(todasSemFiltro, visitas){
       <div class="table-scroll">
       <table id="tblLojas">
         <thead><tr>
-          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th><th data-k="afiliada">Rede</th><th>Padrão</th>
+          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th><th data-k="afiliada">Rede</th><th data-k="promotorResponsavel">Promotor Responsável</th><th>Padrão</th>
           <th data-k="total" class="num">Roteiros</th><th data-k="finalizadas" class="num">Finalizadas</th>
           <th data-k="curtas" class="num">Curtas</th><th data-k="naoCumpridas" class="num">Não Cumpridas</th>
           <th data-k="recuperadas" class="num">Recuperadas (extra)</th><th data-k="semReposicao" class="num">Sem Reposição</th>
@@ -1152,6 +1164,7 @@ function rowLoja(a){
   return `<tr>
     <td>${escapeHtml(a.loja)}</td><td>${escapeHtml(a.cidade)}</td>
     <td style="font-size:12px;color:var(--ink-soft);">${escapeHtml(a.afiliada||'—')}</td>
+    <td style="font-size:12.5px;">${escapeHtml(a.promotorResponsavel||'—')}</td>
     <td class="mono" style="font-size:11.5px;color:var(--ink-soft);">${a.padrao ? a.padrao.join(', ') : 'única / sem padrão'}</td>
     <td class="num mono">${a.total}</td><td class="num mono">${a.finalizadas}</td>
     <td class="num mono">${a.curtas}</td>
