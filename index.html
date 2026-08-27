@@ -205,7 +205,6 @@ const DATA_BRANCH = "main";
 const STATUS_FINALIZADO = "Finalizado pelo Colaborador";
 const STATUS_CORTE = "Finalizado pelo Corte";
 const LIMIAR_CURTA_MIN = 30;
-const LIMIAR_LONGA_MIN = 180;
 const JANELA_RECUPERACAO_DIAS = 3;
 
 let DB = { distribuidoras: {}, updatedAt: null };
@@ -340,7 +339,6 @@ function mergeFotos(existing, novas){
 /* Cálculos                                                                 */
 /* ---------------------------------------------------------------------- */
 function isCurta(v){ return v.status === STATUS_FINALIZADO && v.duracaoMin != null && v.duracaoMin < LIMIAR_CURTA_MIN; }
-function isLonga(v){ return v.status === STATUS_FINALIZADO && v.duracaoMin != null && v.duracaoMin > LIMIAR_LONGA_MIN; }
 function isCorte(v){ return v.status === STATUS_CORTE; }
 function isFalta(v){ return /^falta$/i.test(v.motivo||""); }
 function isApp(v){ return /problemas?\s*com\s*app/i.test(v.motivo||""); }
@@ -419,11 +417,10 @@ function aggregatePeriodo(visitas, granularidade){
   const map = new Map();
   for (const v of visitas) {
     const k = keyFn(v.data);
-    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, longas:0, faltas:0, corte:0, total:0 });
+    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, faltas:0, corte:0, total:0 });
     const a = map.get(k);
     a.total++;
     if (isCurta(v)) a.curtas++;
-    if (isLonga(v)) a.longas++;
     if (isFalta(v)) a.faltas++;
     if (isCorte(v)) a.corte++;
   }
@@ -437,7 +434,7 @@ function weekdayLabelPT(dateStr){
 function aggregateDiario(visitas, semanaKey){
   const diasOrdem = ['Seg','Ter','Qua','Qui','Sex'];
   const porDia = {};
-  diasOrdem.forEach(d => porDia[d] = { dia:d, total:0, curtas:0, longas:0, faltas:0, corte:0, rows:[] });
+  diasOrdem.forEach(d => porDia[d] = { dia:d, total:0, curtas:0, faltas:0, corte:0, rows:[] });
   for (const v of visitas) {
     if (weekKey(v.data) !== semanaKey) continue;
     const wd = weekdayLabelPT(v.data);
@@ -445,7 +442,6 @@ function aggregateDiario(visitas, semanaKey){
     const a = porDia[wd];
     a.total++;
     if (isCurta(v)) a.curtas++;
-    if (isLonga(v)) a.longas++;
     if (isFalta(v)) a.faltas++;
     if (isCorte(v)) a.corte++;
     a.rows.push(v);
@@ -454,7 +450,6 @@ function aggregateDiario(visitas, semanaKey){
 }
 function flagVisita(v){
   if (isCurta(v)) return {label:'Curta', cls:'warn'};
-  if (isLonga(v)) return {label:'Longa', cls:''};
   if (v.status === STATUS_FINALIZADO) return {label:'Normal', cls:''};
   if (isFalta(v)) return {label:'Falta', cls:'warn'};
   if (isCorte(v)) return {label:'Fech. Corte', cls:'warn'};
@@ -690,7 +685,7 @@ function renderVisitas(main){
     </div>
     <div class="panel">
       <div class="panel-head">
-        <h3 id="visitasTituloGrafico">Visitas curtas, longas e faltas ao longo do tempo</h3>
+        <h3 id="visitasTituloGrafico">Visitas curtas e faltas ao longo do tempo</h3>
         <div class="pill-toggle" id="periodoToggle">
           <button data-p="diario">Diário</button>
           <button data-p="semanal">Semanal</button>
@@ -761,12 +756,11 @@ function drawDiario(visitas){
   document.getElementById('visitasTituloGrafico').textContent = `Semana ${visitasSemanaSel || ''} — segunda a sexta`;
   document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por dia — clique num dia pra ver as lojas';
   const agg = visitasSemanaSel ? aggregateDiario(visitas, visitasSemanaSel) : [];
-  document.getElementById('periodoHead').innerHTML = `<th>Dia</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Visitas Longas</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
+  document.getElementById('periodoHead').innerHTML = `<th>Dia</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
   document.getElementById('periodoBody').innerHTML = agg.map((a,i)=>`
     <tr class="dia-row" data-i="${i}" style="cursor:${a.total>0?'pointer':'default'};">
     <td class="mono">${a.dia} ${a.total>0?'🔎':''}</td><td class="num mono">${a.total}</td>
     <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
-    <td class="num mono">${a.longas}</td>
     <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
     <td class="num mono">${a.corte}</td></tr>
   `).join('');
@@ -786,7 +780,6 @@ function drawDiario(visitas){
       labels: agg.map(a=>a.dia),
       datasets:[
         {label:'Visitas curtas', data:agg.map(a=>a.curtas), backgroundColor:'#d98e28'},
-        {label:'Visitas longas', data:agg.map(a=>a.longas), backgroundColor:'#3f7d6b'},
         {label:'Faltas', data:agg.map(a=>a.faltas), backgroundColor:'#b3432b'},
       ]
     },
@@ -819,14 +812,13 @@ function mostrarDetalheDia(diaAgg){
 
 function drawVisitasChart(visitas){
   document.getElementById('diaDetalhePanel').style.display = 'none';
-  document.getElementById('visitasTituloGrafico').textContent = 'Visitas curtas, longas e faltas ao longo do tempo';
+  document.getElementById('visitasTituloGrafico').textContent = 'Visitas curtas e faltas ao longo do tempo';
   document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por período';
   const agg = aggregatePeriodo(visitas, visitasPeriodo);
-  document.getElementById('periodoHead').innerHTML = `<th>Período</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Visitas Longas</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
+  document.getElementById('periodoHead').innerHTML = `<th>Período</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
   document.getElementById('periodoBody').innerHTML = agg.map(a=>`
     <tr><td class="mono">${a.periodo}</td><td class="num mono">${a.total}</td>
     <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
-    <td class="num mono">${a.longas}</td>
     <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
     <td class="num mono">${a.corte}</td></tr>
   `).join('');
@@ -838,7 +830,6 @@ function drawVisitasChart(visitas){
       labels: agg.map(a=>a.periodo),
       datasets:[
         {label:'Visitas curtas', data:agg.map(a=>a.curtas), backgroundColor:'#d98e28'},
-        {label:'Visitas longas', data:agg.map(a=>a.longas), backgroundColor:'#3f7d6b'},
         {label:'Faltas', data:agg.map(a=>a.faltas), backgroundColor:'#b3432b'},
       ]
     },
