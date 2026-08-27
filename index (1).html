@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auditoria TradePro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="./vendor/xlsx.full.min.js"></script>
+<script src="./vendor/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg-app:#171b21;
+  --bg-app2:#1f252d;
+  --paper:#f4f2ec;
+  --paper2:#ffffff;
+  --ink:#1b2430;
+  --ink-soft:#5b6472;
+  --line:#e4dfd3;
+  --line-dark:#2c333d;
+  --amber:#d98e28;
+  --amber-soft:#f4e4c8;
+  --alto:#b3432b;
+  --alto-soft:#f6dcd4;
+  --medio:#d98e28;
+  --medio-soft:#f7e6c6;
+  --baixo:#3f7d6b;
+  --baixo-soft:#dcede7;
+}
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);}
+h1,h2,h3,.display{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.03em;}
+.mono{font-family:'IBM Plex Mono',monospace;}
+a{color:inherit;}
+
+/* ---------- layout ---------- */
+#app{display:flex;min-height:100vh;}
+#sidebar{
+  width:250px;flex-shrink:0;background:var(--bg-app);color:#cdd3db;
+  display:flex;flex-direction:column;padding:20px 0;
+}
+#sidebar .brand{
+  padding:0 20px 18px 20px;border-bottom:1px solid var(--line-dark);margin-bottom:16px;
+}
+#sidebar .brand .tag{
+  display:inline-block;background:var(--amber);color:#1b1400;font-family:'Oswald',sans-serif;
+  font-weight:600;font-size:11px;letter-spacing:.12em;padding:2px 7px;border-radius:2px;margin-bottom:8px;
+}
+#sidebar .brand h1{font-size:19px;margin:0;color:#fff;letter-spacing:.02em;line-height:1.15;}
+#sidebar .brand .sub{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#7c8797;margin-top:6px;}
+
+.dist-select-wrap{padding:0 20px 18px 20px;border-bottom:1px solid var(--line-dark);margin-bottom:8px;}
+.dist-select-wrap label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#7c8797;margin-bottom:6px;font-family:'Oswald',sans-serif;}
+.dist-select-wrap select{
+  width:100%;background:var(--bg-app2);color:#fff;border:1px solid var(--line-dark);border-radius:4px;
+  padding:9px 10px;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;
+  -webkit-appearance:none;-moz-appearance:none;appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='%23a9b1bd' d='M4 6l4 4 4-4z'/></svg>");
+  background-repeat:no-repeat;background-position:right 10px center;background-size:14px;
+}
+.dist-select-wrap select:focus{outline:2px solid var(--amber);outline-offset:1px;}
+.dist-select-wrap select option{background:var(--bg-app2);color:#fff;}
+
+nav#tabs{display:flex;flex-direction:column;padding:8px 10px;gap:2px;flex:1;}
+nav#tabs button{
+  display:flex;align-items:center;gap:10px;background:transparent;border:none;color:#a9b1bd;
+  padding:11px 12px;border-radius:6px;font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.06em;
+  text-transform:uppercase;cursor:pointer;text-align:left;transition:background .12s,color .12s;
+}
+nav#tabs button:hover{background:var(--bg-app2);color:#fff;}
+nav#tabs button.active{background:var(--amber);color:#1b1400;font-weight:600;}
+nav#tabs button .ic{width:16px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:13px;}
+
+#sidebar .foot{padding:14px 20px 0 20px;border-top:1px solid var(--line-dark);margin-top:8px;}
+#sidebar .foot .updated{font-size:10.5px;color:#6b7482;font-family:'IBM Plex Mono',monospace;}
+
+#main{flex:1;padding:28px 36px 60px 36px;max-width:1400px;}
+.page-title{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:22px;flex-wrap:wrap;gap:10px;}
+.page-title h2{font-size:26px;margin:0;color:var(--ink);}
+.page-title .desc{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;color:var(--ink-soft);font-size:13px;margin-top:4px;}
+
+/* ---------- cards / kpis ---------- */
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:26px;}
+.kpi{
+  background:var(--paper2);border:1px solid var(--line);border-radius:8px;padding:16px 18px;
+  position:relative;overflow:hidden;
+}
+.kpi::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--amber);}
+.kpi .lbl{font-family:'Oswald',sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);}
+.kpi .val{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;margin-top:4px;color:var(--ink);}
+
+/* ---------- tables ---------- */
+.panel{background:var(--paper2);border:1px solid var(--line);border-radius:8px;padding:0;margin-bottom:24px;overflow:hidden;}
+.panel .panel-head{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.panel .panel-head h3{margin:0;font-size:15px;}
+.panel .panel-head .hint{font-family:'Inter',sans-serif;text-transform:none;letter-spacing:0;font-size:11.5px;color:var(--ink-soft);}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+thead th{
+  text-align:left;font-family:'Oswald',sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--ink-soft);padding:9px 14px;border-bottom:1px solid var(--line);background:#faf9f5;position:sticky;top:0;
+  cursor:pointer;user-select:none;white-space:nowrap;
+}
+thead th:hover{color:var(--ink);}
+tbody td{padding:9px 14px;border-bottom:1px solid var(--line);vertical-align:middle;}
+tbody tr:hover{background:#faf8f2;}
+tbody tr:last-child td{border-bottom:none;}
+.num{font-family:'IBM Plex Mono',monospace;text-align:right;}
+.table-scroll{max-height:560px;overflow:auto;}
+
+/* ---------- stamp badges ---------- */
+.stamp{
+  display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 9px;border-radius:3px;border:1.5px solid currentColor;transform:rotate(-1.5deg);
+}
+.stamp.alto{color:var(--alto);background:var(--alto-soft);}
+.stamp.medio{color:var(--medio);background:var(--medio-soft);}
+.stamp.baixo{color:var(--baixo);background:var(--baixo-soft);}
+.flagcell{font-family:'IBM Plex Mono',monospace;}
+.flagcell.warn{color:var(--alto);font-weight:600;}
+
+/* ---------- filters ---------- */
+.filter-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;align-items:center;}
+.filter-row select,.filter-row input{
+  font-family:'Inter',sans-serif;font-size:13px;padding:8px 11px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);
+}
+.filter-row label{font-family:'Oswald',sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-right:-4px;}
+
+/* ---------- empty state ---------- */
+.empty{padding:60px 20px;text-align:center;color:var(--ink-soft);}
+.empty .ic{font-size:34px;margin-bottom:10px;}
+.empty h3{margin:0 0 6px 0;color:var(--ink);}
+.empty p{max-width:420px;margin:0 auto;font-size:13.5px;line-height:1.5;}
+
+/* ---------- upload page ---------- */
+.upload-box{border:2px dashed var(--line);border-radius:10px;padding:34px;text-align:center;background:#fbfaf6;}
+.upload-box.drag{border-color:var(--amber);background:var(--amber-soft);}
+.upload-box input[type=file]{display:none;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:none;border-radius:6px;
+  padding:10px 18px;font-family:'Oswald',sans-serif;font-size:12.5px;text-transform:uppercase;letter-spacing:.07em;
+  cursor:pointer;font-weight:600;
+}
+.btn:hover{background:#000;}
+.btn.amber{background:var(--amber);color:#1b1400;}
+.btn.amber:hover{background:#c17f1f;}
+.btn:disabled{opacity:.5;cursor:not-allowed;}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);}
+.field{margin-bottom:14px;}
+.field label{display:block;font-family:'Oswald',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-bottom:6px;}
+.field input,.field select{width:100%;max-width:420px;padding:9px 11px;border:1px solid var(--line);border-radius:6px;font-family:'Inter',sans-serif;font-size:13.5px;}
+.note{font-size:12.5px;color:var(--ink-soft);line-height:1.5;margin-top:8px;}
+.log{font-family:'IBM Plex Mono',monospace;font-size:12px;background:#141821;color:#c9e4c9;border-radius:6px;padding:12px 14px;margin-top:14px;max-height:220px;overflow:auto;white-space:pre-wrap;}
+.log .err{color:#ff9a8a;}
+.log .ok{color:#8ce0a0;}
+
+.chart-wrap{padding:18px;}
+.pill-toggle{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+.pill-toggle button{background:#fff;border:none;padding:7px 14px;font-family:'Oswald',sans-serif;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;color:var(--ink-soft);}
+.pill-toggle button.active{background:var(--ink);color:#fff;}
+.pill-toggle button:not(:last-child){border-right:1px solid var(--line);}
+
+@media(max-width:880px){
+  #app{flex-direction:column;}
+  #sidebar{width:100%;}
+  nav#tabs{flex-direction:row;overflow-x:auto;}
+  #main{padding:20px;}
+}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <span class="tag">Agência Mult</span>
+      <h1>Auditoria<br>TradePro</h1>
+      <div class="sub" id="repoTag">github.com/ThiagoAgencia/Auditoria-TradePro</div>
+    </div>
+    <div class="dist-select-wrap">
+      <label for="periodoSelect">Período</label>
+      <select id="periodoSelect"><option value="">Sem período específico</option></select>
+    </div>
+    <div class="dist-select-wrap">
+      <label for="distSelect">Distribuidora</label>
+      <select id="distSelect"></select>
+    </div>
+    <nav id="tabs">
+      <button data-tab="promotores" class="active"><span class="ic">01</span> Promotores</button>
+      <button data-tab="visitas"><span class="ic">02</span> Visitas</button>
+      <button data-tab="lojas"><span class="ic">03</span> Lojas</button>
+      <button data-tab="fotos"><span class="ic">04</span> Fotos</button>
+      <button data-tab="dados"><span class="ic">05</span> Atualizar Dados</button>
+    </nav>
+    <div class="foot">
+      <div class="updated" id="lastUpdated">sem dados carregados</div>
+      <button id="btnRecarregarSidebar" style="margin-top:10px;width:100%;font-size:10.5px;padding:7px 10px;background:transparent;border:1px solid var(--line-dark);color:#a9b1bd;border-radius:6px;font-family:'Oswald',sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;">↻ Recarregar dados</button>
+    </div>
+  </aside>
+
+  <main id="main"></main>
+</div>
+
+<script>
+/* =========================================================================
+   AUDITORIA TRADEPRO — app estático, roda 100% no navegador.
+   Dados ficam em /data/<distribuidora>.json dentro do próprio repositório.
+   ========================================================================= */
+
+const REPO_OWNER = "ThiagoAgencia";
+const REPO_NAME  = "Auditoria-TradePro";
+const DATA_BRANCH = "main";
+
+const STATUS_FINALIZADO = "Finalizado pelo Colaborador";
+const STATUS_CORTE = "Finalizado pelo Corte";
+const LIMIAR_CURTA_MIN = 30;
+const JANELA_RECUPERACAO_DIAS = 3;
+
+let DB = { distribuidoras: {}, updatedAt: null };
+let AFILIAIS = {}; // { "LOJA NORMALIZADA": "Nome da Afiliada" }
+let AFILIAIS_SHA = null;
+let currentDist = null;
+let currentTab = "promotores";
+let globalPeriodoFiltro = ""; // "" = sem período específico | "YYYY-MM" = só esse mês, vale pra Promotores/Visitas/Lojas/Fotos
+let lojaFiltroPromotor = "";
+let lojaFiltroAfiliada = "";
+let visitasPeriodo = "mensal"; // diario | semanal | mensal | anual
+
+function normLoja(s){
+  return (s||"").toString().toUpperCase().trim()
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')   // hífen, ponto etc viram espaço, pra "MUNDIAL - IRAJA" bater com "MUNDIAL IRAJA"
+    .replace(/\s+/g, ' ').trim();
+}
+
+// Retorna as visitas da distribuidora atual já cortadas pelo filtro global de período.
+// Todas as abas (Promotores/Visitas/Lojas) devem ler daqui, nunca de currentVisitas() direto,
+// pra respeitar o filtro global.
+function visitasEscopo(){
+  const todas = currentVisitas();
+  if (!globalPeriodoFiltro) return todas;
+  return todas.filter(v => monthKey(v.data) === globalPeriodoFiltro);
+}
+function fotosEscopo(){
+  const todas = currentFotos();
+  if (!globalPeriodoFiltro) return todas;
+  return todas.filter(f => f.data && monthKey(f.data) === globalPeriodoFiltro);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Utilidades de data                                                      */
+/* ---------------------------------------------------------------------- */
+function parseBRDate(v){
+  // aceita "DD/MM/AAAA", Date do SheetJS, ou serial excel
+  if (v instanceof Date) return v;
+  if (typeof v === "number") {
+    const d = XLSX.SSF.parse_date_code(v);
+    if (d) return new Date(Date.UTC(d.y, d.m-1, d.d));
+  }
+  if (typeof v === "string") {
+    const m = v.trim().match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+    if (m) return new Date(Date.UTC(+m[3], +m[2]-1, +m[1]));
+  }
+  return null;
+}
+function isoDate(d){ return d ? d.toISOString().slice(0,10) : null; }
+function fmtBR(d){
+  if (!d) return "";
+  const dt = new Date(d);
+  return dt.toLocaleDateString('pt-BR', {timeZone:'UTC'});
+}
+function parseTimeToMinutes(v, baseDate){
+  // v pode ser Date (com hora), string HH:MM:SS, ou serial excel fracionário
+  if (v == null || v === "") return null;
+  let totalMin = null;
+  if (v instanceof Date) {
+    totalMin = v.getUTCHours()*60 + v.getUTCMinutes() + v.getUTCSeconds()/60;
+  } else if (typeof v === "number") {
+    const frac = v % 1;
+    totalMin = frac * 24 * 60;
+  } else if (typeof v === "string") {
+    const m = v.trim().match(/(\d{1,2}):(\d{2})(:(\d{2}))?/);
+    if (m) totalMin = (+m[1])*60 + (+m[2]) + (m[4]? (+m[4])/60 : 0);
+  }
+  return totalMin;
+}
+function weekKey(dateStr){
+  const d = new Date(dateStr);
+  const onejan = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+  const week = Math.ceil((((d - onejan) / 86400000) + onejan.getUTCDay()+1)/7);
+  return `${d.getUTCFullYear()}-S${String(week).padStart(2,'0')}`;
+}
+function monthKey(dateStr){
+  const d = new Date(dateStr);
+  return `${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,'0')}`;
+}
+function yearKey(dateStr){
+  return `${new Date(dateStr).getUTCFullYear()}`;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Parsing do Relatório de Roteiro (.xls / .xlsx do TradePro)              */
+/* ---------------------------------------------------------------------- */
+function parseRoteiroWorkbook(workbook, log){
+  const sheetName = workbook.SheetNames[0];
+  const sheet = workbook.Sheets[sheetName];
+  // header real fica na linha 2 (index 1) nos exports do TradePro
+  const rows = XLSX.utils.sheet_to_json(sheet, {header:1, raw:true, defval:null});
+  if (rows.length < 3) { log("Arquivo não parece um Relatório de Roteiro válido.", true); return []; }
+  const headerRow = rows[1].map(h => (h||"").toString().trim());
+  const idx = name => headerRow.findIndex(h => h.toLowerCase() === name.toLowerCase());
+
+  const col = {
+    colaborador: idx("Colaborador"),
+    cidade: idx("Cidade"),
+    fantasia: idx("Fantasia"),
+    data: idx("Data Visita"),
+    horaIni: idx("Hora Início"),
+    horaFim: idx("Hora Final"),
+    motivo: idx("Motivo Não Visita"),
+    status: idx("Status Roteiros"),
+  };
+  if (col.colaborador === -1 || col.status === -1) {
+    log("Não encontrei as colunas esperadas (Colaborador / Status Roteiros). Confira se é o arquivo certo.", true);
+    return [];
+  }
+
+  const out = [];
+  for (let i = 2; i < rows.length; i++) {
+    const r = rows[i];
+    if (!r || !r[col.colaborador]) continue;
+    const colaborador = (r[col.colaborador]||"").toString().trim();
+    if (!colaborador || colaborador.toLowerCase().includes("suporte tradepro")) continue;
+    const dataObj = parseBRDate(r[col.data]);
+    if (!dataObj) continue;
+    const horaIniMin = parseTimeToMinutes(r[col.horaIni]);
+    const horaFimMin = parseTimeToMinutes(r[col.horaFim]);
+    let duracaoMin = null;
+    if (horaIniMin != null && horaFimMin != null) {
+      duracaoMin = horaFimMin - horaIniMin;
+      if (duracaoMin < 0) duracaoMin += 24*60;
+    }
+    out.push({
+      colaborador,
+      cidade: col.cidade!==-1 ? (r[col.cidade]||"").toString().trim() : "",
+      loja: col.fantasia!==-1 ? (r[col.fantasia]||"").toString().trim() : "",
+      data: isoDate(dataObj),
+      duracaoMin,
+      motivo: col.motivo!==-1 ? (r[col.motivo]||"").toString().trim() : "",
+      status: (r[col.status]||"").toString().trim(),
+    });
+  }
+  return out;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Merge de dados (upload incremental, sem duplicar)                       */
+/* ---------------------------------------------------------------------- */
+function mergeVisitas(existing, novas){
+  const map = new Map();
+  for (const v of existing) map.set(`${v.colaborador}|${v.loja}|${v.data}`, v);
+  for (const v of novas) map.set(`${v.colaborador}|${v.loja}|${v.data}`, v);
+  return Array.from(map.values());
+}
+function mergeFotos(existing, novas){
+  const map = new Map();
+  for (const f of existing) map.set(`${f.colaborador}|${f.loja}|${f.data}|${f.tipo}`, f);
+  for (const f of novas) map.set(`${f.colaborador}|${f.loja}|${f.data}|${f.tipo}`, f);
+  return Array.from(map.values());
+}
+
+/* ---------------------------------------------------------------------- */
+/* Cálculos                                                                 */
+/* ---------------------------------------------------------------------- */
+function isCurta(v){ return v.status === STATUS_FINALIZADO && v.duracaoMin != null && v.duracaoMin < LIMIAR_CURTA_MIN; }
+function isNormal(v){ return v.status === STATUS_FINALIZADO && !isCurta(v); }
+function isCorte(v){ return v.status === STATUS_CORTE; }
+function isFalta(v){ return /^falta$/i.test(v.motivo||""); }
+function isApp(v){ return /problemas?\s*com\s*app/i.test(v.motivo||""); }
+function isAtestado(v){ return /atestado m[eé]dico|consulta m[eé]dica/i.test(v.motivo||""); }
+
+function lojaDiasRegulares(rowsDaLoja){
+  // Detecta em quais dias da semana essa loja costuma ter roteiro (aparece em pelo menos
+  // 2 semanas diferentes naquele dia = padrão de recorrência; menos que isso = coincidência)
+  const porDia = {};
+  for (const v of rowsDaLoja) {
+    const wd = weekdayLabelPT(v.data);
+    const wk = weekKey(v.data);
+    if (!porDia[wd]) porDia[wd] = new Set();
+    porDia[wd].add(wk);
+  }
+  const regulares = new Set();
+  for (const wd in porDia) if (porDia[wd].size >= 2) regulares.add(wd);
+  return regulares;
+}
+
+function recuperadaEm3Dias(visita, todasDoMesmaLoja, diasRegulares){
+  if (visita.status === STATUS_FINALIZADO) return null; // não se aplica
+  const d0 = new Date(visita.data);
+  const temPadrao = diasRegulares && diasRegulares.size > 0;
+  for (const v2 of todasDoMesmaLoja) {
+    if (v2.status !== STATUS_FINALIZADO) continue;
+    const d1 = new Date(v2.data);
+    const diffDias = (d1 - d0) / 86400000;
+    if (diffDias >= 0 && diffDias <= JANELA_RECUPERACAO_DIAS) {
+      if (!temPadrao) return true; // loja sem padrão fixo: qualquer visita na janela é recuperação de verdade
+      const wdVisita = weekdayLabelPT(v2.data);
+      if (!diasRegulares.has(wdVisita)) return true; // visita EXTRA, fora do dia fixo = recuperação de verdade
+      // cai num dia que já era fixo da loja -> é só o ciclo normal, não conta como recuperação
+    }
+  }
+  return false;
+}
+
+function computeScore(agg){
+  const pctCurtas = agg.finalizadas ? agg.curtas/agg.finalizadas : 0;
+  const score = pctCurtas*40 + agg.corte*3 + agg.falta*5 + agg.app*1;
+  let classe = "baixo";
+  if (score >= 20) classe = "alto"; else if (score >= 10) classe = "medio";
+  return { score: Math.round(score*10)/10, classe, pctCurtas };
+}
+
+function aggregatePromotores(visitas){
+  const byColab = new Map();
+  for (const v of visitas) {
+    if (!byColab.has(v.colaborador)) byColab.set(v.colaborador, { colaborador:v.colaborador, cidade:v.cidade, total:0, finalizadas:0, curtas:0, corte:0, falta:0, app:0, atestadoDias:new Set() });
+    const a = byColab.get(v.colaborador);
+    a.total++;
+    if (v.status === STATUS_FINALIZADO) a.finalizadas++;
+    if (isCurta(v)) a.curtas++;
+    if (isCorte(v)) a.corte++;
+    if (isFalta(v)) a.falta++;
+    if (isApp(v)) a.app++;
+    if (isAtestado(v)) a.atestadoDias.add(v.data);
+  }
+  const list = [];
+  for (const a of byColab.values()) {
+    const { score, classe, pctCurtas } = computeScore(a);
+    list.push({ ...a, atestado: a.atestadoDias.size, score, classe, pctCurtas });
+  }
+  list.sort((x,y)=> y.score - x.score);
+  return list;
+}
+
+function aggregateLojas(visitas, filtroColaborador, refDate){
+  const filtradas = filtroColaborador ? visitas.filter(v=>v.colaborador===filtroColaborador) : visitas;
+  const byLoja = new Map();
+  for (const v of filtradas) {
+    if (!v.loja) continue;
+    const key = normLoja(v.loja);
+    if (!byLoja.has(key)) byLoja.set(key, { loja:v.loja, cidade:v.cidade, afiliada:AFILIAIS[key]||null, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, ultimaVisita:null, rows:[], _nomeVariantes:{}, _promotores:{} });
+    const a = byLoja.get(key);
+    a._nomeVariantes[v.loja] = (a._nomeVariantes[v.loja]||0) + 1; // pra escolher o nome mais usado na hora de exibir
+    if (v.colaborador) a._promotores[v.colaborador] = (a._promotores[v.colaborador]||0) + 1;
+    a.total++;
+    if (v.status === STATUS_FINALIZADO) a.finalizadas++;
+    // conta como "visita de verdade" pra fins de dias-sem-visita tanto o fechamento normal quanto
+    // o fechado pelo corte (a promotora provavelmente esteve lá, só não fechou certo) — Justificado/Aberto não contam
+    if (v.status === STATUS_FINALIZADO || v.status === STATUS_CORTE) {
+      if (!a.ultimaVisita || v.data > a.ultimaVisita) a.ultimaVisita = v.data;
+    }
+    if (isCurta(v)) a.curtas++;
+    a.rows.push(v);
+  }
+  for (const a of byLoja.values()) {
+    // usa a grafia mais frequente como nome de exibição (ex: "MUNDIAL - IRAJA" x "Mundial Iraja" -> a que aparecer mais vezes)
+    let melhorNome = a.loja, melhorCont = 0;
+    for (const [nome, cont] of Object.entries(a._nomeVariantes)) { if (cont > melhorCont) { melhorCont = cont; melhorNome = nome; } }
+    a.loja = melhorNome;
+    delete a._nomeVariantes;
+    // promotor responsável = quem mais aparece no roteiro dessa loja (se mais de um dividir igual, lista os empatados)
+    const totalPromotorEntries = Object.entries(a._promotores);
+    if (totalPromotorEntries.length) {
+      const maxCont = Math.max(...totalPromotorEntries.map(([,c])=>c));
+      a.promotorResponsavel = totalPromotorEntries.filter(([,c])=>c===maxCont).map(([nome])=>nome).join(' / ');
+    } else {
+      a.promotorResponsavel = null;
+    }
+    delete a._promotores;
+    const diasRegulares = lojaDiasRegulares(a.rows);
+    a.padrao = diasRegulares.size ? ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].filter(d=>diasRegulares.has(d)) : null;
+    for (const v of a.rows) {
+      if (v.status !== STATUS_FINALIZADO) {
+        a.naoCumpridas++;
+        const rec = recuperadaEm3Dias(v, a.rows, diasRegulares);
+        if (rec === true) a.recuperadas++;
+        else if (rec === false) a.semReposicao++;
+      }
+    }
+    a.diasSemVisita = a.ultimaVisita ? Math.round((new Date(refDate) - new Date(a.ultimaVisita)) / 86400000) : null;
+    delete a.rows;
+  }
+  return Array.from(byLoja.values()).sort((x,y)=> (y.diasSemVisita ?? 99999) - (x.diasSemVisita ?? 99999));
+}
+
+function aggregatePeriodo(visitas, granularidade){
+  const keyFn = granularidade === "semanal" ? weekKey : granularidade === "anual" ? yearKey : monthKey;
+  const map = new Map();
+  for (const v of visitas) {
+    const k = keyFn(v.data);
+    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, normais:0, faltas:0, corte:0, total:0 });
+    const a = map.get(k);
+    a.total++;
+    if (isCurta(v)) a.curtas++;
+    if (isNormal(v)) a.normais++;
+    if (isFalta(v)) a.faltas++;
+    if (isCorte(v)) a.corte++;
+  }
+  return Array.from(map.values()).sort((x,y)=> x.periodo.localeCompare(y.periodo));
+}
+
+function weekdayLabelPT(dateStr){
+  const dias = ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
+  return dias[new Date(dateStr).getUTCDay()];
+}
+function aggregateDiario(visitas, semanaKey){
+  const diasOrdem = ['Seg','Ter','Qua','Qui','Sex'];
+  const porDia = {};
+  diasOrdem.forEach(d => porDia[d] = { dia:d, total:0, curtas:0, normais:0, faltas:0, corte:0, rows:[] });
+  for (const v of visitas) {
+    if (weekKey(v.data) !== semanaKey) continue;
+    const wd = weekdayLabelPT(v.data);
+    if (!porDia[wd]) continue; // ignora sábado/domingo, a visão diária é só dias úteis
+    const a = porDia[wd];
+    a.total++;
+    if (isCurta(v)) a.curtas++;
+    if (isNormal(v)) a.normais++;
+    if (isFalta(v)) a.faltas++;
+    if (isCorte(v)) a.corte++;
+    a.rows.push(v);
+  }
+  return diasOrdem.map(d => porDia[d]);
+}
+function flagVisita(v){
+  if (isCurta(v)) return {label:'Curta', cls:'warn'};
+  if (v.status === STATUS_FINALIZADO) return {label:'Normal', cls:''};
+  if (isFalta(v)) return {label:'Falta', cls:'warn'};
+  if (isCorte(v)) return {label:'Fech. Corte', cls:'warn'};
+  return {label:v.status || '—', cls:''};
+}
+
+function aggregateFotos(fotos, filtroPromotor){
+  const filtradas = filtroPromotor ? fotos.filter(f=>f.colaborador===filtroPromotor) : fotos;
+  const byLoja = new Map();
+  for (const f of filtradas) {
+    const key = normLoja(f.loja);
+    if (!byLoja.has(key)) byLoja.set(key, { loja:f.loja, tela:0, preta:0, duplicada:0, outro:0, total:0 });
+    const a = byLoja.get(key);
+    a.total++;
+    if (f.tipo in a) a[f.tipo]++; else a.outro++;
+  }
+  return Array.from(byLoja.values()).sort((x,y)=> y.total-x.total);
+}
+
+/* ---------------------------------------------------------------------- */
+/* GitHub API (leitura pública + escrita autenticada opcional)             */
+/* ---------------------------------------------------------------------- */
+function ghToken(){ return localStorage.getItem('gh_pat') || ""; }
+function setGhToken(t){ localStorage.setItem('gh_pat', t); }
+
+async function ghGetFile(path){
+  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}?ref=${DATA_BRANCH}`;
+  const headers = {};
+  const tok = ghToken();
+  if (tok) headers['Authorization'] = `Bearer ${tok}`;
+  const res = await fetch(url, {headers});
+  if (res.status === 404) return { content:null, sha:null };
+  if (!res.ok) throw new Error(`GitHub GET ${path}: ${res.status}`);
+  const j = await res.json();
+  const content = JSON.parse(decodeURIComponent(escape(atob(j.content))));
+  return { content, sha:j.sha };
+}
+async function ghPutFile(path, obj, sha, message){
+  const tok = ghToken();
+  if (!tok) throw new Error("Nenhum token do GitHub configurado. Vá em Atualizar Dados → Conexão com GitHub.");
+  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}`;
+  const body = {
+    message: message || `Atualiza ${path}`,
+    content: btoa(unescape(encodeURIComponent(JSON.stringify(obj, null, 2)))),
+    branch: DATA_BRANCH,
+  };
+  if (sha) body.sha = sha;
+  const res = await fetch(url, {
+    method:'PUT',
+    headers:{ 'Authorization':`Bearer ${tok}`, 'Content-Type':'application/json' },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) { const t = await res.text(); throw new Error(`GitHub PUT ${path}: ${res.status} ${t}`); }
+  return await res.json();
+}
+
+let lastLoadError = null;
+
+async function loadAllData(){
+  lastLoadError = null;
+  try {
+    const idx = await ghGetFile('data/index.json');
+    const names = idx.content?.distribuidoras || [];
+    const dists = {};
+    for (const nome of names) {
+      const f = await ghGetFile(`data/${encodeURIComponent(nome)}.json`);
+      if (f.content) dists[nome] = f.content;
+    }
+    DB = { distribuidoras: dists, updatedAt: idx.content?.updatedAt || null };
+    const afil = await ghGetFile('data/afiliais.json');
+    AFILIAIS = afil.content || {};
+    AFILIAIS_SHA = afil.sha || null;
+  } catch(e) {
+    console.warn("Não consegui carregar dados do GitHub:", e);
+    lastLoadError = e.message || String(e);
+    DB = { distribuidoras: {}, updatedAt: null };
+  }
+  if (lastLoadError) {
+    const cached = localStorage.getItem('db_cache');
+    if (cached) { try { const c = JSON.parse(cached); DB = c.DB || c; AFILIAIS = c.AFILIAIS || {}; } catch(e){} }
+  }
+}
+function cacheLocally(){
+  localStorage.setItem('db_cache', JSON.stringify({ DB, AFILIAIS }));
+}
+async function salvarAfiliais(novasEntradas){
+  // novasEntradas: { "LOJA NORMALIZADA": "Nome Afiliada", ... }
+  Object.assign(AFILIAIS, novasEntradas);
+  const res = await ghPutFile('data/afiliais.json', AFILIAIS, AFILIAIS_SHA, `Classifica ${Object.keys(novasEntradas).length} loja(s) em afiliadas`);
+  AFILIAIS_SHA = res?.content?.sha || AFILIAIS_SHA;
+  cacheLocally();
+}
+
+/* ---------------------------------------------------------------------- */
+/* Render: shell / navegação                                               */
+/* ---------------------------------------------------------------------- */
+function distNames(){ return Object.keys(DB.distribuidoras).sort(); }
+
+function renderShell(){
+  const sel = document.getElementById('distSelect');
+  const names = distNames();
+  sel.innerHTML = names.length
+    ? names.map(n=>`<option value="${escapeHtml(n)}">${escapeHtml(n)}</option>`).join('')
+    : `<option value="">— nenhuma ainda —</option>`;
+  if (!currentDist || !names.includes(currentDist)) currentDist = names[0] || null;
+  sel.value = currentDist || "";
+
+  const periodoSel = document.getElementById('periodoSelect');
+  const meses = Array.from(new Set(currentVisitas().map(v=>monthKey(v.data)))).sort();
+  periodoSel.innerHTML = `<option value="">Sem período específico</option>` +
+    meses.map(m=>`<option value="${m}">${m}</option>`).join('');
+  if (globalPeriodoFiltro && !meses.includes(globalPeriodoFiltro)) {
+    // a distribuidora atual não tem esse mês — mantém selecionado mesmo assim fora da lista,
+    // pra deixar claro (tela em branco) que falta subir esse período dela
+    const opt = document.createElement('option');
+    opt.value = globalPeriodoFiltro; opt.textContent = `${globalPeriodoFiltro} (sem dados aqui)`;
+    periodoSel.appendChild(opt);
+  }
+  periodoSel.value = globalPeriodoFiltro || "";
+
+  document.getElementById('lastUpdated').textContent = DB.updatedAt
+    ? `atualizado em ${new Date(DB.updatedAt).toLocaleString('pt-BR')}`
+    : 'sem dados carregados';
+  renderTab();
+  renderLoadBanner();
+}
+
+function renderLoadBanner(){
+  const old = document.getElementById('loadBanner');
+  if (old) old.remove();
+  if (!lastLoadError) return;
+  const banner = document.createElement('div');
+  banner.id = 'loadBanner';
+  banner.style.cssText = 'background:#f6dcd4;border:1px solid var(--alto);color:#7a2c1c;border-radius:8px;padding:12px 16px;margin-bottom:18px;font-size:13px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;';
+  banner.innerHTML = `<span>⚠️ Não consegui buscar a versão mais recente do GitHub agora (${escapeHtml(lastLoadError)}). Mostrando a última cópia salva neste navegador — pode estar desatualizada.</span>
+    <button class="btn ghost" id="btnRecarregar" style="white-space:nowrap;">Tentar de novo</button>`;
+  document.getElementById('main').prepend(banner);
+  document.getElementById('btnRecarregar').addEventListener('click', async ()=>{
+    document.getElementById('btnRecarregar').textContent = 'Carregando...';
+    await loadAllData();
+    cacheLocally();
+    renderShell();
+  });
+}
+
+function escapeHtml(s){ return (s??"").toString().replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+document.getElementById('distSelect').addEventListener('change', e=>{
+  currentDist = e.target.value || null;
+  renderShell(); // precisa refazer o seletor de período também (Opção A: lista muda por distribuidora)
+});
+document.getElementById('periodoSelect').addEventListener('change', e=>{
+  globalPeriodoFiltro = e.target.value || "";
+  renderTab();
+});
+document.querySelectorAll('#tabs button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('#tabs button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    currentTab = btn.dataset.tab;
+    renderTab();
+  });
+});
+
+function currentVisitas(){
+  if (!currentDist || !DB.distribuidoras[currentDist]) return [];
+  return DB.distribuidoras[currentDist].visitas || [];
+}
+function currentFotos(){
+  if (!currentDist || !DB.distribuidoras[currentDist]) return [];
+  return DB.distribuidoras[currentDist].fotos || [];
+}
+
+function renderTab(){
+  const main = document.getElementById('main');
+  if (!currentDist && currentTab !== 'dados') {
+    main.innerHTML = emptyState("Nenhuma distribuidora cadastrada ainda",
+      "Vá até a aba <b>Atualizar Dados</b> pra subir o primeiro Relatório de Roteiro e criar sua primeira distribuidora.");
+    return;
+  }
+  if (currentTab === 'promotores') renderPromotores(main);
+  else if (currentTab === 'visitas') renderVisitas(main);
+  else if (currentTab === 'lojas') renderLojas(main);
+  else if (currentTab === 'fotos') renderFotos(main);
+  else if (currentTab === 'dados') renderDados(main);
+}
+
+function emptyState(title, html){
+  return `<div class="empty"><div class="ic">◇</div><h3>${title}</h3><p>${html}</p></div>`;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Promotores                                                         */
+/* ---------------------------------------------------------------------- */
+function renderPromotores(main){
+  const todasSemFiltro = currentVisitas();
+  const visitas = visitasEscopo();
+  if (!visitas.length) {
+    const msg = todasSemFiltro.length
+      ? emptyState("Sem visitas nesse período", `Essa distribuidora não tem dado pra <b>${escapeHtml(globalPeriodoFiltro)}</b> — talvez falte subir o Relatório de Roteiro desse mês.`)
+      : emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados.");
+    main.innerHTML = pageHeader('Promotores', currentDist) + msg; return;
+  }
+  const list = aggregatePromotores(visitas);
+  const totalFaltas = list.reduce((s,a)=>s+a.falta,0);
+  const totalCurtas = list.reduce((s,a)=>s+a.curtas,0);
+  const altos = list.filter(a=>a.classe==='alto').length;
+
+  main.innerHTML = pageHeader('Promotores', currentDist) + `
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">Promotores</div><div class="val">${list.length}</div></div>
+      <div class="kpi"><div class="lbl">Faltas reais</div><div class="val">${totalFaltas}</div></div>
+      <div class="kpi"><div class="lbl">Visitas curtas (total)</div><div class="val">${totalCurtas}</div></div>
+      <div class="kpi"><div class="lbl">Risco alto</div><div class="val">${altos}</div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Ranking de risco</h3><span class="hint">clique no cabeçalho pra ordenar · score = %curtas×40 + corte×3 + falta×5 + app×1</span></div>
+      <div class="table-scroll">
+      <table id="tblPromotores">
+        <thead><tr>
+          <th data-k="colaborador">Colaborador</th><th data-k="cidade">Cidade</th>
+          <th data-k="total" class="num">Roteiros</th><th data-k="finalizadas" class="num">Finalizadas</th>
+          <th data-k="curtas" class="num">Curtas &lt;30min</th><th data-k="pctCurtas" class="num">% Curtas</th>
+          <th data-k="corte" class="num">Fech. Corte</th><th data-k="falta" class="num">Faltas</th>
+          <th data-k="atestado" class="num">Atestado (dias)</th><th data-k="app" class="num">Problema App</th>
+          <th data-k="score" class="num">Score</th><th>Classe</th>
+        </tr></thead>
+        <tbody>${list.map(rowPromotor).join('')}</tbody>
+      </table>
+      </div>
+    </div>`;
+  wireSort('tblPromotores', list, renderPromotorRowsInto);
+}
+function rowPromotor(a){
+  return `<tr>
+    <td>${escapeHtml(a.colaborador)}</td><td>${escapeHtml(a.cidade)}</td>
+    <td class="num mono">${a.total}</td><td class="num mono">${a.finalizadas}</td>
+    <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
+    <td class="num mono">${(a.pctCurtas*100).toFixed(0)}%</td>
+    <td class="num mono">${a.corte}</td>
+    <td class="num mono ${a.falta>0?'flagcell warn':''}">${a.falta}</td>
+    <td class="num mono">${a.atestado}</td>
+    <td class="num mono">${a.app}</td>
+    <td class="num mono">${a.score}</td>
+    <td><span class="stamp ${a.classe}">${a.classe}</span></td>
+  </tr>`;
+}
+function renderPromotorRowsInto(list){
+  document.querySelector('#tblPromotores tbody').innerHTML = list.map(rowPromotor).join('');
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Visitas (série temporal + visão diária)                            */
+/* ---------------------------------------------------------------------- */
+let visitasChart = null;
+let visitasPromotorFiltro = "";
+let visitasSemanaSel = null;
+
+function renderVisitas(main){
+  const todasSemFiltro = currentVisitas();
+  const todas = visitasEscopo();
+  if (!todas.length) {
+    const msg = todasSemFiltro.length
+      ? emptyState("Sem visitas nesse período", `Essa distribuidora não tem dado pra <b>${escapeHtml(globalPeriodoFiltro)}</b> — talvez falte subir o Relatório de Roteiro desse mês.`)
+      : emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados.");
+    main.innerHTML = pageHeader('Visitas', currentDist) + msg; return;
+  }
+  const promotores = Array.from(new Set(todas.map(v=>v.colaborador))).sort();
+
+  main.innerHTML = pageHeader('Visitas', currentDist) + `
+    <div class="filter-row">
+      <label for="visitasPromotorFiltro">Filtrar por promotor</label>
+      <select id="visitasPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
+    </div>
+    <div class="panel">
+      <div class="panel-head">
+        <h3 id="visitasTituloGrafico">Visitas curtas, normais e faltas ao longo do tempo</h3>
+        <div class="pill-toggle" id="periodoToggle">
+          <button data-p="diario">Diário</button>
+          <button data-p="semanal">Semanal</button>
+          <button data-p="mensal" class="active">Mensal</button>
+          <button data-p="anual">Anual</button>
+        </div>
+      </div>
+      <div id="semanaSelectorWrap" style="display:none;padding:14px 18px 0 18px;">
+        <label for="semanaSelect" style="font-family:'Oswald',sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-right:8px;">Semana</label>
+        <select id="semanaSelect"></select>
+        <span class="note" style="margin-left:10px;">mostrando segunda a sexta dessa semana</span>
+      </div>
+      <div class="chart-wrap"><canvas id="visitasCanvas" height="90"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3 id="visitasTituloTabela">Detalhamento por período</h3></div>
+      <div class="table-scroll">
+      <table><thead><tr id="periodoHead"></tr></thead>
+      <tbody id="periodoBody"></tbody></table>
+      </div>
+    </div>
+    <div class="panel" id="diaDetalhePanel" style="display:none;">
+      <div class="panel-head"><h3 id="diaDetalheTitulo">Lojas do dia</h3></div>
+      <div class="table-scroll">
+      <table><thead><tr><th>Loja</th><th>Cidade</th><th>Duração</th><th>Status</th><th>Motivo</th><th>Flag</th></tr></thead>
+      <tbody id="diaDetalheBody"></tbody></table>
+      </div>
+    </div>`;
+
+  document.getElementById('visitasPromotorFiltro').addEventListener('change', e=>{
+    visitasPromotorFiltro = e.target.value;
+    redrawVisitas(todas);
+  });
+  document.querySelectorAll('#periodoToggle button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      document.querySelectorAll('#periodoToggle button').forEach(x=>x.classList.remove('active'));
+      b.classList.add('active');
+      visitasPeriodo = b.dataset.p;
+      redrawVisitas(todas);
+    });
+  });
+  redrawVisitas(todas);
+}
+
+function visitasFiltradas(todas){
+  return visitasPromotorFiltro ? todas.filter(v=>v.colaborador===visitasPromotorFiltro) : todas;
+}
+
+function redrawVisitas(todasVisitas){
+  const visitas = visitasFiltradas(todasVisitas);
+  const semanaWrap = document.getElementById('semanaSelectorWrap');
+
+  if (visitasPeriodo === 'diario') {
+    semanaWrap.style.display = 'block';
+    const semanas = Array.from(new Set(visitas.map(v=>weekKey(v.data)))).sort();
+    const semanaSelect = document.getElementById('semanaSelect');
+    if (!visitasSemanaSel || !semanas.includes(visitasSemanaSel)) visitasSemanaSel = semanas[semanas.length-1] || null;
+    semanaSelect.innerHTML = semanas.map(s=>`<option value="${s}" ${s===visitasSemanaSel?'selected':''}>${s}</option>`).join('');
+    semanaSelect.onchange = () => { visitasSemanaSel = semanaSelect.value; drawDiario(visitas); };
+    drawDiario(visitas);
+  } else {
+    semanaWrap.style.display = 'none';
+    drawVisitasChart(visitas);
+  }
+}
+
+function drawDiario(visitas){
+  document.getElementById('visitasTituloGrafico').textContent = `Semana ${visitasSemanaSel || ''} — segunda a sexta`;
+  document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por dia — clique num dia pra ver as lojas';
+  const agg = visitasSemanaSel ? aggregateDiario(visitas, visitasSemanaSel) : [];
+  document.getElementById('periodoHead').innerHTML = `<th>Dia</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Normais</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
+  document.getElementById('periodoBody').innerHTML = agg.map((a,i)=>`
+    <tr class="dia-row" data-i="${i}" style="cursor:${a.total>0?'pointer':'default'};">
+    <td class="mono">${a.dia} ${a.total>0?'🔎':''}</td><td class="num mono">${a.total}</td>
+    <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
+    <td class="num mono">${a.normais}</td>
+    <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
+    <td class="num mono">${a.corte}</td></tr>
+  `).join('');
+  document.querySelectorAll('.dia-row').forEach(tr=>{
+    tr.addEventListener('click', ()=>{
+      const a = agg[+tr.dataset.i];
+      if (!a || !a.total) return;
+      mostrarDetalheDia(a);
+    });
+  });
+  document.getElementById('diaDetalhePanel').style.display = 'none';
+  const ctx = document.getElementById('visitasCanvas');
+  if (visitasChart) visitasChart.destroy();
+  visitasChart = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels: agg.map(a=>a.dia),
+      datasets:[
+        {label:'Visitas curtas', data:agg.map(a=>a.curtas), backgroundColor:'#d98e28'},
+        {label:'Normais', data:agg.map(a=>a.normais), backgroundColor:'#3f7d6b'},
+        {label:'Faltas', data:agg.map(a=>a.faltas), backgroundColor:'#b3432b'},
+      ]
+    },
+    options:{ responsive:true, plugins:{legend:{position:'bottom', labels:{font:{family:'Inter'}}}}, scales:{x:{ticks:{font:{family:'IBM Plex Mono', size:11}}}, y:{beginAtZero:true, ticks:{precision:0}}} }
+  });
+}
+
+function fmtMin(m){
+  if (m == null) return '—';
+  const h = Math.floor(m/60), mm = Math.round(m%60);
+  return h>0 ? `${h}h${String(mm).padStart(2,'0')}` : `${mm}min`;
+}
+function mostrarDetalheDia(diaAgg){
+  const panel = document.getElementById('diaDetalhePanel');
+  document.getElementById('diaDetalheTitulo').textContent = `${diaAgg.dia} — ${diaAgg.rows.length} loja(s)`;
+  const rowsOrdenadas = [...diaAgg.rows].sort((a,b)=> (a.loja||'').localeCompare(b.loja||''));
+  document.getElementById('diaDetalheBody').innerHTML = rowsOrdenadas.map(v=>{
+    const f = flagVisita(v);
+    return `<tr>
+      <td>${escapeHtml(v.loja)}</td><td>${escapeHtml(v.cidade)}</td>
+      <td class="num mono">${fmtMin(v.duracaoMin)}</td>
+      <td>${escapeHtml(v.status)}</td>
+      <td>${escapeHtml(v.motivo||'—')}</td>
+      <td class="${f.cls==='warn'?'flagcell warn':'flagcell'}">${f.label}</td>
+    </tr>`;
+  }).join('');
+  panel.style.display = 'block';
+  panel.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+function drawVisitasChart(visitas){
+  document.getElementById('diaDetalhePanel').style.display = 'none';
+  document.getElementById('visitasTituloGrafico').textContent = 'Visitas curtas, normais e faltas ao longo do tempo';
+  document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por período';
+  const agg = aggregatePeriodo(visitas, visitasPeriodo);
+  document.getElementById('periodoHead').innerHTML = `<th>Período</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Normais</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
+  document.getElementById('periodoBody').innerHTML = agg.map(a=>`
+    <tr><td class="mono">${a.periodo}</td><td class="num mono">${a.total}</td>
+    <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
+    <td class="num mono">${a.normais}</td>
+    <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
+    <td class="num mono">${a.corte}</td></tr>
+  `).join('');
+  const ctx = document.getElementById('visitasCanvas');
+  if (visitasChart) visitasChart.destroy();
+  visitasChart = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels: agg.map(a=>a.periodo),
+      datasets:[
+        {label:'Visitas curtas', data:agg.map(a=>a.curtas), backgroundColor:'#d98e28'},
+        {label:'Normais', data:agg.map(a=>a.normais), backgroundColor:'#3f7d6b'},
+        {label:'Faltas', data:agg.map(a=>a.faltas), backgroundColor:'#b3432b'},
+      ]
+    },
+    options:{ responsive:true, plugins:{legend:{position:'bottom', labels:{font:{family:'Inter'}}}}, scales:{x:{ticks:{font:{family:'IBM Plex Mono', size:11}}}, y:{beginAtZero:true}} }
+  });
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Lojas                                                              */
+/* ---------------------------------------------------------------------- */
+const LIMIAR_DIAS_ATENCAO = 7;
+const LIMIAR_DIAS_CRITICO = 14;
+
+function lojasSemAfiliada(todasVisitasSemFiltro){
+  // usa histórico completo da distribuidora (não só o período em foco), pra sempre
+  // classificar todo mundo de uma vez, independente de qual período você tá vendo agora
+  const nomes = new Map(); // normLoja -> nome original (o mais recente encontrado)
+  for (const v of todasVisitasSemFiltro) {
+    if (!v.loja) continue;
+    nomes.set(normLoja(v.loja), v.loja);
+  }
+  const faltando = [];
+  for (const [key, nomeOriginal] of nomes) {
+    if (!AFILIAIS[key]) faltando.push(nomeOriginal);
+  }
+  return faltando.sort();
+}
+
+function normSemEspaco(s){ return normLoja(s).replace(/\s+/g, ''); }
+
+function sugerirAfiliada(nomeLoja){
+  const norm = normLoja(nomeLoja);
+  const normSem = normSemEspaco(nomeLoja);
+  const afiliadasConhecidas = Array.from(new Set(Object.values(AFILIAIS))).sort();
+  // 1) prefixo exato (respeitando espaço)
+  let candidatos = afiliadasConhecidas.filter(af => norm.startsWith(normLoja(af)) && normLoja(af).length >= 4);
+  if (candidatos.length === 1) return candidatos[0];
+  // 2) prefixo ignorando espaço (pega "HIPERIDEAL" batendo com "HIPER IDEAL")
+  candidatos = afiliadasConhecidas.filter(af => normSem.startsWith(normSemEspaco(af)) && normSemEspaco(af).length >= 4);
+  if (candidatos.length === 1) return candidatos[0];
+  return null;
+}
+
+function renderLojas(main){
+  const todasSemFiltro = currentVisitas();
+  const visitas = visitasEscopo();
+  if (!todasSemFiltro.length) { main.innerHTML = pageHeader('Lojas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
+
+  main.innerHTML = pageHeader('Lojas', currentDist) + `<div id="lojasAutoNota"></div><div id="lojasClassificarWrap"></div><div id="lojasConteudo"></div>`;
+
+  const faltando = lojasSemAfiliada(todasSemFiltro);
+  const autoResolvidas = {};
+  const precisaRevisao = [];
+  for (const loja of faltando) {
+    const sugestao = sugerirAfiliada(loja);
+    if (sugestao) autoResolvidas[normLoja(loja)] = sugestao;
+    else precisaRevisao.push(loja);
+  }
+
+  if (Object.keys(autoResolvidas).length) {
+    Object.assign(AFILIAIS, autoResolvidas); // já aplica na hora, não espera salvar pra mostrar
+    const exemplos = Object.entries(autoResolvidas).slice(0,3).map(([k,v])=>`${k} → ${v}`).join(', ');
+    document.getElementById('lojasAutoNota').innerHTML =
+      `<div class="note" style="margin-bottom:14px;">✓ ${Object.keys(autoResolvidas).length} loja(s) classificada(s) automaticamente por nome (ex: ${escapeHtml(exemplos)}${Object.keys(autoResolvidas).length>3?'…':''}).</div>`;
+    salvarAfiliais(autoResolvidas).catch(err => console.warn('Não consegui salvar a classificação automática agora (token do GitHub configurado?):', err));
+  }
+
+  if (precisaRevisao.length) {
+    renderPainelClassificacao(precisaRevisao);
+  } else {
+    renderLojasConteudo(todasSemFiltro, visitas);
+  }
+}
+
+function renderPainelClassificacao(faltando){
+  const afiliadasConhecidas = Array.from(new Set(Object.values(AFILIAIS))).sort();
+  const wrap = document.getElementById('lojasClassificarWrap');
+  wrap.innerHTML = `
+    <div class="panel" style="border-color:var(--amber);">
+      <div class="panel-head"><h3>📋 ${faltando.length} loja(s) sem Rede — classifique antes de continuar</h3>
+        <span class="hint">Escolha uma Rede já existente ou digite uma nova. Fica salvo pra sempre, só pergunta de novo se aparecer loja nova.</span></div>
+      <div class="table-scroll" style="max-height:420px;">
+      <table><thead><tr><th>Loja</th><th>Rede</th></tr></thead>
+      <tbody id="classificarBody">
+        ${faltando.map((loja,i)=>{
+          const sugestao = sugerirAfiliada(loja);
+          return `<tr>
+            <td>${escapeHtml(loja)}</td>
+            <td>
+              <select class="classSelect" data-loja="${escapeHtml(loja)}" style="padding:6px 8px;border:1px solid var(--line);border-radius:5px;font-family:'Inter',sans-serif;font-size:13px;">
+                <option value="">— escolher —</option>
+                ${afiliadasConhecidas.map(a=>`<option value="${escapeHtml(a)}" ${a===sugestao?'selected':''}>${escapeHtml(a)}</option>`).join('')}
+                <option value="__nova__">+ Nova Rede...</option>
+              </select>
+              <input type="text" class="classNova" data-loja="${escapeHtml(loja)}" placeholder="nome da nova Rede" style="display:none;margin-left:6px;padding:6px 8px;border:1px solid var(--line);border-radius:5px;font-size:13px;">
+            </td>
+          </tr>`;
+        }).join('')}
+      </tbody></table>
+      </div>
+      <div style="padding:14px 18px;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;">
+        <button class="btn amber" id="btnSalvarClassificacao">Salvar classificação</button>
+        <span class="note" id="classificarStatus"></span>
+      </div>
+    </div>`;
+
+  wrap.querySelectorAll('.classSelect').forEach(sel=>{
+    sel.addEventListener('change', ()=>{
+      const nova = wrap.querySelector(`.classNova[data-loja="${CSS.escape(sel.dataset.loja)}"]`);
+      nova.style.display = sel.value === '__nova__' ? 'inline-block' : 'none';
+    });
+  });
+
+  document.getElementById('btnSalvarClassificacao').addEventListener('click', async ()=>{
+    const btn = document.getElementById('btnSalvarClassificacao');
+    const status = document.getElementById('classificarStatus');
+    const novasEntradas = {};
+    let faltaAlgum = false;
+    wrap.querySelectorAll('.classSelect').forEach(sel=>{
+      const loja = sel.dataset.loja;
+      let valor = sel.value;
+      if (valor === '__nova__') {
+        const novaInput = wrap.querySelector(`.classNova[data-loja="${CSS.escape(loja)}"]`);
+        valor = novaInput.value.trim();
+      }
+      if (!valor) { faltaAlgum = true; return; }
+      novasEntradas[normLoja(loja)] = valor;
+    });
+    if (faltaAlgum) { status.textContent = 'Falta escolher a Rede de alguma loja.'; status.style.color = 'var(--alto)'; return; }
+    btn.disabled = true; status.textContent = 'Salvando no GitHub...'; status.style.color = '';
+    try {
+      await salvarAfiliais(novasEntradas);
+      status.textContent = 'Salvo!'; status.style.color = 'var(--baixo)';
+      renderTab();
+    } catch(err) {
+      status.textContent = 'Erro ao salvar: ' + err.message; status.style.color = 'var(--alto)';
+      btn.disabled = false;
+    }
+  });
+}
+
+function renderLojasConteudo(todasSemFiltro, visitas){
+  const conteudo = document.getElementById('lojasConteudo');
+  const promotores = Array.from(new Set(todasSemFiltro.map(v=>v.colaborador))).sort();
+  const afiliadasDaDistribuidora = Array.from(new Set(
+    Array.from(new Set(todasSemFiltro.map(v=>v.loja))).map(l => AFILIAIS[normLoja(l)]).filter(Boolean)
+  )).sort();
+
+  if (!visitas.length) {
+    conteudo.innerHTML = emptyState("Sem visitas nesse período", `Essa distribuidora não tem dado pra <b>${escapeHtml(globalPeriodoFiltro)}</b> — talvez falte subir o Relatório de Roteiro desse mês.`);
+    return;
+  }
+  const refDate = visitas.reduce((max,v)=> v.data > max ? v.data : max, visitas[0].data);
+
+  conteudo.innerHTML = `
+    <div class="filter-row">
+      <label for="lojaPromotorFiltro">Promotor</label>
+      <select id="lojaPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
+      <label for="lojaAfiliadaFiltro">Rede</label>
+      <select id="lojaAfiliadaFiltro"><option value="">Todas</option>${afiliadasDaDistribuidora.map(a=>`<option value="${escapeHtml(a)}">${escapeHtml(a)}</option>`).join('')}</select>
+      <span class="note" style="margin-left:auto;">"hoje" considerado = ${fmtBR(refDate)} (data mais recente no escopo atual)</span>
+    </div>
+    <div class="kpi-row" id="lojasKpiRow"></div>
+    <div class="panel">
+      <div class="panel-head"><h3>Cobertura por loja</h3><span class="hint">"Não cumpridas" = visita não finalizada, qualquer motivo. "Sem reposição" = ninguém cobriu em até 3 dias. "Padrão" = dias fixos detectados no histórico da loja (dentro do período em foco); "Recuperada" só conta visita EXTRA fora desses dias fixos.</span></div>
+      <div class="table-scroll">
+      <table id="tblLojas">
+        <thead><tr>
+          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th><th data-k="afiliada">Rede</th><th data-k="promotorResponsavel">Promotor Responsável</th><th>Padrão</th>
+          <th data-k="total" class="num">Roteiros</th><th data-k="finalizadas" class="num">Finalizadas</th>
+          <th data-k="curtas" class="num">Curtas</th><th data-k="naoCumpridas" class="num">Não Cumpridas</th>
+          <th data-k="recuperadas" class="num">Recuperadas (extra)</th><th data-k="semReposicao" class="num">Sem Reposição</th>
+          <th data-k="diasSemVisita" class="num">Dias sem Visita</th>
+        </tr></thead>
+        <tbody id="lojasBody"></tbody>
+      </table>
+      </div>
+    </div>`;
+  const draw = () => {
+    const filtroPromotor = document.getElementById('lojaPromotorFiltro').value;
+    const filtroAfiliada = document.getElementById('lojaAfiliadaFiltro').value;
+    let list = aggregateLojas(visitas, filtroPromotor, refDate);
+    if (filtroAfiliada) list = list.filter(a => a.afiliada === filtroAfiliada);
+    const critico = list.filter(a=>a.diasSemVisita==null || a.diasSemVisita>=LIMIAR_DIAS_CRITICO).length;
+    const atencao = list.filter(a=>a.diasSemVisita!=null && a.diasSemVisita>=LIMIAR_DIAS_ATENCAO && a.diasSemVisita<LIMIAR_DIAS_CRITICO).length;
+    document.getElementById('lojasKpiRow').innerHTML = `
+      <div class="kpi"><div class="lbl">Lojas</div><div class="val">${list.length}</div></div>
+      <div class="kpi" style="border-color:var(--alto);"><div class="lbl">⚠ Crítico (${LIMIAR_DIAS_CRITICO}+ dias ou nunca)</div><div class="val" style="color:var(--alto);">${critico}</div></div>
+      <div class="kpi" style="border-color:var(--medio);"><div class="lbl">Atenção (${LIMIAR_DIAS_ATENCAO}-${LIMIAR_DIAS_CRITICO-1} dias)</div><div class="val" style="color:var(--medio);">${atencao}</div></div>
+      <div class="kpi"><div class="lbl">Sem reposição (total)</div><div class="val">${list.reduce((s,a)=>s+a.semReposicao,0)}</div></div>
+    `;
+    document.getElementById('lojasBody').innerHTML = list.map(rowLoja).join('');
+    wireSort('tblLojas', list, l => document.getElementById('lojasBody').innerHTML = l.map(rowLoja).join(''));
+  };
+  document.getElementById('lojaPromotorFiltro').addEventListener('change', draw);
+  document.getElementById('lojaAfiliadaFiltro').addEventListener('change', draw);
+  draw();
+}
+function rowLoja(a){
+  let diasTxt = '—';
+  if (a.diasSemVisita == null) { diasTxt = 'nunca visitada'; }
+  else diasTxt = `${a.diasSemVisita}d`;
+  const diasStyle = a.diasSemVisita == null || a.diasSemVisita >= LIMIAR_DIAS_CRITICO
+    ? 'color:var(--alto);font-weight:600;'
+    : (a.diasSemVisita >= LIMIAR_DIAS_ATENCAO ? 'color:var(--medio);font-weight:600;' : '');
+  return `<tr>
+    <td>${escapeHtml(a.loja)}</td><td>${escapeHtml(a.cidade)}</td>
+    <td style="font-size:12px;color:var(--ink-soft);">${escapeHtml(a.afiliada||'—')}</td>
+    <td style="font-size:12.5px;">${escapeHtml(a.promotorResponsavel||'—')}</td>
+    <td class="mono" style="font-size:11.5px;color:var(--ink-soft);">${a.padrao ? a.padrao.join(', ') : 'única / sem padrão'}</td>
+    <td class="num mono">${a.total}</td><td class="num mono">${a.finalizadas}</td>
+    <td class="num mono">${a.curtas}</td>
+    <td class="num mono">${a.naoCumpridas}</td>
+    <td class="num mono">${a.recuperadas}</td>
+    <td class="num mono ${a.semReposicao>0?'flagcell warn':''}">${a.semReposicao}</td>
+    <td class="num mono" style="${diasStyle}">${diasTxt}</td>
+  </tr>`;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Fotos                                                              */
+/* ---------------------------------------------------------------------- */
+function renderFotos(main){
+  const fotos = fotosEscopo();
+  const visitas = visitasEscopo();
+  const promotores = Array.from(new Set(visitas.map(v=>v.colaborador))).sort();
+  if (!fotos.length) {
+    const msg = currentFotos().length
+      ? emptyState("Sem flags de foto nesse período", `Não tem flag de foto registrado pra <b>${escapeHtml(globalPeriodoFiltro)}</b> nessa distribuidora.`)
+      : emptyState("Nenhum flag de foto cadastrado", "As fotos em si não ficam guardadas aqui — só os alertas (tela, preta, duplicada) que o Claude identifica ao revisar o álbum. Suba o arquivo de flags na aba Atualizar Dados.");
+    main.innerHTML = pageHeader('Fotos', currentDist) + msg;
+    return;
+  }
+  main.innerHTML = pageHeader('Fotos', currentDist) + `
+    <div class="filter-row">
+      <label for="fotoPromotorFiltro">Filtrar por promotor</label>
+      <select id="fotoPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Fotos suspeitas por loja</h3></div>
+      <div class="table-scroll">
+      <table id="tblFotos">
+        <thead><tr><th data-k="loja">Loja</th><th data-k="tela" class="num">Foto de Tela</th><th data-k="preta" class="num">Foto Preta</th><th data-k="duplicada" class="num">Duplicada</th><th data-k="outro" class="num">Outro</th><th data-k="total" class="num">Total</th></tr></thead>
+        <tbody id="fotosBody"></tbody>
+      </table>
+      </div>
+    </div>`;
+  const draw = () => {
+    const filtro = document.getElementById('fotoPromotorFiltro').value;
+    const list = aggregateFotos(fotos, filtro);
+    document.getElementById('fotosBody').innerHTML = list.map(rowFoto).join('');
+    wireSort('tblFotos', list, l => document.getElementById('fotosBody').innerHTML = l.map(rowFoto).join(''));
+  };
+  document.getElementById('fotoPromotorFiltro').addEventListener('change', draw);
+  draw();
+}
+function rowFoto(a){
+  return `<tr><td>${escapeHtml(a.loja)}</td>
+    <td class="num mono ${a.tela>0?'flagcell warn':''}">${a.tela}</td>
+    <td class="num mono ${a.preta>0?'flagcell warn':''}">${a.preta}</td>
+    <td class="num mono ${a.duplicada>0?'flagcell warn':''}">${a.duplicada}</td>
+    <td class="num mono">${a.outro}</td><td class="num mono">${a.total}</td></tr>`;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Tab: Atualizar Dados                                                    */
+/* ---------------------------------------------------------------------- */
+function renderDados(main){
+  const names = distNames();
+  main.innerHTML = `
+    <div class="page-title"><div><h2>Atualizar Dados</h2><div class="desc">Suba os arquivos exportados do TradePro. Tudo é processado aqui no navegador — nenhum arquivo sai da sua máquina, exceto o resultado calculado, que é salvo no repositório.</div></div></div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>1. Conexão com GitHub</h3><span class="hint">necessário só pra SALVAR. Ver os dados funciona sem token.</span></div>
+      <div style="padding:18px;">
+        <div class="field">
+          <label for="ghPatInput">Personal Access Token (fine-grained, com permissão de escrita neste repositório)</label>
+          <input type="password" id="ghPatInput" placeholder="ghp_xxx..." value="${escapeHtml(ghToken())}">
+        </div>
+        <button class="btn ghost" id="saveTokenBtn">Salvar token neste navegador</button>
+        <p class="note">O token fica só no seu navegador (localStorage), nunca é enviado a mim nem a ninguém além do GitHub. Se você usar outro computador, precisa colar de novo.
+        <br><br><b>Dica:</b> mesmo quem só vai olhar os dados (sem subir arquivo novo) se beneficia de colar o token aqui — sem ele, o GitHub limita a 60 carregamentos por hora por rede, e com token esse limite sobe pra 5.000. Se o site aparentar estar "travado" numa versão antiga, geralmente é isso.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>2. Relatório de Roteiro</h3></div>
+      <div style="padding:18px;">
+        <div class="field">
+          <label for="distNameInput">Nome da distribuidora</label>
+          <input list="distList" id="distNameInput" placeholder="Ex: Ritter, Uau, Bahia/Sergipe...">
+          <datalist id="distList">${names.map(n=>`<option value="${escapeHtml(n)}">`).join('')}</datalist>
+        </div>
+        <div class="upload-box" id="roteiroDrop">
+          <input type="file" id="roteiroFile" accept=".xls,.xlsx">
+          <div>📄 Arraste o arquivo <b>relatorio_roteiro.xls</b> aqui, ou <button class="btn amber" id="roteiroBrowse" type="button">escolher arquivo</button></div>
+        </div>
+        <div id="roteiroLog" class="log" style="display:none;"></div>
+        <div style="margin-top:14px;">
+          <button class="btn" id="saveRoteiroBtn" disabled>Salvar no GitHub</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>3. Flags de fotos suspeitas</h3><span class="hint">arquivo .json gerado pelo Claude após revisar o álbum</span></div>
+      <div style="padding:18px;">
+        <div class="field">
+          <label for="distNameInputFotos">Distribuidora</label>
+          <input list="distList" id="distNameInputFotos" placeholder="Ex: Ritter, Uau, Bahia/Sergipe...">
+        </div>
+        <div class="upload-box" id="fotosDrop">
+          <input type="file" id="fotosFile" accept=".json">
+          <div>🖼️ Arraste o arquivo de flags (.json) aqui, ou <button class="btn amber" id="fotosBrowse" type="button">escolher arquivo</button></div>
+        </div>
+        <div id="fotosLog" class="log" style="display:none;"></div>
+        <div style="margin-top:14px;">
+          <button class="btn" id="saveFotosBtn" disabled>Salvar no GitHub</button>
+        </div>
+        <p class="note">Formato esperado: uma lista de objetos <span class="mono">{"colaborador","loja","data","tipo"}</span>, onde tipo é <span class="mono">tela</span>, <span class="mono">preta</span>, <span class="mono">duplicada</span> ou <span class="mono">outro</span>.</p>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('saveTokenBtn').addEventListener('click', ()=>{
+    setGhToken(document.getElementById('ghPatInput').value.trim());
+    alert('Token salvo neste navegador.');
+  });
+
+  setupUploadBox('roteiroDrop','roteiroFile','roteiroBrowse', handleRoteiroFile);
+  setupUploadBox('fotosDrop','fotosFile','fotosBrowse', handleFotosFile);
+}
+
+function setupUploadBox(boxId, inputId, browseBtnId, handler){
+  const box = document.getElementById(boxId);
+  const input = document.getElementById(inputId);
+  document.getElementById(browseBtnId).addEventListener('click', ()=> input.click());
+  input.addEventListener('change', ()=> input.files[0] && handler(input.files[0]));
+  ['dragenter','dragover'].forEach(ev=> box.addEventListener(ev, e=>{ e.preventDefault(); box.classList.add('drag'); }));
+  ['dragleave','drop'].forEach(ev=> box.addEventListener(ev, e=>{ e.preventDefault(); box.classList.remove('drag'); }));
+  box.addEventListener('drop', e=>{ const f = e.dataTransfer.files[0]; if (f) handler(f); });
+}
+
+let pendingRoteiro = null;
+function handleRoteiroFile(file){
+  const logEl = document.getElementById('roteiroLog');
+  logEl.style.display = 'block';
+  logEl.innerHTML = '';
+  const log = (msg, isErr) => { logEl.innerHTML += `<div class="${isErr?'err':'ok'}">${msg}</div>`; logEl.scrollTop = logEl.scrollHeight; };
+  log(`Lendo ${file.name}...`);
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const wb = XLSX.read(e.target.result, {type:'array', cellDates:true});
+      const parsed = parseRoteiroWorkbook(wb, log);
+      if (!parsed.length) { log('Nenhuma linha válida encontrada.', true); return; }
+      log(`✓ ${parsed.length} visitas lidas de ${new Set(parsed.map(p=>p.colaborador)).size} promotores.`);
+      pendingRoteiro = parsed;
+      document.getElementById('saveRoteiroBtn').disabled = false;
+    } catch(err){ log('Erro lendo o arquivo: ' + err.message, true); }
+  };
+  reader.readAsArrayBuffer(file);
+}
+document.addEventListener('click', async (e)=>{
+  if (e.target && e.target.id === 'saveRoteiroBtn') {
+    const nome = document.getElementById('distNameInput').value.trim();
+    if (!nome) { alert('Digite o nome da distribuidora.'); return; }
+    if (!pendingRoteiro) return;
+    const btn = e.target; btn.disabled = true; btn.textContent = 'Salvando...';
+    try {
+      await saveDistribuidoraData(nome, { visitas: pendingRoteiro });
+      alert(`Dados de "${nome}" salvos no GitHub!`);
+      currentDist = nome;
+      await loadAllData();
+      renderShell();
+    } catch(err){ alert('Erro ao salvar: ' + err.message); }
+    btn.disabled = false; btn.textContent = 'Salvar no GitHub';
+  }
+});
+
+let pendingFotos = null;
+function handleFotosFile(file){
+  const logEl = document.getElementById('fotosLog');
+  logEl.style.display = 'block'; logEl.innerHTML = '';
+  const log = (msg, isErr) => { logEl.innerHTML += `<div class="${isErr?'err':'ok'}">${msg}</div>`; };
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const arr = JSON.parse(e.target.result);
+      if (!Array.isArray(arr)) throw new Error('O JSON precisa ser uma lista.');
+      log(`✓ ${arr.length} flags de foto lidas.`);
+      pendingFotos = arr;
+      document.getElementById('saveFotosBtn').disabled = false;
+    } catch(err){ log('Erro lendo o JSON: ' + err.message, true); }
+  };
+  reader.readAsText(file);
+}
+document.addEventListener('click', async (e)=>{
+  if (e.target && e.target.id === 'saveFotosBtn') {
+    const nome = document.getElementById('distNameInputFotos').value.trim();
+    if (!nome) { alert('Digite o nome da distribuidora.'); return; }
+    if (!pendingFotos) return;
+    const btn = e.target; btn.disabled = true; btn.textContent = 'Salvando...';
+    try {
+      await saveDistribuidoraData(nome, { fotos: pendingFotos });
+      alert(`Flags de foto de "${nome}" salvos no GitHub!`);
+      currentDist = nome;
+      await loadAllData();
+      renderShell();
+    } catch(err){ alert('Erro ao salvar: ' + err.message); }
+    btn.disabled = false; btn.textContent = 'Salvar no GitHub';
+  }
+});
+
+async function saveDistribuidoraData(nome, partial){
+  const path = `data/${encodeURIComponent(nome)}.json`;
+  const existing = await ghGetFile(path);
+  const base = existing.content || { visitas:[], fotos:[] };
+  const merged = {
+    visitas: partial.visitas ? mergeVisitas(base.visitas||[], partial.visitas) : (base.visitas||[]),
+    fotos: partial.fotos ? mergeFotos(base.fotos||[], partial.fotos) : (base.fotos||[]),
+  };
+  await ghPutFile(path, merged, existing.sha, `Atualiza dados de ${nome}`);
+
+  const idxPath = 'data/index.json';
+  const idx = await ghGetFile(idxPath);
+  const names = new Set(idx.content?.distribuidoras || []);
+  names.add(nome);
+  await ghPutFile(idxPath, { distribuidoras: Array.from(names), updatedAt: new Date().toISOString() }, idx.sha, `Atualiza índice (${nome})`);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Helpers de UI genéricos                                                 */
+/* ---------------------------------------------------------------------- */
+function pageHeader(title, dist){
+  const periodoTxt = globalPeriodoFiltro ? ` · período: ${escapeHtml(globalPeriodoFiltro)}` : ' · histórico completo';
+  return `<div class="page-title"><div><h2>${title}</h2><div class="desc">${escapeHtml(dist||'')}${periodoTxt}</div></div></div>`;
+}
+function wireSort(tableId, list, redraw){
+  const table = document.getElementById(tableId);
+  if (!table) return;
+  let dir = {};
+  table.querySelectorAll('thead th[data-k]').forEach(th=>{
+    th.addEventListener('click', ()=>{
+      const k = th.dataset.k;
+      dir[k] = !dir[k];
+      const sorted = [...list].sort((a,b)=>{
+        const va = a[k], vb = b[k];
+        if (typeof va === 'string') return dir[k] ? va.localeCompare(vb) : vb.localeCompare(va);
+        return dir[k] ? va-vb : vb-va;
+      });
+      redraw(sorted);
+    });
+  });
+}
+
+/* ---------------------------------------------------------------------- */
+/* Boot                                                                     */
+/* ---------------------------------------------------------------------- */
+document.getElementById('btnRecarregarSidebar').addEventListener('click', async (e)=>{
+  e.target.textContent = 'Carregando...';
+  await loadAllData();
+  cacheLocally();
+  renderShell();
+  e.target.textContent = '↻ Recarregar dados';
+});
+
+(async function boot(){
+  await loadAllData();
+  cacheLocally();
+  renderShell();
+})();
+</script>
+</body>
+</html>
