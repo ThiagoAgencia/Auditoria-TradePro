@@ -225,7 +225,11 @@ let lojaFiltroPromotor = "";
 let lojaFiltroAfiliada = "";
 let visitasPeriodo = "mensal"; // diario | semanal | mensal | anual
 
-function normLoja(s){ return (s||"").toString().toUpperCase().trim().replace(/\s+/g, ' '); }
+function normLoja(s){
+  return (s||"").toString().toUpperCase().trim()
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')   // hífen, ponto etc viram espaço, pra "MUNDIAL - IRAJA" bater com "MUNDIAL IRAJA"
+    .replace(/\s+/g, ' ').trim();
+}
 
 // Retorna as visitas da distribuidora atual já cortadas pelo filtro global de período.
 // Todas as abas (Promotores/Visitas/Lojas) devem ler daqui, nunca de currentVisitas() direto,
@@ -441,8 +445,10 @@ function aggregateLojas(visitas, filtroColaborador, refDate){
   const byLoja = new Map();
   for (const v of filtradas) {
     if (!v.loja) continue;
-    if (!byLoja.has(v.loja)) byLoja.set(v.loja, { loja:v.loja, cidade:v.cidade, afiliada:AFILIAIS[normLoja(v.loja)]||null, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, ultimaVisita:null, rows:[] });
-    const a = byLoja.get(v.loja);
+    const key = normLoja(v.loja);
+    if (!byLoja.has(key)) byLoja.set(key, { loja:v.loja, cidade:v.cidade, afiliada:AFILIAIS[key]||null, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, ultimaVisita:null, rows:[], _nomeVariantes:{} });
+    const a = byLoja.get(key);
+    a._nomeVariantes[v.loja] = (a._nomeVariantes[v.loja]||0) + 1; // pra escolher o nome mais usado na hora de exibir
     a.total++;
     if (v.status === STATUS_FINALIZADO) {
       a.finalizadas++;
@@ -452,6 +458,11 @@ function aggregateLojas(visitas, filtroColaborador, refDate){
     a.rows.push(v);
   }
   for (const a of byLoja.values()) {
+    // usa a grafia mais frequente como nome de exibição (ex: "MUNDIAL - IRAJA" x "Mundial Iraja" -> a que aparecer mais vezes)
+    let melhorNome = a.loja, melhorCont = 0;
+    for (const [nome, cont] of Object.entries(a._nomeVariantes)) { if (cont > melhorCont) { melhorCont = cont; melhorNome = nome; } }
+    a.loja = melhorNome;
+    delete a._nomeVariantes;
     const diasRegulares = lojaDiasRegulares(a.rows);
     a.padrao = diasRegulares.size ? ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].filter(d=>diasRegulares.has(d)) : null;
     for (const v of a.rows) {
@@ -518,8 +529,9 @@ function aggregateFotos(fotos, filtroPromotor){
   const filtradas = filtroPromotor ? fotos.filter(f=>f.colaborador===filtroPromotor) : fotos;
   const byLoja = new Map();
   for (const f of filtradas) {
-    if (!byLoja.has(f.loja)) byLoja.set(f.loja, { loja:f.loja, tela:0, preta:0, duplicada:0, outro:0, total:0 });
-    const a = byLoja.get(f.loja);
+    const key = normLoja(f.loja);
+    if (!byLoja.has(key)) byLoja.set(key, { loja:f.loja, tela:0, preta:0, duplicada:0, outro:0, total:0 });
+    const a = byLoja.get(key);
     a.total++;
     if (f.tipo in a) a[f.tipo]++; else a.outro++;
   }
