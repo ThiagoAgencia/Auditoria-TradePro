@@ -204,13 +204,14 @@ const DATA_BRANCH = "main";
 const STATUS_FINALIZADO = "Finalizado pelo Colaborador";
 const STATUS_CORTE = "Finalizado pelo Corte";
 const LIMIAR_CURTA_MIN = 30;
+const LIMIAR_LONGA_MIN = 180;
 const JANELA_RECUPERACAO_DIAS = 3;
 
 let DB = { distribuidoras: {}, updatedAt: null };
 let currentDist = null;
 let currentTab = "promotores";
 let lojaFiltroPromotor = "";
-let visitasPeriodo = "mensal"; // semanal | mensal | anual
+let visitasPeriodo = "mensal"; // diario | semanal | mensal | anual
 
 /* ---------------------------------------------------------------------- */
 /* Utilidades de data                                                      */
@@ -338,6 +339,7 @@ function mergeFotos(existing, novas){
 /* Cálculos                                                                 */
 /* ---------------------------------------------------------------------- */
 function isCurta(v){ return v.status === STATUS_FINALIZADO && v.duracaoMin != null && v.duracaoMin < LIMIAR_CURTA_MIN; }
+function isLonga(v){ return v.status === STATUS_FINALIZADO && v.duracaoMin != null && v.duracaoMin > LIMIAR_LONGA_MIN; }
 function isCorte(v){ return v.status === STATUS_CORTE; }
 function isFalta(v){ return /^falta$/i.test(v.motivo||""); }
 function isApp(v){ return /problemas?\s*com\s*app/i.test(v.motivo||""); }
@@ -415,14 +417,37 @@ function aggregatePeriodo(visitas, granularidade){
   const map = new Map();
   for (const v of visitas) {
     const k = keyFn(v.data);
-    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, faltas:0, corte:0, total:0 });
+    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, longas:0, faltas:0, corte:0, total:0 });
     const a = map.get(k);
     a.total++;
     if (isCurta(v)) a.curtas++;
+    if (isLonga(v)) a.longas++;
     if (isFalta(v)) a.faltas++;
     if (isCorte(v)) a.corte++;
   }
   return Array.from(map.values()).sort((x,y)=> x.periodo.localeCompare(y.periodo));
+}
+
+function weekdayLabelPT(dateStr){
+  const dias = ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
+  return dias[new Date(dateStr).getUTCDay()];
+}
+function aggregateDiario(visitas, semanaKey){
+  const diasOrdem = ['Seg','Ter','Qua','Qui','Sex'];
+  const porDia = {};
+  diasOrdem.forEach(d => porDia[d] = { dia:d, total:0, curtas:0, longas:0, faltas:0, corte:0 });
+  for (const v of visitas) {
+    if (weekKey(v.data) !== semanaKey) continue;
+    const wd = weekdayLabelPT(v.data);
+    if (!porDia[wd]) continue; // ignora sábado/domingo, a visão diária é só dias úteis
+    const a = porDia[wd];
+    a.total++;
+    if (isCurta(v)) a.curtas++;
+    if (isLonga(v)) a.longas++;
+    if (isFalta(v)) a.faltas++;
+    if (isCorte(v)) a.corte++;
+  }
+  return diasOrdem.map(d => porDia[d]);
 }
 
 function aggregateFotos(fotos, filtroPromotor){
@@ -613,46 +638,123 @@ function renderPromotorRowsInto(list){
 }
 
 /* ---------------------------------------------------------------------- */
-/* Tab: Visitas (série temporal)                                           */
+/* Tab: Visitas (série temporal + visão diária)                            */
 /* ---------------------------------------------------------------------- */
 let visitasChart = null;
+let visitasPromotorFiltro = "";
+let visitasSemanaSel = null;
+
 function renderVisitas(main){
-  const visitas = currentVisitas();
-  if (!visitas.length) { main.innerHTML = pageHeader('Visitas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
+  const todas = currentVisitas();
+  if (!todas.length) { main.innerHTML = pageHeader('Visitas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
+  const promotores = Array.from(new Set(todas.map(v=>v.colaborador))).sort();
+
   main.innerHTML = pageHeader('Visitas', currentDist) + `
+    <div class="filter-row">
+      <label for="visitasPromotorFiltro">Filtrar por promotor</label>
+      <select id="visitasPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
+    </div>
     <div class="panel">
       <div class="panel-head">
-        <h3>Faltas e visitas curtas ao longo do tempo</h3>
+        <h3 id="visitasTituloGrafico">Visitas curtas, longas e faltas ao longo do tempo</h3>
         <div class="pill-toggle" id="periodoToggle">
+          <button data-p="diario">Diário</button>
           <button data-p="semanal">Semanal</button>
           <button data-p="mensal" class="active">Mensal</button>
           <button data-p="anual">Anual</button>
         </div>
       </div>
+      <div id="semanaSelectorWrap" style="display:none;padding:14px 18px 0 18px;">
+        <label for="semanaSelect" style="font-family:'Oswald',sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-right:8px;">Semana</label>
+        <select id="semanaSelect"></select>
+        <span class="note" style="margin-left:10px;">mostrando segunda a sexta dessa semana</span>
+      </div>
       <div class="chart-wrap"><canvas id="visitasCanvas" height="90"></canvas></div>
     </div>
     <div class="panel">
-      <div class="panel-head"><h3>Detalhamento por período</h3></div>
+      <div class="panel-head"><h3 id="visitasTituloTabela">Detalhamento por período</h3></div>
       <div class="table-scroll">
-      <table><thead><tr><th>Período</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th></tr></thead>
+      <table><thead><tr id="periodoHead"></tr></thead>
       <tbody id="periodoBody"></tbody></table>
       </div>
     </div>`;
+
+  document.getElementById('visitasPromotorFiltro').addEventListener('change', e=>{
+    visitasPromotorFiltro = e.target.value;
+    redrawVisitas(todas);
+  });
   document.querySelectorAll('#periodoToggle button').forEach(b=>{
     b.addEventListener('click', ()=>{
       document.querySelectorAll('#periodoToggle button').forEach(x=>x.classList.remove('active'));
       b.classList.add('active');
       visitasPeriodo = b.dataset.p;
-      drawVisitasChart(visitas);
+      redrawVisitas(todas);
     });
   });
-  drawVisitasChart(visitas);
+  redrawVisitas(todas);
 }
+
+function visitasFiltradas(todas){
+  return visitasPromotorFiltro ? todas.filter(v=>v.colaborador===visitasPromotorFiltro) : todas;
+}
+
+function redrawVisitas(todasVisitas){
+  const visitas = visitasFiltradas(todasVisitas);
+  const semanaWrap = document.getElementById('semanaSelectorWrap');
+
+  if (visitasPeriodo === 'diario') {
+    semanaWrap.style.display = 'block';
+    const semanas = Array.from(new Set(visitas.map(v=>weekKey(v.data)))).sort();
+    const semanaSelect = document.getElementById('semanaSelect');
+    if (!visitasSemanaSel || !semanas.includes(visitasSemanaSel)) visitasSemanaSel = semanas[semanas.length-1] || null;
+    semanaSelect.innerHTML = semanas.map(s=>`<option value="${s}" ${s===visitasSemanaSel?'selected':''}>${s}</option>`).join('');
+    semanaSelect.onchange = () => { visitasSemanaSel = semanaSelect.value; drawDiario(visitas); };
+    drawDiario(visitas);
+  } else {
+    semanaWrap.style.display = 'none';
+    drawVisitasChart(visitas);
+  }
+}
+
+function drawDiario(visitas){
+  document.getElementById('visitasTituloGrafico').textContent = `Semana ${visitasSemanaSel || ''} — segunda a sexta`;
+  document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por dia';
+  const agg = visitasSemanaSel ? aggregateDiario(visitas, visitasSemanaSel) : [];
+  document.getElementById('periodoHead').innerHTML = `<th>Dia</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Visitas Longas</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
+  document.getElementById('periodoBody').innerHTML = agg.map(a=>`
+    <tr><td class="mono">${a.dia}</td><td class="num mono">${a.total}</td>
+    <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
+    <td class="num mono">${a.longas}</td>
+    <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
+    <td class="num mono">${a.corte}</td></tr>
+  `).join('');
+  const ctx = document.getElementById('visitasCanvas');
+  if (visitasChart) visitasChart.destroy();
+  visitasChart = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels: agg.map(a=>a.dia),
+      datasets:[
+        {label:'Visitas curtas', data:agg.map(a=>a.curtas), backgroundColor:'#d98e28'},
+        {label:'Visitas longas', data:agg.map(a=>a.longas), backgroundColor:'#3f7d6b'},
+        {label:'Faltas', data:agg.map(a=>a.faltas), backgroundColor:'#b3432b'},
+      ]
+    },
+    options:{ responsive:true, plugins:{legend:{position:'bottom', labels:{font:{family:'Inter'}}}}, scales:{x:{ticks:{font:{family:'IBM Plex Mono', size:11}}}, y:{beginAtZero:true, ticks:{precision:0}}} }
+  });
+}
+
 function drawVisitasChart(visitas){
+  document.getElementById('visitasTituloGrafico').textContent = 'Visitas curtas, longas e faltas ao longo do tempo';
+  document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por período';
   const agg = aggregatePeriodo(visitas, visitasPeriodo);
+  document.getElementById('periodoHead').innerHTML = `<th>Período</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Visitas Longas</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
   document.getElementById('periodoBody').innerHTML = agg.map(a=>`
     <tr><td class="mono">${a.periodo}</td><td class="num mono">${a.total}</td>
-    <td class="num mono">${a.curtas}</td><td class="num mono">${a.faltas}</td><td class="num mono">${a.corte}</td></tr>
+    <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
+    <td class="num mono">${a.longas}</td>
+    <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
+    <td class="num mono">${a.corte}</td></tr>
   `).join('');
   const ctx = document.getElementById('visitasCanvas');
   if (visitasChart) visitasChart.destroy();
@@ -662,6 +764,7 @@ function drawVisitasChart(visitas){
       labels: agg.map(a=>a.periodo),
       datasets:[
         {label:'Visitas curtas', data:agg.map(a=>a.curtas), backgroundColor:'#d98e28'},
+        {label:'Visitas longas', data:agg.map(a=>a.longas), backgroundColor:'#3f7d6b'},
         {label:'Faltas', data:agg.map(a=>a.faltas), backgroundColor:'#b3432b'},
       ]
     },
