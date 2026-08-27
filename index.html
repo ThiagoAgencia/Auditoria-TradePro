@@ -51,11 +51,15 @@ a{color:inherit;}
 
 .dist-select-wrap{padding:0 20px 18px 20px;border-bottom:1px solid var(--line-dark);margin-bottom:8px;}
 .dist-select-wrap label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#7c8797;margin-bottom:6px;font-family:'Oswald',sans-serif;}
-#distSelect{
+.dist-select-wrap select{
   width:100%;background:var(--bg-app2);color:#fff;border:1px solid var(--line-dark);border-radius:4px;
   padding:9px 10px;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;
+  -webkit-appearance:none;-moz-appearance:none;appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='%23a9b1bd' d='M4 6l4 4 4-4z'/></svg>");
+  background-repeat:no-repeat;background-position:right 10px center;background-size:14px;
 }
-#distSelect:focus{outline:2px solid var(--amber);outline-offset:1px;}
+.dist-select-wrap select:focus{outline:2px solid var(--amber);outline-offset:1px;}
+.dist-select-wrap select option{background:var(--bg-app2);color:#fff;}
 
 nav#tabs{display:flex;flex-direction:column;padding:8px 10px;gap:2px;flex:1;}
 nav#tabs button{
@@ -956,11 +960,19 @@ function lojasSemAfiliada(todasVisitasSemFiltro){
   return faltando.sort();
 }
 
+function normSemEspaco(s){ return normLoja(s).replace(/\s+/g, ''); }
+
 function sugerirAfiliada(nomeLoja){
   const norm = normLoja(nomeLoja);
+  const normSem = normSemEspaco(nomeLoja);
   const afiliadasConhecidas = Array.from(new Set(Object.values(AFILIAIS))).sort();
-  const candidatos = afiliadasConhecidas.filter(af => norm.startsWith(normLoja(af)) && normLoja(af).length >= 4);
-  return candidatos.length === 1 ? candidatos[0] : null;
+  // 1) prefixo exato (respeitando espaço)
+  let candidatos = afiliadasConhecidas.filter(af => norm.startsWith(normLoja(af)) && normLoja(af).length >= 4);
+  if (candidatos.length === 1) return candidatos[0];
+  // 2) prefixo ignorando espaço (pega "HIPERIDEAL" batendo com "HIPER IDEAL")
+  candidatos = afiliadasConhecidas.filter(af => normSem.startsWith(normSemEspaco(af)) && normSemEspaco(af).length >= 4);
+  if (candidatos.length === 1) return candidatos[0];
+  return null;
 }
 
 function renderLojas(main){
@@ -968,11 +980,27 @@ function renderLojas(main){
   const visitas = visitasEscopo();
   if (!todasSemFiltro.length) { main.innerHTML = pageHeader('Lojas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
 
-  main.innerHTML = pageHeader('Lojas', currentDist) + `<div id="lojasClassificarWrap"></div><div id="lojasConteudo"></div>`;
+  main.innerHTML = pageHeader('Lojas', currentDist) + `<div id="lojasAutoNota"></div><div id="lojasClassificarWrap"></div><div id="lojasConteudo"></div>`;
 
   const faltando = lojasSemAfiliada(todasSemFiltro);
-  if (faltando.length) {
-    renderPainelClassificacao(faltando);
+  const autoResolvidas = {};
+  const precisaRevisao = [];
+  for (const loja of faltando) {
+    const sugestao = sugerirAfiliada(loja);
+    if (sugestao) autoResolvidas[normLoja(loja)] = sugestao;
+    else precisaRevisao.push(loja);
+  }
+
+  if (Object.keys(autoResolvidas).length) {
+    Object.assign(AFILIAIS, autoResolvidas); // já aplica na hora, não espera salvar pra mostrar
+    const exemplos = Object.entries(autoResolvidas).slice(0,3).map(([k,v])=>`${k} → ${v}`).join(', ');
+    document.getElementById('lojasAutoNota').innerHTML =
+      `<div class="note" style="margin-bottom:14px;">✓ ${Object.keys(autoResolvidas).length} loja(s) classificada(s) automaticamente por nome (ex: ${escapeHtml(exemplos)}${Object.keys(autoResolvidas).length>3?'…':''}).</div>`;
+    salvarAfiliais(autoResolvidas).catch(err => console.warn('Não consegui salvar a classificação automática agora (token do GitHub configurado?):', err));
+  }
+
+  if (precisaRevisao.length) {
+    renderPainelClassificacao(precisaRevisao);
   } else {
     renderLojasConteudo(todasSemFiltro, visitas);
   }
@@ -983,10 +1011,10 @@ function renderPainelClassificacao(faltando){
   const wrap = document.getElementById('lojasClassificarWrap');
   wrap.innerHTML = `
     <div class="panel" style="border-color:var(--amber);">
-      <div class="panel-head"><h3>📋 ${faltando.length} loja(s) sem afiliada — classifique antes de continuar</h3>
-        <span class="hint">Escolha uma afiliada já existente ou digite uma nova. Fica salvo pra sempre, só pergunta de novo se aparecer loja nova.</span></div>
+      <div class="panel-head"><h3>📋 ${faltando.length} loja(s) sem Rede — classifique antes de continuar</h3>
+        <span class="hint">Escolha uma Rede já existente ou digite uma nova. Fica salvo pra sempre, só pergunta de novo se aparecer loja nova.</span></div>
       <div class="table-scroll" style="max-height:420px;">
-      <table><thead><tr><th>Loja</th><th>Afiliada</th></tr></thead>
+      <table><thead><tr><th>Loja</th><th>Rede</th></tr></thead>
       <tbody id="classificarBody">
         ${faltando.map((loja,i)=>{
           const sugestao = sugerirAfiliada(loja);
@@ -996,9 +1024,9 @@ function renderPainelClassificacao(faltando){
               <select class="classSelect" data-loja="${escapeHtml(loja)}" style="padding:6px 8px;border:1px solid var(--line);border-radius:5px;font-family:'Inter',sans-serif;font-size:13px;">
                 <option value="">— escolher —</option>
                 ${afiliadasConhecidas.map(a=>`<option value="${escapeHtml(a)}" ${a===sugestao?'selected':''}>${escapeHtml(a)}</option>`).join('')}
-                <option value="__nova__">+ Nova afiliada...</option>
+                <option value="__nova__">+ Nova Rede...</option>
               </select>
-              <input type="text" class="classNova" data-loja="${escapeHtml(loja)}" placeholder="nome da nova afiliada" style="display:none;margin-left:6px;padding:6px 8px;border:1px solid var(--line);border-radius:5px;font-size:13px;">
+              <input type="text" class="classNova" data-loja="${escapeHtml(loja)}" placeholder="nome da nova Rede" style="display:none;margin-left:6px;padding:6px 8px;border:1px solid var(--line);border-radius:5px;font-size:13px;">
             </td>
           </tr>`;
         }).join('')}
@@ -1032,7 +1060,7 @@ function renderPainelClassificacao(faltando){
       if (!valor) { faltaAlgum = true; return; }
       novasEntradas[normLoja(loja)] = valor;
     });
-    if (faltaAlgum) { status.textContent = 'Falta escolher a afiliada de alguma loja.'; status.style.color = 'var(--alto)'; return; }
+    if (faltaAlgum) { status.textContent = 'Falta escolher a Rede de alguma loja.'; status.style.color = 'var(--alto)'; return; }
     btn.disabled = true; status.textContent = 'Salvando no GitHub...'; status.style.color = '';
     try {
       await salvarAfiliais(novasEntradas);
@@ -1062,7 +1090,7 @@ function renderLojasConteudo(todasSemFiltro, visitas){
     <div class="filter-row">
       <label for="lojaPromotorFiltro">Promotor</label>
       <select id="lojaPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
-      <label for="lojaAfiliadaFiltro">Afiliada</label>
+      <label for="lojaAfiliadaFiltro">Rede</label>
       <select id="lojaAfiliadaFiltro"><option value="">Todas</option>${afiliadasDaDistribuidora.map(a=>`<option value="${escapeHtml(a)}">${escapeHtml(a)}</option>`).join('')}</select>
       <span class="note" style="margin-left:auto;">"hoje" considerado = ${fmtBR(refDate)} (data mais recente no escopo atual)</span>
     </div>
@@ -1072,7 +1100,7 @@ function renderLojasConteudo(todasSemFiltro, visitas){
       <div class="table-scroll">
       <table id="tblLojas">
         <thead><tr>
-          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th><th data-k="afiliada">Afiliada</th><th>Padrão</th>
+          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th><th data-k="afiliada">Rede</th><th>Padrão</th>
           <th data-k="total" class="num">Roteiros</th><th data-k="finalizadas" class="num">Finalizadas</th>
           <th data-k="curtas" class="num">Curtas</th><th data-k="naoCumpridas" class="num">Não Cumpridas</th>
           <th data-k="recuperadas" class="num">Recuperadas (extra)</th><th data-k="semReposicao" class="num">Sem Reposição</th>
