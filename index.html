@@ -345,14 +345,35 @@ function isFalta(v){ return /^falta$/i.test(v.motivo||""); }
 function isApp(v){ return /problemas?\s*com\s*app/i.test(v.motivo||""); }
 function isAtestado(v){ return /atestado m[eé]dico|consulta m[eé]dica/i.test(v.motivo||""); }
 
-function recuperadaEm3Dias(visita, todasDoMesmaLoja){
+function lojaDiasRegulares(rowsDaLoja){
+  // Detecta em quais dias da semana essa loja costuma ter roteiro (aparece em pelo menos
+  // 2 semanas diferentes naquele dia = padrão de recorrência; menos que isso = coincidência)
+  const porDia = {};
+  for (const v of rowsDaLoja) {
+    const wd = weekdayLabelPT(v.data);
+    const wk = weekKey(v.data);
+    if (!porDia[wd]) porDia[wd] = new Set();
+    porDia[wd].add(wk);
+  }
+  const regulares = new Set();
+  for (const wd in porDia) if (porDia[wd].size >= 2) regulares.add(wd);
+  return regulares;
+}
+
+function recuperadaEm3Dias(visita, todasDoMesmaLoja, diasRegulares){
   if (visita.status === STATUS_FINALIZADO) return null; // não se aplica
   const d0 = new Date(visita.data);
+  const temPadrao = diasRegulares && diasRegulares.size > 0;
   for (const v2 of todasDoMesmaLoja) {
     if (v2.status !== STATUS_FINALIZADO) continue;
     const d1 = new Date(v2.data);
     const diffDias = (d1 - d0) / 86400000;
-    if (diffDias >= 0 && diffDias <= JANELA_RECUPERACAO_DIAS) return true;
+    if (diffDias >= 0 && diffDias <= JANELA_RECUPERACAO_DIAS) {
+      if (!temPadrao) return true; // loja sem padrão fixo: qualquer visita na janela é recuperação de verdade
+      const wdVisita = weekdayLabelPT(v2.data);
+      if (!diasRegulares.has(wdVisita)) return true; // visita EXTRA, fora do dia fixo = recuperação de verdade
+      // cai num dia que já era fixo da loja -> é só o ciclo normal, não conta como recuperação
+    }
   }
   return false;
 }
@@ -387,30 +408,36 @@ function aggregatePromotores(visitas){
   return list;
 }
 
-function aggregateLojas(visitas, filtroColaborador){
+function aggregateLojas(visitas, filtroColaborador, refDate){
   const filtradas = filtroColaborador ? visitas.filter(v=>v.colaborador===filtroColaborador) : visitas;
   const byLoja = new Map();
   for (const v of filtradas) {
     if (!v.loja) continue;
-    if (!byLoja.has(v.loja)) byLoja.set(v.loja, { loja:v.loja, cidade:v.cidade, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, rows:[] });
+    if (!byLoja.has(v.loja)) byLoja.set(v.loja, { loja:v.loja, cidade:v.cidade, total:0, finalizadas:0, naoCumpridas:0, curtas:0, recuperadas:0, semReposicao:0, ultimaVisita:null, rows:[] });
     const a = byLoja.get(v.loja);
     a.total++;
-    if (v.status === STATUS_FINALIZADO) a.finalizadas++;
+    if (v.status === STATUS_FINALIZADO) {
+      a.finalizadas++;
+      if (!a.ultimaVisita || v.data > a.ultimaVisita) a.ultimaVisita = v.data;
+    }
     if (isCurta(v)) a.curtas++;
     a.rows.push(v);
   }
   for (const a of byLoja.values()) {
+    const diasRegulares = lojaDiasRegulares(a.rows);
+    a.padrao = diasRegulares.size ? ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].filter(d=>diasRegulares.has(d)) : null;
     for (const v of a.rows) {
       if (v.status !== STATUS_FINALIZADO) {
         a.naoCumpridas++;
-        const rec = recuperadaEm3Dias(v, a.rows);
+        const rec = recuperadaEm3Dias(v, a.rows, diasRegulares);
         if (rec === true) a.recuperadas++;
         else if (rec === false) a.semReposicao++;
       }
     }
+    a.diasSemVisita = a.ultimaVisita ? Math.round((new Date(refDate) - new Date(a.ultimaVisita)) / 86400000) : null;
     delete a.rows;
   }
-  return Array.from(byLoja.values()).sort((x,y)=> y.semReposicao - x.semReposicao);
+  return Array.from(byLoja.values()).sort((x,y)=> (y.diasSemVisita ?? 99999) - (x.diasSemVisita ?? 99999));
 }
 
 function aggregatePeriodo(visitas, granularidade){
@@ -847,24 +874,32 @@ function drawVisitasChart(visitas){
 /* ---------------------------------------------------------------------- */
 /* Tab: Lojas                                                              */
 /* ---------------------------------------------------------------------- */
+const LIMIAR_DIAS_ATENCAO = 7;
+const LIMIAR_DIAS_CRITICO = 14;
+
 function renderLojas(main){
   const visitas = currentVisitas();
   if (!visitas.length) { main.innerHTML = pageHeader('Lojas', currentDist) + emptyState("Sem visitas cadastradas", "Suba o Relatório de Roteiro dessa distribuidora na aba Atualizar Dados."); return; }
   const promotores = Array.from(new Set(visitas.map(v=>v.colaborador))).sort();
+  const refDate = visitas.reduce((max,v)=> v.data > max ? v.data : max, visitas[0].data);
+
   main.innerHTML = pageHeader('Lojas', currentDist) + `
     <div class="filter-row">
       <label for="lojaPromotorFiltro">Filtrar por promotor</label>
       <select id="lojaPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
+      <span class="note" style="margin-left:auto;">"hoje" considerado = ${fmtBR(refDate)} (data mais recente nos dados)</span>
     </div>
+    <div class="kpi-row" id="lojasKpiRow"></div>
     <div class="panel">
-      <div class="panel-head"><h3>Cobertura por loja</h3><span class="hint">"Não cumpridas" = qualquer visita não finalizada, seja qual for o motivo (inclui Falta, Problema com App, Maior Demanda etc). "Sem reposição" = dessas, quantas ninguém cobriu em até 3 dias.</span></div>
+      <div class="panel-head"><h3>Cobertura por loja</h3><span class="hint">"Não cumpridas" = visita não finalizada, qualquer motivo. "Sem reposição" = ninguém cobriu em até 3 dias. "Padrão" = dias fixos detectados no histórico da loja; "Recuperada" só conta visita EXTRA fora desses dias fixos.</span></div>
       <div class="table-scroll">
       <table id="tblLojas">
         <thead><tr>
-          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th>
+          <th data-k="loja">Loja</th><th data-k="cidade">Cidade</th><th>Padrão</th>
           <th data-k="total" class="num">Roteiros</th><th data-k="finalizadas" class="num">Finalizadas</th>
           <th data-k="curtas" class="num">Curtas</th><th data-k="naoCumpridas" class="num">Não Cumpridas</th>
-          <th data-k="recuperadas" class="num">Recuperadas (3d)</th><th data-k="semReposicao" class="num">Sem Reposição</th>
+          <th data-k="recuperadas" class="num">Recuperadas (extra)</th><th data-k="semReposicao" class="num">Sem Reposição</th>
+          <th data-k="diasSemVisita" class="num">Dias sem Visita</th>
         </tr></thead>
         <tbody id="lojasBody"></tbody>
       </table>
@@ -872,7 +907,15 @@ function renderLojas(main){
     </div>`;
   const draw = () => {
     const filtro = document.getElementById('lojaPromotorFiltro').value;
-    const list = aggregateLojas(visitas, filtro);
+    const list = aggregateLojas(visitas, filtro, refDate);
+    const critico = list.filter(a=>a.diasSemVisita==null || a.diasSemVisita>=LIMIAR_DIAS_CRITICO).length;
+    const atencao = list.filter(a=>a.diasSemVisita!=null && a.diasSemVisita>=LIMIAR_DIAS_ATENCAO && a.diasSemVisita<LIMIAR_DIAS_CRITICO).length;
+    document.getElementById('lojasKpiRow').innerHTML = `
+      <div class="kpi"><div class="lbl">Lojas</div><div class="val">${list.length}</div></div>
+      <div class="kpi" style="border-color:var(--alto);"><div class="lbl">⚠ Crítico (${LIMIAR_DIAS_CRITICO}+ dias ou nunca)</div><div class="val" style="color:var(--alto);">${critico}</div></div>
+      <div class="kpi" style="border-color:var(--medio);"><div class="lbl">Atenção (${LIMIAR_DIAS_ATENCAO}-${LIMIAR_DIAS_CRITICO-1} dias)</div><div class="val" style="color:var(--medio);">${atencao}</div></div>
+      <div class="kpi"><div class="lbl">Sem reposição (total)</div><div class="val">${list.reduce((s,a)=>s+a.semReposicao,0)}</div></div>
+    `;
     document.getElementById('lojasBody').innerHTML = list.map(rowLoja).join('');
     wireSort('tblLojas', list, l => document.getElementById('lojasBody').innerHTML = l.map(rowLoja).join(''));
   };
@@ -880,13 +923,25 @@ function renderLojas(main){
   draw();
 }
 function rowLoja(a){
+  let diasCls = '', diasTxt = '—';
+  if (a.diasSemVisita == null) { diasCls = 'flagcell warn'; diasTxt = 'nunca visitada'; }
+  else {
+    diasTxt = `${a.diasSemVisita}d`;
+    if (a.diasSemVisita >= LIMIAR_DIAS_CRITICO) diasCls = 'flagcell warn';
+    else if (a.diasSemVisita >= LIMIAR_DIAS_ATENCAO) diasCls = 'flagcell';
+  }
+  const diasStyle = a.diasSemVisita == null || a.diasSemVisita >= LIMIAR_DIAS_CRITICO
+    ? 'color:var(--alto);font-weight:600;'
+    : (a.diasSemVisita >= LIMIAR_DIAS_ATENCAO ? 'color:var(--medio);font-weight:600;' : '');
   return `<tr>
     <td>${escapeHtml(a.loja)}</td><td>${escapeHtml(a.cidade)}</td>
+    <td class="mono" style="font-size:11.5px;color:var(--ink-soft);">${a.padrao ? a.padrao.join(', ') : 'única / sem padrão'}</td>
     <td class="num mono">${a.total}</td><td class="num mono">${a.finalizadas}</td>
     <td class="num mono">${a.curtas}</td>
     <td class="num mono">${a.naoCumpridas}</td>
     <td class="num mono">${a.recuperadas}</td>
     <td class="num mono ${a.semReposicao>0?'flagcell warn':''}">${a.semReposicao}</td>
+    <td class="num mono" style="${diasStyle}">${diasTxt}</td>
   </tr>`;
 }
 
