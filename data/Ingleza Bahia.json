@@ -86,27 +86,27 @@
       "cidade": "Feira de Santana",
       "loja": "ECONOMART FSA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 154.6500000000001,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ADRIANO SILVA SANTIAGO",
       "cidade": "Feira de Santana",
       "loja": "G. BARBOSA RODOVIARIA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 90.33333333333326,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ADRIANO SILVA SANTIAGO",
       "cidade": "Feira de Santana",
       "loja": "SÃO ROQUE CONTORNO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 76.66666666666663,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ADRIANO SILVA SANTIAGO",
@@ -1077,26 +1077,26 @@
       "loja": "ATAKAREJO ARMACAO",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
     },
     {
       "colaborador": "ALANA CUNHA DA SILVA REIS",
       "cidade": "Salvador",
       "loja": "ATAKAREJO PATAMARES",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 197.7833333333333,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Corte"
     },
     {
       "colaborador": "ALANA CUNHA DA SILVA REIS",
       "cidade": "Salvador",
       "loja": "ATAKAREJO PIATA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 106.5,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ALANA CUNHA DA SILVA REIS",
@@ -2291,36 +2291,36 @@
       "cidade": "Salvador",
       "loja": "ATAKAREJO SUSSUARANA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 113.75,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "Ana Claudia Jesus do Carmo",
       "cidade": "Salvador",
       "loja": "FORT PERNAMBUES",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 8.933333333333167,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "Ana Claudia Jesus do Carmo",
       "cidade": "Salvador",
       "loja": "FORT PERNAMBUES II",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 93.14999999999986,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "Ana Claudia Jesus do Carmo",
       "cidade": "Salvador",
       "loja": "NOVO MIX SUSSUARANA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 51.16666666666663,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "Ana Claudia Jesus do Carmo",
@@ -3452,18 +3452,18 @@
       "cidade": "Salvador",
       "loja": "ATAKAREJO CASTELO BRANCO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 153.73333333333323,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ANATALIA BISPO BARRADAS",
       "cidade": "Salvador",
       "loja": "MERCANTIL PAU DA LIMA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 72.2166666666667,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ANATALIA BISPO BARRADAS",
@@ -4326,8 +4326,8 @@
       "loja": "ATAKAREJO PERNAMBUES",
       "data": "2026-08-22",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4335,8 +4335,8 @@
       "loja": "ATAKAREJO BROTAS",
       "data": "2026-08-22",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4344,8 +4344,8 @@
       "loja": "ATAKAREJO PERNAMBUES",
       "data": "2026-08-24",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4353,8 +4353,8 @@
       "loja": "Hiperideal Aquarius",
       "data": "2026-08-24",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4362,8 +4362,8 @@
       "loja": "HIPERIDEAL C. CONVENÇÕES",
       "data": "2026-08-24",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4371,8 +4371,8 @@
       "loja": "REDE MIX IMBUI",
       "data": "2026-08-24",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4380,8 +4380,8 @@
       "loja": "ATAKAREJO BROTAS",
       "data": "2026-08-24",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4389,8 +4389,8 @@
       "loja": "ATAKAREJO BROTAS",
       "data": "2026-08-25",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4398,8 +4398,8 @@
       "loja": "HIPERIDEAL CIDADE JARDIM",
       "data": "2026-08-25",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4407,8 +4407,8 @@
       "loja": "HIPERIDEAL ARMAÇÃO",
       "data": "2026-08-25",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4416,8 +4416,8 @@
       "loja": "REDEMIX SALVADOR SHOP",
       "data": "2026-08-25",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4425,8 +4425,8 @@
       "loja": "HIPERIDEAL ITAIGARA",
       "data": "2026-08-25",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4434,8 +4434,8 @@
       "loja": "ATAKAREJO PERNAMBUES",
       "data": "2026-08-25",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4443,8 +4443,8 @@
       "loja": "REDE MIX IMBUI",
       "data": "2026-08-26",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4452,8 +4452,8 @@
       "loja": "HIPERIDEAL C. CONVENÇÕES",
       "data": "2026-08-26",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4461,8 +4461,8 @@
       "loja": "Hiperideal Aquarius",
       "data": "2026-08-26",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4470,8 +4470,8 @@
       "loja": "ATAKAREJO BROTAS",
       "data": "2026-08-26",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4479,8 +4479,8 @@
       "loja": "ATAKAREJO PERNAMBUES",
       "data": "2026-08-26",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4488,8 +4488,8 @@
       "loja": "HIPERIDEAL ARMAÇÃO",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4497,8 +4497,8 @@
       "loja": "HIPERIDEAL CIDADE JARDIM",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4506,8 +4506,8 @@
       "loja": "ATAKAREJO PERNAMBUES",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4515,8 +4515,8 @@
       "loja": "ATAKAREJO BROTAS",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4524,8 +4524,8 @@
       "loja": "HIPERIDEAL ITAIGARA",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -4533,8 +4533,8 @@
       "loja": "REDEMIX SALVADOR SHOP",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
     },
     {
       "colaborador": "Brisa Peret Pereira",
@@ -5819,18 +5819,18 @@
       "cidade": "Aracaju",
       "loja": "G. BARBOSA S JOSE",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 124.5,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
       "cidade": "Aracaju",
       "loja": "G. BARBOSA ORLANDO DANTAS",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 74.2166666666667,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
@@ -5847,8 +5847,8 @@
       "loja": "G. BARBOSA ATALAIA",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
     },
     {
       "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
@@ -6819,7 +6819,7 @@
       "loja": "G BARBOSA LAURO",
       "data": "2026-08-24",
       "duracaoMin": null,
-      "motivo": "Maior Demanda na Loja Anterior",
+      "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
     },
     {
@@ -6836,9 +6836,9 @@
       "cidade": "Lauro de Freitas",
       "loja": "ATAKAREJO LAURO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 81.58333333333348,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "GETULIO NERI GUERRA FILHO",
@@ -6846,17 +6846,17 @@
       "loja": "MERCANTIL LAURO",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
     },
     {
       "colaborador": "GETULIO NERI GUERRA FILHO",
       "cidade": "Lauro de Freitas",
       "loja": "G BARBOSA LAURO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 118.48333333333335,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "GETULIO NERI GUERRA FILHO",
@@ -7565,27 +7565,27 @@
       "cidade": "Salvador",
       "loja": "FORT MARECHAL",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 37.76666666666665,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "HELAINE SANTOS DA SILVA",
       "cidade": "Salvador",
       "loja": "NOVO MIX CAMPINAS DE PIRAJÁ",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 27.73333333333335,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "HELAINE SANTOS DA SILVA",
       "cidade": "Salvador",
       "loja": "CENTRO SUL 1",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 177.93333333333328,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "HELAINE SANTOS DA SILVA",
@@ -8510,45 +8510,45 @@
       "cidade": "Salvador",
       "loja": "HIPERIDEAL GRAÇA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 50.549999999999955,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ISIS MACHADO SILVA",
       "cidade": "Salvador",
       "loja": "REDE MIX CHAME CHAME",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 56.76666666666665,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ISIS MACHADO SILVA",
       "cidade": "Salvador",
       "loja": "FORT GRAÇA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 9.38333333333344,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ISIS MACHADO SILVA",
       "cidade": "Salvador",
       "loja": "HIPERIDEAL BARRA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 17.76666666666665,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ISIS MACHADO SILVA",
       "cidade": "Salvador",
       "loja": "REDEMIX ONDINA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 15.916666666666742,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ISIS MACHADO SILVA",
@@ -9473,36 +9473,36 @@
       "cidade": "Lauro de Freitas",
       "loja": "NOVO MIX BURAQUINHO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 14.56666666666672,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "JUVANIA FERREIRA CERQUEIRA",
       "cidade": "Lauro de Freitas",
       "loja": "HIPERIDEAL PORTÃO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 30.58333333333337,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "JUVANIA FERREIRA CERQUEIRA",
       "cidade": "Camaçari",
       "loja": "NOVO MIX ABRANTES",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 12.766666666666652,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "JUVANIA FERREIRA CERQUEIRA",
       "cidade": "Camaçari",
       "loja": "NOVO MIX BUSCA VIDA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 14.600000000000136,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "JUVANIA FERREIRA CERQUEIRA",
@@ -10247,27 +10247,27 @@
       "cidade": "Salvador",
       "loja": "MERCANTIL OGUNJÁ",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 28.716666666666697,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "LAIANA NASCIMENTO BONFIM",
       "cidade": "Salvador",
       "loja": "G BARBOSA BROTAS",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 43.28333333333342,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "LAIANA NASCIMENTO BONFIM",
       "cidade": "Salvador",
       "loja": "ATAKAREJO VIA EXPRESSA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 164.94999999999993,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "LAIANA NASCIMENTO BONFIM",
@@ -11580,8 +11580,8 @@
       "loja": "SÃO ROQUE CENTRO",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
@@ -11589,8 +11589,8 @@
       "loja": "G. BARBOSA MARECHAL FSA",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
@@ -11598,17 +11598,17 @@
       "loja": "MIX MATEUS FSA",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
       "cidade": "Feira de Santana",
       "loja": "ATAKAREJO MANGABEIRA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 0.5166666666666515,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Corte"
     },
     {
       "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
@@ -11616,8 +11616,8 @@
       "loja": "ATAKAREJO FEIRA",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
@@ -11625,17 +11625,17 @@
       "loja": "SÃO ROQUE TOMÉ DE SOUZA",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
       "cidade": "Feira de Santana",
       "loja": "G BARBOSA BARAO FSA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 40.73333333333335,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
@@ -12245,18 +12245,18 @@
       "cidade": "Salvador",
       "loja": "Atakarejo Plataforma",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 56.4666666666667,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
       "cidade": "Salvador",
       "loja": "ATAKAREJO PARIPE",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 144.3499999999999,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
@@ -13361,27 +13361,27 @@
       "cidade": "Aracaju",
       "loja": "G. BARBOSA ATACADO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 21.883333333333326,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "RUAN LUIZ SANTOS LIMA",
       "cidade": "Aracaju",
       "loja": "G. BARBOSA MERCADO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 15.583333333333258,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "RUAN LUIZ SANTOS LIMA",
       "cidade": "Aracaju",
       "loja": "ATAKAREJO ADELIA FRANCO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 158.66666666666674,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "RUAN LUIZ SANTOS LIMA",
@@ -14324,54 +14324,54 @@
       "cidade": "Dias d'Ávila",
       "loja": "ATAKAREJO DIAS DAVILA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 63.5333333333333,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SAMUEL DE OLIVEIRA RIOS",
       "cidade": "Camaçari",
       "loja": "NOVO MIX GLEBA A",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 9.950000000000045,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SAMUEL DE OLIVEIRA RIOS",
       "cidade": "Camaçari",
       "loja": "FORT LAMA PRETA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 10.616666666666674,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SAMUEL DE OLIVEIRA RIOS",
       "cidade": "Camaçari",
       "loja": "NOVO MIX LAMA PRETA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 8.166666666666742,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SAMUEL DE OLIVEIRA RIOS",
       "cidade": "Camaçari",
       "loja": "NOVO MIX PHOC II",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 15.483333333333348,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SAMUEL DE OLIVEIRA RIOS",
       "cidade": "Camaçari",
       "loja": "ATAKAREJO CAMAÇARI",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 112.58333333333337,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SAMUEL DE OLIVEIRA RIOS",
@@ -15260,45 +15260,45 @@
       "cidade": "Salvador",
       "loja": "REDE MIX AMAZONAS",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 29.983333333333235,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SIDNEY JESUS DOS SANTOS",
       "cidade": "Salvador",
       "loja": "FORT BOCA DO RIO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 0.3500000000001364,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SIDNEY JESUS DOS SANTOS",
       "cidade": "Salvador",
       "loja": "ATAKAREJO BOCA DO RIO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 0.4333333333331666,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SIDNEY JESUS DOS SANTOS",
       "cidade": "Salvador",
       "loja": "HIPERIDEAL PITUBA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 45.34999999999991,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SIDNEY JESUS DOS SANTOS",
       "cidade": "Salvador",
       "loja": "HIPERIDEAL MANOEL DIAS",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 32.0333333333333,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "SIDNEY JESUS DOS SANTOS",
@@ -16322,36 +16322,36 @@
       "cidade": "Lauro de Freitas",
       "loja": "REDE MIX LAURO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 58.15000000000009,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "YURI BISPO MORAES",
       "cidade": "Lauro de Freitas",
       "loja": "NOVO MIX VILAS",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 13.483333333333348,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "YURI BISPO MORAES",
       "cidade": "Lauro de Freitas",
       "loja": "REDE MIX VILAS",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 47.316666666666606,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "YURI BISPO MORAES",
       "cidade": "Lauro de Freitas",
       "loja": "HIPERIDEAL PARK SHOPP",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 14.36666666666656,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "YURI BISPO MORAES",
@@ -16962,6 +16962,1941 @@
       "loja": "ATAKAREJO SÃO CRISTOVÃO",
       "data": "2026-08-27",
       "duracaoMin": 70.7166666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "G BARBOSA TOMBA",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "G BARBOSA TOMBA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "ATAKAREJO SIM",
+      "data": "2026-08-28",
+      "duracaoMin": 169.4666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "SÃO ROQUE ARTEMIA",
+      "data": "2026-08-28",
+      "duracaoMin": 55.89999999999998,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "MERCANTIL KALILANDIA",
+      "data": "2026-08-28",
+      "duracaoMin": 33.866666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "ECONOMART FSA",
+      "data": "2026-08-28",
+      "duracaoMin": 278.58333333333337,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "ATAKAREJO SIM",
+      "data": "2026-08-29",
+      "duracaoMin": 102,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "ECONOMART FSA",
+      "data": "2026-08-29",
+      "duracaoMin": 132.31666666666672,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "ATAKAREJO SIM",
+      "data": "2026-08-31",
+      "duracaoMin": 178.2166666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "ECONOMART FSA",
+      "data": "2026-08-31",
+      "duracaoMin": 305.54999999999995,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "cidade": "Feira de Santana",
+      "loja": "MERCANTIL KALILANDIA",
+      "data": "2026-08-31",
+      "duracaoMin": 37.78333333333353,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PATAMARES",
+      "data": "2026-08-29",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "G. BARBOSA COSTA AZUL",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PATAMARES",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Em Execução"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO ARMACAO",
+      "data": "2026-08-28",
+      "duracaoMin": 149.44999999999993,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "G. BARBOSA COSTA AZUL",
+      "data": "2026-08-28",
+      "duracaoMin": 135.26666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PATAMARES",
+      "data": "2026-08-28",
+      "duracaoMin": 105.3166666666666,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL PATAMARES",
+      "data": "2026-08-28",
+      "duracaoMin": 40.5333333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PIATA",
+      "data": "2026-08-28",
+      "duracaoMin": 29.383333333333212,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PIATA",
+      "data": "2026-08-29",
+      "duracaoMin": 203.85000000000002,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO ARMACAO",
+      "data": "2026-08-31",
+      "duracaoMin": 202.29999999999995,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PIATA",
+      "data": "2026-08-31",
+      "duracaoMin": 0.06666666666660603,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "GBARBOSA H BOA VISTA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CABULA",
+      "data": "2026-08-28",
+      "duracaoMin": 115.68333333333328,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "FORT CABULA",
+      "data": "2026-08-28",
+      "duracaoMin": 16.149999999999977,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "NOVO MIX CABULA",
+      "data": "2026-08-28",
+      "duracaoMin": 22.350000000000023,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "FORT SUSSUARANA",
+      "data": "2026-08-28",
+      "duracaoMin": 19.899999999999977,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SUSSUARANA",
+      "data": "2026-08-28",
+      "duracaoMin": 101.76666666666677,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "GBARBOSA H BOA VISTA",
+      "data": "2026-08-28",
+      "duracaoMin": 98.25,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CABULA",
+      "data": "2026-08-29",
+      "duracaoMin": 103.7833333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SUSSUARANA",
+      "data": "2026-08-29",
+      "duracaoMin": 94.23333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CABULA",
+      "data": "2026-08-31",
+      "duracaoMin": 209.89999999999998,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "FORT CABULA",
+      "data": "2026-08-31",
+      "duracaoMin": 18.58333333333337,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "NOVO MIX CABULA",
+      "data": "2026-08-31",
+      "duracaoMin": 7.533333333333417,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SUSSUARANA",
+      "data": "2026-08-31",
+      "duracaoMin": 150.6833333333334,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "cidade": "Salvador",
+      "loja": "MERCANTIL CALÇADA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PERIPERI",
+      "data": "2026-08-28",
+      "duracaoMin": 110.68333333333328,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CAM. DE AREIA",
+      "data": "2026-08-28",
+      "duracaoMin": 167.4333333333334,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO LOBATO",
+      "data": "2026-08-28",
+      "duracaoMin": 103.5333333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PERIPERI",
+      "data": "2026-08-29",
+      "duracaoMin": 93.71666666666658,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO LOBATO",
+      "data": "2026-08-29",
+      "duracaoMin": 113.75,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PERIPERI",
+      "data": "2026-08-31",
+      "duracaoMin": 126.83333333333337,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO LOBATO",
+      "data": "2026-08-31",
+      "duracaoMin": 96,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SÃO CAETANO",
+      "data": "2026-08-28",
+      "duracaoMin": 93.33333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "MERCANTIL SAN MARTIN",
+      "data": "2026-08-28",
+      "duracaoMin": 77.0666666666666,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SAN MARTIN",
+      "data": "2026-08-28",
+      "duracaoMin": 180.79999999999995,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "MERCANTIL PIRAJÁ",
+      "data": "2026-08-28",
+      "duracaoMin": 53.433333333333394,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SÃO CAETANO",
+      "data": "2026-08-29",
+      "duracaoMin": 121,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SAN MARTIN",
+      "data": "2026-08-29",
+      "duracaoMin": 67.53333333333342,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SÃO CAETANO",
+      "data": "2026-08-31",
+      "duracaoMin": 142.03333333333342,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SAN MARTIN",
+      "data": "2026-08-31",
+      "duracaoMin": 236.63333333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "MERCANTIL SAN MARTIN",
+      "data": "2026-08-31",
+      "duracaoMin": 18.883333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "cidade": "Salvador",
+      "loja": "MERCANTIL PIRAJÁ",
+      "data": "2026-08-31",
+      "duracaoMin": 41.01666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL C. CONVENÇÕES",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "REDE MIX IMBUI",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO BROTAS",
+      "data": "2026-08-29",
+      "duracaoMin": null,
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PERNAMBUES",
+      "data": "2026-08-29",
+      "duracaoMin": null,
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "REDE MIX PITUBA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "Hiperideal Aquarius",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "REDE MIX IMBUI",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "REDE MIX IMBUI",
+      "data": "2026-08-27",
+      "duracaoMin": 106.3166666666666,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "REDE MIX PITUBA",
+      "data": "2026-08-27",
+      "duracaoMin": 93.83333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO BROTAS",
+      "data": "2026-08-28",
+      "duracaoMin": 159.61666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PERNAMBUES",
+      "data": "2026-08-28",
+      "duracaoMin": 266.39999999999986,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO BROTAS",
+      "data": "2026-08-31",
+      "duracaoMin": 270.55000000000007,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PERNAMBUES",
+      "data": "2026-08-31",
+      "duracaoMin": 163.08333333333348,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "mercantil jabotiana",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA ATALAIA",
+      "data": "2026-08-29",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "mercantil jabotiana",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G BARBOSA FAROLANDIA",
+      "data": "2026-08-28",
+      "duracaoMin": 138.5,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA JARDINS",
+      "data": "2026-08-28",
+      "duracaoMin": 76.14999999999998,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G BARBOSA RIOMAR",
+      "data": "2026-08-28",
+      "duracaoMin": 34.26666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA PORTO",
+      "data": "2026-08-28",
+      "duracaoMin": 110.14999999999986,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA AUGUSTO FRANCO",
+      "data": "2026-08-29",
+      "duracaoMin": 62.60000000000002,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA ORLANDO DANTAS",
+      "data": "2026-08-29",
+      "duracaoMin": 29.98333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G BARBOSA FAROLANDIA",
+      "data": "2026-08-31",
+      "duracaoMin": 198.26666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA JARDINS",
+      "data": "2026-08-31",
+      "duracaoMin": 90.25,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G BARBOSA RIOMAR",
+      "data": "2026-08-31",
+      "duracaoMin": 56.30000000000007,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA PORTO",
+      "data": "2026-08-31",
+      "duracaoMin": 71.81666666666683,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Lauro de Freitas",
+      "loja": "FORT ITINGA",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Lauro de Freitas",
+      "loja": "NOVO MIX ITINGA",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Lauro de Freitas",
+      "loja": "G BARBOSA LAURO",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Salvador",
+      "loja": "REDEMIX ALPHAVILLE",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PARALELA",
+      "data": "2026-08-28",
+      "duracaoMin": 163.36666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL ALPHAVILLE",
+      "data": "2026-08-28",
+      "duracaoMin": 45.299999999999955,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Salvador",
+      "loja": "REDEMIX ALPHAVILLE",
+      "data": "2026-08-28",
+      "duracaoMin": 67.39999999999998,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL PARALELA",
+      "data": "2026-08-28",
+      "duracaoMin": 9.233333333333235,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Lauro de Freitas",
+      "loja": "ATAKAREJO LAURO",
+      "data": "2026-08-28",
+      "duracaoMin": 168.01666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PARALELA",
+      "data": "2026-08-29",
+      "duracaoMin": 80.01666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Lauro de Freitas",
+      "loja": "ATAKAREJO LAURO",
+      "data": "2026-08-29",
+      "duracaoMin": 102.91666666666663,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PARALELA",
+      "data": "2026-08-31",
+      "duracaoMin": 219.71666666666658,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "cidade": "Lauro de Freitas",
+      "loja": "ATAKAREJO LAURO",
+      "data": "2026-08-31",
+      "duracaoMin": 243.23333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CALÇADA 2",
+      "data": "2026-08-28",
+      "duracaoMin": 21.283333333333303,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "cidade": "Salvador",
+      "loja": "CENTRO SUL 2",
+      "data": "2026-08-28",
+      "duracaoMin": 94.14999999999998,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CALÇADA 1",
+      "data": "2026-08-28",
+      "duracaoMin": 59.200000000000045,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "cidade": "Salvador",
+      "loja": "CENTRO SUL 1",
+      "data": "2026-08-28",
+      "duracaoMin": 252.26666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "cidade": "Salvador",
+      "loja": "CENTRO SUL 1",
+      "data": "2026-08-29",
+      "duracaoMin": 132.01666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "cidade": "Salvador",
+      "loja": "CENTRO SUL 2",
+      "data": "2026-08-31",
+      "duracaoMin": 135.73333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CALÇADA 2",
+      "data": "2026-08-31",
+      "duracaoMin": 27.81666666666672,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CALÇADA 1",
+      "data": "2026-08-31",
+      "duracaoMin": 61.36666666666656,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "cidade": "Salvador",
+      "loja": "CENTRO SUL 1",
+      "data": "2026-08-31",
+      "duracaoMin": 298.36666666666656,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PERNAMBUES",
+      "data": "2026-08-29",
+      "duracaoMin": null,
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL CANELA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO VASCO DA GAMA",
+      "data": "2026-08-28",
+      "duracaoMin": 186.46666666666658,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL VASCO",
+      "data": "2026-08-28",
+      "duracaoMin": 53.61666666666656,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "REDE MIX HORTO",
+      "data": "2026-08-28",
+      "duracaoMin": 9.616666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "REDE MIX VITORIA",
+      "data": "2026-08-28",
+      "duracaoMin": 108.88333333333344,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL VITÓRIA",
+      "data": "2026-08-28",
+      "duracaoMin": 40.666666666666515,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL CANELA",
+      "data": "2026-08-28",
+      "duracaoMin": 2.8833333333334394,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO VASCO DA GAMA",
+      "data": "2026-08-29",
+      "duracaoMin": 124.45000000000005,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO VASCO DA GAMA",
+      "data": "2026-08-31",
+      "duracaoMin": 257.05000000000007,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "REDE MIX HORTO",
+      "data": "2026-08-31",
+      "duracaoMin": 4.849999999999909,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL VASCO",
+      "data": "2026-08-31",
+      "duracaoMin": 18.41666666666663,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "REDE MIX VITORIA",
+      "data": "2026-08-31",
+      "duracaoMin": 60.4666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ISIS MACHADO SILVA",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL VITÓRIA",
+      "data": "2026-08-31",
+      "duracaoMin": 51.30000000000018,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Camaçari",
+      "loja": "HIPERIDEAL GUARAJUBA",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Mata de São João",
+      "loja": "HIPERIDEAL PRAIA DO FORTE",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Camaçari",
+      "loja": "GBARBOSA GUARAJUBA",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Camaçari",
+      "loja": "ATAKAREJO ITACIMIRIM",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Camaçari",
+      "loja": "HIPERIDEAL GUARAJUBA",
+      "data": "2026-08-29",
+      "duracaoMin": null,
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Camaçari",
+      "loja": "ATAKAREJO ITACIMIRIM",
+      "data": "2026-08-29",
+      "duracaoMin": null,
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Camaçari",
+      "loja": "GBARBOSA GUARAJUBA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Camaçari",
+      "loja": "HIPERIDEAL GUARAJUBA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Mata de São João",
+      "loja": "HIPERIDEAL PRAIA DO FORTE",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "cidade": "Camaçari",
+      "loja": "ATAKAREJO ITACIMIRIM",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL VILA LAURA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO IAPI",
+      "data": "2026-08-28",
+      "duracaoMin": 99.33333333333337,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "REDE MIX IAPI",
+      "data": "2026-08-28",
+      "duracaoMin": 53.19999999999993,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO VIA EXPRESSA",
+      "data": "2026-08-28",
+      "duracaoMin": 107.61666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL VILA LAURA",
+      "data": "2026-08-28",
+      "duracaoMin": 65.71666666666658,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "REDE MIX VILA LAURA",
+      "data": "2026-08-28",
+      "duracaoMin": 66.95000000000005,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO IAPI",
+      "data": "2026-08-29",
+      "duracaoMin": 115.85000000000002,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO VIA EXPRESSA",
+      "data": "2026-08-29",
+      "duracaoMin": 113.9333333333334,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO VIA EXPRESSA",
+      "data": "2026-08-31",
+      "duracaoMin": 0.2666666666666515,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO IAPI",
+      "data": "2026-08-31",
+      "duracaoMin": 192.29999999999995,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "G BARBOSA SOBRADINHO",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "MERCANTIL CIDADE NOVA",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "SÃO ROQUE FRAGA MAIA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "MERCANTIL CIDADE NOVA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "ATAKAREJO MANGABEIRA",
+      "data": "2026-08-28",
+      "duracaoMin": 140.9333333333334,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "MIX MATEUS FSA",
+      "data": "2026-08-28",
+      "duracaoMin": 126.64999999999998,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "SÃO ROQUE FRAGA MAIA",
+      "data": "2026-08-28",
+      "duracaoMin": 85.95000000000005,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "ATAKAREJO FEIRA",
+      "data": "2026-08-28",
+      "duracaoMin": 139.5333333333332,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "ATAKAREJO MANGABEIRA",
+      "data": "2026-08-29",
+      "duracaoMin": 124.68333333333328,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "ATAKAREJO FEIRA",
+      "data": "2026-08-29",
+      "duracaoMin": 105.33333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "MIX MATEUS FSA",
+      "data": "2026-08-31",
+      "duracaoMin": 329.35,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "ATAKAREJO MANGABEIRA",
+      "data": "2026-08-31",
+      "duracaoMin": 141.91666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "cidade": "Feira de Santana",
+      "loja": "ATAKAREJO FEIRA",
+      "data": "2026-08-31",
+      "duracaoMin": 52.26666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Simões Filho",
+      "loja": "ATAKAREJO SIMÕES FILHO",
+      "data": "2026-08-28",
+      "duracaoMin": 121.5333333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PARIPE",
+      "data": "2026-08-28",
+      "duracaoMin": 99.11666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Salvador",
+      "loja": "REDE MIX PARIPE",
+      "data": "2026-08-28",
+      "duracaoMin": 63.06666666666672,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Salvador",
+      "loja": "Atakarejo Plataforma",
+      "data": "2026-08-28",
+      "duracaoMin": 12.683333333333394,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Salvador",
+      "loja": "Atakarejo Plataforma",
+      "data": "2026-08-29",
+      "duracaoMin": 44.13333333333344,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PARIPE",
+      "data": "2026-08-29",
+      "duracaoMin": 63.116666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Simões Filho",
+      "loja": "ATAKAREJO SIMÕES FILHO",
+      "data": "2026-08-31",
+      "duracaoMin": 141.63333333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Simões Filho",
+      "loja": "REDE MIX SIMOES FILHO",
+      "data": "2026-08-31",
+      "duracaoMin": 19.800000000000068,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO PARIPE",
+      "data": "2026-08-31",
+      "duracaoMin": 96.63333333333344,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "cidade": "Salvador",
+      "loja": "Atakarejo Plataforma",
+      "data": "2026-08-31",
+      "duracaoMin": 62.46666666666647,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARLENE COSTA DE JESUS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CAJAZEIRAS",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "MARLENE COSTA DE JESUS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SETE DE ABRIL",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "MARLENE COSTA DE JESUS",
+      "cidade": "Salvador",
+      "loja": "NOVO MIX CANABRAVA",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "MARLENE COSTA DE JESUS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CAJAZEIRAS",
+      "data": "2026-08-29",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "MARLENE COSTA DE JESUS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SETE DE ABRIL",
+      "data": "2026-08-29",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "MARLENE COSTA DE JESUS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO CAJAZEIRAS",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "MARLENE COSTA DE JESUS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SETE DE ABRIL",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "cidade": "Aracaju",
+      "loja": "ATAKAREJO TANCREDO NEVES",
+      "data": "2026-08-28",
+      "duracaoMin": 88.01666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "cidade": "Aracaju",
+      "loja": "ATAKAREJO ADELIA FRANCO",
+      "data": "2026-08-28",
+      "duracaoMin": 78.23333333333323,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA SUL",
+      "data": "2026-08-28",
+      "duracaoMin": 102.98333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "cidade": "Aracaju",
+      "loja": "ATAKAREJO ADELIA FRANCO",
+      "data": "2026-08-29",
+      "duracaoMin": 55.450000000000045,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "cidade": "Aracaju",
+      "loja": "ATAKAREJO TANCREDO NEVES",
+      "data": "2026-08-29",
+      "duracaoMin": 70.01666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "cidade": "Aracaju",
+      "loja": "ATAKAREJO TANCREDO NEVES",
+      "data": "2026-08-31",
+      "duracaoMin": 181.41666666666663,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "cidade": "Aracaju",
+      "loja": "ATAKAREJO ADELIA FRANCO",
+      "data": "2026-08-31",
+      "duracaoMin": 148.86666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA ATACADO",
+      "data": "2026-08-31",
+      "duracaoMin": 15.366666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "cidade": "Aracaju",
+      "loja": "G. BARBOSA MERCADO",
+      "data": "2026-08-31",
+      "duracaoMin": 10.18333333333328,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Camaçari",
+      "loja": "NOVO MIX DOS 46",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Dias d'Ávila",
+      "loja": "NOVO MIX DIAS D AVILA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Camaçari",
+      "loja": "NOVO MIX AV SUL",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Dias d'Ávila",
+      "loja": "ATAKAREJO DIAS DAVILA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Camaçari",
+      "loja": "ATAKAREJO CAMAÇARI",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Camaçari",
+      "loja": "FORT DOS 46",
+      "data": "2026-08-28",
+      "duracaoMin": 98.44999999999993,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Camaçari",
+      "loja": "ATAKAREJO CAMAÇARI",
+      "data": "2026-08-28",
+      "duracaoMin": 148.48333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Camaçari",
+      "loja": "NOVO MIX CASCALHEIRA",
+      "data": "2026-08-28",
+      "duracaoMin": 16.299999999999955,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Camaçari",
+      "loja": "NOVO MIX LIMOEIRO",
+      "data": "2026-08-28",
+      "duracaoMin": 21.73333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Dias d'Ávila",
+      "loja": "ATAKAREJO DIAS DAVILA",
+      "data": "2026-08-28",
+      "duracaoMin": 82.33333333333337,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Dias d'Ávila",
+      "loja": "NOVO MIX DIAS D AVILA",
+      "data": "2026-08-28",
+      "duracaoMin": 34.59999999999991,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Camaçari",
+      "loja": "ATAKAREJO CAMAÇARI",
+      "data": "2026-08-29",
+      "duracaoMin": 124.5333333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "cidade": "Dias d'Ávila",
+      "loja": "ATAKAREJO DIAS DAVILA",
+      "data": "2026-08-29",
+      "duracaoMin": 58.19999999999993,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "REDE MIX MASANI",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL AMAZONAS",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL CAM. ARVORES",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "REDE MIX PITUBA",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "REDE MIX RIO VERMELHO",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL CAM. ARVORES",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL C. CONVENÇÕES",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO AMARALINA",
+      "data": "2026-08-28",
+      "duracaoMin": 98.8166666666666,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO BOCA DO RIO",
+      "data": "2026-08-28",
+      "duracaoMin": 104.29999999999995,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO BOCA DO RIO",
+      "data": "2026-08-29",
+      "duracaoMin": 74.16666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO AMARALINA",
+      "data": "2026-08-29",
+      "duracaoMin": 93.45000000000005,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO AMARALINA",
+      "data": "2026-08-31",
+      "duracaoMin": 100.56666666666672,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "REDE MIX RIO VERMELHO",
+      "data": "2026-08-31",
+      "duracaoMin": 55.2166666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO BOCA DO RIO",
+      "data": "2026-08-31",
+      "duracaoMin": 199.93333333333328,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "HIPERIDEAL AMAZONAS",
+      "data": "2026-08-31",
+      "duracaoMin": 0.36666666666678793,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "cidade": "Salvador",
+      "loja": "REDE MIX MASANI",
+      "data": "2026-08-31",
+      "duracaoMin": 0.1999999999998181,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "MIX MATEUS SAO CRISTOVAO",
+      "data": "2026-08-28",
+      "duracaoMin": 164.13333333333344,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "FORT SÃO CRISTOVAO",
+      "data": "2026-08-28",
+      "duracaoMin": 14.866666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SÃO CRISTOVÃO",
+      "data": "2026-08-28",
+      "duracaoMin": 139.1500000000001,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "NOVO MIX ITAPUÃ",
+      "data": "2026-08-28",
+      "duracaoMin": 17.78333333333353,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "REDE MIX ITAPUÃ",
+      "data": "2026-08-28",
+      "duracaoMin": 53.450000000000045,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "MIX MATEUS SAO CRISTOVAO",
+      "data": "2026-08-29",
+      "duracaoMin": 132.55000000000007,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SÃO CRISTOVÃO",
+      "data": "2026-08-29",
+      "duracaoMin": 93.86666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "MIX MATEUS SAO CRISTOVAO",
+      "data": "2026-08-31",
+      "duracaoMin": 202.95000000000005,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "FORT SÃO CRISTOVAO",
+      "data": "2026-08-31",
+      "duracaoMin": 21.466666666666697,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "ATAKAREJO SÃO CRISTOVÃO",
+      "data": "2026-08-31",
+      "duracaoMin": 202.13333333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "NOVO MIX ITAPUÃ",
+      "data": "2026-08-31",
+      "duracaoMin": 8.25,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "cidade": "Salvador",
+      "loja": "REDE MIX ITAPUÃ",
+      "data": "2026-08-31",
+      "duracaoMin": 9.516666666666879,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
     }
