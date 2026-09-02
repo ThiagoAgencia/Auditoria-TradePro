@@ -149,18 +149,18 @@
       "cidade": "Rio de Janeiro",
       "loja": "GUANABARA REALENGO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 174.30000000000007,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "Bruno Luiz dos Santos Cordeiro",
       "cidade": "Rio de Janeiro",
       "loja": "MUNDIAL ILHA DO GOVERNADOR - TAUA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 34.9666666666667,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "Bruno Luiz dos Santos Cordeiro",
@@ -780,7 +780,7 @@
       "loja": "SUPERMARKET PARK SHOPPING",
       "data": "2026-08-10",
       "duracaoMin": null,
-      "motivo": "Maior Demanda na Loja Anterior",
+      "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
     },
     {
@@ -896,18 +896,18 @@
       "cidade": "Rio de Janeiro",
       "loja": "GUANABARA RIO DA PRATA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 137.58333333333326,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "GIZÉLIA MONTEIRO",
       "cidade": "Rio de Janeiro",
       "loja": "GUANABARA AGUA BRANCA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 78.2166666666667,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "GIZÉLIA MONTEIRO",
@@ -1292,18 +1292,18 @@
       "cidade": "São Gonçalo",
       "loja": "SUPERMARKET PORTO VELHO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 38.866666666666674,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "MILENA LEONARDO DOS PRAZERES",
       "cidade": "São Gonçalo",
       "loja": "GUANABARA SAO GONCALO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 240.60000000000002,
       "motivo": "",
-      "status": "Em Execução"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "MILENA LEONARDO DOS PRAZERES",
@@ -1977,8 +1977,8 @@
       "loja": "PREZUNIC CAMPINHO",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
@@ -1986,17 +1986,17 @@
       "loja": "SUPERMARKET TANQUE",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "Falta",
+      "status": "Justificado"
     },
     {
       "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
       "cidade": "Rio de Janeiro",
       "loja": "MUNDIAL - PRAÇA SECA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 14.5,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
@@ -2454,7 +2454,7 @@
       "loja": "VIANENSE",
       "data": "2026-08-07",
       "duracaoMin": null,
-      "motivo": "Maior Demanda na Loja Anterior",
+      "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
     },
     {
@@ -2472,7 +2472,7 @@
       "loja": "SUPERMARKETFLORIANO PEIXOTO",
       "data": "2026-08-11",
       "duracaoMin": null,
-      "motivo": "PROBLEMAS COM APP",
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
     },
     {
@@ -2579,27 +2579,27 @@
       "cidade": "Nova Iguaçu",
       "loja": "VIANENSE FILIAL 08 ANDRADE ARAUJO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 21.799999999999955,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "RAYANNE PIMENTA LIMA",
       "cidade": "Nilópolis",
       "loja": "VIANENSE FILIAL 16 NILOPOLIS",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 10.783333333333303,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "RAYANNE PIMENTA LIMA",
       "cidade": "Rio de Janeiro",
       "loja": "FLORZINHA DA PAVUNA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 47.69999999999993,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "RAYANNE PIMENTA LIMA",
@@ -3362,18 +3362,18 @@
       "cidade": "Rio de Janeiro",
       "loja": "",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 11.850000000000023,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ROBSON DE SOUZA",
       "cidade": "Rio de Janeiro",
       "loja": "MUNDIAL RECREIO",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 137.01666666666665,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ROBSON DE SOUZA",
@@ -3381,8 +3381,8 @@
       "loja": "PREZUNIC RECREIO",
       "data": "2026-08-27",
       "duracaoMin": null,
-      "motivo": "",
-      "status": "Aberto"
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
     },
     {
       "colaborador": "ROBSON DE SOUZA",
@@ -4271,9 +4271,9 @@
       "cidade": "Rio de Janeiro",
       "loja": "GUANABARA IRAJA",
       "data": "2026-08-27",
-      "duracaoMin": null,
+      "duracaoMin": 20.73333333333335,
       "motivo": "",
-      "status": "Aberto"
+      "status": "Finalizado pelo Colaborador"
     },
     {
       "colaborador": "ZÉLIA MARIA DA SILVEIRA",
@@ -4632,6 +4632,528 @@
       "loja": "Mundial Iraja",
       "data": "2026-08-27",
       "duracaoMin": 94,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA PENHA",
+      "data": "2026-08-28",
+      "duracaoMin": 106.4666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA BONSUCESSO",
+      "data": "2026-08-28",
+      "duracaoMin": 98.56666666666672,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA VILA VALQUEIRE",
+      "data": "2026-08-28",
+      "duracaoMin": 98.1833333333334,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA PENHA",
+      "data": "2026-08-31",
+      "duracaoMin": 25.5,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "cidade": "Rio de Janeiro",
+      "loja": "MUNDIAL - RAMOS",
+      "data": "2026-08-31",
+      "duracaoMin": 38.866666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "cidade": "Rio de Janeiro",
+      "loja": "supermarket bonsucesso",
+      "data": "2026-08-31",
+      "duracaoMin": 11.533333333333303,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA BONSUCESSO",
+      "data": "2026-08-31",
+      "duracaoMin": 58.64999999999998,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA VILA VALQUEIRE",
+      "data": "2026-08-31",
+      "duracaoMin": 146.1833333333334,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GIZÉLIA MONTEIRO",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA AURELIO CG",
+      "data": "2026-08-28",
+      "duracaoMin": 0.8666666666666742,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GIZÉLIA MONTEIRO",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA RIO DO A",
+      "data": "2026-08-28",
+      "duracaoMin": 244.70000000000005,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GIZÉLIA MONTEIRO",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA AURELIO CG",
+      "data": "2026-08-31",
+      "duracaoMin": 76.7166666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GIZÉLIA MONTEIRO",
+      "cidade": "Rio de Janeiro",
+      "loja": "SUPERMARKET PARK SHOPPING",
+      "data": "2026-08-31",
+      "duracaoMin": 21.91666666666663,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "GIZÉLIA MONTEIRO",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA RIO DO A",
+      "data": "2026-08-31",
+      "duracaoMin": 0.5499999999999545,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MILENA LEONARDO DOS PRAZERES",
+      "cidade": "Niterói",
+      "loja": "CANTO DA BALA MATRIZ",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MILENA LEONARDO DOS PRAZERES",
+      "cidade": "Niterói",
+      "loja": "CANTO DA BALA MATRIZ",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MILENA LEONARDO DOS PRAZERES",
+      "cidade": "Niterói",
+      "loja": "SUPERPRIX GAVIÃO PEIXOTO",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MILENA LEONARDO DOS PRAZERES",
+      "cidade": "Itaboraí",
+      "loja": "PRINCESA ITABORAI",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MILENA LEONARDO DOS PRAZERES",
+      "cidade": "Niterói",
+      "loja": "PRINCESA FONSECA",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MILENA LEONARDO DOS PRAZERES",
+      "cidade": "Niterói",
+      "loja": "GUANABAR - NITEROI",
+      "data": "2026-08-28",
+      "duracaoMin": 0.2333333333333485,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MILENA LEONARDO DOS PRAZERES",
+      "cidade": "Niterói",
+      "loja": "GUANABAR - NITEROI",
+      "data": "2026-08-31",
+      "duracaoMin": 613.6500000000001,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA CAFUNDA",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "Sem Bateria",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA CAMPINHO",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "MUNDIAL CURICICA",
+      "data": "2026-08-27",
+      "duracaoMin": 50.05000000000007,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "MUNDIAL - FREGUESIA",
+      "data": "2026-08-28",
+      "duracaoMin": 113.79999999999995,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA TANQUE",
+      "data": "2026-08-28",
+      "duracaoMin": 139.94999999999993,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA CAMPINHO",
+      "data": "2026-08-31",
+      "duracaoMin": 131.94999999999993,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA CAFUNDA",
+      "data": "2026-08-31",
+      "duracaoMin": 86.01666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "SUPERMARKET OUTEIRO SANTO",
+      "data": "2026-08-31",
+      "duracaoMin": 66.11666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "São João de Meriti",
+      "loja": "COMERCIO DE DOCES CHEGA MAIS SAO JOAO",
+      "data": "2026-08-31",
+      "duracaoMin": 37.733333333333235,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "Nova Iguaçu",
+      "loja": "GUANABARA NOVA IGUACU",
+      "data": "2026-08-28",
+      "duracaoMin": 33.01666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "Duque de Caxias",
+      "loja": "VIANENSE",
+      "data": "2026-08-28",
+      "duracaoMin": 22.600000000000023,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "Duque de Caxias",
+      "loja": "GUANABARA CAXIAS",
+      "data": "2026-08-28",
+      "duracaoMin": 119.16666666666663,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "São João de Meriti",
+      "loja": "GUANABARA SAO JOAO",
+      "data": "2026-08-28",
+      "duracaoMin": 51.18333333333328,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "São João de Meriti",
+      "loja": "COMERCIO DE DOCES CHEGA MAIS SAO JOAO",
+      "data": "2026-08-28",
+      "duracaoMin": 64.53333333333342,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "Nova Iguaçu",
+      "loja": "GUANABARA NOVA IGUACU",
+      "data": "2026-08-31",
+      "duracaoMin": 51.89999999999998,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "Duque de Caxias",
+      "loja": "GUANABARA CAXIAS",
+      "data": "2026-08-31",
+      "duracaoMin": 119,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "São João de Meriti",
+      "loja": "GUANABARA SAO JOAO",
+      "data": "2026-08-31",
+      "duracaoMin": 50,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "cidade": "Rio de Janeiro",
+      "loja": "FLORZINHA DA PAVUNA",
+      "data": "2026-08-31",
+      "duracaoMin": 36.48333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA RECREIO",
+      "data": "2026-08-28",
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "MUNDIAL ABELARDO BUENO",
+      "data": "2026-08-27",
+      "duracaoMin": 68.26666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA BARRA",
+      "data": "2026-08-28",
+      "duracaoMin": 65.19999999999993,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "Mundial Jardim Oceânico",
+      "data": "2026-08-28",
+      "duracaoMin": 110.33333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "MUNDIAL BARRINHA",
+      "data": "2026-08-28",
+      "duracaoMin": 44.7833333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "Supermarket Via Parque",
+      "data": "2026-08-28",
+      "duracaoMin": 12.75,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA BARRA",
+      "data": "2026-08-31",
+      "duracaoMin": 181.2166666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "Campeão Barra",
+      "data": "2026-08-31",
+      "duracaoMin": 12.516666666666652,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "Supermarket Barra Blue",
+      "data": "2026-08-31",
+      "duracaoMin": 18.93333333333328,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "MUNDIAL RECREIO",
+      "data": "2026-08-31",
+      "duracaoMin": 160.26666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "cidade": "Rio de Janeiro",
+      "loja": "",
+      "data": "2026-08-31",
+      "duracaoMin": 52.38333333333321,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "PREZUNIC VISTA ALEGRE",
+      "data": "2026-08-31",
+      "duracaoMin": null,
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "MUNDIAL - VAZ LOBO",
+      "data": "2026-08-27",
+      "duracaoMin": 64.98333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "SUPERMARKET PILARES",
+      "data": "2026-08-28",
+      "duracaoMin": 47.41666666666663,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA PIEDADE",
+      "data": "2026-08-28",
+      "duracaoMin": 79.78333333333342,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA ENG DE DENTRO",
+      "data": "2026-08-28",
+      "duracaoMin": 108.5666666666666,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "Campeão Abolição",
+      "data": "2026-08-28",
+      "duracaoMin": 3.6666666666667425,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA ENG DE DENTRO",
+      "data": "2026-08-31",
+      "duracaoMin": 128.61666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "GUANABARA IRAJA",
+      "data": "2026-08-31",
+      "duracaoMin": 0.5499999999999545,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "cidade": "Rio de Janeiro",
+      "loja": "Mundial Iraja",
+      "data": "2026-08-31",
+      "duracaoMin": 74.43333333333317,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
     }
