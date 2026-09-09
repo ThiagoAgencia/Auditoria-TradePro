@@ -193,6 +193,7 @@ tbody tr:last-child td{border-bottom:none;}
     </nav>
     <div class="foot">
       <div class="updated" id="lastUpdated">sem dados carregados</div>
+      <div class="updated" style="margin-top:3px;opacity:.6;">versão do código: 2026-09-09-01</div>
       <button id="btnRecarregarSidebar" style="margin-top:10px;width:100%;font-size:10.5px;padding:7px 10px;background:transparent;border:1px solid var(--line-dark);color:#a9b1bd;border-radius:6px;font-family:'Oswald',sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;">↻ Recarregar dados</button>
     </div>
   </aside>
@@ -549,18 +550,26 @@ function aggregateLojas(visitas, filtroColaborador, refDate){
   return Array.from(byLoja.values()).sort((x,y)=> (y.diasSemVisita ?? 99999) - (x.diasSemVisita ?? 99999));
 }
 
-function aggregatePeriodo(visitas, granularidade){
+function aggregatePeriodo(visitas, granularidade, pontoInconsistencias){
   const keyFn = granularidade === "semanal" ? weekKey : granularidade === "anual" ? yearKey : monthKey;
   const map = new Map();
+  const getOrCreate = (k) => {
+    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, normais:0, faltas:0, corte:0, total:0, pontoSuspeito:0 });
+    return map.get(k);
+  };
   for (const v of visitas) {
-    const k = keyFn(v.data);
-    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, normais:0, faltas:0, corte:0, total:0 });
-    const a = map.get(k);
+    const a = getOrCreate(keyFn(v.data));
     a.total++;
     if (isCurta(v)) a.curtas++;
     if (isNormal(v)) a.normais++;
     if (isFalta(v)) a.faltas++;
     if (isCorte(v)) a.corte++;
+  }
+  if (pontoInconsistencias) {
+    for (const key of pontoInconsistencias) {
+      const data = key.split('|')[1];
+      getOrCreate(keyFn(data)).pontoSuspeito++;
+    }
   }
   return Array.from(map.values()).sort((x,y)=> x.periodo.localeCompare(y.periodo));
 }
@@ -615,11 +624,13 @@ function ghToken(){ return localStorage.getItem('gh_pat') || ""; }
 function setGhToken(t){ localStorage.setItem('gh_pat', t); }
 
 async function ghGetFile(path){
-  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}?ref=${DATA_BRANCH}`;
+  // cache:'no-store' pra nunca usar versão em cache do navegador — sempre busca o dado
+  // mais recente do GitHub antes de mesclar e salvar, evitando sobrescrever com dado velho.
+  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}?ref=${DATA_BRANCH}&_=${Date.now()}`;
   const headers = {};
   const tok = ghToken();
   if (tok) headers['Authorization'] = `Bearer ${tok}`;
-  const res = await fetch(url, {headers});
+  const res = await fetch(url, {headers, cache:'no-store'});
   if (res.status === 404) return { content:null, sha:null };
   if (!res.ok) throw new Error(`GitHub GET ${path}: ${res.status}`);
   const j = await res.json();
@@ -977,8 +988,12 @@ function visitasFiltradas(todas){
   return visitasPromotorFiltro ? todas.filter(v=>v.colaborador===visitasPromotorFiltro) : todas;
 }
 
-function redrawVisitas(todasVisitas, pontoInconsistencias){
+function redrawVisitas(todasVisitas, pontoInconsistenciasGlobal){
   const visitas = visitasFiltradas(todasVisitas);
+  // se tem filtro de promotor, recalcula só pra ele (senão o número fica igual ao geral, sem sentido)
+  const pontoInconsistencias = visitasPromotorFiltro
+    ? calcInconsistenciasPonto(visitas, pontoEscopo())
+    : pontoInconsistenciasGlobal;
   const semanaWrap = document.getElementById('semanaSelectorWrap');
 
   if (visitasPeriodo === 'diario') {
@@ -991,7 +1006,7 @@ function redrawVisitas(todasVisitas, pontoInconsistencias){
     drawDiario(visitas, pontoInconsistencias);
   } else {
     semanaWrap.style.display = 'none';
-    drawVisitasChart(visitas);
+    drawVisitasChart(visitas, pontoInconsistencias);
   }
 }
 
@@ -1066,18 +1081,19 @@ function mostrarDetalheDia(diaAgg, pontoInconsistencias){
   panel.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
 
-function drawVisitasChart(visitas){
+function drawVisitasChart(visitas, pontoInconsistencias){
   document.getElementById('diaDetalhePanel').style.display = 'none';
   document.getElementById('visitasTituloGrafico').textContent = 'Visitas curtas, normais e faltas ao longo do tempo';
   document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por período';
-  const agg = aggregatePeriodo(visitas, visitasPeriodo);
-  document.getElementById('periodoHead').innerHTML = `<th>Período</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Normais</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
+  const agg = aggregatePeriodo(visitas, visitasPeriodo, pontoInconsistencias ? pontoInconsistencias.diasInconsistentes : null);
+  document.getElementById('periodoHead').innerHTML = `<th>Período</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Normais</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th><th class="num">Ponto x Roteiro</th>`;
   document.getElementById('periodoBody').innerHTML = agg.map(a=>`
     <tr><td class="mono">${a.periodo}</td><td class="num mono">${a.total}</td>
     <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
     <td class="num mono">${a.normais}</td>
     <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
-    <td class="num mono">${a.corte}</td></tr>
+    <td class="num mono">${a.corte}</td>
+    <td class="num mono ${a.pontoSuspeito>0?'flagcell warn':''}">${a.pontoSuspeito || '—'}</td></tr>
   `).join('');
   const ctx = document.getElementById('visitasCanvas');
   if (visitasChart) visitasChart.destroy();
