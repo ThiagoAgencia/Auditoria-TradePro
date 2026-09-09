@@ -13224,5 +13224,4626 @@
     }
   ],
   "fotos": [],
-  "ponto": []
+  "ponto": [
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-04",
+      "entradaMin": 674.15,
+      "saidaMin": 1081.3666666666666
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-05",
+      "entradaMin": 662.45,
+      "saidaMin": 1030.0166666666667
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-07",
+      "entradaMin": 658.4333333333333,
+      "saidaMin": 962.7166666666667
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-10",
+      "entradaMin": 656.8166666666667,
+      "saidaMin": 1025.95
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-12",
+      "entradaMin": 658.1,
+      "saidaMin": 1020.2
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-14",
+      "entradaMin": 685.85,
+      "saidaMin": 1030.6833333333334
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-17",
+      "entradaMin": 664.0833333333334,
+      "saidaMin": 1031.25
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-19",
+      "entradaMin": 658.7666666666667,
+      "saidaMin": 1021.6166666666667
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-21",
+      "entradaMin": 660.45,
+      "saidaMin": 1021.8833333333333
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-24",
+      "entradaMin": 656.9666666666667,
+      "saidaMin": 1022.5
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-26",
+      "entradaMin": 655.6833333333333,
+      "saidaMin": 1021.6833333333333
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-28",
+      "entradaMin": 670.2166666666667,
+      "saidaMin": 1033.2166666666667
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-08-31",
+      "entradaMin": 657.95,
+      "saidaMin": 1020.7833333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-01",
+      "entradaMin": 609.9,
+      "saidaMin": 870.8833333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-03",
+      "entradaMin": 625.0333333333333,
+      "saidaMin": 1139.55
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-04",
+      "entradaMin": 625.1833333333333,
+      "saidaMin": 1139.55
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-05",
+      "entradaMin": 621.7333333333333,
+      "saidaMin": 1139.05
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-06",
+      "entradaMin": 629.0166666666667,
+      "saidaMin": 1139.2833333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-07",
+      "entradaMin": 607.5833333333334,
+      "saidaMin": 976.25
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-08",
+      "entradaMin": 604.4,
+      "saidaMin": 837.2833333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-10",
+      "entradaMin": 616.4166666666666,
+      "saidaMin": 1126.1833333333334
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-11",
+      "entradaMin": 614.0333333333333,
+      "saidaMin": 1146.9333333333334
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-12",
+      "entradaMin": 638.1333333333333,
+      "saidaMin": 1142.0666666666666
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-13",
+      "entradaMin": 632.4333333333333,
+      "saidaMin": 1156.25
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-14",
+      "entradaMin": 629.8666666666667,
+      "saidaMin": 1179.45
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-15",
+      "entradaMin": 602.15,
+      "saidaMin": 841.7666666666667
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-17",
+      "entradaMin": 623.6166666666667,
+      "saidaMin": 1173.2166666666667
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-18",
+      "entradaMin": 615.1,
+      "saidaMin": 1167.25
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-19",
+      "entradaMin": 604.15,
+      "saidaMin": 1167.4
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-20",
+      "entradaMin": 610.2833333333333,
+      "saidaMin": 1157.7333333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-21",
+      "entradaMin": 600.8166666666667,
+      "saidaMin": 1151.3333333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-22",
+      "entradaMin": 615.9833333333333,
+      "saidaMin": 850.8833333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-24",
+      "entradaMin": 609.2,
+      "saidaMin": 1142.2666666666667
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-25",
+      "entradaMin": 607.7166666666667,
+      "saidaMin": 1152.6666666666667
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-26",
+      "entradaMin": 608.9833333333333,
+      "saidaMin": 1147.4166666666667
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-27",
+      "entradaMin": 604.6166666666667,
+      "saidaMin": 1148.2
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-28",
+      "entradaMin": 611.6166666666667,
+      "saidaMin": 1165.7166666666667
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-29",
+      "entradaMin": 618.3166666666667,
+      "saidaMin": 856.8
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-08-31",
+      "entradaMin": 609,
+      "saidaMin": 1156.5833333333333
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-01",
+      "entradaMin": 677.4833333333333,
+      "saidaMin": 905.7666666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-03",
+      "entradaMin": 676.55,
+      "saidaMin": 1219.5333333333333
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-04",
+      "entradaMin": 692.4,
+      "saidaMin": 1251.1333333333334
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-05",
+      "entradaMin": 678.5833333333334,
+      "saidaMin": 1235.7666666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-06",
+      "entradaMin": 683.3,
+      "saidaMin": 1233.4833333333333
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-07",
+      "entradaMin": 676.95,
+      "saidaMin": 1080.4833333333333
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-08",
+      "entradaMin": 681.6333333333333,
+      "saidaMin": 907.4166666666666
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-10",
+      "entradaMin": 683.3666666666667,
+      "saidaMin": 1251.3166666666666
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-11",
+      "entradaMin": 669.45,
+      "saidaMin": 1205.7666666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-12",
+      "entradaMin": 655.4166666666666,
+      "saidaMin": 1199.7333333333333
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-13",
+      "entradaMin": 689.7,
+      "saidaMin": 1242.5833333333333
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-14",
+      "entradaMin": 650.0333333333333,
+      "saidaMin": 1203.6666666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-15",
+      "entradaMin": 658,
+      "saidaMin": 901.5666666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-17",
+      "entradaMin": 677.9833333333333,
+      "saidaMin": 1205.7666666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-18",
+      "entradaMin": 659.4333333333333,
+      "saidaMin": 1233.75
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-19",
+      "entradaMin": 684.6333333333333,
+      "saidaMin": 1215.4666666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-20",
+      "entradaMin": 686.4333333333333,
+      "saidaMin": 1210.8833333333334
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-21",
+      "entradaMin": 668.3666666666667,
+      "saidaMin": 1202.5833333333333
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-22",
+      "entradaMin": 662.7666666666667,
+      "saidaMin": 962.6833333333333
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-24",
+      "entradaMin": 680.4,
+      "saidaMin": 1213.7666666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-25",
+      "entradaMin": 652.5,
+      "saidaMin": 1201.2
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-26",
+      "entradaMin": 671.1333333333333,
+      "saidaMin": 1240.95
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-27",
+      "entradaMin": 689.2666666666667,
+      "saidaMin": 1229.0166666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-28",
+      "entradaMin": 680.35,
+      "saidaMin": 1203.5666666666666
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-29",
+      "entradaMin": 680.5333333333333,
+      "saidaMin": 944.5166666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-08-31",
+      "entradaMin": 665.3333333333334,
+      "saidaMin": 1207.55
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-01",
+      "entradaMin": 670.7333333333333,
+      "saidaMin": 957.5833333333334
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-03",
+      "entradaMin": 710.2166666666667,
+      "saidaMin": 1211.6166666666666
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-04",
+      "entradaMin": 718.3333333333334,
+      "saidaMin": 1210.2333333333333
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-05",
+      "entradaMin": 708.2,
+      "saidaMin": 1209.5333333333333
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-06",
+      "entradaMin": 850.3833333333333,
+      "saidaMin": 1211.45
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-07",
+      "entradaMin": 695.7333333333333,
+      "saidaMin": 1077.75
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-08",
+      "entradaMin": 689.8166666666667,
+      "saidaMin": 935.5833333333334
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-10",
+      "entradaMin": 718.5,
+      "saidaMin": 1207.5333333333333
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-11",
+      "entradaMin": 788.4333333333333,
+      "saidaMin": 1208.7
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-12",
+      "entradaMin": 700.15,
+      "saidaMin": 1207.0833333333333
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-13",
+      "entradaMin": 697.7833333333333,
+      "saidaMin": 1204.6166666666666
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-14",
+      "entradaMin": 744.5166666666667,
+      "saidaMin": 1208.3
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-15",
+      "entradaMin": 752.1833333333333,
+      "saidaMin": 958.2
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-17",
+      "entradaMin": 675.4666666666667,
+      "saidaMin": 1204.45
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-18",
+      "entradaMin": 691.7333333333333,
+      "saidaMin": 1211.05
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-19",
+      "entradaMin": 705.9,
+      "saidaMin": 1201.3833333333334
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-20",
+      "entradaMin": 719.2166666666667,
+      "saidaMin": 1206.8833333333334
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-21",
+      "entradaMin": 699.7333333333333,
+      "saidaMin": 1206.85
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-22",
+      "entradaMin": 675.2166666666667,
+      "saidaMin": 936.8333333333334
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-24",
+      "entradaMin": 668.4333333333333,
+      "saidaMin": 1209.0166666666667
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-25",
+      "entradaMin": 727.6666666666666,
+      "saidaMin": 1205.5666666666666
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-26",
+      "entradaMin": 684.1,
+      "saidaMin": 1203.3
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-27",
+      "entradaMin": 718.35,
+      "saidaMin": 1210.5333333333333
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-28",
+      "entradaMin": 684.3166666666667,
+      "saidaMin": 1222.3666666666666
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-29",
+      "entradaMin": 661.7,
+      "saidaMin": 909.7333333333333
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-08-31",
+      "entradaMin": 702.5833333333334,
+      "saidaMin": 1201.8833333333334
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-01",
+      "entradaMin": 868.6,
+      "saidaMin": 1007.4333333333333
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-03",
+      "entradaMin": 692.6666666666666,
+      "saidaMin": 1215.85
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-04",
+      "entradaMin": 786.3833333333333,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-05",
+      "entradaMin": 756.9333333333333,
+      "saidaMin": 1260.4333333333334
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-06",
+      "entradaMin": 888.6166666666667,
+      "saidaMin": 1239.3166666666666
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-07",
+      "entradaMin": 765.0833333333334,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-08",
+      "entradaMin": 829.45,
+      "saidaMin": 1018.7833333333333
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-10",
+      "entradaMin": 720.8166666666667,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-11",
+      "entradaMin": 760.3833333333333,
+      "saidaMin": 1260.45
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-12",
+      "entradaMin": 714.55,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-13",
+      "entradaMin": 844.95,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-14",
+      "entradaMin": 748.3666666666667,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-15",
+      "entradaMin": 854.9333333333333,
+      "saidaMin": 1052.7666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-17",
+      "entradaMin": 703.0666666666667,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-18",
+      "entradaMin": 775.45,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-19",
+      "entradaMin": 800.55,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-20",
+      "entradaMin": 731.6833333333333,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-21",
+      "entradaMin": 768.6833333333333,
+      "saidaMin": 1240.8833333333334
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-22",
+      "entradaMin": 760.1666666666666,
+      "saidaMin": 944.45
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-24",
+      "entradaMin": 689.2,
+      "saidaMin": 1260
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-25",
+      "entradaMin": 776.9666666666667,
+      "saidaMin": 1260.5
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-26",
+      "entradaMin": 728.8666666666667,
+      "saidaMin": 1260.1166666666666
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-27",
+      "entradaMin": 774.7333333333333,
+      "saidaMin": 1260.3166666666666
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-28",
+      "entradaMin": 751.5,
+      "saidaMin": 1260.8333333333333
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-29",
+      "entradaMin": 781.8833333333333,
+      "saidaMin": 987
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-08-31",
+      "entradaMin": 682.75,
+      "saidaMin": 1259.75
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-03",
+      "entradaMin": 677.1833333333333,
+      "saidaMin": 1045.75
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-05",
+      "entradaMin": 658.2,
+      "saidaMin": 1020.7166666666667
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-07",
+      "entradaMin": 660.1166666666667,
+      "saidaMin": 1038.8
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-10",
+      "entradaMin": 698.3166666666667,
+      "saidaMin": 1045.75
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-12",
+      "entradaMin": 656.1333333333333,
+      "saidaMin": 1023.95
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-14",
+      "entradaMin": 672.3666666666667,
+      "saidaMin": 1039.9
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-17",
+      "entradaMin": 655.45,
+      "saidaMin": 1040.7
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-19",
+      "entradaMin": 658.3166666666667,
+      "saidaMin": 1022.45
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-21",
+      "entradaMin": 664.3666666666667,
+      "saidaMin": 1040.7
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-24",
+      "entradaMin": 654.2833333333333,
+      "saidaMin": 1047.3166666666666
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-26",
+      "entradaMin": 652.4666666666667,
+      "saidaMin": 1018.9
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-28",
+      "entradaMin": 679.0166666666667,
+      "saidaMin": 1032.5
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-08-31",
+      "entradaMin": 664.0666666666667,
+      "saidaMin": 1024.2166666666667
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-01",
+      "entradaMin": 603.5333333333333,
+      "saidaMin": 846.4333333333333
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-03",
+      "entradaMin": 606.7166666666667,
+      "saidaMin": 1148.9166666666667
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-04",
+      "entradaMin": 601.3333333333334,
+      "saidaMin": 1148.85
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-05",
+      "entradaMin": 604.6333333333333,
+      "saidaMin": 1143.75
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-06",
+      "entradaMin": 603.1166666666667,
+      "saidaMin": 1141.7333333333333
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-07",
+      "entradaMin": 606.7333333333333,
+      "saidaMin": 1046.1
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-08",
+      "entradaMin": 605.0666666666667,
+      "saidaMin": 864.5833333333334
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-10",
+      "entradaMin": 610.9333333333333,
+      "saidaMin": 1179.9333333333334
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-11",
+      "entradaMin": 612,
+      "saidaMin": 1146.95
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-12",
+      "entradaMin": 602.4833333333333,
+      "saidaMin": 1142.9833333333333
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-13",
+      "entradaMin": 615.7333333333333,
+      "saidaMin": 1141.75
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-14",
+      "entradaMin": 608.8666666666667,
+      "saidaMin": 1156.25
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-15",
+      "entradaMin": 607.4666666666667,
+      "saidaMin": 846.5833333333334
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-17",
+      "entradaMin": 601.3,
+      "saidaMin": 1174.5166666666667
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-18",
+      "entradaMin": 625.5166666666667,
+      "saidaMin": 1168.8333333333333
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-19",
+      "entradaMin": 611.6666666666666,
+      "saidaMin": 1143.9166666666667
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-20",
+      "entradaMin": 600.7,
+      "saidaMin": 1144.0333333333333
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-21",
+      "entradaMin": 601.9333333333333,
+      "saidaMin": 1143.0166666666667
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-22",
+      "entradaMin": 600.8,
+      "saidaMin": 844.1166666666667
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-24",
+      "entradaMin": 600.5666666666667,
+      "saidaMin": 1171.5833333333333
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-25",
+      "entradaMin": 600.8333333333334,
+      "saidaMin": 1144.25
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-26",
+      "entradaMin": 602.0333333333333,
+      "saidaMin": 1143.1833333333334
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-27",
+      "entradaMin": 600.9166666666666,
+      "saidaMin": 1141.9
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-28",
+      "entradaMin": 600.8833333333333,
+      "saidaMin": 1141.0666666666666
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-29",
+      "entradaMin": 606.35,
+      "saidaMin": 843.4666666666667
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-08-31",
+      "entradaMin": 601.4333333333333,
+      "saidaMin": 1147.35
+    },
+    {
+      "colaborador": "Carlos Eduardo Patalão de Carvalho",
+      "data": "2026-08-25",
+      "entradaMin": 636.4,
+      "saidaMin": 1007.1166666666667
+    },
+    {
+      "colaborador": "Carlos Eduardo Patalão de Carvalho",
+      "data": "2026-08-26",
+      "entradaMin": 631.5833333333334,
+      "saidaMin": 995.6333333333333
+    },
+    {
+      "colaborador": "Carlos Eduardo Patalão de Carvalho",
+      "data": "2026-08-27",
+      "entradaMin": 609.6166666666667,
+      "saidaMin": 997.4333333333333
+    },
+    {
+      "colaborador": "Carlos Eduardo Patalão de Carvalho",
+      "data": "2026-08-28",
+      "entradaMin": 645.8666666666667,
+      "saidaMin": 1013.35
+    },
+    {
+      "colaborador": "Carlos Eduardo Patalão de Carvalho",
+      "data": "2026-08-31",
+      "entradaMin": 611.5,
+      "saidaMin": 1020.7
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-01",
+      "entradaMin": 625.3833333333333,
+      "saidaMin": 888.5
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-03",
+      "entradaMin": 655.5333333333333,
+      "saidaMin": 1181.5333333333333
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-04",
+      "entradaMin": 630.9666666666667,
+      "saidaMin": 1181.4333333333334
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-05",
+      "entradaMin": 622.9166666666666,
+      "saidaMin": 1163.2166666666667
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-06",
+      "entradaMin": 625.0166666666667,
+      "saidaMin": 1189
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-07",
+      "entradaMin": 621.9166666666666,
+      "saidaMin": 1135.8166666666666
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-08",
+      "entradaMin": 597.15,
+      "saidaMin": 889.5333333333333
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-10",
+      "entradaMin": 681.1166666666667,
+      "saidaMin": 1198.6
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-11",
+      "entradaMin": 639.4333333333333,
+      "saidaMin": 1184.15
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-12",
+      "entradaMin": 593.3333333333334,
+      "saidaMin": 1143.3333333333333
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-13",
+      "entradaMin": 600.1833333333333,
+      "saidaMin": 1149.7333333333333
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-14",
+      "entradaMin": 602.2833333333333,
+      "saidaMin": 1177.0166666666667
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-15",
+      "entradaMin": 599.0833333333334,
+      "saidaMin": 924.7333333333333
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-17",
+      "entradaMin": 593.8666666666667,
+      "saidaMin": 1142.7666666666667
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-18",
+      "entradaMin": 625,
+      "saidaMin": 1169.6
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-19",
+      "entradaMin": 600.6666666666666,
+      "saidaMin": 1159.8333333333333
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-20",
+      "entradaMin": 619.2,
+      "saidaMin": 1164.65
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-21",
+      "entradaMin": 613.0333333333333,
+      "saidaMin": 1156.2666666666667
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-22",
+      "entradaMin": 596.3333333333334,
+      "saidaMin": 852.3166666666667
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-24",
+      "entradaMin": 628.95,
+      "saidaMin": 1172.9333333333334
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-25",
+      "entradaMin": 616.1,
+      "saidaMin": 1158.35
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-26",
+      "entradaMin": 601.1833333333333,
+      "saidaMin": 1157.55
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-27",
+      "entradaMin": 620.3333333333334,
+      "saidaMin": 1163.3
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-28",
+      "entradaMin": 590.5333333333333,
+      "saidaMin": 1144.7666666666667
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-29",
+      "entradaMin": 595.8833333333333,
+      "saidaMin": 868.9833333333333
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-08-31",
+      "entradaMin": 631.9,
+      "saidaMin": 1175.4833333333333
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-01",
+      "entradaMin": 662.3166666666667,
+      "saidaMin": 960.8666666666667
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-03",
+      "entradaMin": 667.55,
+      "saidaMin": 969.2
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-04",
+      "entradaMin": 658.3833333333333,
+      "saidaMin": 971.4166666666666
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-05",
+      "entradaMin": 647.7333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-06",
+      "entradaMin": 656.6166666666667,
+      "saidaMin": 966.7166666666667
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-07",
+      "entradaMin": 658.9,
+      "saidaMin": 1021.45
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-08",
+      "entradaMin": 650.7166666666667,
+      "saidaMin": 958.9
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-10",
+      "entradaMin": 765.1666666666666,
+      "saidaMin": 1142.2
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-11",
+      "entradaMin": 659.8333333333334,
+      "saidaMin": 1022.3333333333334
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-12",
+      "entradaMin": 654.3,
+      "saidaMin": 1018.6666666666666
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-13",
+      "entradaMin": 662.2333333333333,
+      "saidaMin": 962.4166666666666
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-14",
+      "entradaMin": 649.5166666666667,
+      "saidaMin": 1000.5
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-15",
+      "entradaMin": 648.7333333333333,
+      "saidaMin": 982.2666666666667
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-17",
+      "entradaMin": 665.5666666666667,
+      "saidaMin": 1022.25
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-18",
+      "entradaMin": 664.95,
+      "saidaMin": 976.95
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-19",
+      "entradaMin": 660.6666666666666,
+      "saidaMin": 1023.8166666666667
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-20",
+      "entradaMin": 664.45,
+      "saidaMin": 986.8
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-21",
+      "entradaMin": 656.4166666666666,
+      "saidaMin": 1012.25
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-22",
+      "entradaMin": 648.8333333333334,
+      "saidaMin": 984.7
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-24",
+      "entradaMin": 678.4166666666666,
+      "saidaMin": 980.5166666666667
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-25",
+      "entradaMin": 668.3,
+      "saidaMin": 971.0166666666667
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-26",
+      "entradaMin": 658.0166666666667,
+      "saidaMin": 973.2333333333333
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-27",
+      "entradaMin": 661.1,
+      "saidaMin": 962.5333333333333
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-28",
+      "entradaMin": 665.05,
+      "saidaMin": 665.2333333333333
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-29",
+      "entradaMin": 651.4,
+      "saidaMin": 964.2666666666667
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-08-31",
+      "entradaMin": 675.5833333333334,
+      "saidaMin": 963.1
+    },
+    {
+      "colaborador": "CLAUDIA MARIANO DA SILVA LEAL",
+      "data": "2026-08-24",
+      "entradaMin": 678.4166666666666,
+      "saidaMin": 980.5166666666667
+    },
+    {
+      "colaborador": "CLAUDIA MARIANO DA SILVA LEAL",
+      "data": "2026-08-27",
+      "entradaMin": 659.3166666666667,
+      "saidaMin": 962
+    },
+    {
+      "colaborador": "CRISTIANO LAZARO",
+      "data": "2026-08-21",
+      "entradaMin": 1004.4333333333333,
+      "saidaMin": 1161.0666666666666
+    },
+    {
+      "colaborador": "CRISTIANO LAZARO",
+      "data": "2026-08-24",
+      "entradaMin": 560.7166666666667,
+      "saidaMin": 845.7666666666667
+    },
+    {
+      "colaborador": "CRISTIANO LAZARO",
+      "data": "2026-08-26",
+      "entradaMin": 600.5666666666667,
+      "saidaMin": 842.5666666666667
+    },
+    {
+      "colaborador": "CRISTIANO LAZARO",
+      "data": "2026-08-31",
+      "entradaMin": 543.0333333333333,
+      "saidaMin": 855.1
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-01",
+      "entradaMin": 660,
+      "saidaMin": 964.7166666666667
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-03",
+      "entradaMin": 651.0833333333334,
+      "saidaMin": 960.7166666666667
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-04",
+      "entradaMin": 650.4833333333333,
+      "saidaMin": 977.1166666666667
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-05",
+      "entradaMin": 647.65,
+      "saidaMin": 960.8
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-06",
+      "entradaMin": 674.4666666666667,
+      "saidaMin": 966.1
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-07",
+      "entradaMin": 661.6,
+      "saidaMin": 973.6
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-08",
+      "entradaMin": 650.6833333333333,
+      "saidaMin": 960.8333333333334
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-10",
+      "entradaMin": 675.3333333333334,
+      "saidaMin": 960.9166666666666
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-11",
+      "entradaMin": 652.7,
+      "saidaMin": 960.6833333333333
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-12",
+      "entradaMin": 647.35,
+      "saidaMin": 960.9833333333333
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-13",
+      "entradaMin": 649.8333333333334,
+      "saidaMin": 960.5833333333334
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-14",
+      "entradaMin": 648.7333333333333,
+      "saidaMin": 960.9166666666666
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-15",
+      "entradaMin": 651.9166666666666,
+      "saidaMin": 942.85
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-17",
+      "entradaMin": 673.0333333333333,
+      "saidaMin": 969.1666666666666
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-18",
+      "entradaMin": 662.1333333333333,
+      "saidaMin": 960.5833333333334
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-19",
+      "entradaMin": 654.7833333333333,
+      "saidaMin": 953.2833333333333
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-20",
+      "entradaMin": 659.2666666666667,
+      "saidaMin": 959.65
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-21",
+      "entradaMin": 641.3833333333333,
+      "saidaMin": 954.65
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-24",
+      "entradaMin": 661.7666666666667,
+      "saidaMin": 953.4
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-25",
+      "entradaMin": 662.6,
+      "saidaMin": 962.5666666666667
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-26",
+      "entradaMin": 680.0666666666667,
+      "saidaMin": 993.0166666666667
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-27",
+      "entradaMin": 661.4833333333333,
+      "saidaMin": 961.45
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-28",
+      "entradaMin": 660.7,
+      "saidaMin": 963.1166666666667
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-29",
+      "entradaMin": 665.8166666666667,
+      "saidaMin": 961.5166666666667
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-08-31",
+      "entradaMin": 708.7166666666667,
+      "saidaMin": 965.3833333333333
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-01",
+      "entradaMin": 695.8166666666667,
+      "saidaMin": 902.1833333333333
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-03",
+      "entradaMin": 668.3,
+      "saidaMin": 871.5333333333333
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-04",
+      "entradaMin": 686.1,
+      "saidaMin": 984.7666666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-05",
+      "entradaMin": 668.0833333333334,
+      "saidaMin": 963.2666666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-06",
+      "entradaMin": 662.45,
+      "saidaMin": 970.85
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-07",
+      "entradaMin": 694.8666666666667,
+      "saidaMin": 963.2666666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-08",
+      "entradaMin": 729.8666666666667,
+      "saidaMin": 965.75
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-10",
+      "entradaMin": 779.05,
+      "saidaMin": 963.2666666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-11",
+      "entradaMin": 732.5333333333333,
+      "saidaMin": 990.3
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-12",
+      "entradaMin": 748.3833333333333,
+      "saidaMin": 980.7666666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-13",
+      "entradaMin": 718.3666666666667,
+      "saidaMin": 964.75
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-14",
+      "entradaMin": 720.0666666666667,
+      "saidaMin": 1014.5666666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-15",
+      "entradaMin": 678.25,
+      "saidaMin": 979.2166666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-17",
+      "entradaMin": 684.85,
+      "saidaMin": 976.1666666666666
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-19",
+      "entradaMin": 669.6166666666667,
+      "saidaMin": 1020.8833333333333
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-20",
+      "entradaMin": 685.6166666666667,
+      "saidaMin": 984.7666666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-21",
+      "entradaMin": 704.8833333333333,
+      "saidaMin": 1026.6833333333334
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-22",
+      "entradaMin": 717.1166666666667,
+      "saidaMin": 962.0166666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-24",
+      "entradaMin": 717.4,
+      "saidaMin": 965.7166666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-25",
+      "entradaMin": 690.1666666666666,
+      "saidaMin": 961.15
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-27",
+      "entradaMin": 703.55,
+      "saidaMin": 836.1666666666666
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-28",
+      "entradaMin": 671.05,
+      "saidaMin": 964.8666666666667
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-29",
+      "entradaMin": 673.1833333333333,
+      "saidaMin": 867.35
+    },
+    {
+      "colaborador": "EDUARDA PEDROLLI MELO",
+      "data": "2026-08-31",
+      "entradaMin": 698.6833333333333,
+      "saidaMin": 961.0333333333333
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-01",
+      "entradaMin": 629.0833333333334,
+      "saidaMin": 928.3166666666667
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-03",
+      "entradaMin": 654.4666666666667,
+      "saidaMin": 970.4666666666667
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-04",
+      "entradaMin": 635.3166666666667,
+      "saidaMin": 996.2333333333333
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-05",
+      "entradaMin": 651.5833333333334,
+      "saidaMin": 952.8333333333334
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-06",
+      "entradaMin": 639.85,
+      "saidaMin": 954.7333333333333
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-07",
+      "entradaMin": 635.2833333333333,
+      "saidaMin": 930.5833333333334
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-08",
+      "entradaMin": 628.9833333333333,
+      "saidaMin": 935.3666666666667
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-10",
+      "entradaMin": 665.45,
+      "saidaMin": 982.9333333333333
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-11",
+      "entradaMin": 646.95,
+      "saidaMin": 987.8166666666667
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-12",
+      "entradaMin": 644.1833333333333,
+      "saidaMin": 966.4833333333333
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-13",
+      "entradaMin": 650.8833333333333,
+      "saidaMin": 969.7
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-14",
+      "entradaMin": 667.8666666666667,
+      "saidaMin": 960.6833333333333
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-15",
+      "entradaMin": 669.2,
+      "saidaMin": 786.4833333333333
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-17",
+      "entradaMin": 671.0833333333334,
+      "saidaMin": 972.2833333333333
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-18",
+      "entradaMin": 644.6,
+      "saidaMin": 984.25
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-19",
+      "entradaMin": 658.5166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-20",
+      "entradaMin": 634.1333333333333,
+      "saidaMin": 945.2
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-21",
+      "entradaMin": 661.1333333333333,
+      "saidaMin": 961.3
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-22",
+      "entradaMin": 627.4166666666666,
+      "saidaMin": 929.5833333333334
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-24",
+      "entradaMin": 658.1666666666666,
+      "saidaMin": 980.7
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-25",
+      "entradaMin": 644.4,
+      "saidaMin": 958.7166666666667
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-26",
+      "entradaMin": 644.0333333333333,
+      "saidaMin": 948.6
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-27",
+      "entradaMin": 649.7,
+      "saidaMin": 974.4166666666666
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-28",
+      "entradaMin": 657.7833333333333,
+      "saidaMin": 959.7166666666667
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-29",
+      "entradaMin": 627.7,
+      "saidaMin": 921.3833333333333
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-08-31",
+      "entradaMin": 691.55,
+      "saidaMin": 979.4333333333333
+    },
+    {
+      "colaborador": "FABIO CESAR DOS ANJOS ALVES",
+      "data": "2026-08-04",
+      "entradaMin": 972.9166666666666,
+      "saidaMin": 1134.6166666666666
+    },
+    {
+      "colaborador": "FABIO CESAR DOS ANJOS ALVES",
+      "data": "2026-08-06",
+      "entradaMin": 1000.55,
+      "saidaMin": 1129.05
+    },
+    {
+      "colaborador": "FABIO CESAR DOS ANJOS ALVES",
+      "data": "2026-08-11",
+      "entradaMin": 950.95,
+      "saidaMin": 1137.8166666666666
+    },
+    {
+      "colaborador": "FABIO CESAR DOS ANJOS ALVES",
+      "data": "2026-08-13",
+      "entradaMin": 883.9,
+      "saidaMin": 1101.9666666666667
+    },
+    {
+      "colaborador": "FABIO CESAR DOS ANJOS ALVES",
+      "data": "2026-08-18",
+      "entradaMin": 827.25,
+      "saidaMin": 1089
+    },
+    {
+      "colaborador": "FABIO CESAR DOS ANJOS ALVES",
+      "data": "2026-08-20",
+      "entradaMin": 858.05,
+      "saidaMin": 1115.45
+    },
+    {
+      "colaborador": "FABIO CESAR DOS ANJOS ALVES",
+      "data": "2026-08-25",
+      "entradaMin": 862.0166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "FABIO CESAR DOS ANJOS ALVES",
+      "data": "2026-08-27",
+      "entradaMin": 854.3,
+      "saidaMin": 1038.9166666666667
+    },
+    {
+      "colaborador": "FELIPE CALVELLI",
+      "data": "2026-08-24",
+      "entradaMin": 968.45,
+      "saidaMin": 971.7833333333333
+    },
+    {
+      "colaborador": "FELIPE CALVELLI",
+      "data": "2026-08-25",
+      "entradaMin": 651.9166666666666,
+      "saidaMin": 1014.0666666666667
+    },
+    {
+      "colaborador": "FELIPE CALVELLI",
+      "data": "2026-08-26",
+      "entradaMin": 656.05,
+      "saidaMin": 772.25
+    },
+    {
+      "colaborador": "FELIPE CALVELLI",
+      "data": "2026-08-27",
+      "entradaMin": 661.65,
+      "saidaMin": 992.9
+    },
+    {
+      "colaborador": "FELIPE CALVELLI",
+      "data": "2026-08-28",
+      "entradaMin": 642.75,
+      "saidaMin": 868.2166666666667
+    },
+    {
+      "colaborador": "FELIPE CALVELLI",
+      "data": "2026-08-31",
+      "entradaMin": 649.25,
+      "saidaMin": 1020.65
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-03",
+      "entradaMin": 606.0333333333333,
+      "saidaMin": 1022.8833333333333
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-04",
+      "entradaMin": 601.65,
+      "saidaMin": 1020.15
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-05",
+      "entradaMin": 601.2,
+      "saidaMin": 962.4166666666666
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-06",
+      "entradaMin": 622.1333333333333,
+      "saidaMin": 1008.85
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-07",
+      "entradaMin": 611.9166666666666,
+      "saidaMin": 975.8833333333333
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-10",
+      "entradaMin": 614.1333333333333,
+      "saidaMin": 975.8833333333333
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-11",
+      "entradaMin": 603.95,
+      "saidaMin": 980.7666666666667
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-12",
+      "entradaMin": 604.6666666666666,
+      "saidaMin": 975.8833333333333
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-13",
+      "entradaMin": 604.25,
+      "saidaMin": 1040.6833333333334
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-14",
+      "entradaMin": 606.5166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-17",
+      "entradaMin": 600.6333333333333,
+      "saidaMin": 964.75
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-18",
+      "entradaMin": 610.5833333333334,
+      "saidaMin": 1055.7666666666667
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-19",
+      "entradaMin": 607.4333333333333,
+      "saidaMin": 1022.5
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-20",
+      "entradaMin": 602.15,
+      "saidaMin": 1040.7
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-21",
+      "entradaMin": 603.1333333333333,
+      "saidaMin": 1022.7166666666667
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-24",
+      "entradaMin": 605.7833333333333,
+      "saidaMin": 970.9
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-26",
+      "entradaMin": 604.7,
+      "saidaMin": 962.4166666666666
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-27",
+      "entradaMin": 602.85,
+      "saidaMin": 966.5666666666667
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-28",
+      "entradaMin": 600.5333333333333,
+      "saidaMin": 972.9
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-08-31",
+      "entradaMin": 623.8166666666667,
+      "saidaMin": 966.9833333333333
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-03",
+      "entradaMin": 653.9666666666667,
+      "saidaMin": 1225.1
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-05",
+      "entradaMin": 672.5,
+      "saidaMin": 1156.7166666666667
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-07",
+      "entradaMin": 678.1833333333333,
+      "saidaMin": 1008.95
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-10",
+      "entradaMin": 675.85,
+      "saidaMin": 1191.2
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-12",
+      "entradaMin": 671.2833333333333,
+      "saidaMin": 1049.0333333333333
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-14",
+      "entradaMin": 700.4666666666667,
+      "saidaMin": 1014.2666666666667
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-17",
+      "entradaMin": 681.5666666666667,
+      "saidaMin": 1073.3833333333334
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-19",
+      "entradaMin": 686.4833333333333,
+      "saidaMin": 1022
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-21",
+      "entradaMin": 684.8333333333334,
+      "saidaMin": 1045.5
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-24",
+      "entradaMin": 661.1333333333333,
+      "saidaMin": 1065.5
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-26",
+      "entradaMin": 665.7333333333333,
+      "saidaMin": 951.5166666666667
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-28",
+      "entradaMin": 687.2833333333333,
+      "saidaMin": 924.3166666666667
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-08-31",
+      "entradaMin": 686.1833333333333,
+      "saidaMin": 1014.4
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-03",
+      "entradaMin": 775.9333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-05",
+      "entradaMin": 659.3833333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-07",
+      "entradaMin": 707.2166666666667,
+      "saidaMin": 1065.8833333333334
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-10",
+      "entradaMin": 842.1,
+      "saidaMin": 1046.4666666666667
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-12",
+      "entradaMin": 816.5,
+      "saidaMin": 1055.75
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-14",
+      "entradaMin": 650.4833333333333,
+      "saidaMin": 1085.2833333333333
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-19",
+      "entradaMin": 693.95,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-21",
+      "entradaMin": 655.55,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-24",
+      "entradaMin": 737.7166666666667,
+      "saidaMin": 1154.0166666666667
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-27",
+      "entradaMin": 887.3166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-28",
+      "entradaMin": 744.2333333333333,
+      "saidaMin": 1085.0166666666667
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-08-31",
+      "entradaMin": 780.3166666666667,
+      "saidaMin": 1205.8
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-03",
+      "entradaMin": 851.0166666666667,
+      "saidaMin": 1211.0166666666667
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-04",
+      "entradaMin": 630.8,
+      "saidaMin": 990.8
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-05",
+      "entradaMin": 840.35,
+      "saidaMin": 1200.35
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-06",
+      "entradaMin": 631.45,
+      "saidaMin": 991.45
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-07",
+      "entradaMin": 840.9166666666666,
+      "saidaMin": 1200.9166666666667
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-10",
+      "entradaMin": 909.0166666666667,
+      "saidaMin": 1212.6333333333334
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-11",
+      "entradaMin": 653.8166666666667,
+      "saidaMin": 1013.8166666666667
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-12",
+      "entradaMin": 837,
+      "saidaMin": 1197
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-13",
+      "entradaMin": 636.0666666666667,
+      "saidaMin": 996.0666666666667
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-14",
+      "entradaMin": 837.3166666666667,
+      "saidaMin": 1197.3166666666666
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-17",
+      "entradaMin": 846.1833333333333,
+      "saidaMin": 1022.7166666666667
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-18",
+      "entradaMin": 639.3666666666667,
+      "saidaMin": 999.3666666666667
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-19",
+      "entradaMin": 814.45,
+      "saidaMin": 1113.25
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-20",
+      "entradaMin": 631.0833333333334,
+      "saidaMin": 991.0833333333334
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-21",
+      "entradaMin": 851.2166666666667,
+      "saidaMin": 1050.45
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-24",
+      "entradaMin": 638.1333333333333,
+      "saidaMin": 998.1333333333333
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-25",
+      "entradaMin": 630.9666666666667,
+      "saidaMin": 990.9666666666667
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-26",
+      "entradaMin": 852.7333333333333,
+      "saidaMin": 1050.45
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-27",
+      "entradaMin": 639.6166666666667,
+      "saidaMin": 999.6166666666667
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-28",
+      "entradaMin": 848.6833333333333,
+      "saidaMin": 1050.45
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-08-31",
+      "entradaMin": 849.75,
+      "saidaMin": 1170.4666666666667
+    },
+    {
+      "colaborador": "João Guilherme Gomes Da Silva Araujo",
+      "data": "2026-08-20",
+      "entradaMin": 1131.4333333333334,
+      "saidaMin": 1133.8666666666666
+    },
+    {
+      "colaborador": "João Guilherme Gomes Da Silva Araujo",
+      "data": "2026-08-21",
+      "entradaMin": 674.35,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "João Guilherme Gomes Da Silva Araujo",
+      "data": "2026-08-24",
+      "entradaMin": 592.9833333333333,
+      "saidaMin": 890.0666666666667
+    },
+    {
+      "colaborador": "João Guilherme Gomes Da Silva Araujo",
+      "data": "2026-08-25",
+      "entradaMin": 658.5166666666667,
+      "saidaMin": 900.6
+    },
+    {
+      "colaborador": "João Guilherme Gomes Da Silva Araujo",
+      "data": "2026-08-26",
+      "entradaMin": 588.05,
+      "saidaMin": 827.6666666666666
+    },
+    {
+      "colaborador": "João Guilherme Gomes Da Silva Araujo",
+      "data": "2026-08-27",
+      "entradaMin": 601.9333333333333,
+      "saidaMin": 823.7166666666667
+    },
+    {
+      "colaborador": "João Guilherme Gomes Da Silva Araujo",
+      "data": "2026-08-31",
+      "entradaMin": 604.0333333333333,
+      "saidaMin": 837.95
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-03",
+      "entradaMin": 618.8166666666667,
+      "saidaMin": 949.8666666666667
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-04",
+      "entradaMin": 687.5,
+      "saidaMin": 1050.5833333333333
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-05",
+      "entradaMin": 601.5,
+      "saidaMin": 982.3166666666667
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-06",
+      "entradaMin": 646.6,
+      "saidaMin": 1000.1333333333333
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-07",
+      "entradaMin": 652.6333333333333,
+      "saidaMin": 1012.5833333333334
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-10",
+      "entradaMin": 631.7333333333333,
+      "saidaMin": 968.1
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-11",
+      "entradaMin": 617,
+      "saidaMin": 992.4833333333333
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-12",
+      "entradaMin": 625.7333333333333,
+      "saidaMin": 950.0333333333333
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-13",
+      "entradaMin": 665.3,
+      "saidaMin": 1004.9666666666667
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-14",
+      "entradaMin": 646.0833333333334,
+      "saidaMin": 1009.1166666666667
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-17",
+      "entradaMin": 642,
+      "saidaMin": 999.6333333333333
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-18",
+      "entradaMin": 635.7833333333333,
+      "saidaMin": 998.3666666666667
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-19",
+      "entradaMin": 656.9333333333333,
+      "saidaMin": 1026.6833333333334
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-20",
+      "entradaMin": 652.8166666666667,
+      "saidaMin": 1018.6166666666667
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-21",
+      "entradaMin": 660.9166666666666,
+      "saidaMin": 1045.5
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-24",
+      "entradaMin": 623,
+      "saidaMin": 991.8
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-25",
+      "entradaMin": 642.3333333333334,
+      "saidaMin": 1009.65
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-26",
+      "entradaMin": 602.15,
+      "saidaMin": 961.65
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-27",
+      "entradaMin": 617.4833333333333,
+      "saidaMin": 999.1333333333333
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-28",
+      "entradaMin": 621.3,
+      "saidaMin": 955.9833333333333
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-08-31",
+      "entradaMin": 609.3333333333334,
+      "saidaMin": 1000.45
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-01",
+      "entradaMin": 581.8833333333333,
+      "saidaMin": 819.45
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-03",
+      "entradaMin": 619.5,
+      "saidaMin": 1183.3166666666666
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-04",
+      "entradaMin": 615.8666666666667,
+      "saidaMin": 1195.3
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-05",
+      "entradaMin": 604.3666666666667,
+      "saidaMin": 1145.7
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-06",
+      "entradaMin": 572.3666666666667,
+      "saidaMin": 1138.95
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-07",
+      "entradaMin": 603.95,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-08",
+      "entradaMin": 604.2166666666667,
+      "saidaMin": 842.8833333333333
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-10",
+      "entradaMin": 595.75,
+      "saidaMin": 1160.55
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-11",
+      "entradaMin": 614.3,
+      "saidaMin": 1165.7666666666667
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-12",
+      "entradaMin": 603.1333333333333,
+      "saidaMin": 1141.2333333333333
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-13",
+      "entradaMin": 588.8,
+      "saidaMin": 1174.9166666666667
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-14",
+      "entradaMin": 593.7666666666667,
+      "saidaMin": 1187
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-15",
+      "entradaMin": 605.7333333333333,
+      "saidaMin": 844.7833333333333
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-17",
+      "entradaMin": 598.7833333333333,
+      "saidaMin": 1159.6833333333334
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-18",
+      "entradaMin": 608.2833333333333,
+      "saidaMin": 1139.8333333333333
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-19",
+      "entradaMin": 611.2166666666667,
+      "saidaMin": 1184.3166666666666
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-21",
+      "entradaMin": 624.9333333333333,
+      "saidaMin": 1163.65
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-22",
+      "entradaMin": 601.5333333333333,
+      "saidaMin": 855.9
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-24",
+      "entradaMin": 607.7166666666667,
+      "saidaMin": 1210.2666666666667
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-25",
+      "entradaMin": 601.65,
+      "saidaMin": 1192.2166666666667
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-26",
+      "entradaMin": 617.3833333333333,
+      "saidaMin": 1171.7833333333333
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-27",
+      "entradaMin": 613.0333333333333,
+      "saidaMin": 1191.9166666666667
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-28",
+      "entradaMin": 618.4666666666667,
+      "saidaMin": 1183.4666666666667
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-29",
+      "entradaMin": 603.55,
+      "saidaMin": 870.2666666666667
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-08-31",
+      "entradaMin": 618.4333333333333,
+      "saidaMin": 1179.95
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-14",
+      "entradaMin": 954.8333333333334,
+      "saidaMin": 959.1833333333333
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-17",
+      "entradaMin": 637.8833333333333,
+      "saidaMin": 1055.95
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-18",
+      "entradaMin": 628.8666666666667,
+      "saidaMin": 1042.1166666666666
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-19",
+      "entradaMin": 634.6666666666666,
+      "saidaMin": 1021.8833333333333
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-20",
+      "entradaMin": 650.2333333333333,
+      "saidaMin": 1020.5333333333333
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-21",
+      "entradaMin": 608.1,
+      "saidaMin": 1021.5
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-24",
+      "entradaMin": 652.7166666666667,
+      "saidaMin": 1018.9
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-25",
+      "entradaMin": 643.4333333333333,
+      "saidaMin": 1020.75
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-26",
+      "entradaMin": 639,
+      "saidaMin": 1020.9
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-27",
+      "entradaMin": 644.0333333333333,
+      "saidaMin": 1036.8
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-28",
+      "entradaMin": 624.9666666666667,
+      "saidaMin": 1021.15
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-08-31",
+      "entradaMin": 624.4833333333333,
+      "saidaMin": 1074.0666666666666
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-01",
+      "entradaMin": 603.2166666666667,
+      "saidaMin": 965.7
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-03",
+      "entradaMin": 589.7,
+      "saidaMin": 890.4666666666667
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-04",
+      "entradaMin": 622.25,
+      "saidaMin": 916.2666666666667
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-05",
+      "entradaMin": 610.0666666666667,
+      "saidaMin": 927.5333333333333
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-06",
+      "entradaMin": 595.4833333333333,
+      "saidaMin": 901.0833333333334
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-10",
+      "entradaMin": 875.8333333333334,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-11",
+      "entradaMin": 655.9,
+      "saidaMin": 1018.7166666666667
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-12",
+      "entradaMin": 611.3333333333334,
+      "saidaMin": 970.9
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-13",
+      "entradaMin": 605.7333333333333,
+      "saidaMin": 976.0666666666667
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-14",
+      "entradaMin": 623.5,
+      "saidaMin": 995.7666666666667
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-15",
+      "entradaMin": 605.4,
+      "saidaMin": 975.8833333333333
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-17",
+      "entradaMin": 621.1333333333333,
+      "saidaMin": 985.7666666666667
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-18",
+      "entradaMin": 662.4666666666667,
+      "saidaMin": 982.4333333333333
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-19",
+      "entradaMin": 615.55,
+      "saidaMin": 1022.5
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-20",
+      "entradaMin": 600.8166666666667,
+      "saidaMin": 982.2666666666667
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-21",
+      "entradaMin": 682.1833333333333,
+      "saidaMin": 1024.45
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-22",
+      "entradaMin": 608.3166666666667,
+      "saidaMin": 1044.45
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-24",
+      "entradaMin": 637.5,
+      "saidaMin": 1008.8833333333333
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-25",
+      "entradaMin": 655.4833333333333,
+      "saidaMin": 917.4
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-26",
+      "entradaMin": 621.2666666666667,
+      "saidaMin": 967.1
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-27",
+      "entradaMin": 710.3333333333334,
+      "saidaMin": 945.3
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-28",
+      "entradaMin": 625.1833333333333,
+      "saidaMin": 805
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-29",
+      "entradaMin": 603.3833333333333,
+      "saidaMin": 785.25
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-08-31",
+      "entradaMin": 679.3,
+      "saidaMin": 723.0833333333334
+    },
+    {
+      "colaborador": "MAXIMILIANO DE JESUS DE SÁ",
+      "data": "2026-08-04",
+      "entradaMin": 614.9166666666666,
+      "saidaMin": 1033.6833333333334
+    },
+    {
+      "colaborador": "MAXIMILIANO DE JESUS DE SÁ",
+      "data": "2026-08-06",
+      "entradaMin": 679.9166666666666,
+      "saidaMin": 1028.55
+    },
+    {
+      "colaborador": "MAXIMILIANO DE JESUS DE SÁ",
+      "data": "2026-08-08",
+      "entradaMin": 809.0833333333334,
+      "saidaMin": 995.4333333333333
+    },
+    {
+      "colaborador": "MAXIMILIANO DE JESUS DE SÁ",
+      "data": "2026-08-13",
+      "entradaMin": 633.75,
+      "saidaMin": 1046.75
+    },
+    {
+      "colaborador": "MAXIMILIANO DE JESUS DE SÁ",
+      "data": "2026-08-24",
+      "entradaMin": 634.4166666666666,
+      "saidaMin": 1041.0333333333333
+    },
+    {
+      "colaborador": "MAXIMILIANO DE JESUS DE SÁ",
+      "data": "2026-08-27",
+      "entradaMin": 647.4166666666666,
+      "saidaMin": 1020.8666666666667
+    },
+    {
+      "colaborador": "MAXIMILIANO DE JESUS DE SÁ",
+      "data": "2026-08-31",
+      "entradaMin": 635.5666666666667,
+      "saidaMin": 1028.3166666666666
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-03",
+      "entradaMin": 717.8666666666667,
+      "saidaMin": 855
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-05",
+      "entradaMin": 696.9833333333333,
+      "saidaMin": 1014.1666666666666
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-07",
+      "entradaMin": 750.75,
+      "saidaMin": 1039.5
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-10",
+      "entradaMin": 670.1166666666667,
+      "saidaMin": 972.55
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-12",
+      "entradaMin": 719.8833333333333,
+      "saidaMin": 1043.3666666666666
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-17",
+      "entradaMin": 756.8,
+      "saidaMin": 1059.3166666666666
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-19",
+      "entradaMin": 652.7833333333333,
+      "saidaMin": 951.1333333333333
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-21",
+      "entradaMin": 882.5833333333334,
+      "saidaMin": 1025.9
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-24",
+      "entradaMin": 746.7666666666667,
+      "saidaMin": 1041.05
+    },
+    {
+      "colaborador": "MICHELE TARDIVO FERREIRA",
+      "data": "2026-08-28",
+      "entradaMin": 752.4333333333333,
+      "saidaMin": 947.05
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-04",
+      "entradaMin": 676.6166666666667,
+      "saidaMin": 1011.45
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-05",
+      "entradaMin": 675.9,
+      "saidaMin": 1037.4333333333334
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-06",
+      "entradaMin": 678.3,
+      "saidaMin": 1039.7333333333333
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-07",
+      "entradaMin": 822.1666666666666,
+      "saidaMin": 1019.15
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-10",
+      "entradaMin": 645.55,
+      "saidaMin": 883.1
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-11",
+      "entradaMin": 692.6,
+      "saidaMin": 1025.7166666666667
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-12",
+      "entradaMin": 629.8666666666667,
+      "saidaMin": 817.55
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-13",
+      "entradaMin": 648.7833333333333,
+      "saidaMin": 1002.6833333333333
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-14",
+      "entradaMin": 686.3833333333333,
+      "saidaMin": 1040.8166666666666
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-19",
+      "entradaMin": 652.8333333333334,
+      "saidaMin": 1048.7166666666667
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-20",
+      "entradaMin": 974.35,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-21",
+      "entradaMin": 895.7166666666667,
+      "saidaMin": 989.3666666666667
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-24",
+      "entradaMin": 678.05,
+      "saidaMin": 834.8166666666667
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-25",
+      "entradaMin": 679.2833333333333,
+      "saidaMin": 856.2166666666667
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-26",
+      "entradaMin": 674.3333333333334,
+      "saidaMin": 1007.7166666666667
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-08-27",
+      "entradaMin": 615.7,
+      "saidaMin": 970.6833333333333
+    },
+    {
+      "colaborador": "NEUZELI PEREIRA DA COSTA",
+      "data": "2026-08-01",
+      "entradaMin": 602.6833333333333,
+      "saidaMin": 846.4333333333333
+    },
+    {
+      "colaborador": "NEUZELI PEREIRA DA COSTA",
+      "data": "2026-08-03",
+      "entradaMin": 592.3833333333333,
+      "saidaMin": 1145.5833333333333
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-01",
+      "entradaMin": 659.8,
+      "saidaMin": 906.8666666666667
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-03",
+      "entradaMin": 799,
+      "saidaMin": 847.5166666666667
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-04",
+      "entradaMin": 652.1,
+      "saidaMin": 1218.9
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-05",
+      "entradaMin": 608.4833333333333,
+      "saidaMin": 787.9666666666667
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-06",
+      "entradaMin": 685.7666666666667,
+      "saidaMin": 1205.45
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-07",
+      "entradaMin": 598.6833333333333,
+      "saidaMin": 984.9166666666666
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-08",
+      "entradaMin": 656.2166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-10",
+      "entradaMin": 685.5,
+      "saidaMin": 1201.0333333333333
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-11",
+      "entradaMin": 654.6166666666667,
+      "saidaMin": 962.3666666666667
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-12",
+      "entradaMin": 611.7666666666667,
+      "saidaMin": 1085.0333333333333
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-13",
+      "entradaMin": 684.5166666666667,
+      "saidaMin": 1201.0166666666667
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-14",
+      "entradaMin": 608.8166666666667,
+      "saidaMin": 993.6666666666666
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-15",
+      "entradaMin": 660.6166666666667,
+      "saidaMin": 985.7666666666667
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-17",
+      "entradaMin": 624.5333333333333,
+      "saidaMin": 1205.1
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-18",
+      "entradaMin": 663.1166666666667,
+      "saidaMin": 1206.0666666666666
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-19",
+      "entradaMin": 613.85,
+      "saidaMin": 1150.8333333333333
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-20",
+      "entradaMin": 631.15,
+      "saidaMin": 1166.45
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-21",
+      "entradaMin": 606.65,
+      "saidaMin": 1021.8833333333333
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-22",
+      "entradaMin": 659.9833333333333,
+      "saidaMin": 1199.4333333333334
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-24",
+      "entradaMin": 644.6833333333333,
+      "saidaMin": 1197.9
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-25",
+      "entradaMin": 650.4333333333333,
+      "saidaMin": 1190.85
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-26",
+      "entradaMin": 611.8333333333334,
+      "saidaMin": 1144.0833333333333
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-27",
+      "entradaMin": 650.4833333333333,
+      "saidaMin": 1190.7
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-28",
+      "entradaMin": 670.0666666666667,
+      "saidaMin": 1168.7166666666667
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-29",
+      "entradaMin": 647.1666666666666,
+      "saidaMin": 870.95
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-08-31",
+      "entradaMin": 649.3,
+      "saidaMin": 1202.7333333333333
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-01",
+      "entradaMin": 630.8666666666667,
+      "saidaMin": 925.3
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-03",
+      "entradaMin": 633.6666666666666,
+      "saidaMin": 1023.7166666666667
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-04",
+      "entradaMin": 632.9666666666667,
+      "saidaMin": 931.3333333333334
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-05",
+      "entradaMin": 616.2833333333333,
+      "saidaMin": 914.2666666666667
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-06",
+      "entradaMin": 654.8833333333333,
+      "saidaMin": 961.75
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-07",
+      "entradaMin": 675.7833333333333,
+      "saidaMin": 973.8833333333333
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-08",
+      "entradaMin": 717.3333333333334,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-10",
+      "entradaMin": 668,
+      "saidaMin": 1050.8833333333334
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-11",
+      "entradaMin": 678.7666666666667,
+      "saidaMin": 1055.7333333333333
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-12",
+      "entradaMin": 649.75,
+      "saidaMin": 1045.6833333333334
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-13",
+      "entradaMin": 720.2833333333333,
+      "saidaMin": 1057.4333333333334
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-14",
+      "entradaMin": 757.3166666666667,
+      "saidaMin": 1078.7166666666667
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-15",
+      "entradaMin": 651,
+      "saidaMin": 1050.9333333333334
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-17",
+      "entradaMin": 672.1666666666666,
+      "saidaMin": 1052.4333333333334
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-18",
+      "entradaMin": 656.4333333333333,
+      "saidaMin": 971.05
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-19",
+      "entradaMin": 648.8333333333334,
+      "saidaMin": 1022
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-20",
+      "entradaMin": 684.3333333333334,
+      "saidaMin": 965.9833333333333
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-21",
+      "entradaMin": 707.75,
+      "saidaMin": 957.9
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-22",
+      "entradaMin": 654.7333333333333,
+      "saidaMin": 964.3666666666667
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-24",
+      "entradaMin": 658.4166666666666,
+      "saidaMin": 965.75
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-25",
+      "entradaMin": 644.2,
+      "saidaMin": 768.95
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-26",
+      "entradaMin": 644.4333333333333,
+      "saidaMin": 970.05
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-27",
+      "entradaMin": 660.2,
+      "saidaMin": 963.75
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-28",
+      "entradaMin": 726.0666666666667,
+      "saidaMin": 995.3833333333333
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-29",
+      "entradaMin": 695.5333333333333,
+      "saidaMin": 1005.8833333333333
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-08-31",
+      "entradaMin": 665.45,
+      "saidaMin": 981.3333333333334
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-01",
+      "entradaMin": 675.05,
+      "saidaMin": 911.0666666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-03",
+      "entradaMin": 682.05,
+      "saidaMin": 1190.45
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-04",
+      "entradaMin": 662.4833333333333,
+      "saidaMin": 1233.75
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-05",
+      "entradaMin": 664.2333333333333,
+      "saidaMin": 1200.8833333333334
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-06",
+      "entradaMin": 667.6666666666666,
+      "saidaMin": 1191.85
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-07",
+      "entradaMin": 677.0666666666667,
+      "saidaMin": 1203.7
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-08",
+      "entradaMin": 674.2166666666667,
+      "saidaMin": 911.0666666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-10",
+      "entradaMin": 670.8666666666667,
+      "saidaMin": 1193.95
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-11",
+      "entradaMin": 660.25,
+      "saidaMin": 1201.65
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-12",
+      "entradaMin": 667.1333333333333,
+      "saidaMin": 1215.4666666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-13",
+      "entradaMin": 661.4666666666667,
+      "saidaMin": 1176.2666666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-14",
+      "entradaMin": 660.75,
+      "saidaMin": 1191.8833333333334
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-15",
+      "entradaMin": 663.6,
+      "saidaMin": 1202.25
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-17",
+      "entradaMin": 671.3833333333333,
+      "saidaMin": 1203.8833333333334
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-20",
+      "entradaMin": 677.5666666666667,
+      "saidaMin": 1198.15
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-21",
+      "entradaMin": 667.1833333333333,
+      "saidaMin": 1191.7333333333333
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-22",
+      "entradaMin": 674.6666666666666,
+      "saidaMin": 873.4166666666666
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-25",
+      "entradaMin": 653.9,
+      "saidaMin": 1170.2166666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-26",
+      "entradaMin": 652.8333333333334,
+      "saidaMin": 1185.25
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-27",
+      "entradaMin": 665.9666666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-28",
+      "entradaMin": 757.8666666666667,
+      "saidaMin": 1183.4166666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-29",
+      "entradaMin": 787.1333333333333,
+      "saidaMin": 893.8333333333334
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-08-31",
+      "entradaMin": 671.6166666666667,
+      "saidaMin": 1187.1166666666666
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-03",
+      "entradaMin": 663.7333333333333,
+      "saidaMin": 1022.8833333333333
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-04",
+      "entradaMin": 662.2333333333333,
+      "saidaMin": 1025.9
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-05",
+      "entradaMin": 661.0333333333333,
+      "saidaMin": 1033.9
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-06",
+      "entradaMin": 660.75,
+      "saidaMin": 1026.8166666666666
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-07",
+      "entradaMin": 667.0833333333334,
+      "saidaMin": 1021.8666666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-10",
+      "entradaMin": 661.3166666666667,
+      "saidaMin": 1021.4833333333333
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-11",
+      "entradaMin": 684.7333333333333,
+      "saidaMin": 1040.7
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-12",
+      "entradaMin": 662.4666666666667,
+      "saidaMin": 1026.8833333333334
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-13",
+      "entradaMin": 705.7166666666667,
+      "saidaMin": 1055.3833333333334
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-14",
+      "entradaMin": 664.1666666666666,
+      "saidaMin": 1051.4333333333334
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-17",
+      "entradaMin": 660.65,
+      "saidaMin": 968.7166666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-18",
+      "entradaMin": 663.6833333333333,
+      "saidaMin": 1023.8666666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-19",
+      "entradaMin": 661,
+      "saidaMin": 1023.9333333333333
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-20",
+      "entradaMin": 661.3666666666667,
+      "saidaMin": 1109.3
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-21",
+      "entradaMin": 661.7333333333333,
+      "saidaMin": 1021.8833333333333
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-24",
+      "entradaMin": 661.0833333333334,
+      "saidaMin": 962.7166666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-25",
+      "entradaMin": 660.9666666666667,
+      "saidaMin": 789.5333333333333
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-26",
+      "entradaMin": 661.8166666666667,
+      "saidaMin": 828.4166666666666
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-27",
+      "entradaMin": 661.1166666666667,
+      "saidaMin": 895.4666666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-28",
+      "entradaMin": 661.3666666666667,
+      "saidaMin": 756.5833333333334
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-08-31",
+      "entradaMin": 663.5,
+      "saidaMin": 1021.8833333333333
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-11",
+      "entradaMin": 799.0666666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-12",
+      "entradaMin": 661.2333333333333,
+      "saidaMin": 1173.5166666666667
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-13",
+      "entradaMin": 674.3333333333334,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-14",
+      "entradaMin": 633.8833333333333,
+      "saidaMin": 1237.3166666666666
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-15",
+      "entradaMin": 661.2833333333333,
+      "saidaMin": 891.1666666666666
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-17",
+      "entradaMin": 665.05,
+      "saidaMin": 1231.9833333333333
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-18",
+      "entradaMin": 694.9666666666667,
+      "saidaMin": 1240.4833333333333
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-19",
+      "entradaMin": 652.8166666666667,
+      "saidaMin": 1186.2333333333333
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-28",
+      "entradaMin": 659.1666666666666,
+      "saidaMin": 1167.7
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-08-31",
+      "entradaMin": 842.4333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-03",
+      "entradaMin": 736.9333333333333,
+      "saidaMin": 1047.4333333333334
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-04",
+      "entradaMin": 592.4833333333333,
+      "saidaMin": 958.7
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-05",
+      "entradaMin": 588.5833333333334,
+      "saidaMin": 962.4166666666666
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-06",
+      "entradaMin": 591.5333333333333,
+      "saidaMin": 962.7166666666667
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-07",
+      "entradaMin": 594.1166666666667,
+      "saidaMin": 604.8833333333333
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-10",
+      "entradaMin": 593.9,
+      "saidaMin": 602.7666666666667
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-11",
+      "entradaMin": 594.4,
+      "saidaMin": 965.75
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-12",
+      "entradaMin": 590.8833333333333,
+      "saidaMin": 962.7166666666667
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-13",
+      "entradaMin": 581.2833333333333,
+      "saidaMin": 1008.5
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-14",
+      "entradaMin": 595.1333333333333,
+      "saidaMin": 964.45
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-17",
+      "entradaMin": 651.1,
+      "saidaMin": 990.7
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-18",
+      "entradaMin": 654.65,
+      "saidaMin": 1008.8833333333333
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-19",
+      "entradaMin": 650.6166666666667,
+      "saidaMin": 1022.45
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-20",
+      "entradaMin": 650.25,
+      "saidaMin": 1011.4666666666667
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-21",
+      "entradaMin": 652.8666666666667,
+      "saidaMin": 999.5833333333334
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-24",
+      "entradaMin": 650.6,
+      "saidaMin": 1032.5
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-25",
+      "entradaMin": 646.55,
+      "saidaMin": 1009.5333333333333
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-26",
+      "entradaMin": 651.3333333333334,
+      "saidaMin": 1011.3333333333334
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-27",
+      "entradaMin": 644.5166666666667,
+      "saidaMin": 1011.25
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-28",
+      "entradaMin": 651.6,
+      "saidaMin": 1011.5833333333334
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-08-31",
+      "entradaMin": 651.3,
+      "saidaMin": 1010.65
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-14",
+      "entradaMin": 1049.1,
+      "saidaMin": 1053.75
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-15",
+      "entradaMin": 661.6333333333333,
+      "saidaMin": 891.8166666666667
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-17",
+      "entradaMin": 634.8166666666667,
+      "saidaMin": 1171.6166666666666
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-18",
+      "entradaMin": 651.5166666666667,
+      "saidaMin": 1194.05
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-19",
+      "entradaMin": 640.2166666666667,
+      "saidaMin": 1188.1833333333334
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-20",
+      "entradaMin": 630.8333333333334,
+      "saidaMin": 1182.7
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-21",
+      "entradaMin": 636.55,
+      "saidaMin": 1175.9
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-22",
+      "entradaMin": 621.8166666666667,
+      "saidaMin": 867.3
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-24",
+      "entradaMin": 631.3333333333334,
+      "saidaMin": 1183.55
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-25",
+      "entradaMin": 630.75,
+      "saidaMin": 1192.45
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-26",
+      "entradaMin": 640.6833333333333,
+      "saidaMin": 1171.8166666666666
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-27",
+      "entradaMin": 630.45,
+      "saidaMin": 1192.9666666666667
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-28",
+      "entradaMin": 656.55,
+      "saidaMin": 1190.2333333333333
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-29",
+      "entradaMin": 624.5666666666667,
+      "saidaMin": 869.3
+    },
+    {
+      "colaborador": "STEFFANY DA SILVA SEVERINO",
+      "data": "2026-08-31",
+      "entradaMin": 630.4833333333333,
+      "saidaMin": 1188.1166666666666
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-01",
+      "entradaMin": 631.2166666666667,
+      "saidaMin": 962.9166666666666
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-03",
+      "entradaMin": 641.5666666666667,
+      "saidaMin": 992.2666666666667
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-04",
+      "entradaMin": 605.7,
+      "saidaMin": 970.2666666666667
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-05",
+      "entradaMin": 600.9,
+      "saidaMin": 994.5666666666667
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-06",
+      "entradaMin": 658.6166666666667,
+      "saidaMin": 1002.7333333333333
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-07",
+      "entradaMin": 604.1666666666666,
+      "saidaMin": 955.3666666666667
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-08",
+      "entradaMin": 600.7666666666667,
+      "saidaMin": 999.45
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-10",
+      "entradaMin": 644.3333333333334,
+      "saidaMin": 1000.75
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-11",
+      "entradaMin": 683.7333333333333,
+      "saidaMin": 1000.1166666666667
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-12",
+      "entradaMin": 602.2666666666667,
+      "saidaMin": 982.4166666666666
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-13",
+      "entradaMin": 606.85,
+      "saidaMin": 943.75
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-14",
+      "entradaMin": 615.3833333333333,
+      "saidaMin": 941.1666666666666
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-15",
+      "entradaMin": 638.2833333333333,
+      "saidaMin": 971.1666666666666
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-17",
+      "entradaMin": 661.6,
+      "saidaMin": 993.25
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-18",
+      "entradaMin": 611.5333333333333,
+      "saidaMin": 938.1166666666667
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-19",
+      "entradaMin": 625.2333333333333,
+      "saidaMin": 979.95
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-20",
+      "entradaMin": 915.3833333333333,
+      "saidaMin": 959.1666666666666
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-21",
+      "entradaMin": 628,
+      "saidaMin": 1023.8833333333333
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-22",
+      "entradaMin": 644.9666666666667,
+      "saidaMin": 960.7166666666667
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-24",
+      "entradaMin": 634.8333333333334,
+      "saidaMin": 1010.6333333333333
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-25",
+      "entradaMin": 639.8833333333333,
+      "saidaMin": 989.9666666666667
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-26",
+      "entradaMin": 654,
+      "saidaMin": 995.25
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-27",
+      "entradaMin": 689.1833333333333,
+      "saidaMin": 998.1
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-28",
+      "entradaMin": 612.9166666666666,
+      "saidaMin": 1058.9
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-29",
+      "entradaMin": 672.5833333333334,
+      "saidaMin": 835.5333333333333
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-08-31",
+      "entradaMin": 676.9333333333333,
+      "saidaMin": 1040.7
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-01",
+      "entradaMin": 541.05,
+      "saidaMin": 838.9
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-03",
+      "entradaMin": 575.3333333333334,
+      "saidaMin": 1123.8166666666666
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-04",
+      "entradaMin": 574.4666666666667,
+      "saidaMin": 1126.5333333333333
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-05",
+      "entradaMin": 592.6,
+      "saidaMin": 1127.8
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-06",
+      "entradaMin": 577.1,
+      "saidaMin": 1120.4833333333333
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-07",
+      "entradaMin": 584.6,
+      "saidaMin": 1096.1666666666667
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-08",
+      "entradaMin": 543.9,
+      "saidaMin": 798.25
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-10",
+      "entradaMin": 573.9166666666666,
+      "saidaMin": 1130.15
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-11",
+      "entradaMin": 578.45,
+      "saidaMin": 1132.9833333333333
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-12",
+      "entradaMin": 581.6333333333333,
+      "saidaMin": 1128.5166666666667
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-13",
+      "entradaMin": 573.2166666666667,
+      "saidaMin": 1113.6666666666667
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-14",
+      "entradaMin": 578.05,
+      "saidaMin": 1145.75
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-15",
+      "entradaMin": 548.4166666666666,
+      "saidaMin": 828.5
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-17",
+      "entradaMin": 574.2166666666667,
+      "saidaMin": 1126.2333333333333
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-18",
+      "entradaMin": 576.4333333333333,
+      "saidaMin": 1138.9
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-19",
+      "entradaMin": 580.4,
+      "saidaMin": 1123.8666666666666
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-20",
+      "entradaMin": 577.5833333333334,
+      "saidaMin": 1170.8666666666666
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-21",
+      "entradaMin": 573.9166666666666,
+      "saidaMin": 1108.5166666666667
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-22",
+      "entradaMin": 541.5666666666667,
+      "saidaMin": 822.4
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-24",
+      "entradaMin": 576.6,
+      "saidaMin": 1165.6833333333334
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-25",
+      "entradaMin": 591.8833333333333,
+      "saidaMin": 1135.5666666666666
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-26",
+      "entradaMin": 754.5,
+      "saidaMin": 1138.5333333333333
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-27",
+      "entradaMin": 580.5333333333333,
+      "saidaMin": 1126.4333333333334
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-28",
+      "entradaMin": 578.65,
+      "saidaMin": 1133.6166666666666
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-29",
+      "entradaMin": 544.3333333333334,
+      "saidaMin": 790.2666666666667
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-08-31",
+      "entradaMin": 576.0166666666667,
+      "saidaMin": 1133.95
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-01",
+      "entradaMin": 661.1666666666666,
+      "saidaMin": 906.4833333333333
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-03",
+      "entradaMin": 661.4,
+      "saidaMin": 1217.4333333333334
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-04",
+      "entradaMin": 662.2833333333333,
+      "saidaMin": 1202.7166666666667
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-08",
+      "entradaMin": 662.4833333333333,
+      "saidaMin": 953.0333333333333
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-10",
+      "entradaMin": 661.3166666666667,
+      "saidaMin": 1202.25
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-11",
+      "entradaMin": 660.8666666666667,
+      "saidaMin": 1201.0666666666666
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-12",
+      "entradaMin": 661,
+      "saidaMin": 1222.1666666666667
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-13",
+      "entradaMin": 661.1333333333333,
+      "saidaMin": 1202.7166666666667
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-14",
+      "entradaMin": 662.0333333333333,
+      "saidaMin": 1217.65
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-15",
+      "entradaMin": 666.6,
+      "saidaMin": 943.3833333333333
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-17",
+      "entradaMin": 661.0666666666667,
+      "saidaMin": 1203.8666666666666
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-18",
+      "entradaMin": 661.1,
+      "saidaMin": 1230.2833333333333
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-19",
+      "entradaMin": 661.5833333333334,
+      "saidaMin": 1239.8833333333334
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-20",
+      "entradaMin": 662.6,
+      "saidaMin": 1201.0333333333333
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-21",
+      "entradaMin": 663.6666666666666,
+      "saidaMin": 1214.55
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-22",
+      "entradaMin": 664.1333333333333,
+      "saidaMin": 930.8666666666667
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-24",
+      "entradaMin": 664.3833333333333,
+      "saidaMin": 1229.8166666666666
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-25",
+      "entradaMin": 660.9166666666666,
+      "saidaMin": 1204.3666666666666
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-26",
+      "entradaMin": 662.2,
+      "saidaMin": 1210.1333333333334
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-27",
+      "entradaMin": 660.85,
+      "saidaMin": 1223.0333333333333
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-28",
+      "entradaMin": 662.85,
+      "saidaMin": 1213.7666666666667
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-29",
+      "entradaMin": 662.8833333333333,
+      "saidaMin": 936.8833333333333
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-08-31",
+      "entradaMin": 661,
+      "saidaMin": 1239.6833333333334
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-03",
+      "entradaMin": 644.4333333333333,
+      "saidaMin": 1004.4333333333333
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-05",
+      "entradaMin": 632.7833333333333,
+      "saidaMin": 992.7833333333333
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-07",
+      "entradaMin": 650.45,
+      "saidaMin": 1010.45
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-10",
+      "entradaMin": 633.3,
+      "saidaMin": 993.3
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-11",
+      "entradaMin": 667.7666666666667,
+      "saidaMin": 1000.9333333333333
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-13",
+      "entradaMin": 665.5833333333334,
+      "saidaMin": 1005.9
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-17",
+      "entradaMin": 631.5833333333334,
+      "saidaMin": 991.5833333333334
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-19",
+      "entradaMin": 636.2166666666667,
+      "saidaMin": 996.2166666666667
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-21",
+      "entradaMin": 643.8,
+      "saidaMin": 1003.8
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-24",
+      "entradaMin": 640.9166666666666,
+      "saidaMin": 1000.9166666666666
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-26",
+      "entradaMin": 664.8333333333334,
+      "saidaMin": 1024.8333333333333
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-28",
+      "entradaMin": 645.7833333333333,
+      "saidaMin": 1005.7833333333333
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-08-31",
+      "entradaMin": 634.0166666666667,
+      "saidaMin": 994.0166666666667
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-03",
+      "entradaMin": 603.15,
+      "saidaMin": 987.3166666666667
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-05",
+      "entradaMin": 603.1333333333333,
+      "saidaMin": 963.4833333333333
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-06",
+      "entradaMin": 600.7,
+      "saidaMin": 960.7666666666667
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-07",
+      "entradaMin": 600.9333333333333,
+      "saidaMin": 958.1166666666667
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-10",
+      "entradaMin": 600.6666666666666,
+      "saidaMin": 961.5333333333333
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-11",
+      "entradaMin": 600.8,
+      "saidaMin": 961.1833333333333
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-12",
+      "entradaMin": 601.2833333333333,
+      "saidaMin": 1000.8833333333333
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-13",
+      "entradaMin": 655.1,
+      "saidaMin": 1006.2666666666667
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-14",
+      "entradaMin": 608.4666666666667,
+      "saidaMin": 973.1666666666666
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-17",
+      "entradaMin": 600.8,
+      "saidaMin": 961.8833333333333
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-18",
+      "entradaMin": 601.1666666666666,
+      "saidaMin": 961.4833333333333
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-19",
+      "entradaMin": 603.1333333333333,
+      "saidaMin": 961.6666666666666
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-21",
+      "entradaMin": 602.3,
+      "saidaMin": 962.8833333333333
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-24",
+      "entradaMin": 602.0166666666667,
+      "saidaMin": 960.4666666666667
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-25",
+      "entradaMin": 608.3,
+      "saidaMin": 1022.35
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-26",
+      "entradaMin": 601.7,
+      "saidaMin": 955.15
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-27",
+      "entradaMin": 600.6666666666666,
+      "saidaMin": 963.55
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-28",
+      "entradaMin": 600.65,
+      "saidaMin": 945.8166666666667
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-08-31",
+      "entradaMin": 613.3,
+      "saidaMin": 980.7666666666667
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-01",
+      "entradaMin": 603.4666666666667,
+      "saidaMin": 845.0666666666667
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-03",
+      "entradaMin": 740.8333333333334,
+      "saidaMin": 1167.8666666666666
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-04",
+      "entradaMin": 629.4666666666667,
+      "saidaMin": 1179.8333333333333
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-05",
+      "entradaMin": 610.6666666666666,
+      "saidaMin": 1162.4
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-06",
+      "entradaMin": 643.5333333333333,
+      "saidaMin": 1133.2833333333333
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-07",
+      "entradaMin": 631.1166666666667,
+      "saidaMin": 1067.2833333333333
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-08",
+      "entradaMin": 688.4333333333333,
+      "saidaMin": 823.2333333333333
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-10",
+      "entradaMin": 620.85,
+      "saidaMin": 1143.2166666666667
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-11",
+      "entradaMin": 624.7,
+      "saidaMin": 1158.4833333333333
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-12",
+      "entradaMin": 663.0166666666667,
+      "saidaMin": 1139.6
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-13",
+      "entradaMin": 641.1833333333333,
+      "saidaMin": 1132.4833333333333
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-14",
+      "entradaMin": 639.7666666666667,
+      "saidaMin": 1112.15
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-15",
+      "entradaMin": 621.4166666666666,
+      "saidaMin": 840.75
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-19",
+      "entradaMin": 623.6666666666666,
+      "saidaMin": 1135.7666666666667
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-20",
+      "entradaMin": 682.4666666666667,
+      "saidaMin": 1105.3166666666666
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-21",
+      "entradaMin": 635.0833333333334,
+      "saidaMin": 1065.2666666666667
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-22",
+      "entradaMin": 628.9833333333333,
+      "saidaMin": 841.6166666666667
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-24",
+      "entradaMin": 611.4,
+      "saidaMin": 1124.3833333333334
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-25",
+      "entradaMin": 626.75,
+      "saidaMin": 1126.0333333333333
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-26",
+      "entradaMin": 641.8333333333334,
+      "saidaMin": 1102.3333333333333
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-27",
+      "entradaMin": 631.3666666666667,
+      "saidaMin": 1125.9666666666667
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-28",
+      "entradaMin": 641.5833333333334,
+      "saidaMin": 1145.2166666666667
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-08-29",
+      "entradaMin": 651.35,
+      "saidaMin": 841.8666666666667
+    }
+  ]
 }
