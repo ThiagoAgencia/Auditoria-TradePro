@@ -783,7 +783,9 @@ function calcInconsistenciasPonto(visitas, pontoRecords){
 
   const porDia = new Map(); // "colaborador|data" -> {primeira: visita, ultima: visita}
   for (const v of visitas) {
-    if (v.status !== STATUS_FINALIZADO) continue;
+    // conta como "visita de verdade" tanto o fechamento normal quanto o fechado pelo corte
+    // (a promotora esteve lá, só não fechou o app na hora) — Justificado/Aberto não contam
+    if (v.status !== STATUS_FINALIZADO && v.status !== STATUS_CORTE) continue;
     if (v.horaInicioMin == null && v.horaFimMin == null) continue;
     const key = `${v.colaborador}|${v.data}`;
     if (!porDia.has(key)) porDia.set(key, {primeira:null, ultima:null});
