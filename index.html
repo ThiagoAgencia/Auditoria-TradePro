@@ -244,6 +244,11 @@ function fotosEscopo(){
   if (!globalPeriodoFiltro) return todas;
   return todas.filter(f => f.data && monthKey(f.data) === globalPeriodoFiltro);
 }
+function pontoEscopo(){
+  const todas = currentPonto();
+  if (!globalPeriodoFiltro) return todas;
+  return todas.filter(p => p.data && monthKey(p.data) === globalPeriodoFiltro);
+}
 
 /* ---------------------------------------------------------------------- */
 /* Utilidades de data                                                      */
@@ -343,9 +348,55 @@ function parseRoteiroWorkbook(workbook, log){
       cidade: col.cidade!==-1 ? (r[col.cidade]||"").toString().trim() : "",
       loja: col.fantasia!==-1 ? (r[col.fantasia]||"").toString().trim() : "",
       data: isoDate(dataObj),
+      horaInicioMin: horaIniMin,
+      horaFimMin: horaFimMin,
       duracaoMin,
       motivo: col.motivo!==-1 ? (r[col.motivo]||"").toString().trim() : "",
       status: (r[col.status]||"").toString().trim(),
+    });
+  }
+  return out;
+}
+
+function parsePontoWorkbook(workbook, log){
+  const sheetName = workbook.SheetNames[0];
+  const sheet = workbook.Sheets[sheetName];
+  // mesmo formato do TradePro: linha 2 (index 2) tem os títulos principais,
+  // linha 3 (index 3) tem os subtítulos (Início/Saída), dados a partir da linha 4 (index 4)
+  const rows = XLSX.utils.sheet_to_json(sheet, {header:1, raw:true, defval:null});
+  if (rows.length < 5) { log("Arquivo não parece um Registro de Ponto válido.", true); return []; }
+  const headerRow = (rows[2]||[]).map(h => (h||"").toString().trim());
+  const subRow = (rows[3]||[]).map(h => (h||"").toString().trim());
+  const colColaborador = headerRow.findIndex(h => h.toLowerCase() === "colaborador");
+  const colData = headerRow.findIndex(h => h.toLowerCase() === "data");
+  const colExecutado = headerRow.findIndex(h => h.toLowerCase() === "executado");
+  if (colColaborador === -1 || colData === -1 || colExecutado === -1) {
+    log("Não encontrei as colunas esperadas (Colaborador / Data / Executado). Confira se é o arquivo certo.", true);
+    return [];
+  }
+  const colExecInicio = colExecutado; // "Início" logo abaixo de "Executado"
+  // "Saída" do Executado: procura no subRow, a partir de colExecutado, o 4º campo (Início, Almoço, Retorno, Saída)
+  let colExecSaida = -1;
+  for (let c = colExecutado; c < subRow.length; c++) {
+    if (subRow[c] && subRow[c].toLowerCase() === "saída") { colExecSaida = c; break; }
+  }
+
+  const out = [];
+  for (let i = 4; i < rows.length; i++) {
+    const r = rows[i];
+    if (!r || !r[colColaborador]) continue;
+    const colaborador = (r[colColaborador]||"").toString().trim();
+    if (!colaborador) continue;
+    const dataObj = parseBRDate(r[colData]);
+    if (!dataObj) continue;
+    const entradaMin = parseTimeToMinutes(r[colExecInicio]);
+    const saidaMin = colExecSaida!==-1 ? parseTimeToMinutes(r[colExecSaida]) : null;
+    if (entradaMin == null && saidaMin == null) continue; // dia sem batida (DSR, falta etc) — não interessa aqui
+    out.push({
+      colaborador,
+      data: isoDate(dataObj),
+      entradaMin,
+      saidaMin,
     });
   }
   return out;
@@ -364,6 +415,12 @@ function mergeFotos(existing, novas){
   const map = new Map();
   for (const f of existing) map.set(`${f.colaborador}|${f.loja}|${f.data}|${f.tipo}`, f);
   for (const f of novas) map.set(`${f.colaborador}|${f.loja}|${f.data}|${f.tipo}`, f);
+  return Array.from(map.values());
+}
+function mergePonto(existing, novas){
+  const map = new Map();
+  for (const p of existing) map.set(`${p.colaborador}|${p.data}`, p);
+  for (const p of novas) map.set(`${p.colaborador}|${p.data}`, p);
   return Array.from(map.values());
 }
 
@@ -703,6 +760,43 @@ function currentFotos(){
   if (!currentDist || !DB.distribuidoras[currentDist]) return [];
   return DB.distribuidoras[currentDist].fotos || [];
 }
+function currentPonto(){
+  if (!currentDist || !DB.distribuidoras[currentDist]) return [];
+  return DB.distribuidoras[currentDist].ponto || [];
+}
+
+const TOLERANCIA_PONTO_MIN = 10;
+
+// Retorna um Set de "colaborador|data" que têm inconsistência entre o horário do
+// Roteiro (1ª/última visita do dia) e o horário batido no Ponto (entrada/saída),
+// considerando TOLERANCIA_PONTO_MIN de folga.
+function calcInconsistenciasPonto(visitas, pontoRecords){
+  const inconsistentes = new Set();
+  if (!pontoRecords || !pontoRecords.length) return inconsistentes;
+  const pontoPorDia = new Map();
+  for (const p of pontoRecords) pontoPorDia.set(`${p.colaborador}|${p.data}`, p);
+
+  const porDia = new Map(); // "colaborador|data" -> {min, max}
+  for (const v of visitas) {
+    if (v.status !== STATUS_FINALIZADO) continue;
+    if (v.horaInicioMin == null && v.horaFimMin == null) continue;
+    const key = `${v.colaborador}|${v.data}`;
+    if (!porDia.has(key)) porDia.set(key, {min:null, max:null});
+    const d = porDia.get(key);
+    if (v.horaInicioMin != null && (d.min == null || v.horaInicioMin < d.min)) d.min = v.horaInicioMin;
+    if (v.horaFimMin != null && (d.max == null || v.horaFimMin > d.max)) d.max = v.horaFimMin;
+  }
+
+  for (const [key, d] of porDia) {
+    const ponto = pontoPorDia.get(key);
+    if (!ponto) continue;
+    let suspeito = false;
+    if (d.min != null && ponto.entradaMin != null && Math.abs(d.min - ponto.entradaMin) > TOLERANCIA_PONTO_MIN) suspeito = true;
+    if (d.max != null && ponto.saidaMin != null && Math.abs(d.max - ponto.saidaMin) > TOLERANCIA_PONTO_MIN) suspeito = true;
+    if (suspeito) inconsistentes.add(key);
+  }
+  return inconsistentes;
+}
 
 function renderTab(){
   const main = document.getElementById('main');
@@ -799,11 +893,13 @@ function renderVisitas(main){
     main.innerHTML = pageHeader('Visitas', currentDist) + msg; return;
   }
   const promotores = Array.from(new Set(todas.map(v=>v.colaborador))).sort();
+  const pontoInconsistencias = calcInconsistenciasPonto(todas, pontoEscopo());
 
   main.innerHTML = pageHeader('Visitas', currentDist) + `
     <div class="filter-row">
       <label for="visitasPromotorFiltro">Filtrar por promotor</label>
       <select id="visitasPromotorFiltro"><option value="">Todos</option>${promotores.map(p=>`<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('')}</select>
+      ${pontoEscopo().length ? `<span class="note" style="margin-left:auto;">⚠ ${pontoInconsistencias.size} dia(s) com Ponto ≠ Roteiro (tolerância ${TOLERANCIA_PONTO_MIN}min)</span>` : `<span class="note" style="margin-left:auto;">Suba o Registro de Ponto em Atualizar Dados pra ativar a checagem Ponto x Roteiro</span>`}
     </div>
     <div class="panel">
       <div class="panel-head">
@@ -832,31 +928,31 @@ function renderVisitas(main){
     <div class="panel" id="diaDetalhePanel" style="display:none;">
       <div class="panel-head"><h3 id="diaDetalheTitulo">Lojas do dia</h3></div>
       <div class="table-scroll">
-      <table><thead><tr><th>Loja</th><th>Cidade</th><th>Duração</th><th>Status</th><th>Motivo</th><th>Flag</th></tr></thead>
+      <table><thead><tr><th>Loja</th><th>Cidade</th><th>Duração</th><th>Status</th><th>Motivo</th><th>Flag</th><th>Ponto x Roteiro</th></tr></thead>
       <tbody id="diaDetalheBody"></tbody></table>
       </div>
     </div>`;
 
   document.getElementById('visitasPromotorFiltro').addEventListener('change', e=>{
     visitasPromotorFiltro = e.target.value;
-    redrawVisitas(todas);
+    redrawVisitas(todas, pontoInconsistencias);
   });
   document.querySelectorAll('#periodoToggle button').forEach(b=>{
     b.addEventListener('click', ()=>{
       document.querySelectorAll('#periodoToggle button').forEach(x=>x.classList.remove('active'));
       b.classList.add('active');
       visitasPeriodo = b.dataset.p;
-      redrawVisitas(todas);
+      redrawVisitas(todas, pontoInconsistencias);
     });
   });
-  redrawVisitas(todas);
+  redrawVisitas(todas, pontoInconsistencias);
 }
 
 function visitasFiltradas(todas){
   return visitasPromotorFiltro ? todas.filter(v=>v.colaborador===visitasPromotorFiltro) : todas;
 }
 
-function redrawVisitas(todasVisitas){
+function redrawVisitas(todasVisitas, pontoInconsistencias){
   const visitas = visitasFiltradas(todasVisitas);
   const semanaWrap = document.getElementById('semanaSelectorWrap');
 
@@ -866,32 +962,34 @@ function redrawVisitas(todasVisitas){
     const semanaSelect = document.getElementById('semanaSelect');
     if (!visitasSemanaSel || !semanas.includes(visitasSemanaSel)) visitasSemanaSel = semanas[semanas.length-1] || null;
     semanaSelect.innerHTML = semanas.map(s=>`<option value="${s}" ${s===visitasSemanaSel?'selected':''}>${s}</option>`).join('');
-    semanaSelect.onchange = () => { visitasSemanaSel = semanaSelect.value; drawDiario(visitas); };
-    drawDiario(visitas);
+    semanaSelect.onchange = () => { visitasSemanaSel = semanaSelect.value; drawDiario(visitas, pontoInconsistencias); };
+    drawDiario(visitas, pontoInconsistencias);
   } else {
     semanaWrap.style.display = 'none';
     drawVisitasChart(visitas);
   }
 }
 
-function drawDiario(visitas){
+function drawDiario(visitas, pontoInconsistencias){
   document.getElementById('visitasTituloGrafico').textContent = `Semana ${visitasSemanaSel || ''} — segunda a sexta`;
   document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por dia — clique num dia pra ver as lojas';
   const agg = visitasSemanaSel ? aggregateDiario(visitas, visitasSemanaSel) : [];
-  document.getElementById('periodoHead').innerHTML = `<th>Dia</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Normais</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th>`;
-  document.getElementById('periodoBody').innerHTML = agg.map((a,i)=>`
-    <tr class="dia-row" data-i="${i}" style="cursor:${a.total>0?'pointer':'default'};">
+  document.getElementById('periodoHead').innerHTML = `<th>Dia</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Normais</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th><th class="num">Ponto x Roteiro</th>`;
+  document.getElementById('periodoBody').innerHTML = agg.map((a,i)=>{
+    const diasComInconsistencia = new Set(a.rows.filter(v=>pontoInconsistencias.has(`${v.colaborador}|${v.data}`)).map(v=>v.colaborador)).size;
+    return `<tr class="dia-row" data-i="${i}" style="cursor:${a.total>0?'pointer':'default'};">
     <td class="mono">${a.dia} ${a.total>0?'🔎':''}</td><td class="num mono">${a.total}</td>
     <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
     <td class="num mono">${a.normais}</td>
     <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
-    <td class="num mono">${a.corte}</td></tr>
-  `).join('');
+    <td class="num mono">${a.corte}</td>
+    <td class="num mono ${diasComInconsistencia>0?'flagcell warn':''}">${diasComInconsistencia || '—'}</td></tr>`;
+  }).join('');
   document.querySelectorAll('.dia-row').forEach(tr=>{
     tr.addEventListener('click', ()=>{
       const a = agg[+tr.dataset.i];
       if (!a || !a.total) return;
-      mostrarDetalheDia(a);
+      mostrarDetalheDia(a, pontoInconsistencias);
     });
   });
   document.getElementById('diaDetalhePanel').style.display = 'none';
@@ -916,18 +1014,20 @@ function fmtMin(m){
   const h = Math.floor(m/60), mm = Math.round(m%60);
   return h>0 ? `${h}h${String(mm).padStart(2,'0')}` : `${mm}min`;
 }
-function mostrarDetalheDia(diaAgg){
+function mostrarDetalheDia(diaAgg, pontoInconsistencias){
   const panel = document.getElementById('diaDetalhePanel');
   document.getElementById('diaDetalheTitulo').textContent = `${diaAgg.dia} — ${diaAgg.rows.length} loja(s)`;
   const rowsOrdenadas = [...diaAgg.rows].sort((a,b)=> (a.loja||'').localeCompare(b.loja||''));
   document.getElementById('diaDetalheBody').innerHTML = rowsOrdenadas.map(v=>{
     const f = flagVisita(v);
+    const pontoSuspeito = pontoInconsistencias && pontoInconsistencias.has(`${v.colaborador}|${v.data}`);
     return `<tr>
       <td>${escapeHtml(v.loja)}</td><td>${escapeHtml(v.cidade)}</td>
       <td class="num mono">${fmtMin(v.duracaoMin)}</td>
       <td>${escapeHtml(v.status)}</td>
       <td>${escapeHtml(v.motivo||'—')}</td>
       <td class="${f.cls==='warn'?'flagcell warn':'flagcell'}">${f.label}</td>
+      <td class="${pontoSuspeito?'flagcell warn':'flagcell'}">${pontoSuspeito?'⚠ Suspeita':'—'}</td>
     </tr>`;
   }).join('');
   panel.style.display = 'block';
@@ -1261,7 +1361,26 @@ function renderDados(main){
     </div>
 
     <div class="panel">
-      <div class="panel-head"><h3>3. Flags de fotos suspeitas</h3><span class="hint">arquivo .json gerado pelo Claude após revisar o álbum</span></div>
+      <div class="panel-head"><h3>3. Registro de Ponto</h3><span class="hint">pra checagem Ponto x Roteiro na aba Visitas</span></div>
+      <div style="padding:18px;">
+        <div class="field">
+          <label for="distNameInputPonto">Distribuidora</label>
+          <input list="distList" id="distNameInputPonto" placeholder="Ex: Ritter, Uau, Bahia/Sergipe...">
+        </div>
+        <div class="upload-box" id="pontoDrop">
+          <input type="file" id="pontoFile" accept=".xls,.xlsx">
+          <div>🕒 Arraste o arquivo <b>relatorio_registro_ponto.xlsx</b> aqui, ou <button class="btn amber" id="pontoBrowse" type="button">escolher arquivo</button></div>
+        </div>
+        <div id="pontoLog" class="log" style="display:none;"></div>
+        <div style="margin-top:14px;">
+          <button class="btn" id="savePontoBtn" disabled>Salvar no GitHub</button>
+        </div>
+        <p class="note">Precisa ser o Excel (não o PDF) — o site compara a 1ª/última visita do dia no Roteiro com a entrada/saída batida no Ponto, com ${TOLERANCIA_PONTO_MIN} minutos de tolerância.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>4. Flags de fotos suspeitas</h3><span class="hint">arquivo .json gerado pelo Claude após revisar o álbum</span></div>
       <div style="padding:18px;">
         <div class="field">
           <label for="distNameInputFotos">Distribuidora</label>
@@ -1286,6 +1405,7 @@ function renderDados(main){
   });
 
   setupUploadBox('roteiroDrop','roteiroFile','roteiroBrowse', handleRoteiroFile);
+  setupUploadBox('pontoDrop','pontoFile','pontoBrowse', handlePontoFile);
   setupUploadBox('fotosDrop','fotosFile','fotosBrowse', handleFotosFile);
 }
 
@@ -1336,6 +1456,43 @@ document.addEventListener('click', async (e)=>{
   }
 });
 
+let pendingPonto = null;
+function handlePontoFile(file){
+  const logEl = document.getElementById('pontoLog');
+  logEl.style.display = 'block';
+  logEl.innerHTML = '';
+  const log = (msg, isErr) => { logEl.innerHTML += `<div class="${isErr?'err':'ok'}">${msg}</div>`; logEl.scrollTop = logEl.scrollHeight; };
+  log(`Lendo ${file.name}...`);
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const wb = XLSX.read(e.target.result, {type:'array', cellDates:true});
+      const parsed = parsePontoWorkbook(wb, log);
+      if (!parsed.length) { log('Nenhuma linha com batida de ponto encontrada.', true); return; }
+      log(`✓ ${parsed.length} dias de ponto lidos de ${new Set(parsed.map(p=>p.colaborador)).size} promotores.`);
+      pendingPonto = parsed;
+      document.getElementById('savePontoBtn').disabled = false;
+    } catch(err){ log('Erro lendo o arquivo: ' + err.message, true); }
+  };
+  reader.readAsArrayBuffer(file);
+}
+document.addEventListener('click', async (e)=>{
+  if (e.target && e.target.id === 'savePontoBtn') {
+    const nome = document.getElementById('distNameInputPonto').value.trim();
+    if (!nome) { alert('Digite o nome da distribuidora.'); return; }
+    if (!pendingPonto) return;
+    const btn = e.target; btn.disabled = true; btn.textContent = 'Salvando...';
+    try {
+      await saveDistribuidoraData(nome, { ponto: pendingPonto });
+      alert(`Ponto de "${nome}" salvo no GitHub!`);
+      currentDist = nome;
+      await loadAllData();
+      renderShell();
+    } catch(err){ alert('Erro ao salvar: ' + err.message); }
+    btn.disabled = false; btn.textContent = 'Salvar no GitHub';
+  }
+});
+
 let pendingFotos = null;
 function handleFotosFile(file){
   const logEl = document.getElementById('fotosLog');
@@ -1373,10 +1530,11 @@ document.addEventListener('click', async (e)=>{
 async function saveDistribuidoraData(nome, partial){
   const path = `data/${encodeURIComponent(nome)}.json`;
   const existing = await ghGetFile(path);
-  const base = existing.content || { visitas:[], fotos:[] };
+  const base = existing.content || { visitas:[], fotos:[], ponto:[] };
   const merged = {
     visitas: partial.visitas ? mergeVisitas(base.visitas||[], partial.visitas) : (base.visitas||[]),
     fotos: partial.fotos ? mergeFotos(base.fotos||[], partial.fotos) : (base.fotos||[]),
+    ponto: partial.ponto ? mergePonto(base.ponto||[], partial.ponto) : (base.ponto||[]),
   };
   await ghPutFile(path, merged, existing.sha, `Atualiza dados de ${nome}`);
 
