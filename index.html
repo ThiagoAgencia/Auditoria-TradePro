@@ -588,11 +588,12 @@ function aggregateDiario(visitas, semanaKey){
   const diasOrdem = ordemSemana.filter(d => diasComDado.has(d));
 
   const porDia = {};
-  diasOrdem.forEach(d => porDia[d] = { dia:d, total:0, curtas:0, normais:0, faltas:0, corte:0, rows:[] });
+  diasOrdem.forEach(d => porDia[d] = { dia:d, data:null, total:0, curtas:0, normais:0, faltas:0, corte:0, rows:[] });
   for (const v of visitasDaSemana) {
     const wd = weekdayLabelPT(v.data);
     if (!porDia[wd]) continue;
     const a = porDia[wd];
+    if (!a.data) a.data = v.data; // todo mundo com esse dia da semana, nessa semana, cai na mesma data
     a.total++;
     if (isCurta(v)) a.curtas++;
     if (isNormal(v)) a.normais++;
@@ -601,6 +602,13 @@ function aggregateDiario(visitas, semanaKey){
     a.rows.push(v);
   }
   return diasOrdem.map(d => porDia[d]);
+}
+function diaComData(a){
+  if (!a.data) return a.dia;
+  const dt = new Date(a.data);
+  const dd = String(dt.getUTCDate()).padStart(2,'0');
+  const mm = String(dt.getUTCMonth()+1).padStart(2,'0');
+  return `${a.dia} ${dd}/${mm}`;
 }
 function flagVisita(v){
   if (isCurta(v)) return {label:'Curta', cls:'warn'};
@@ -1028,7 +1036,7 @@ function drawDiario(visitas, pontoInconsistencias){
   document.getElementById('periodoBody').innerHTML = agg.map((a,i)=>{
     const diasComInconsistencia = new Set(a.rows.filter(v=>pontoInconsistencias.diasInconsistentes.has(`${v.colaborador}|${v.data}`)).map(v=>v.colaborador)).size;
     return `<tr class="dia-row" data-i="${i}" style="cursor:${a.total>0?'pointer':'default'};">
-    <td class="mono">${a.dia} ${a.total>0?'🔎':''}</td><td class="num mono">${a.total}</td>
+    <td class="mono">${diaComData(a)} ${a.total>0?'🔎':''}</td><td class="num mono">${a.total}</td>
     <td class="num mono ${a.curtas>0?'flagcell warn':''}">${a.curtas}</td>
     <td class="num mono">${a.normais}</td>
     <td class="num mono ${a.faltas>0?'flagcell warn':''}">${a.faltas}</td>
@@ -1048,7 +1056,7 @@ function drawDiario(visitas, pontoInconsistencias){
   visitasChart = new Chart(ctx, {
     type:'bar',
     data:{
-      labels: agg.map(a=>a.dia),
+      labels: agg.map(a=>diaComData(a)),
       datasets:[
         {label:'Visitas curtas', data:agg.map(a=>a.curtas), backgroundColor:'#d98e28'},
         {label:'Normais', data:agg.map(a=>a.normais), backgroundColor:'#3f7d6b'},
@@ -1066,7 +1074,7 @@ function fmtMin(m){
 }
 function mostrarDetalheDia(diaAgg, pontoInconsistencias){
   const panel = document.getElementById('diaDetalhePanel');
-  document.getElementById('diaDetalheTitulo').textContent = `${diaAgg.dia} — ${diaAgg.rows.length} loja(s)`;
+  document.getElementById('diaDetalheTitulo').textContent = `${diaComData(diaAgg)} — ${diaAgg.rows.length} loja(s)`;
   const rowsOrdenadas = [...diaAgg.rows].sort((a,b)=> (a.loja||'').localeCompare(b.loja||''));
   document.getElementById('diaDetalheBody').innerHTML = rowsOrdenadas.map(v=>{
     const f = flagVisita(v);
