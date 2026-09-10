@@ -5,6 +5,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORQUATO",
       "data": "2026-08-20",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -14,6 +16,8 @@
       "cidade": "Manaus",
       "loja": "Nova flores - max teixeira",
       "data": "2026-08-20",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -23,6 +27,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA COMPENSA",
       "data": "2026-08-21",
+      "horaInicioMin": 678,
+      "horaFimMin": 797.2833333333333,
       "duracaoMin": 119.2833333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -32,6 +38,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CENTRO",
       "data": "2026-08-21",
+      "horaInicioMin": 820.05,
+      "horaFimMin": 905,
       "duracaoMin": 84.95000000000005,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -41,6 +49,8 @@
       "cidade": "Manaus",
       "loja": "Nova Era Dom Pedro",
       "data": "2026-08-24",
+      "horaInicioMin": 665.5,
+      "horaFimMin": 819.45,
       "duracaoMin": 153.95000000000005,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -50,6 +60,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA PONTA NEGRA",
       "data": "2026-08-24",
+      "horaInicioMin": 832.9166666666666,
+      "horaFimMin": 947.5833333333334,
       "duracaoMin": 114.66666666666674,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -59,6 +71,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA ALVORADA",
       "data": "2026-08-24",
+      "horaInicioMin": 969.6666666666666,
+      "horaFimMin": 969.7666666666667,
       "duracaoMin": 0.10000000000002274,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -68,6 +82,8 @@
       "cidade": "Manaus",
       "loja": "Nova flores - max teixeira",
       "data": "2026-08-25",
+      "horaInicioMin": 661.8166666666667,
+      "horaFimMin": 787.5,
       "duracaoMin": 125.68333333333328,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -77,6 +93,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORQUATO",
       "data": "2026-08-25",
+      "horaInicioMin": 833.8666666666667,
+      "horaFimMin": 867.9833333333333,
       "duracaoMin": 34.116666666666674,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -86,6 +104,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA VIA NORTE",
       "data": "2026-08-25",
+      "horaInicioMin": 889.05,
+      "horaFimMin": 975.9166666666666,
       "duracaoMin": 86.86666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -95,6 +115,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA ALVORADA",
       "data": "2026-08-26",
+      "horaInicioMin": 685.2833333333333,
+      "horaFimMin": 746.7833333333333,
       "duracaoMin": 61.5,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -104,6 +126,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA PONTA NEGRA",
       "data": "2026-08-26",
+      "horaInicioMin": 758.1,
+      "horaFimMin": 833.6833333333333,
       "duracaoMin": 75.58333333333326,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -113,6 +137,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA COMPENSA",
       "data": "2026-08-26",
+      "horaInicioMin": 887.25,
+      "horaFimMin": 989.8333333333334,
       "duracaoMin": 102.58333333333337,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -122,6 +148,8 @@
       "cidade": "Manaus",
       "loja": "Nova flores - max teixeira",
       "data": "2026-08-27",
+      "horaInicioMin": 671.2,
+      "horaFimMin": 758.9333333333333,
       "duracaoMin": 87.73333333333323,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -131,6 +159,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORQUATO",
       "data": "2026-08-27",
+      "horaInicioMin": 813.25,
+      "horaFimMin": 946.0833333333334,
       "duracaoMin": 132.83333333333337,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -140,6 +170,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA COMPENSA",
       "data": "2026-08-28",
+      "horaInicioMin": 680.7166666666667,
+      "horaFimMin": 755.3833333333333,
       "duracaoMin": 74.66666666666663,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -149,6 +181,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CENTRO",
       "data": "2026-08-28",
+      "horaInicioMin": 789.25,
+      "horaFimMin": 875.9666666666667,
       "duracaoMin": 86.7166666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -158,6 +192,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA PONTA NEGRA",
       "data": "2026-08-31",
+      "horaInicioMin": 674.7333333333333,
+      "horaFimMin": 773.7166666666667,
       "duracaoMin": 98.98333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -167,6 +203,8 @@
       "cidade": "Manaus",
       "loja": "Nova Era Dom Pedro",
       "data": "2026-08-31",
+      "horaInicioMin": 782.7666666666667,
+      "horaFimMin": 849.7166666666667,
       "duracaoMin": 66.95000000000005,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -176,6 +214,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA ALVORADA",
       "data": "2026-08-31",
+      "horaInicioMin": 887.9,
+      "horaFimMin": 967.0833333333334,
       "duracaoMin": 79.1833333333334,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -185,6 +225,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-03",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -194,6 +236,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -203,6 +247,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-10",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -212,6 +258,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-14",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -221,6 +269,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-14",
+      "horaInicioMin": 971.6166666666667,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -230,6 +280,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-17",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -239,6 +291,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-24",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -248,6 +302,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-28",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -257,6 +313,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-28",
+      "horaInicioMin": 515.0833333333334,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -266,6 +324,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-31",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -275,6 +335,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-01",
+      "horaInicioMin": 530.4333333333333,
+      "horaFimMin": 531.4666666666667,
       "duracaoMin": 1.0333333333334167,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -284,6 +346,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-01",
+      "horaInicioMin": 535.4333333333333,
+      "horaFimMin": 771.25,
       "duracaoMin": 235.81666666666672,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -293,6 +357,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-03",
+      "horaInicioMin": 510.28333333333336,
+      "horaFimMin": 537.45,
       "duracaoMin": 27.166666666666686,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -302,6 +368,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-03",
+      "horaInicioMin": 537.6,
+      "horaFimMin": 549.4666666666667,
       "duracaoMin": 11.866666666666674,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -311,6 +379,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-03",
+      "horaInicioMin": 558.0833333333334,
+      "horaFimMin": 1058.6833333333334,
       "duracaoMin": 500.6,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -320,6 +390,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER - RO",
       "data": "2026-08-04",
+      "horaInicioMin": 510.95,
+      "horaFimMin": 528.5,
       "duracaoMin": 17.55000000000001,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -329,6 +401,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA R BRASILIA",
       "data": "2026-08-04",
+      "horaInicioMin": 532.1833333333333,
+      "horaFimMin": 568.2666666666667,
       "duracaoMin": 36.08333333333337,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -338,6 +412,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-04",
+      "horaInicioMin": 580.1666666666666,
+      "horaFimMin": 1076.35,
       "duracaoMin": 496.1833333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -347,6 +423,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-05",
+      "horaInicioMin": 510.95,
+      "horaFimMin": 528.6,
       "duracaoMin": 17.650000000000034,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -356,6 +434,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-05",
+      "horaInicioMin": 529.2166666666667,
+      "horaFimMin": 537.25,
       "duracaoMin": 8.033333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -365,6 +445,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-05",
+      "horaInicioMin": 554.5666666666667,
+      "horaFimMin": 615.2166666666667,
       "duracaoMin": 60.64999999999998,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -374,6 +456,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-05",
+      "horaInicioMin": 623.9833333333333,
+      "horaFimMin": 1054.6666666666667,
       "duracaoMin": 430.6833333333334,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -383,6 +467,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER - RO",
       "data": "2026-08-06",
+      "horaInicioMin": 510.3333333333333,
+      "horaFimMin": 512.8666666666667,
       "duracaoMin": 2.53333333333336,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -392,6 +478,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA R BRASILIA",
       "data": "2026-08-06",
+      "horaInicioMin": 517.2,
+      "horaFimMin": 533.1,
       "duracaoMin": 15.899999999999977,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -401,6 +489,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-06",
+      "horaInicioMin": 597.35,
+      "horaFimMin": 1069.5666666666666,
       "duracaoMin": 472.2166666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -410,6 +500,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-07",
+      "horaInicioMin": 513.55,
+      "horaFimMin": 538.5666666666667,
       "duracaoMin": 25.016666666666765,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -419,6 +511,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-07",
+      "horaInicioMin": 538.7333333333333,
+      "horaFimMin": 552.2666666666667,
       "duracaoMin": 13.533333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -428,6 +522,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-07",
+      "horaInicioMin": 569.65,
+      "horaFimMin": 606.0833333333334,
       "duracaoMin": 36.433333333333394,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -437,6 +533,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-07",
+      "horaInicioMin": 615.95,
+      "horaFimMin": 1015.9833333333333,
       "duracaoMin": 400.0333333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -446,6 +544,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-08",
+      "horaInicioMin": 526.9166666666666,
+      "horaFimMin": 765.4666666666667,
       "duracaoMin": 238.55000000000007,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -455,6 +555,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-10",
+      "horaInicioMin": 512,
+      "horaFimMin": 528.4333333333333,
       "duracaoMin": 16.43333333333328,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -464,6 +566,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-10",
+      "horaInicioMin": 528.5666666666667,
+      "horaFimMin": 535.6166666666667,
       "duracaoMin": 7.0499999999999545,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -473,6 +577,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-10",
+      "horaInicioMin": 546.7,
+      "horaFimMin": 571.3666666666667,
       "duracaoMin": 24.66666666666663,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -482,6 +588,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER - RO",
       "data": "2026-08-11",
+      "horaInicioMin": 510.95,
+      "horaFimMin": 531.7,
       "duracaoMin": 20.750000000000057,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -491,6 +599,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA R BRASILIA",
       "data": "2026-08-11",
+      "horaInicioMin": 534.75,
+      "horaFimMin": 563.0833333333334,
       "duracaoMin": 28.33333333333337,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -500,6 +610,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-11",
+      "horaInicioMin": 586.8833333333333,
+      "horaFimMin": 1077.7833333333333,
       "duracaoMin": 490.9,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -509,6 +621,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-12",
+      "horaInicioMin": 510.6666666666667,
+      "horaFimMin": 522.5166666666667,
       "duracaoMin": 11.849999999999966,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -518,6 +632,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-12",
+      "horaInicioMin": 525.8166666666667,
+      "horaFimMin": 541.0166666666667,
       "duracaoMin": 15.199999999999932,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -527,6 +643,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-12",
+      "horaInicioMin": 553.5333333333333,
+      "horaFimMin": 585.95,
       "duracaoMin": 32.41666666666674,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -536,6 +654,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-12",
+      "horaInicioMin": 601.05,
+      "horaFimMin": 1051.0833333333333,
       "duracaoMin": 450.0333333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -545,6 +665,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER - RO",
       "data": "2026-08-13",
+      "horaInicioMin": 536.5666666666667,
+      "horaFimMin": 540.5666666666667,
       "duracaoMin": 4,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -554,6 +676,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA R BRASILIA",
       "data": "2026-08-13",
+      "horaInicioMin": 545.25,
+      "horaFimMin": 566.5,
       "duracaoMin": 21.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -563,6 +687,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-13",
+      "horaInicioMin": 1074.0166666666667,
+      "horaFimMin": 1076.9166666666667,
       "duracaoMin": 2.900000000000091,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -572,6 +698,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-14",
+      "horaInicioMin": 512.8,
+      "horaFimMin": 514.2,
       "duracaoMin": 1.400000000000091,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -581,6 +709,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-14",
+      "horaInicioMin": 514.5333333333333,
+      "horaFimMin": 522.2666666666667,
       "duracaoMin": 7.7333333333333485,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -590,6 +720,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-14",
+      "horaInicioMin": 532.25,
+      "horaFimMin": 1011.3666666666667,
       "duracaoMin": 479.1166666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -599,6 +731,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-15",
+      "horaInicioMin": 516.0666666666667,
+      "horaFimMin": 519.1833333333333,
       "duracaoMin": 3.1166666666665606,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -608,6 +742,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-15",
+      "horaInicioMin": 523.1333333333333,
+      "horaFimMin": 765.3666666666667,
       "duracaoMin": 242.23333333333335,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -617,6 +753,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-17",
+      "horaInicioMin": 511.71666666666664,
+      "horaFimMin": 545.3166666666667,
       "duracaoMin": 33.60000000000008,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -626,6 +764,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-17",
+      "horaInicioMin": 545.45,
+      "horaFimMin": 551.6166666666667,
       "duracaoMin": 6.166666666666629,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -635,6 +775,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-17",
+      "horaInicioMin": 562.2166666666667,
+      "horaFimMin": 1051.3333333333333,
       "duracaoMin": 489.11666666666656,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -644,6 +786,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER - RO",
       "data": "2026-08-18",
+      "horaInicioMin": 514.0166666666667,
+      "horaFimMin": 532.4666666666667,
       "duracaoMin": 18.450000000000045,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -653,6 +797,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA R BRASILIA",
       "data": "2026-08-18",
+      "horaInicioMin": 543.8666666666667,
+      "horaFimMin": 566.4666666666667,
       "duracaoMin": 22.600000000000023,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -662,6 +808,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-18",
+      "horaInicioMin": 581.8666666666667,
+      "horaFimMin": 1079.4333333333334,
       "duracaoMin": 497.5666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -671,6 +819,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-19",
+      "horaInicioMin": 512.8833333333333,
+      "horaFimMin": 524.85,
       "duracaoMin": 11.966666666666697,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -680,6 +830,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-19",
+      "horaInicioMin": 525.2166666666667,
+      "horaFimMin": 538.0833333333334,
       "duracaoMin": 12.866666666666674,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -689,6 +841,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-19",
+      "horaInicioMin": 562.9666666666667,
+      "horaFimMin": 609.8333333333334,
       "duracaoMin": 46.866666666666674,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -698,6 +852,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-19",
+      "horaInicioMin": 637.8666666666667,
+      "horaFimMin": 1062.4333333333334,
       "duracaoMin": 424.5666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -707,6 +863,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER - RO",
       "data": "2026-08-20",
+      "horaInicioMin": 510.3666666666667,
+      "horaFimMin": 511.9,
       "duracaoMin": 1.533333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -716,6 +874,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA R BRASILIA",
       "data": "2026-08-20",
+      "horaInicioMin": 515.6333333333333,
+      "horaFimMin": 530.5,
       "duracaoMin": 14.866666666666674,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -725,6 +885,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-20",
+      "horaInicioMin": 590.7833333333333,
+      "horaFimMin": 1078.9833333333333,
       "duracaoMin": 488.20000000000005,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -734,6 +896,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-21",
+      "horaInicioMin": 511.46666666666664,
+      "horaFimMin": 521.7,
       "duracaoMin": 10.233333333333405,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -743,6 +907,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-21",
+      "horaInicioMin": 521.9166666666666,
+      "horaFimMin": 546.0666666666667,
       "duracaoMin": 24.15000000000009,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -752,6 +918,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-21",
+      "horaInicioMin": 557.65,
+      "horaFimMin": 599.3,
       "duracaoMin": 41.64999999999998,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -761,6 +929,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-21",
+      "horaInicioMin": 608.2,
+      "horaFimMin": 1051.8,
       "duracaoMin": 443.5999999999999,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -770,6 +940,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-22",
+      "horaInicioMin": 510.51666666666665,
+      "horaFimMin": 512.8666666666667,
       "duracaoMin": 2.3500000000000227,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -779,6 +951,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-22",
+      "horaInicioMin": 517.6166666666667,
+      "horaFimMin": 758.65,
       "duracaoMin": 241.0333333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -788,6 +962,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-24",
+      "horaInicioMin": 511.26666666666665,
+      "horaFimMin": 535.4666666666667,
       "duracaoMin": 24.200000000000045,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -797,6 +973,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-24",
+      "horaInicioMin": 535.7166666666667,
+      "horaFimMin": 589.8833333333333,
       "duracaoMin": 54.16666666666663,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -806,6 +984,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-24",
+      "horaInicioMin": 600.5166666666667,
+      "horaFimMin": 1050.5333333333333,
       "duracaoMin": 450.01666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -815,6 +995,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER - RO",
       "data": "2026-08-25",
+      "horaInicioMin": 510.93333333333334,
+      "horaFimMin": 526.5,
       "duracaoMin": 15.566666666666663,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -824,6 +1006,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA R BRASILIA",
       "data": "2026-08-25",
+      "horaInicioMin": 529.9333333333333,
+      "horaFimMin": 562.9,
       "duracaoMin": 32.9666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -833,6 +1017,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-25",
+      "horaInicioMin": 576.55,
+      "horaFimMin": 659.0833333333334,
       "duracaoMin": 82.53333333333342,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -842,6 +1028,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-26",
+      "horaInicioMin": 512.1333333333333,
+      "horaFimMin": 526.8166666666667,
       "duracaoMin": 14.683333333333394,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -851,6 +1039,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-26",
+      "horaInicioMin": 527.0333333333333,
+      "horaFimMin": 541.5,
       "duracaoMin": 14.466666666666697,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -860,6 +1050,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-26",
+      "horaInicioMin": 555.0166666666667,
+      "horaFimMin": 598.6166666666667,
       "duracaoMin": 43.60000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -869,6 +1061,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-26",
+      "horaInicioMin": 613.4,
+      "horaFimMin": 1051.5,
       "duracaoMin": 438.1,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -878,6 +1072,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER - RO",
       "data": "2026-08-27",
+      "horaInicioMin": 510.73333333333335,
+      "horaFimMin": 512.3333333333334,
       "duracaoMin": 1.6000000000000227,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -887,6 +1083,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA R BRASILIA",
       "data": "2026-08-27",
+      "horaInicioMin": 515.9666666666667,
+      "horaFimMin": 520.9333333333333,
       "duracaoMin": 4.966666666666583,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -896,6 +1094,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-27",
+      "horaInicioMin": 529.3166666666667,
+      "horaFimMin": 1079.0833333333333,
       "duracaoMin": 549.7666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -905,6 +1105,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-28",
+      "horaInicioMin": 512.8,
+      "horaFimMin": 519.25,
       "duracaoMin": 6.4500000000000455,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -914,6 +1116,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-28",
+      "horaInicioMin": 529.9,
+      "horaFimMin": 540.5666666666667,
       "duracaoMin": 10.666666666666742,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -923,6 +1127,8 @@
       "cidade": "Porto Velho",
       "loja": "NE RAIMUNDO CANTUARIA",
       "data": "2026-08-28",
+      "horaInicioMin": 552.95,
+      "horaFimMin": 1053.0833333333333,
       "duracaoMin": 500.1333333333332,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -932,6 +1138,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA JATUARANA",
       "data": "2026-08-29",
+      "horaInicioMin": 513.0833333333334,
+      "horaFimMin": 516.4666666666667,
       "duracaoMin": 3.3833333333333258,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -941,6 +1149,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-29",
+      "horaInicioMin": 520.7166666666667,
+      "horaFimMin": 754.8833333333333,
       "duracaoMin": 234.16666666666663,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -950,6 +1160,8 @@
       "cidade": "Porto Velho",
       "loja": "ARASUPER ESPERANÇA",
       "data": "2026-08-31",
+      "horaInicioMin": 510.95,
+      "horaFimMin": 512.75,
       "duracaoMin": 1.8000000000000114,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -959,6 +1171,8 @@
       "cidade": "Porto Velho",
       "loja": "NOVA ERA IMIGRANTES",
       "data": "2026-08-31",
+      "horaInicioMin": 520.9833333333333,
+      "horaFimMin": 541.8,
       "duracaoMin": 20.816666666666606,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -968,6 +1182,8 @@
       "cidade": "Porto Velho",
       "loja": "ARAMIX - RO",
       "data": "2026-08-31",
+      "horaInicioMin": 551.55,
+      "horaFimMin": 1048.9833333333333,
       "duracaoMin": 497.4333333333334,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -977,6 +1193,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORQUATO",
       "data": "2026-08-05",
+      "horaInicioMin": 629.4333333333333,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -986,6 +1204,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA PONTA NEGRA",
       "data": "2026-08-05",
+      "horaInicioMin": 629.9333333333333,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -995,6 +1215,8 @@
       "cidade": "Manaus",
       "loja": "nova era laranjeiras",
       "data": "2026-08-06",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1004,6 +1226,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORQUATO",
       "data": "2026-08-07",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -1013,6 +1237,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA PONTA NEGRA",
       "data": "2026-08-07",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1022,6 +1248,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA COROADO",
       "data": "2026-08-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1031,6 +1259,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA AUTAZ MIRIM",
       "data": "2026-08-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1040,6 +1270,8 @@
       "cidade": "Manaus",
       "loja": "nova era laranjeiras",
       "data": "2026-08-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1049,6 +1281,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORRES",
       "data": "2026-08-10",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Sem Bateria",
       "status": "Justificado"
@@ -1058,6 +1292,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-10",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1067,6 +1303,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE DE DEUS",
       "data": "2026-08-11",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -1076,6 +1314,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA GRANDE CIRCULAR",
       "data": "2026-08-11",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -1085,6 +1325,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA VIVER MELHOR",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -1094,6 +1336,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE DE DEUS",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1103,6 +1347,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -1112,6 +1358,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA PONTE",
       "data": "2026-08-13",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1121,6 +1369,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-14",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1130,6 +1380,8 @@
       "cidade": "Manaus",
       "loja": "nova era laranjeiras",
       "data": "2026-08-15",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1139,6 +1391,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA AUTAZ MIRIM",
       "data": "2026-08-15",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1148,6 +1402,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA COROADO",
       "data": "2026-08-15",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1157,6 +1413,8 @@
       "cidade": "Manaus",
       "loja": "TORRES 02",
       "data": "2026-08-17",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1166,6 +1424,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORRES",
       "data": "2026-08-17",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1175,6 +1435,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE DE DEUS",
       "data": "2026-08-18",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -1184,6 +1446,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA GRANDE CIRCULAR",
       "data": "2026-08-18",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1193,6 +1457,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-21",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1202,6 +1468,8 @@
       "cidade": "Manaus",
       "loja": "nova era laranjeiras",
       "data": "2026-08-22",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1211,6 +1479,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA COROADO",
       "data": "2026-08-22",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1220,6 +1490,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA AUTAZ MIRIM",
       "data": "2026-08-22",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Sem Bateria",
       "status": "Justificado"
@@ -1229,6 +1501,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-24",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1238,6 +1512,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-28",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1247,6 +1523,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA COROADO",
       "data": "2026-08-29",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1256,6 +1534,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA AUTAZ MIRIM",
       "data": "2026-08-29",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1265,6 +1545,8 @@
       "cidade": "Manaus",
       "loja": "nova era laranjeiras",
       "data": "2026-08-29",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1274,6 +1556,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-31",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -1283,6 +1567,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA VIA NORTE",
       "data": "2026-08-06",
+      "horaInicioMin": 704.75,
+      "horaFimMin": 807.7666666666667,
       "duracaoMin": 103.01666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1292,6 +1578,8 @@
       "cidade": "Manaus",
       "loja": "TORRES 02",
       "data": "2026-08-10",
+      "horaInicioMin": 698.7166666666667,
+      "horaFimMin": 796.2166666666667,
       "duracaoMin": 97.5,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1301,6 +1589,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-11",
+      "horaInicioMin": 711.1,
+      "horaFimMin": 756.75,
       "duracaoMin": 45.64999999999998,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1310,6 +1600,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA VIVER MELHOR",
       "data": "2026-08-11",
+      "horaInicioMin": 883.8166666666667,
+      "horaFimMin": 898.15,
       "duracaoMin": 14.333333333333258,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1319,6 +1611,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA GRANDE CIRCULAR",
       "data": "2026-08-12",
+      "horaInicioMin": 669.05,
+      "horaFimMin": 842.5,
       "duracaoMin": 173.45000000000005,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1328,6 +1622,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA SILVES",
       "data": "2026-08-13",
+      "horaInicioMin": 725.25,
+      "horaFimMin": 908.9833333333333,
       "duracaoMin": 183.73333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1337,6 +1633,8 @@
       "cidade": "Manaus",
       "loja": "TORRES 02",
       "data": "2026-08-14",
+      "horaInicioMin": 690.9,
+      "horaFimMin": 726.1666666666666,
       "duracaoMin": 35.26666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1346,6 +1644,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORRES",
       "data": "2026-08-14",
+      "horaInicioMin": 793.9,
+      "horaFimMin": 903.75,
       "duracaoMin": 109.85000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1355,6 +1655,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-17",
+      "horaInicioMin": 713.0333333333333,
+      "horaFimMin": 791.15,
       "duracaoMin": 78.11666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1364,6 +1666,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-19",
+      "horaInicioMin": 703.0166666666667,
+      "horaFimMin": 778.2833333333333,
       "duracaoMin": 75.26666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1373,6 +1677,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA VIVER MELHOR",
       "data": "2026-08-19",
+      "horaInicioMin": 841.15,
+      "horaFimMin": 891.85,
       "duracaoMin": 50.700000000000045,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1382,6 +1688,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA PONTE",
       "data": "2026-08-20",
+      "horaInicioMin": 835,
+      "horaFimMin": 839.6,
       "duracaoMin": 4.600000000000023,
       "motivo": "",
       "status": "Finalizado pelo Supervisor"
@@ -1391,6 +1699,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA SILVES",
       "data": "2026-08-20",
+      "horaInicioMin": 896.2833333333333,
+      "horaFimMin": 915.35,
       "duracaoMin": 19.06666666666672,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1400,6 +1710,8 @@
       "cidade": "Manaus",
       "loja": "TORRES 02",
       "data": "2026-08-21",
+      "horaInicioMin": 699.7666666666667,
+      "horaFimMin": 835.0166666666667,
       "duracaoMin": 135.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1409,6 +1721,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORRES",
       "data": "2026-08-21",
+      "horaInicioMin": 873.7,
+      "horaFimMin": 915.3333333333334,
       "duracaoMin": 41.633333333333326,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1418,6 +1732,8 @@
       "cidade": "Manaus",
       "loja": "TORRES 02",
       "data": "2026-08-24",
+      "horaInicioMin": 714.1166666666667,
+      "horaFimMin": 835.1,
       "duracaoMin": 120.98333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1427,6 +1743,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORRES",
       "data": "2026-08-24",
+      "horaInicioMin": 863.25,
+      "horaFimMin": 945.9,
       "duracaoMin": 82.64999999999998,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1436,6 +1754,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA GRANDE CIRCULAR",
       "data": "2026-08-25",
+      "horaInicioMin": 685.9333333333333,
+      "horaFimMin": 780.3166666666667,
       "duracaoMin": 94.38333333333344,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1445,6 +1765,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE DE DEUS",
       "data": "2026-08-25",
+      "horaInicioMin": 821.4,
+      "horaFimMin": 881.8666666666667,
       "duracaoMin": 60.4666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1454,6 +1776,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA CIDADE NOVA",
       "data": "2026-08-26",
+      "horaInicioMin": 687.5666666666667,
+      "horaFimMin": 792.6333333333333,
       "duracaoMin": 105.0666666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1463,6 +1787,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA VIVER MELHOR",
       "data": "2026-08-26",
+      "horaInicioMin": 899.55,
+      "horaFimMin": 949.6,
       "duracaoMin": 50.05000000000007,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1472,6 +1798,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA PONTE",
       "data": "2026-08-27",
+      "horaInicioMin": 745.1,
+      "horaFimMin": 745.1,
       "duracaoMin": 0,
       "motivo": "",
       "status": "Finalizado pelo Supervisor"
@@ -1481,6 +1809,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA SILVES",
       "data": "2026-08-27",
+      "horaInicioMin": 859.3666666666667,
+      "horaFimMin": 902.1833333333333,
       "duracaoMin": 42.816666666666606,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1490,6 +1820,8 @@
       "cidade": "Manaus",
       "loja": "TORRES 02",
       "data": "2026-08-28",
+      "horaInicioMin": 690.3333333333334,
+      "horaFimMin": 842.7666666666667,
       "duracaoMin": 152.43333333333328,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1499,6 +1831,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORRES",
       "data": "2026-08-28",
+      "horaInicioMin": 858.6666666666666,
+      "horaFimMin": 874.25,
       "duracaoMin": 15.583333333333371,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1508,6 +1842,8 @@
       "cidade": "Manaus",
       "loja": "TORRES 02",
       "data": "2026-08-31",
+      "horaInicioMin": 764.8833333333333,
+      "horaFimMin": 840.0833333333334,
       "duracaoMin": 75.20000000000005,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1517,6 +1853,8 @@
       "cidade": "Manaus",
       "loja": "NOVA ERA TORRES",
       "data": "2026-08-31",
+      "horaInicioMin": 861.4,
+      "horaFimMin": 950.1,
       "duracaoMin": 88.70000000000005,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1526,6 +1864,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1535,6 +1875,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-03",
+      "horaInicioMin": 692.85,
+      "horaFimMin": 1066.4833333333333,
       "duracaoMin": 373.6333333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1544,6 +1886,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-03",
+      "horaInicioMin": 545.7166666666667,
+      "horaFimMin": 571.5,
       "duracaoMin": 25.783333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1553,6 +1897,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-03",
+      "horaInicioMin": 582.7833333333333,
+      "horaFimMin": 592.0833333333334,
       "duracaoMin": 9.300000000000068,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1562,6 +1908,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-03",
+      "horaInicioMin": 510.85,
+      "horaFimMin": 533.4166666666666,
       "duracaoMin": 22.566666666666606,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1571,6 +1919,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-04",
+      "horaInicioMin": 512.9166666666666,
+      "horaFimMin": 533.45,
       "duracaoMin": 20.533333333333417,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1580,6 +1930,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-05",
+      "horaInicioMin": 549.25,
+      "horaFimMin": 549.5666666666667,
       "duracaoMin": 0.3166666666667197,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1589,6 +1941,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-05",
+      "horaInicioMin": 510.81666666666666,
+      "horaFimMin": 511.03333333333336,
       "duracaoMin": 0.21666666666669698,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1598,6 +1952,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-05",
+      "horaInicioMin": 525.8,
+      "horaFimMin": 526.0833333333334,
       "duracaoMin": 0.2833333333334167,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1607,6 +1963,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-05",
+      "horaInicioMin": 517.5333333333333,
+      "horaFimMin": 517.75,
       "duracaoMin": 0.21666666666669698,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1616,6 +1974,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-06",
+      "horaInicioMin": 514.5666666666667,
+      "horaFimMin": 514.8333333333334,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1625,6 +1985,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-07",
+      "horaInicioMin": 523.2333333333333,
+      "horaFimMin": 523.5,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1634,6 +1996,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-07",
+      "horaInicioMin": 510.23333333333335,
+      "horaFimMin": 510.55,
       "duracaoMin": 0.3166666666666629,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1643,6 +2007,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-07",
+      "horaInicioMin": 515.25,
+      "horaFimMin": 515.5666666666667,
       "duracaoMin": 0.3166666666667197,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1652,6 +2018,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-07",
+      "horaInicioMin": 545.0666666666667,
+      "horaFimMin": 545.3333333333334,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1661,6 +2029,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-08",
+      "horaInicioMin": 536.0833333333334,
+      "horaFimMin": 536.6166666666667,
       "duracaoMin": 0.533333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1670,6 +2040,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-10",
+      "horaInicioMin": 510.93333333333334,
+      "horaFimMin": 511.2,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1679,6 +2051,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-10",
+      "horaInicioMin": 515.5666666666667,
+      "horaFimMin": 515.8666666666667,
       "duracaoMin": 0.2999999999999545,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1688,6 +2062,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-10",
+      "horaInicioMin": 524.4,
+      "horaFimMin": 524.6666666666666,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1697,6 +2073,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-10",
+      "horaInicioMin": 553.3,
+      "horaFimMin": 553.6166666666667,
       "duracaoMin": 0.3166666666667197,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1706,6 +2084,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-11",
+      "horaInicioMin": 512.0666666666667,
+      "horaFimMin": 533.7166666666667,
       "duracaoMin": 21.649999999999977,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1715,6 +2095,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1724,6 +2106,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-12",
+      "horaInicioMin": 627.4666666666667,
+      "horaFimMin": 1056.2833333333333,
       "duracaoMin": 428.8166666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1733,6 +2117,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-12",
+      "horaInicioMin": 511.6,
+      "horaFimMin": 535.7333333333333,
       "duracaoMin": 24.133333333333326,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1742,6 +2128,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-12",
+      "horaInicioMin": 594.2166666666667,
+      "horaFimMin": 619.95,
       "duracaoMin": 25.73333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1751,6 +2139,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-12",
+      "horaInicioMin": 547.0333333333333,
+      "horaFimMin": 581.6,
       "duracaoMin": 34.56666666666672,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1760,6 +2150,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-13",
+      "horaInicioMin": 513.1666666666666,
+      "horaFimMin": 513.4333333333333,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1769,6 +2161,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-14",
+      "horaInicioMin": 524.3833333333333,
+      "horaFimMin": 524.65,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1778,6 +2172,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-14",
+      "horaInicioMin": 545.6666666666666,
+      "horaFimMin": 545.95,
       "duracaoMin": 0.2833333333334167,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1787,6 +2183,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-14",
+      "horaInicioMin": 516.6666666666666,
+      "horaFimMin": 516.9,
       "duracaoMin": 0.2333333333333485,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1796,6 +2194,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-14",
+      "horaInicioMin": 512.9,
+      "horaFimMin": 513.15,
       "duracaoMin": 0.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1805,6 +2205,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-15",
+      "horaInicioMin": 515.15,
+      "horaFimMin": 515.3666666666667,
       "duracaoMin": 0.21666666666669698,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1814,6 +2216,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-17",
+      "horaInicioMin": 522.0166666666667,
+      "horaFimMin": 522.3833333333333,
       "duracaoMin": 0.36666666666667425,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1823,6 +2227,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-17",
+      "horaInicioMin": 526.95,
+      "horaFimMin": 527.3833333333333,
       "duracaoMin": 0.4333333333332803,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1832,6 +2238,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-17",
+      "horaInicioMin": 535.0333333333333,
+      "horaFimMin": 535.3333333333334,
       "duracaoMin": 0.3000000000000682,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1841,6 +2249,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-17",
+      "horaInicioMin": 549.0833333333334,
+      "horaFimMin": 549.35,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1850,6 +2260,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-18",
+      "horaInicioMin": 517.5666666666667,
+      "horaFimMin": 518.05,
       "duracaoMin": 0.4833333333332348,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1859,6 +2271,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-19",
+      "horaInicioMin": 610.7166666666667,
+      "horaFimMin": 1065.2333333333333,
       "duracaoMin": 454.51666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1868,6 +2282,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-19",
+      "horaInicioMin": 576.5,
+      "horaFimMin": 605.8166666666667,
       "duracaoMin": 29.31666666666672,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1877,6 +2293,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-19",
+      "horaInicioMin": 528.3833333333333,
+      "horaFimMin": 566.9333333333333,
       "duracaoMin": 38.549999999999955,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1886,6 +2304,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-19",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1895,6 +2315,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-19",
+      "horaInicioMin": 510.68333333333334,
+      "horaFimMin": 519.0666666666667,
       "duracaoMin": 8.383333333333383,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1904,6 +2326,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-20",
+      "horaInicioMin": 511.3666666666667,
+      "horaFimMin": 511.65,
       "duracaoMin": 0.283333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1913,6 +2337,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-21",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -1922,6 +2348,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-21",
+      "horaInicioMin": 557.5666666666667,
+      "horaFimMin": 606.4666666666667,
       "duracaoMin": 48.89999999999998,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1931,6 +2359,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-21",
+      "horaInicioMin": 511.21666666666664,
+      "horaFimMin": 546.95,
       "duracaoMin": 35.733333333333405,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1940,6 +2370,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-21",
+      "horaInicioMin": 616.4666666666667,
+      "horaFimMin": 648.7166666666667,
       "duracaoMin": 32.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1949,6 +2381,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-22",
+      "horaInicioMin": 520.95,
+      "horaFimMin": 555.1833333333333,
       "duracaoMin": 34.233333333333235,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1958,6 +2392,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-24",
+      "horaInicioMin": 519.0166666666667,
+      "horaFimMin": 519.25,
       "duracaoMin": 0.2333333333333485,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1967,6 +2403,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-24",
+      "horaInicioMin": 510.48333333333335,
+      "horaFimMin": 510.76666666666665,
       "duracaoMin": 0.283333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1976,6 +2414,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-24",
+      "horaInicioMin": 525.1333333333333,
+      "horaFimMin": 525.3666666666667,
       "duracaoMin": 0.2333333333333485,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1985,6 +2425,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-24",
+      "horaInicioMin": 534.45,
+      "horaFimMin": 534.7,
       "duracaoMin": 0.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -1994,6 +2436,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-25",
+      "horaInicioMin": 511.75,
+      "horaFimMin": 512.6333333333333,
       "duracaoMin": 0.8833333333333258,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2003,6 +2447,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-26",
+      "horaInicioMin": 532.1166666666667,
+      "horaFimMin": 532.3666666666667,
       "duracaoMin": 0.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2012,6 +2458,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-26",
+      "horaInicioMin": 540.35,
+      "horaFimMin": 590.5833333333334,
       "duracaoMin": 50.23333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2021,6 +2469,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-26",
+      "horaInicioMin": 528.0833333333334,
+      "horaFimMin": 528.65,
       "duracaoMin": 0.566666666666606,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2030,6 +2480,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-26",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -2039,6 +2491,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-26",
+      "horaInicioMin": 606.0833333333334,
+      "horaFimMin": 1054.6833333333334,
       "duracaoMin": 448.6,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2048,6 +2502,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-27",
+      "horaInicioMin": 510.28333333333336,
+      "horaFimMin": 533.3666666666667,
       "duracaoMin": 23.083333333333314,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2057,6 +2513,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-28",
+      "horaInicioMin": 515.3333333333334,
+      "horaFimMin": 515.6166666666667,
       "duracaoMin": 0.283333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2066,6 +2524,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-28",
+      "horaInicioMin": 511.65,
+      "horaFimMin": 512,
       "duracaoMin": 0.35000000000002274,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2075,6 +2535,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-28",
+      "horaInicioMin": 548.6333333333333,
+      "horaFimMin": 548.8666666666667,
       "duracaoMin": 0.2333333333333485,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2084,6 +2546,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-28",
+      "horaInicioMin": 523.1166666666667,
+      "horaFimMin": 523.3666666666667,
       "duracaoMin": 0.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2093,6 +2557,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F11 EMBRATEL",
       "data": "2026-08-29",
+      "horaInicioMin": 547.7,
+      "horaFimMin": 547.9833333333333,
       "duracaoMin": 0.283333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2102,6 +2568,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F29 TIRADENTES",
       "data": "2026-08-31",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -2111,6 +2579,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F27 7 DE SETEMBRO",
       "data": "2026-08-31",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -2120,6 +2590,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-01",
+      "horaInicioMin": 516.4833333333333,
+      "horaFimMin": 516.75,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2129,6 +2601,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-01",
+      "horaInicioMin": 538.4833333333333,
+      "horaFimMin": 793.75,
       "duracaoMin": 255.26666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2138,6 +2612,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-03",
+      "horaInicioMin": 613.4333333333333,
+      "horaFimMin": 683.4333333333333,
       "duracaoMin": 70,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2147,6 +2623,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-04",
+      "horaInicioMin": 541.7833333333333,
+      "horaFimMin": 542.2333333333333,
       "duracaoMin": 0.4500000000000455,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2156,6 +2634,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F46 - MARIANA",
       "data": "2026-08-04",
+      "horaInicioMin": 551.1666666666666,
+      "horaFimMin": 588.7666666666667,
       "duracaoMin": 37.60000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2165,6 +2645,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-04",
+      "horaInicioMin": 608.0666666666667,
+      "horaFimMin": 1075.4166666666667,
       "duracaoMin": 467.35,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2174,6 +2656,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-05",
+      "horaInicioMin": 560.3666666666667,
+      "horaFimMin": 1050.8333333333333,
       "duracaoMin": 490.4666666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2183,6 +2667,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-06",
+      "horaInicioMin": 521.3166666666667,
+      "horaFimMin": 521.65,
       "duracaoMin": 0.33333333333325754,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2192,6 +2678,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F46 - MARIANA",
       "data": "2026-08-06",
+      "horaInicioMin": 529.9666666666667,
+      "horaFimMin": 530.2,
       "duracaoMin": 0.2333333333333485,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2201,6 +2689,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-06",
+      "horaInicioMin": 566.4333333333333,
+      "horaFimMin": 1069.0666666666666,
       "duracaoMin": 502.6333333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2210,6 +2700,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-07",
+      "horaInicioMin": 549.3166666666667,
+      "horaFimMin": 1052.6,
       "duracaoMin": 503.2833333333332,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2219,6 +2711,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-08",
+      "horaInicioMin": 542.7666666666667,
+      "horaFimMin": 543.1333333333333,
       "duracaoMin": 0.36666666666667425,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2228,6 +2722,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-08",
+      "horaInicioMin": 558.1333333333333,
+      "horaFimMin": 800.7333333333333,
       "duracaoMin": 242.60000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2237,6 +2733,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-10",
+      "horaInicioMin": 557.8666666666667,
+      "horaFimMin": 1056.8166666666666,
       "duracaoMin": 498.94999999999993,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2246,6 +2744,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-11",
+      "horaInicioMin": 541.2666666666667,
+      "horaFimMin": 577.1166666666667,
       "duracaoMin": 35.85000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2255,6 +2755,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F46 - MARIANA",
       "data": "2026-08-11",
+      "horaInicioMin": 592.0666666666667,
+      "horaFimMin": 592.5833333333334,
       "duracaoMin": 0.5166666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2264,6 +2766,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-11",
+      "horaInicioMin": 605.5666666666667,
+      "horaFimMin": 1077.1166666666666,
       "duracaoMin": 471.54999999999984,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2273,6 +2777,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-13",
+      "horaInicioMin": 520,
+      "horaFimMin": 520.2666666666667,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2282,6 +2788,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F46 - MARIANA",
       "data": "2026-08-13",
+      "horaInicioMin": 528.4833333333333,
+      "horaFimMin": 632.5,
       "duracaoMin": 104.01666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2291,6 +2799,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-13",
+      "horaInicioMin": 651.6833333333333,
+      "horaFimMin": 1073.5333333333333,
       "duracaoMin": 421.85,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2300,6 +2810,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-14",
+      "horaInicioMin": 551.6,
+      "horaFimMin": 1050.2666666666667,
       "duracaoMin": 498.66666666666663,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2309,6 +2821,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-15",
+      "horaInicioMin": 522.7833333333333,
+      "horaFimMin": 523.2166666666667,
       "duracaoMin": 0.43333333333339397,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2318,6 +2832,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-15",
+      "horaInicioMin": 543.85,
+      "horaFimMin": 775.7,
       "duracaoMin": 231.85000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2327,6 +2843,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-17",
+      "horaInicioMin": 555.15,
+      "horaFimMin": 1058.1833333333334,
       "duracaoMin": 503.0333333333334,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2336,6 +2854,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-18",
+      "horaInicioMin": 525.3333333333334,
+      "horaFimMin": 525.8,
       "duracaoMin": 0.4666666666665833,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2345,6 +2865,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F46 - MARIANA",
       "data": "2026-08-18",
+      "horaInicioMin": 534.1333333333333,
+      "horaFimMin": 534.5333333333333,
       "duracaoMin": 0.39999999999997726,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2354,6 +2876,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-18",
+      "horaInicioMin": 547.1666666666666,
+      "horaFimMin": 1078.5666666666666,
       "duracaoMin": 531.4,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2363,6 +2887,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-20",
+      "horaInicioMin": 520.0333333333333,
+      "horaFimMin": 520.3,
       "duracaoMin": 0.2666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2372,6 +2898,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F46 - MARIANA",
       "data": "2026-08-20",
+      "horaInicioMin": 528.3333333333334,
+      "horaFimMin": 528.5333333333333,
       "duracaoMin": 0.1999999999999318,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2381,6 +2909,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-20",
+      "horaInicioMin": 555.8666666666667,
+      "horaFimMin": 1078.5333333333333,
       "duracaoMin": 522.6666666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2390,6 +2920,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-21",
+      "horaInicioMin": 711.7833333333333,
+      "horaFimMin": 1061.6,
       "duracaoMin": 349.8166666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2399,6 +2931,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-22",
+      "horaInicioMin": 565.2833333333333,
+      "horaFimMin": 629.6666666666666,
       "duracaoMin": 64.38333333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2408,6 +2942,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-22",
+      "horaInicioMin": 652.75,
+      "horaFimMin": 760.35,
       "duracaoMin": 107.60000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2417,6 +2953,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-24",
+      "horaInicioMin": 538.8333333333334,
+      "horaFimMin": 1054.5333333333333,
       "duracaoMin": 515.6999999999999,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2426,6 +2964,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-25",
+      "horaInicioMin": 520.25,
+      "horaFimMin": 520.85,
       "duracaoMin": 0.6000000000000227,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2435,6 +2975,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F46 - MARIANA",
       "data": "2026-08-25",
+      "horaInicioMin": 529.95,
+      "horaFimMin": 530.35,
       "duracaoMin": 0.39999999999997726,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2444,6 +2986,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-25",
+      "horaInicioMin": 545,
+      "horaFimMin": 1075.6333333333334,
       "duracaoMin": 530.6333333333334,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2453,6 +2997,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-27",
+      "horaInicioMin": 544.4666666666667,
+      "horaFimMin": 544.7833333333333,
       "duracaoMin": 0.31666666666660603,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2462,6 +3008,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F46 - MARIANA",
       "data": "2026-08-27",
+      "horaInicioMin": 554,
+      "horaFimMin": 561.8166666666667,
       "duracaoMin": 7.81666666666672,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2471,6 +3019,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-27",
+      "horaInicioMin": 622.2166666666667,
+      "horaFimMin": 1078.5333333333333,
       "duracaoMin": 456.3166666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2480,6 +3030,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-28",
+      "horaInicioMin": 553.1333333333333,
+      "horaFimMin": 1055.25,
       "duracaoMin": 502.1166666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2489,6 +3041,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F50 - MAMORE",
       "data": "2026-08-29",
+      "horaInicioMin": 554.55,
+      "horaFimMin": 554.8,
       "duracaoMin": 0.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2498,6 +3052,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F38 - JATUARANA",
       "data": "2026-08-29",
+      "horaInicioMin": 566.45,
+      "horaFimMin": 775.7833333333333,
       "duracaoMin": 209.33333333333326,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2507,6 +3063,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F19 AV RIO DE JANEIRO",
       "data": "2026-08-31",
+      "horaInicioMin": 711.9166666666666,
+      "horaFimMin": 721.3,
       "duracaoMin": 9.383333333333326,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2516,6 +3074,8 @@
       "cidade": "Porto Velho",
       "loja": "IG F21 AV JATUARANA",
       "data": "2026-08-31",
+      "horaInicioMin": 726.8166666666667,
+      "horaFimMin": 732.5833333333334,
       "duracaoMin": 5.7666666666666515,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2525,6 +3085,8 @@
       "cidade": "Porto Velho",
       "loja": "irmãos Gonçalves F-52",
       "data": "2026-08-31",
+      "horaInicioMin": 738.8333333333334,
+      "horaFimMin": 1057.3666666666666,
       "duracaoMin": 318.5333333333332,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2534,6 +3096,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO VILLE ROY",
       "data": "2026-08-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2543,6 +3107,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-03",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2552,6 +3118,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião  13 de setembro",
       "data": "2026-08-04",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2561,6 +3129,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2570,6 +3140,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião - Cidade Satélite",
       "data": "2026-08-06",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2579,6 +3151,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-07",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -2588,6 +3162,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO VILLE ROY",
       "data": "2026-08-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2597,6 +3173,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO VILLE ROY",
       "data": "2026-08-11",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2606,6 +3184,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2615,6 +3195,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião - Cidade Satélite",
       "data": "2026-08-13",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2624,6 +3206,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO VILLE ROY",
       "data": "2026-08-14",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Sem Bateria",
       "status": "Justificado"
@@ -2633,6 +3217,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião - Cidade Satélite",
       "data": "2026-08-15",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2642,6 +3228,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião  13 de setembro",
       "data": "2026-08-18",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2651,6 +3239,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO RAIAR DO SOL",
       "data": "2026-08-19",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2660,6 +3250,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-20",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2669,6 +3261,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO VILLE ROY",
       "data": "2026-08-21",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2678,6 +3272,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião - Cidade Satélite",
       "data": "2026-08-26",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Sem Bateria",
       "status": "Justificado"
@@ -2687,6 +3283,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO VILLE ROY",
       "data": "2026-08-28",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2696,6 +3294,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião - Cidade Satélite",
       "data": "2026-08-29",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2705,6 +3305,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-31",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -2714,6 +3316,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião  13 de setembro",
       "data": "2026-08-01",
+      "horaInicioMin": 647.25,
+      "horaFimMin": 956.7166666666667,
       "duracaoMin": 309.4666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2723,6 +3327,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-03",
+      "horaInicioMin": 684.0833333333334,
+      "horaFimMin": 969.9166666666666,
       "duracaoMin": 285.83333333333326,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2732,6 +3338,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO VILLE ROY",
       "data": "2026-08-04",
+      "horaInicioMin": 673.25,
+      "horaFimMin": 673.35,
       "duracaoMin": 0.10000000000002274,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2741,6 +3349,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-05",
+      "horaInicioMin": 658.6166666666667,
+      "horaFimMin": 878.9,
       "duracaoMin": 220.2833333333333,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2750,6 +3360,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO RAIAR DO SOL",
       "data": "2026-08-06",
+      "horaInicioMin": 670.2,
+      "horaFimMin": 937.25,
       "duracaoMin": 267.04999999999995,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2759,6 +3371,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-07",
+      "horaInicioMin": 668.9666666666667,
+      "horaFimMin": 669.0833333333334,
       "duracaoMin": 0.11666666666667425,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2768,6 +3382,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião  13 de setembro",
       "data": "2026-08-08",
+      "horaInicioMin": 645.05,
+      "horaFimMin": 645.15,
       "duracaoMin": 0.10000000000002274,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2777,6 +3393,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-10",
+      "horaInicioMin": 650.2166666666667,
+      "horaFimMin": 846.9833333333333,
       "duracaoMin": 196.76666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2786,6 +3404,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-10",
+      "horaInicioMin": 860.8333333333334,
+      "horaFimMin": 861.2166666666667,
       "duracaoMin": 0.38333333333332575,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2795,6 +3415,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião  13 de setembro",
       "data": "2026-08-11",
+      "horaInicioMin": 676.9333333333333,
+      "horaFimMin": 677.1,
       "duracaoMin": 0.16666666666674246,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2804,6 +3426,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-12",
+      "horaInicioMin": 671.35,
+      "horaFimMin": 718.05,
       "duracaoMin": 46.69999999999993,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2813,6 +3437,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO RAIAR DO SOL",
       "data": "2026-08-13",
+      "horaInicioMin": 659.2666666666667,
+      "horaFimMin": 659.3833333333333,
       "duracaoMin": 0.11666666666667425,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2822,6 +3448,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião  13 de setembro",
       "data": "2026-08-14",
+      "horaInicioMin": 689.55,
+      "horaFimMin": 689.6333333333333,
       "duracaoMin": 0.08333333333337123,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2831,6 +3459,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO RAIAR DO SOL",
       "data": "2026-08-15",
+      "horaInicioMin": 662.95,
+      "horaFimMin": 663.15,
       "duracaoMin": 0.1999999999999318,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2840,6 +3470,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-17",
+      "horaInicioMin": 669.0833333333334,
+      "horaFimMin": 838.6666666666666,
       "duracaoMin": 169.58333333333326,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2849,6 +3481,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-17",
+      "horaInicioMin": 865,
+      "horaFimMin": 960.1666666666666,
       "duracaoMin": 95.16666666666663,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2858,6 +3492,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO VILLE ROY",
       "data": "2026-08-18",
+      "horaInicioMin": 663.65,
+      "horaFimMin": 945.2166666666667,
       "duracaoMin": 281.5666666666667,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2867,6 +3503,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião - Cidade Satélite",
       "data": "2026-08-19",
+      "horaInicioMin": 674.95,
+      "horaFimMin": 963.85,
       "duracaoMin": 288.9,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2876,6 +3514,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-20",
+      "horaInicioMin": 663.4166666666666,
+      "horaFimMin": 950.6333333333333,
       "duracaoMin": 287.2166666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2885,6 +3525,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião  13 de setembro",
       "data": "2026-08-21",
+      "horaInicioMin": 659.1666666666666,
+      "horaFimMin": 659.4166666666666,
       "duracaoMin": 0.25,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2894,6 +3536,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO RAIAR DO SOL",
       "data": "2026-08-22",
+      "horaInicioMin": 679.6833333333333,
+      "horaFimMin": 881.3,
       "duracaoMin": 201.61666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2903,6 +3547,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião - Cidade Satélite",
       "data": "2026-08-22",
+      "horaInicioMin": 909.9666666666667,
+      "horaFimMin": 959.75,
       "duracaoMin": 49.7833333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2912,6 +3558,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-24",
+      "horaInicioMin": 661.4333333333333,
+      "horaFimMin": 850.9833333333333,
       "duracaoMin": 189.55000000000007,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2921,6 +3569,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-24",
+      "horaInicioMin": 862.8833333333333,
+      "horaFimMin": 953.7,
       "duracaoMin": 90.81666666666672,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2930,6 +3580,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO VILLE ROY",
       "data": "2026-08-25",
+      "horaInicioMin": 664.1333333333333,
+      "horaFimMin": 806,
       "duracaoMin": 141.86666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2939,6 +3591,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião  13 de setembro",
       "data": "2026-08-25",
+      "horaInicioMin": 820.0333333333333,
+      "horaFimMin": 926.2666666666667,
       "duracaoMin": 106.23333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2948,6 +3602,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO RAIAR DO SOL",
       "data": "2026-08-26",
+      "horaInicioMin": 665.5333333333333,
+      "horaFimMin": 881.9833333333333,
       "duracaoMin": 216.45000000000005,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -2957,6 +3613,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-27",
+      "horaInicioMin": 667.1833333333333,
+      "horaFimMin": 801.65,
       "duracaoMin": 134.4666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2966,6 +3624,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIAO TANCREDO NEVES",
       "data": "2026-08-27",
+      "horaInicioMin": 813.9,
+      "horaFimMin": 961.2166666666667,
       "duracaoMin": 147.31666666666672,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2975,6 +3635,8 @@
       "cidade": "Boa Vista",
       "loja": "Gavião  13 de setembro",
       "data": "2026-08-28",
+      "horaInicioMin": 666.85,
+      "horaFimMin": 951.0333333333333,
       "duracaoMin": 284.1833333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2984,6 +3646,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO RAIAR DO SOL",
       "data": "2026-08-29",
+      "horaInicioMin": 657.5333333333333,
+      "horaFimMin": 936.7833333333333,
       "duracaoMin": 279.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -2993,6 +3657,8 @@
       "cidade": "Boa Vista",
       "loja": "GAVIÃO ALVORADA",
       "data": "2026-08-31",
+      "horaInicioMin": 678.6833333333333,
+      "horaFimMin": 942.2333333333333,
       "duracaoMin": 263.55000000000007,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3002,6 +3668,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-03",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -3011,6 +3679,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-03",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -3020,6 +3690,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Grande Circular",
       "data": "2026-08-04",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -3029,6 +3701,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Sem Bateria",
       "status": "Justificado"
@@ -3038,6 +3712,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Grande Circular",
       "data": "2026-08-06",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "",
       "status": "Aberto"
@@ -3047,6 +3723,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Cidade Nova",
       "data": "2026-08-06",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "",
       "status": "Aberto"
@@ -3056,6 +3734,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-07",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -3065,6 +3745,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-07",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -3074,6 +3756,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-07",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Mudança de Rota - Solicitação Supervisor",
       "status": "Justificado"
@@ -3083,6 +3767,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-10",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -3092,6 +3778,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-10",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -3101,6 +3789,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Grande Circular",
       "data": "2026-08-11",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3110,6 +3800,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3119,6 +3811,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3128,6 +3822,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3137,6 +3833,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Cidade Nova",
       "data": "2026-08-13",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3146,6 +3844,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Grande Circular",
       "data": "2026-08-13",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3155,6 +3855,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-14",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3164,6 +3866,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-14",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3173,6 +3877,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-14",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3182,6 +3888,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-17",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3191,6 +3899,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-17",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3200,6 +3910,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-17",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3209,6 +3921,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Grande Circular",
       "data": "2026-08-18",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3218,6 +3932,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Cidade Nova",
       "data": "2026-08-18",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3227,6 +3943,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-19",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3236,6 +3954,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-19",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3245,6 +3965,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-19",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3254,6 +3976,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Cidade Nova",
       "data": "2026-08-20",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3263,6 +3987,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Grande Circular",
       "data": "2026-08-20",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3272,6 +3998,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-21",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3281,6 +4009,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-21",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3290,6 +4020,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-21",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3299,6 +4031,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-24",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3308,6 +4042,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-24",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3317,6 +4053,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-24",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3326,6 +4064,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-28",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -3335,6 +4075,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-03",
+      "horaInicioMin": 692.75,
+      "horaFimMin": 1025.0666666666666,
       "duracaoMin": 332.3166666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3344,6 +4086,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Cidade Nova",
       "data": "2026-08-04",
+      "horaInicioMin": 708.5333333333333,
+      "horaFimMin": 1032.1,
       "duracaoMin": 323.5666666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3353,6 +4097,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-05",
+      "horaInicioMin": 663.8,
+      "horaFimMin": 763.05,
       "duracaoMin": 99.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3362,6 +4108,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-05",
+      "horaInicioMin": 763.4166666666666,
+      "horaFimMin": 763.4166666666666,
       "duracaoMin": 0,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -3371,6 +4119,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Grande Circular",
       "data": "2026-08-07",
+      "horaInicioMin": 671.1666666666666,
+      "horaFimMin": 671.1666666666666,
       "duracaoMin": 0,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -3380,6 +4130,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Moderna",
       "data": "2026-08-10",
+      "horaInicioMin": 666.1333333333333,
+      "horaFimMin": 1025.8333333333333,
       "duracaoMin": 359.69999999999993,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3389,6 +4141,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Cidade Nova",
       "data": "2026-08-11",
+      "horaInicioMin": 666.2333333333333,
+      "horaFimMin": 1020.9333333333333,
       "duracaoMin": 354.69999999999993,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3398,6 +4152,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Educandos",
       "data": "2026-08-25",
+      "horaInicioMin": 706.5666666666667,
+      "horaFimMin": 1027.4666666666667,
       "duracaoMin": 320.9,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3407,6 +4163,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Grande Circular",
       "data": "2026-08-26",
+      "horaInicioMin": 635.75,
+      "horaFimMin": 1070.4833333333333,
       "duracaoMin": 434.73333333333335,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -3416,6 +4174,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Japim",
       "data": "2026-08-27",
+      "horaInicioMin": 717.5833333333334,
+      "horaFimMin": 956.9833333333333,
       "duracaoMin": 239.39999999999998,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3425,6 +4185,8 @@
       "cidade": "Manaus",
       "loja": "Atacadão Cidade Nova",
       "data": "2026-08-31",
+      "horaInicioMin": 681.2666666666667,
+      "horaFimMin": 846.3666666666667,
       "duracaoMin": 165.10000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3434,6 +4196,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -3443,6 +4207,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER SOBRAL",
       "data": "2026-08-03",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Sem Bateria",
       "status": "Justificado"
@@ -3452,6 +4218,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AMAPÁ",
       "data": "2026-08-04",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3461,6 +4229,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER 2º DIST.",
       "data": "2026-08-04",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3470,6 +4240,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER VAREJÃO",
       "data": "2026-08-04",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3479,6 +4251,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AVIARIO",
       "data": "2026-08-04",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3488,6 +4262,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX VILA",
       "data": "2026-08-04",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3497,6 +4273,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX VILA",
       "data": "2026-08-06",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3506,6 +4284,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AVIARIO",
       "data": "2026-08-06",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3515,6 +4295,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER 2º DIST.",
       "data": "2026-08-06",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3524,6 +4306,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER VAREJÃO",
       "data": "2026-08-06",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3533,6 +4317,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AMAPÁ",
       "data": "2026-08-06",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3542,6 +4328,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-07",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "",
       "status": "Aberto"
@@ -3551,6 +4339,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAUJO ISAURA PARENTE",
       "data": "2026-08-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -3560,6 +4350,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER PLACAS",
       "data": "2026-08-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -3569,6 +4361,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "PROBLEMAS COM APP",
       "status": "Justificado"
@@ -3578,6 +4372,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER SOBRAL",
       "data": "2026-08-10",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Sem Bateria",
       "status": "Justificado"
@@ -3587,6 +4383,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-10",
+      "horaInicioMin": 733.9166666666666,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "",
       "status": "Em Execução"
@@ -3596,6 +4394,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3605,6 +4405,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAUJO ISAURA PARENTE",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3614,6 +4416,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER W DANTAS",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3623,6 +4427,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER PLACAS",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3632,6 +4438,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-12",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Atestado Médico",
       "status": "Justificado"
@@ -3641,6 +4449,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-15",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3650,6 +4460,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAUJO ISAURA PARENTE",
       "data": "2026-08-15",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Falta",
       "status": "Justificado"
@@ -3659,6 +4471,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER 2º DIST.",
       "data": "2026-08-20",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Sem Bateria",
       "status": "Justificado"
@@ -3668,6 +4482,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-22",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -3677,6 +4493,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-29",
+      "horaInicioMin": null,
+      "horaFimMin": null,
       "duracaoMin": null,
       "motivo": "Maior Demanda na Loja Anterior",
       "status": "Justificado"
@@ -3686,6 +4504,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER PLACAS",
       "data": "2026-08-01",
+      "horaInicioMin": 659.8666666666667,
+      "horaFimMin": 693.35,
       "duracaoMin": 33.48333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3695,6 +4515,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAUJO ISAURA PARENTE",
       "data": "2026-08-01",
+      "horaInicioMin": 712.45,
+      "horaFimMin": 712.5166666666667,
       "duracaoMin": 0.06666666666660603,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -3704,6 +4526,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-03",
+      "horaInicioMin": 661.1,
+      "horaFimMin": 736.7666666666667,
       "duracaoMin": 75.66666666666663,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3713,6 +4537,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-03",
+      "horaInicioMin": 740.9,
+      "horaFimMin": 873.1333333333333,
       "duracaoMin": 132.23333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3722,6 +4548,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER BETEL",
       "data": "2026-08-03",
+      "horaInicioMin": 880.5,
+      "horaFimMin": 928.1833333333333,
       "duracaoMin": 47.68333333333328,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3731,6 +4559,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER FLORESTA",
       "data": "2026-08-03",
+      "horaInicioMin": 932.6833333333333,
+      "horaFimMin": 932.75,
       "duracaoMin": 0.06666666666671972,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -3740,6 +4570,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER W DANTAS",
       "data": "2026-08-05",
+      "horaInicioMin": 670.1833333333333,
+      "horaFimMin": 738.2666666666667,
       "duracaoMin": 68.08333333333337,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3749,6 +4581,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAUJO ISAURA PARENTE",
       "data": "2026-08-05",
+      "horaInicioMin": 748.1833333333333,
+      "horaFimMin": 832.4166666666666,
       "duracaoMin": 84.23333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3758,6 +4592,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-05",
+      "horaInicioMin": 869.0833333333334,
+      "horaFimMin": 933.3333333333334,
       "duracaoMin": 64.25,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3767,6 +4603,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-05",
+      "horaInicioMin": 941.0666666666667,
+      "horaFimMin": 960.5,
       "duracaoMin": 19.43333333333328,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3776,6 +4614,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER PLACAS",
       "data": "2026-08-05",
+      "horaInicioMin": 1097.4833333333333,
+      "horaFimMin": 1097.5666666666666,
       "duracaoMin": 0.08333333333325754,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -3785,6 +4625,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER FLORESTA",
       "data": "2026-08-07",
+      "horaInicioMin": 669.4666666666667,
+      "horaFimMin": 753,
       "duracaoMin": 83.5333333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3794,6 +4636,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER SOBRAL",
       "data": "2026-08-07",
+      "horaInicioMin": 759.3333333333334,
+      "horaFimMin": 775.6833333333333,
       "duracaoMin": 16.34999999999991,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3803,6 +4647,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER BETEL",
       "data": "2026-08-07",
+      "horaInicioMin": 782.6666666666666,
+      "horaFimMin": 806.6,
       "duracaoMin": 23.933333333333394,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3812,6 +4658,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-07",
+      "horaInicioMin": 812.6833333333333,
+      "horaFimMin": 812.8166666666667,
       "duracaoMin": 0.13333333333343944,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -3821,6 +4669,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-10",
+      "horaInicioMin": 644.3333333333334,
+      "horaFimMin": 731.0833333333334,
       "duracaoMin": 86.75,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3830,6 +4680,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER BETEL",
       "data": "2026-08-10",
+      "horaInicioMin": 900.8,
+      "horaFimMin": 942.5166666666667,
       "duracaoMin": 41.7166666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3839,6 +4691,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER FLORESTA",
       "data": "2026-08-10",
+      "horaInicioMin": 951.5833333333334,
+      "horaFimMin": 951.6666666666666,
       "duracaoMin": 0.08333333333325754,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -3848,6 +4702,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AVIARIO",
       "data": "2026-08-11",
+      "horaInicioMin": 700,
+      "horaFimMin": 744.8,
       "duracaoMin": 44.799999999999955,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3857,6 +4713,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER VAREJÃO",
       "data": "2026-08-11",
+      "horaInicioMin": 751.3,
+      "horaFimMin": 772.2833333333333,
       "duracaoMin": 20.98333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3866,6 +4724,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AMAPÁ",
       "data": "2026-08-11",
+      "horaInicioMin": 784.6833333333333,
+      "horaFimMin": 817.6333333333333,
       "duracaoMin": 32.950000000000045,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3875,6 +4735,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX VILA",
       "data": "2026-08-11",
+      "horaInicioMin": 823.35,
+      "horaFimMin": 1100.7666666666667,
       "duracaoMin": 277.41666666666663,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3884,6 +4746,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER 2º DIST.",
       "data": "2026-08-11",
+      "horaInicioMin": 1115.6166666666666,
+      "horaFimMin": 1115.6666666666667,
       "duracaoMin": 0.0500000000001819,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -3893,6 +4757,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER VAREJÃO",
       "data": "2026-08-13",
+      "horaInicioMin": 663.7,
+      "horaFimMin": 702.35,
       "duracaoMin": 38.64999999999998,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3902,6 +4768,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AMAPÁ",
       "data": "2026-08-13",
+      "horaInicioMin": 741.7833333333333,
+      "horaFimMin": 776.2333333333333,
       "duracaoMin": 34.450000000000045,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3911,6 +4779,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX VILA",
       "data": "2026-08-13",
+      "horaInicioMin": 779.9166666666666,
+      "horaFimMin": 864.3,
       "duracaoMin": 84.38333333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3920,6 +4790,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER 2º DIST.",
       "data": "2026-08-13",
+      "horaInicioMin": 872.9333333333333,
+      "horaFimMin": 928.4333333333333,
       "duracaoMin": 55.5,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3929,6 +4801,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AVIARIO",
       "data": "2026-08-13",
+      "horaInicioMin": 934.0666666666667,
+      "horaFimMin": 1199.5333333333333,
       "duracaoMin": 265.4666666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3938,6 +4812,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-14",
+      "horaInicioMin": 632.7666666666667,
+      "horaFimMin": 698.1333333333333,
       "duracaoMin": 65.36666666666667,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3947,6 +4823,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER BETEL",
       "data": "2026-08-14",
+      "horaInicioMin": 711.05,
+      "horaFimMin": 767.35,
       "duracaoMin": 56.30000000000007,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3956,6 +4834,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER SOBRAL",
       "data": "2026-08-14",
+      "horaInicioMin": 777.4666666666667,
+      "horaFimMin": 805.9333333333333,
       "duracaoMin": 28.466666666666583,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3965,6 +4845,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER FLORESTA",
       "data": "2026-08-14",
+      "horaInicioMin": 817.7833333333333,
+      "horaFimMin": 871.0666666666667,
       "duracaoMin": 53.28333333333342,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3974,6 +4856,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-14",
+      "horaInicioMin": 879.7333333333333,
+      "horaFimMin": 937.7833333333333,
       "duracaoMin": 58.049999999999955,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3983,6 +4867,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER PLACAS",
       "data": "2026-08-15",
+      "horaInicioMin": 685.2666666666667,
+      "horaFimMin": 759.7,
       "duracaoMin": 74.4333333333334,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -3992,6 +4878,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-17",
+      "horaInicioMin": 667.3833333333333,
+      "horaFimMin": 811.7166666666667,
       "duracaoMin": 144.33333333333337,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4001,6 +4889,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER BETEL",
       "data": "2026-08-17",
+      "horaInicioMin": 845.3666666666667,
+      "horaFimMin": 888.3833333333333,
       "duracaoMin": 43.01666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4010,6 +4900,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER SOBRAL",
       "data": "2026-08-17",
+      "horaInicioMin": 902.8833333333333,
+      "horaFimMin": 924.0166666666667,
       "duracaoMin": 21.133333333333326,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4019,6 +4911,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER FLORESTA",
       "data": "2026-08-17",
+      "horaInicioMin": 930.3,
+      "horaFimMin": 1140.5666666666666,
       "duracaoMin": 210.26666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4028,6 +4922,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-17",
+      "horaInicioMin": 1147.55,
+      "horaFimMin": 1204.3333333333333,
       "duracaoMin": 56.7833333333333,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4037,6 +4933,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AVIARIO",
       "data": "2026-08-18",
+      "horaInicioMin": 681.9666666666667,
+      "horaFimMin": 734.0666666666667,
       "duracaoMin": 52.10000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4046,6 +4944,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER VAREJÃO",
       "data": "2026-08-18",
+      "horaInicioMin": 739.45,
+      "horaFimMin": 754.1,
       "duracaoMin": 14.649999999999977,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4055,6 +4955,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AMAPÁ",
       "data": "2026-08-18",
+      "horaInicioMin": 974.3166666666667,
+      "horaFimMin": 987.15,
       "duracaoMin": 12.833333333333258,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4064,6 +4966,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX VILA",
       "data": "2026-08-18",
+      "horaInicioMin": 1016.1166666666667,
+      "horaFimMin": 1152.65,
       "duracaoMin": 136.53333333333342,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4073,6 +4977,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER 2º DIST.",
       "data": "2026-08-18",
+      "horaInicioMin": 1181.7333333333333,
+      "horaFimMin": 1181.8,
       "duracaoMin": 0.06666666666660603,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -4082,6 +4988,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER W DANTAS",
       "data": "2026-08-19",
+      "horaInicioMin": 667.9166666666666,
+      "horaFimMin": 778.2166666666667,
       "duracaoMin": 110.30000000000007,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4091,6 +4999,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAUJO ISAURA PARENTE",
       "data": "2026-08-19",
+      "horaInicioMin": 799.7833333333333,
+      "horaFimMin": 862.0833333333334,
       "duracaoMin": 62.30000000000007,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4100,6 +5010,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-19",
+      "horaInicioMin": 871.7333333333333,
+      "horaFimMin": 903.3833333333333,
       "duracaoMin": 31.649999999999977,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4109,6 +5021,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-19",
+      "horaInicioMin": 906.35,
+      "horaFimMin": 1093.05,
       "duracaoMin": 186.69999999999993,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4118,6 +5032,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER PLACAS",
       "data": "2026-08-19",
+      "horaInicioMin": 1106.9833333333333,
+      "horaFimMin": 1107.0833333333333,
       "duracaoMin": 0.09999999999990905,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -4127,6 +5043,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AVIARIO",
       "data": "2026-08-20",
+      "horaInicioMin": 683.3666666666667,
+      "horaFimMin": 743.55,
       "duracaoMin": 60.18333333333328,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4136,6 +5054,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER VAREJÃO",
       "data": "2026-08-20",
+      "horaInicioMin": 746.9833333333333,
+      "horaFimMin": 783.2833333333333,
       "duracaoMin": 36.299999999999955,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4145,6 +5065,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AMAPÁ",
       "data": "2026-08-20",
+      "horaInicioMin": 798.1666666666666,
+      "horaFimMin": 836.4666666666667,
       "duracaoMin": 38.30000000000007,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4154,6 +5076,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX VILA",
       "data": "2026-08-20",
+      "horaInicioMin": 840.9833333333333,
+      "horaFimMin": 841.05,
       "duracaoMin": 0.06666666666660603,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -4163,6 +5087,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER FLORESTA",
       "data": "2026-08-21",
+      "horaInicioMin": 677.25,
+      "horaFimMin": 730.5666666666667,
       "duracaoMin": 53.31666666666672,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4172,6 +5098,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER SOBRAL",
       "data": "2026-08-21",
+      "horaInicioMin": 737.85,
+      "horaFimMin": 803.9166666666666,
       "duracaoMin": 66.0666666666666,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4181,6 +5109,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER BETEL",
       "data": "2026-08-21",
+      "horaInicioMin": 813.6,
+      "horaFimMin": 901.0333333333333,
       "duracaoMin": 87.43333333333328,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4190,6 +5120,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-21",
+      "horaInicioMin": 908.5333333333333,
+      "horaFimMin": 1128.3833333333334,
       "duracaoMin": 219.85000000000014,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4199,6 +5131,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-21",
+      "horaInicioMin": 1131.1166666666666,
+      "horaFimMin": 1203.15,
       "duracaoMin": 72.03333333333353,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4208,6 +5142,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAUJO ISAURA PARENTE",
       "data": "2026-08-22",
+      "horaInicioMin": 703.7833333333333,
+      "horaFimMin": 764.55,
       "duracaoMin": 60.76666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4217,6 +5153,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER PLACAS",
       "data": "2026-08-22",
+      "horaInicioMin": 788.55,
+      "horaFimMin": 899.5,
       "duracaoMin": 110.95000000000005,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4226,6 +5164,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-24",
+      "horaInicioMin": 721.1666666666666,
+      "horaFimMin": 774.8666666666667,
       "duracaoMin": 53.700000000000045,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4235,6 +5175,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-24",
+      "horaInicioMin": 780.5,
+      "horaFimMin": 909.0166666666667,
       "duracaoMin": 128.51666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4244,6 +5186,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER BETEL",
       "data": "2026-08-24",
+      "horaInicioMin": 980.7166666666667,
+      "horaFimMin": 1001.0166666666667,
       "duracaoMin": 20.299999999999955,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4253,6 +5197,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER SOBRAL",
       "data": "2026-08-24",
+      "horaInicioMin": 1009.2166666666667,
+      "horaFimMin": 1031.4333333333334,
       "duracaoMin": 22.216666666666697,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4262,6 +5208,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER FLORESTA",
       "data": "2026-08-24",
+      "horaInicioMin": 1036.7833333333333,
+      "horaFimMin": 1201.5333333333333,
       "duracaoMin": 164.75,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4271,6 +5219,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AMAPÁ",
       "data": "2026-08-25",
+      "horaInicioMin": 699.5666666666667,
+      "horaFimMin": 748.2333333333333,
       "duracaoMin": 48.66666666666663,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4280,6 +5230,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX VILA",
       "data": "2026-08-25",
+      "horaInicioMin": 753.1166666666667,
+      "horaFimMin": 914.8833333333333,
       "duracaoMin": 161.76666666666665,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4289,6 +5241,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER 2º DIST.",
       "data": "2026-08-25",
+      "horaInicioMin": 1060.3,
+      "horaFimMin": 1074.4333333333334,
       "duracaoMin": 14.13333333333344,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4298,6 +5252,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER VAREJÃO",
       "data": "2026-08-25",
+      "horaInicioMin": 1088.7166666666667,
+      "horaFimMin": 1119,
       "duracaoMin": 30.283333333333303,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4307,6 +5263,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AVIARIO",
       "data": "2026-08-25",
+      "horaInicioMin": 1125.1333333333334,
+      "horaFimMin": 1180.6166666666666,
       "duracaoMin": 55.48333333333312,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4316,6 +5274,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER PLACAS",
       "data": "2026-08-26",
+      "horaInicioMin": 708.9,
+      "horaFimMin": 745.35,
       "duracaoMin": 36.450000000000045,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4325,6 +5285,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAUJO ISAURA PARENTE",
       "data": "2026-08-26",
+      "horaInicioMin": 754.6833333333333,
+      "horaFimMin": 814.2333333333333,
       "duracaoMin": 59.55000000000007,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4334,6 +5296,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-26",
+      "horaInicioMin": 825.1666666666666,
+      "horaFimMin": 851.7333333333333,
       "duracaoMin": 26.56666666666672,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4343,6 +5307,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-26",
+      "horaInicioMin": 854.55,
+      "horaFimMin": 1023.9,
       "duracaoMin": 169.35000000000002,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4352,6 +5318,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER W DANTAS",
       "data": "2026-08-26",
+      "horaInicioMin": 1034.3166666666666,
+      "horaFimMin": 1193.5166666666667,
       "duracaoMin": 159.20000000000005,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4361,6 +5329,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AMAPÁ",
       "data": "2026-08-27",
+      "horaInicioMin": 759.4833333333333,
+      "horaFimMin": 785.3,
       "duracaoMin": 25.816666666666606,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4370,6 +5340,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX VILA",
       "data": "2026-08-27",
+      "horaInicioMin": 789.8166666666667,
+      "horaFimMin": 1012.0333333333333,
       "duracaoMin": 222.21666666666658,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4379,6 +5351,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER 2º DIST.",
       "data": "2026-08-27",
+      "horaInicioMin": 1023.7666666666667,
+      "horaFimMin": 1061.25,
       "duracaoMin": 37.48333333333335,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4388,6 +5362,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER VAREJÃO",
       "data": "2026-08-27",
+      "horaInicioMin": 1067.9333333333334,
+      "horaFimMin": 1094.6333333333334,
       "duracaoMin": 26.700000000000045,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4397,6 +5373,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER AVIARIO",
       "data": "2026-08-27",
+      "horaInicioMin": 1098.95,
+      "horaFimMin": 1099.0166666666667,
       "duracaoMin": 0.06666666666660603,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -4406,6 +5384,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER FLORESTA",
       "data": "2026-08-28",
+      "horaInicioMin": 722.4333333333333,
+      "horaFimMin": 740.4666666666667,
       "duracaoMin": 18.033333333333417,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4415,6 +5395,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER SOBRAL",
       "data": "2026-08-28",
+      "horaInicioMin": 747.9666666666667,
+      "horaFimMin": 772.85,
       "duracaoMin": 24.883333333333326,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4424,6 +5406,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER BETEL",
       "data": "2026-08-28",
+      "horaInicioMin": 791.4833333333333,
+      "horaFimMin": 815.3333333333334,
       "duracaoMin": 23.850000000000023,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4433,6 +5417,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-28",
+      "horaInicioMin": 863.1833333333333,
+      "horaFimMin": 883.5666666666667,
       "duracaoMin": 20.38333333333344,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4442,6 +5428,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-28",
+      "horaInicioMin": 886.6666666666666,
+      "horaFimMin": 886.7666666666667,
       "duracaoMin": 0.10000000000002274,
       "motivo": "",
       "status": "Finalizado pelo Corte"
@@ -4451,6 +5439,8 @@
       "cidade": "Rio Branco",
       "loja": "ARAUJO ISAURA PARENTE",
       "data": "2026-08-29",
+      "horaInicioMin": 683.9,
+      "horaFimMin": 715.7666666666667,
       "duracaoMin": 31.866666666666674,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4460,6 +5450,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER PLACAS",
       "data": "2026-08-29",
+      "horaInicioMin": 723.4833333333333,
+      "horaFimMin": 869.9833333333333,
       "duracaoMin": 146.5,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4469,6 +5461,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER FLORESTA",
       "data": "2026-08-31",
+      "horaInicioMin": 672.85,
+      "horaFimMin": 713.9166666666666,
       "duracaoMin": 41.066666666666606,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4478,6 +5472,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER SOBRAL",
       "data": "2026-08-31",
+      "horaInicioMin": 719.9166666666666,
+      "horaFimMin": 742.0333333333333,
       "duracaoMin": 22.116666666666674,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4487,6 +5483,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER BETEL",
       "data": "2026-08-31",
+      "horaInicioMin": 750.05,
+      "horaFimMin": 774.2166666666667,
       "duracaoMin": 24.166666666666742,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4496,6 +5494,8 @@
       "cidade": "Rio Branco",
       "loja": "ARASUPER TANGARÁ",
       "data": "2026-08-31",
+      "horaInicioMin": 780.5333333333333,
+      "horaFimMin": 808.2,
       "duracaoMin": 27.666666666666742,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
@@ -4505,10 +5505,1542 @@
       "cidade": "Rio Branco",
       "loja": "ARAMIX - ACRE",
       "data": "2026-08-31",
+      "horaInicioMin": 1143.7333333333333,
+      "horaFimMin": 1207.5666666666666,
       "duracaoMin": 63.83333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "Nova flores - max teixeira",
+      "data": "2026-09-01",
+      "horaInicioMin": 652.0666666666667,
+      "horaFimMin": 740.8333333333334,
+      "duracaoMin": 88.76666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA TORQUATO",
+      "data": "2026-09-01",
+      "horaInicioMin": 769.1,
+      "horaFimMin": 840.6833333333333,
+      "duracaoMin": 71.58333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA VIA NORTE",
+      "data": "2026-09-01",
+      "horaInicioMin": 850.75,
+      "horaFimMin": 946.7833333333333,
+      "duracaoMin": 96.0333333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA ALVORADA",
+      "data": "2026-09-02",
+      "horaInicioMin": 698.0333333333333,
+      "horaFimMin": 820.6166666666667,
+      "duracaoMin": 122.58333333333337,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA PONTA NEGRA",
+      "data": "2026-09-02",
+      "horaInicioMin": 871.3166666666667,
+      "horaFimMin": 949.65,
+      "duracaoMin": 78.33333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA COMPENSA",
+      "data": "2026-09-02",
+      "horaInicioMin": 961.8166666666667,
+      "horaFimMin": 962.0333333333333,
+      "duracaoMin": 0.2166666666665833,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "Nova flores - max teixeira",
+      "data": "2026-09-03",
+      "horaInicioMin": 675.9166666666666,
+      "horaFimMin": 760.0833333333334,
+      "duracaoMin": 84.16666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA TORQUATO",
+      "data": "2026-09-03",
+      "horaInicioMin": 789.8,
+      "horaFimMin": 892.4166666666666,
+      "duracaoMin": 102.61666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA COMPENSA",
+      "data": "2026-09-04",
+      "horaInicioMin": 661.9833333333333,
+      "horaFimMin": 739.2,
+      "duracaoMin": 77.2166666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA CENTRO",
+      "data": "2026-09-04",
+      "horaInicioMin": 766.6,
+      "horaFimMin": 841.85,
+      "duracaoMin": 75.25,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "Nova flores - max teixeira",
+      "data": "2026-09-08",
+      "horaInicioMin": 650.5,
+      "horaFimMin": 758.1166666666667,
+      "duracaoMin": 107.61666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA TORQUATO",
+      "data": "2026-09-08",
+      "horaInicioMin": 790.6,
+      "horaFimMin": 900.5833333333334,
+      "duracaoMin": 109.98333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA VIA NORTE",
+      "data": "2026-09-08",
+      "horaInicioMin": 965.0333333333333,
+      "horaFimMin": 998.0166666666667,
+      "duracaoMin": 32.98333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA ALVORADA",
+      "data": "2026-09-09",
+      "horaInicioMin": 670.9,
+      "horaFimMin": 802.45,
+      "duracaoMin": 131.55000000000007,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA PONTA NEGRA",
+      "data": "2026-09-09",
+      "horaInicioMin": 951.7333333333333,
+      "horaFimMin": 954.8333333333334,
+      "duracaoMin": 3.1000000000000227,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA COMPENSA",
+      "data": "2026-09-09",
+      "horaInicioMin": 971.1833333333333,
+      "horaFimMin": 1018.5833333333334,
+      "duracaoMin": 47.40000000000009,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA JATUARANA",
+      "data": "2026-09-01",
+      "horaInicioMin": 579.4333333333333,
+      "horaFimMin": 1078.5333333333333,
+      "duracaoMin": 499.1,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA R BRASILIA",
+      "data": "2026-09-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NE RAIMUNDO CANTUARIA",
+      "data": "2026-09-04",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Mudança de Rota - Solicitação Supervisor",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARASUPER - RO",
+      "data": "2026-09-01",
+      "horaInicioMin": 510.6666666666667,
+      "horaFimMin": 518.7833333333333,
+      "duracaoMin": 8.116666666666617,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARASUPER ESPERANÇA",
+      "data": "2026-09-02",
+      "horaInicioMin": 513.5666666666667,
+      "horaFimMin": 516.45,
+      "duracaoMin": 2.8833333333333258,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA IMIGRANTES",
+      "data": "2026-09-02",
+      "horaInicioMin": 516.8166666666667,
+      "horaFimMin": 536.1666666666666,
+      "duracaoMin": 19.34999999999991,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NE RAIMUNDO CANTUARIA",
+      "data": "2026-09-02",
+      "horaInicioMin": 555.5833333333334,
+      "horaFimMin": 592.5666666666667,
+      "duracaoMin": 36.98333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARAMIX - RO",
+      "data": "2026-09-02",
+      "horaInicioMin": 602.8166666666667,
+      "horaFimMin": 1054.7833333333333,
+      "duracaoMin": 451.9666666666666,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARASUPER - RO",
+      "data": "2026-09-03",
+      "horaInicioMin": 510.23333333333335,
+      "horaFimMin": 512.0166666666667,
+      "duracaoMin": 1.783333333333303,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA R BRASILIA",
+      "data": "2026-09-03",
+      "horaInicioMin": 515.8833333333333,
+      "horaFimMin": 535.3666666666667,
+      "duracaoMin": 19.48333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA JATUARANA",
+      "data": "2026-09-03",
+      "horaInicioMin": 590.7,
+      "horaFimMin": 1075.25,
+      "duracaoMin": 484.54999999999995,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA IMIGRANTES",
+      "data": "2026-09-04",
+      "horaInicioMin": 513.3666666666667,
+      "horaFimMin": 526.7166666666667,
+      "duracaoMin": 13.350000000000023,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARASUPER ESPERANÇA",
+      "data": "2026-09-04",
+      "horaInicioMin": 526.9,
+      "horaFimMin": 531.7666666666667,
+      "duracaoMin": 4.866666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARAMIX - RO",
+      "data": "2026-09-04",
+      "horaInicioMin": 545.4,
+      "horaFimMin": 1034.2166666666667,
+      "duracaoMin": 488.8166666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA JATUARANA",
+      "data": "2026-09-05",
+      "horaInicioMin": 510.28333333333336,
+      "horaFimMin": 513.7333333333333,
+      "duracaoMin": 3.4499999999999886,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARAMIX - RO",
+      "data": "2026-09-05",
+      "horaInicioMin": 519.0833333333334,
+      "horaFimMin": 765.4333333333333,
+      "duracaoMin": 246.3499999999999,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARASUPER - RO",
+      "data": "2026-09-08",
+      "horaInicioMin": 510.31666666666666,
+      "horaFimMin": 517.5833333333334,
+      "duracaoMin": 7.266666666666708,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA R BRASILIA",
+      "data": "2026-09-08",
+      "horaInicioMin": 522.2833333333333,
+      "horaFimMin": 565.7833333333333,
+      "duracaoMin": 43.5,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA JATUARANA",
+      "data": "2026-09-08",
+      "horaInicioMin": 683.4666666666667,
+      "horaFimMin": 1060.6833333333334,
+      "duracaoMin": 377.2166666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARASUPER ESPERANÇA",
+      "data": "2026-09-09",
+      "horaInicioMin": 513.85,
+      "horaFimMin": 522.45,
+      "duracaoMin": 8.600000000000023,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NOVA ERA IMIGRANTES",
+      "data": "2026-09-09",
+      "horaInicioMin": 522.6333333333333,
+      "horaFimMin": 544.75,
+      "duracaoMin": 22.116666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "NE RAIMUNDO CANTUARIA",
+      "data": "2026-09-09",
+      "horaInicioMin": 554.4,
+      "horaFimMin": 591.4166666666666,
+      "duracaoMin": 37.01666666666665,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "cidade": "Porto Velho",
+      "loja": "ARAMIX - RO",
+      "data": "2026-09-09",
+      "horaInicioMin": 607.2833333333333,
+      "horaFimMin": 1056.7,
+      "duracaoMin": 449.41666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA CIDADE DE DEUS",
+      "data": "2026-09-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA TORRES",
+      "data": "2026-09-04",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA AUTAZ MIRIM",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "nova era laranjeiras",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA COROADO",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA VIVER MELHOR",
+      "data": "2026-09-09",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA GRANDE CIRCULAR",
+      "data": "2026-09-01",
+      "horaInicioMin": 694.4166666666666,
+      "horaFimMin": 932.0166666666667,
+      "duracaoMin": 237.60000000000002,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA CIDADE NOVA",
+      "data": "2026-09-02",
+      "horaInicioMin": 688.6666666666666,
+      "horaFimMin": 799.5,
+      "duracaoMin": 110.83333333333337,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA VIVER MELHOR",
+      "data": "2026-09-02",
+      "horaInicioMin": 857.2166666666667,
+      "horaFimMin": 871.8166666666667,
+      "duracaoMin": 14.600000000000023,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA PONTE",
+      "data": "2026-09-03",
+      "horaInicioMin": 709.3166666666667,
+      "horaFimMin": 779.4666666666667,
+      "duracaoMin": 70.14999999999998,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA SILVES",
+      "data": "2026-09-03",
+      "horaInicioMin": 847.5833333333334,
+      "horaFimMin": 860,
+      "duracaoMin": 12.416666666666629,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "TORRES 02",
+      "data": "2026-09-04",
+      "horaInicioMin": 651.2333333333333,
+      "horaFimMin": 665.05,
+      "duracaoMin": 13.816666666666606,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA CIDADE NOVA",
+      "data": "2026-09-04",
+      "horaInicioMin": 777.7,
+      "horaFimMin": 849.1666666666666,
+      "duracaoMin": 71.46666666666658,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA GRANDE CIRCULAR",
+      "data": "2026-09-08",
+      "horaInicioMin": 710.5166666666667,
+      "horaFimMin": 829.4,
+      "duracaoMin": 118.88333333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA CIDADE DE DEUS",
+      "data": "2026-09-08",
+      "horaInicioMin": 838.4666666666667,
+      "horaFimMin": 867.65,
+      "duracaoMin": 29.18333333333328,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "cidade": "Manaus",
+      "loja": "NOVA ERA CIDADE NOVA",
+      "data": "2026-09-09",
+      "horaInicioMin": 695.6166666666667,
+      "horaFimMin": 803.1,
+      "duracaoMin": 107.48333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F50 - MAMORE",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F11 EMBRATEL",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F38 - JATUARANA",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "irmãos Gonçalves F-52",
+      "data": "2026-09-05",
+      "horaInicioMin": 574.0666666666667,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "PROBLEMAS COM APP",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F11 EMBRATEL",
+      "data": "2026-09-01",
+      "horaInicioMin": 510.18333333333334,
+      "horaFimMin": 535.35,
+      "duracaoMin": 25.166666666666686,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F50 - MAMORE",
+      "data": "2026-09-01",
+      "horaInicioMin": 545.4,
+      "horaFimMin": 576.1166666666667,
+      "duracaoMin": 30.716666666666697,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F46 - MARIANA",
+      "data": "2026-09-01",
+      "horaInicioMin": 592.1666666666666,
+      "horaFimMin": 592.5666666666667,
+      "duracaoMin": 0.40000000000009095,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F38 - JATUARANA",
+      "data": "2026-09-01",
+      "horaInicioMin": 605.5333333333333,
+      "horaFimMin": 1077.45,
+      "duracaoMin": 471.91666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F27 7 DE SETEMBRO",
+      "data": "2026-09-02",
+      "horaInicioMin": 514.9,
+      "horaFimMin": 544.1166666666667,
+      "duracaoMin": 29.216666666666697,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F29 TIRADENTES",
+      "data": "2026-09-02",
+      "horaInicioMin": 556.2666666666667,
+      "horaFimMin": 601.8333333333334,
+      "duracaoMin": 45.56666666666672,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F19 AV RIO DE JANEIRO",
+      "data": "2026-09-02",
+      "horaInicioMin": 613.9166666666666,
+      "horaFimMin": 624.8666666666667,
+      "duracaoMin": 10.950000000000045,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F21 AV JATUARANA",
+      "data": "2026-09-02",
+      "horaInicioMin": 632.6333333333333,
+      "horaFimMin": 644.8166666666667,
+      "duracaoMin": 12.183333333333394,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "irmãos Gonçalves F-52",
+      "data": "2026-09-02",
+      "horaInicioMin": 656.1166666666667,
+      "horaFimMin": 1052.0333333333333,
+      "duracaoMin": 395.91666666666663,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F11 EMBRATEL",
+      "data": "2026-09-03",
+      "horaInicioMin": 510.21666666666664,
+      "horaFimMin": 510.48333333333335,
+      "duracaoMin": 0.26666666666670835,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F50 - MAMORE",
+      "data": "2026-09-03",
+      "horaInicioMin": 517.7166666666667,
+      "horaFimMin": 518,
+      "duracaoMin": 0.283333333333303,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F46 - MARIANA",
+      "data": "2026-09-03",
+      "horaInicioMin": 527.1166666666667,
+      "horaFimMin": 527.3333333333334,
+      "duracaoMin": 0.21666666666669698,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F38 - JATUARANA",
+      "data": "2026-09-03",
+      "horaInicioMin": 547.4333333333333,
+      "horaFimMin": 1077.35,
+      "duracaoMin": 529.9166666666666,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F27 7 DE SETEMBRO",
+      "data": "2026-09-04",
+      "horaInicioMin": 511.31666666666666,
+      "horaFimMin": 511.78333333333336,
+      "duracaoMin": 0.466666666666697,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F29 TIRADENTES",
+      "data": "2026-09-04",
+      "horaInicioMin": 519.3833333333333,
+      "horaFimMin": 519.65,
+      "duracaoMin": 0.2666666666666515,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F19 AV RIO DE JANEIRO",
+      "data": "2026-09-04",
+      "horaInicioMin": 525.8333333333334,
+      "horaFimMin": 526.05,
+      "duracaoMin": 0.2166666666665833,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F21 AV JATUARANA",
+      "data": "2026-09-04",
+      "horaInicioMin": 543.8166666666667,
+      "horaFimMin": 544.0833333333334,
+      "duracaoMin": 0.2666666666666515,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "irmãos Gonçalves F-52",
+      "data": "2026-09-04",
+      "horaInicioMin": 550.2166666666667,
+      "horaFimMin": 1059.5833333333333,
+      "duracaoMin": 509.36666666666656,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F11 EMBRATEL",
+      "data": "2026-09-08",
+      "horaInicioMin": 510.56666666666666,
+      "horaFimMin": 534.15,
+      "duracaoMin": 23.583333333333314,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F50 - MAMORE",
+      "data": "2026-09-08",
+      "horaInicioMin": 545.05,
+      "horaFimMin": 545.4333333333333,
+      "duracaoMin": 0.38333333333332575,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F46 - MARIANA",
+      "data": "2026-09-08",
+      "horaInicioMin": 553.6666666666666,
+      "horaFimMin": 597.5,
+      "duracaoMin": 43.83333333333337,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F38 - JATUARANA",
+      "data": "2026-09-08",
+      "horaInicioMin": 614.3166666666667,
+      "horaFimMin": 1062.6666666666667,
+      "duracaoMin": 448.35,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F27 7 DE SETEMBRO",
+      "data": "2026-09-09",
+      "horaInicioMin": 510.43333333333334,
+      "horaFimMin": 510.73333333333335,
+      "duracaoMin": 0.30000000000001137,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F29 TIRADENTES",
+      "data": "2026-09-09",
+      "horaInicioMin": 519.2,
+      "horaFimMin": 519.4666666666667,
+      "duracaoMin": 0.2666666666666515,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F19 AV RIO DE JANEIRO",
+      "data": "2026-09-09",
+      "horaInicioMin": 525.9666666666667,
+      "horaFimMin": 526.25,
+      "duracaoMin": 0.283333333333303,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "IG F21 AV JATUARANA",
+      "data": "2026-09-09",
+      "horaInicioMin": 544.6666666666666,
+      "horaFimMin": 544.95,
+      "duracaoMin": 0.2833333333334167,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "cidade": "Porto Velho",
+      "loja": "irmãos Gonçalves F-52",
+      "data": "2026-09-09",
+      "horaInicioMin": 553.6166666666667,
+      "horaFimMin": 1039.6833333333334,
+      "duracaoMin": 486.0666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "GAVIÃO VILLE ROY",
+      "data": "2026-09-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Maior Demanda na Loja Anterior",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "GAVIÃO RAIAR DO SOL",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "Gavião - Cidade Satélite",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "GAVIÃO VILLE ROY",
+      "data": "2026-09-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Atestado Médico",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "GAVIÃO RAIAR DO SOL",
+      "data": "2026-09-09",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Consulta Médica",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "Gavião - Cidade Satélite",
+      "data": "2026-09-09",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Consulta Médica",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "Gavião  13 de setembro",
+      "data": "2026-09-01",
+      "horaInicioMin": 680.5666666666667,
+      "horaFimMin": 900.4,
+      "duracaoMin": 219.83333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "GAVIÃO RAIAR DO SOL",
+      "data": "2026-09-02",
+      "horaInicioMin": 677.2,
+      "horaFimMin": 799.4833333333333,
+      "duracaoMin": 122.2833333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "Gavião - Cidade Satélite",
+      "data": "2026-09-02",
+      "horaInicioMin": 826.7,
+      "horaFimMin": 914.8666666666667,
+      "duracaoMin": 88.16666666666663,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "GAVIÃO ALVORADA",
+      "data": "2026-09-03",
+      "horaInicioMin": 682.6833333333333,
+      "horaFimMin": 728.4833333333333,
+      "duracaoMin": 45.80000000000007,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "GAVIAO TANCREDO NEVES",
+      "data": "2026-09-03",
+      "horaInicioMin": 743.45,
+      "horaFimMin": 743.5,
+      "duracaoMin": 0.049999999999954525,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "Gavião  13 de setembro",
+      "data": "2026-09-04",
+      "horaInicioMin": 666.9666666666667,
+      "horaFimMin": 813.8333333333334,
+      "duracaoMin": 146.86666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "GAVIÃO VILLE ROY",
+      "data": "2026-09-04",
+      "horaInicioMin": 823.05,
+      "horaFimMin": 823.1833333333333,
+      "duracaoMin": 0.13333333333332575,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "cidade": "Boa Vista",
+      "loja": "Gavião  13 de setembro",
+      "data": "2026-09-08",
+      "horaInicioMin": 670.7166666666667,
+      "horaFimMin": 670.85,
+      "duracaoMin": 0.13333333333332575,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "ROBERTA BASTISTA DA SILVA",
+      "cidade": "Manaus",
+      "loja": "Atacadão Educandos",
+      "data": "2026-09-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "ROBERTA BASTISTA DA SILVA",
+      "cidade": "Manaus",
+      "loja": "Atacadão Educandos",
+      "data": "2026-09-08",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "ROBERTA BASTISTA DA SILVA",
+      "cidade": "Manaus",
+      "loja": "Atacadão Grande Circular",
+      "data": "2026-09-09",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Aberto"
+    },
+    {
+      "colaborador": "ROBERTA BASTISTA DA SILVA",
+      "cidade": "Manaus",
+      "loja": "Atacadão Grande Circular",
+      "data": "2026-09-02",
+      "horaInicioMin": 678.5166666666667,
+      "horaFimMin": 989.4166666666666,
+      "duracaoMin": 310.9,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBERTA BASTISTA DA SILVA",
+      "cidade": "Manaus",
+      "loja": "Atacadão Japim",
+      "data": "2026-09-03",
+      "horaInicioMin": 765.2,
+      "horaFimMin": 948.9,
+      "duracaoMin": 183.69999999999993,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "ROBERTA BASTISTA DA SILVA",
+      "cidade": "Manaus",
+      "loja": "Atacadão Moderna",
+      "data": "2026-09-04",
+      "horaInicioMin": 662.0166666666667,
+      "horaFimMin": 850.95,
+      "duracaoMin": 188.9333333333334,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER VAREJÃO",
+      "data": "2026-09-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER AVIARIO",
+      "data": "2026-09-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER 2º DIST.",
+      "data": "2026-09-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER AMAPÁ",
+      "data": "2026-09-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAMIX VILA",
+      "data": "2026-09-01",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER PLACAS",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAMIX - ACRE",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAUJO ISAURA PARENTE",
+      "data": "2026-09-05",
+      "horaInicioMin": null,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "Falta",
+      "status": "Justificado"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER W DANTAS",
+      "data": "2026-09-09",
+      "horaInicioMin": 1026.2166666666667,
+      "horaFimMin": null,
+      "duracaoMin": null,
+      "motivo": "",
+      "status": "Em Execução"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER PLACAS",
+      "data": "2026-09-02",
+      "horaInicioMin": 677.8166666666667,
+      "horaFimMin": 744.4333333333333,
+      "duracaoMin": 66.61666666666656,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAUJO ISAURA PARENTE",
+      "data": "2026-09-02",
+      "horaInicioMin": 754.1333333333333,
+      "horaFimMin": 802.2333333333333,
+      "duracaoMin": 48.10000000000002,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER TANGARÁ",
+      "data": "2026-09-02",
+      "horaInicioMin": 821.9666666666667,
+      "horaFimMin": 851.65,
+      "duracaoMin": 29.68333333333328,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAMIX - ACRE",
+      "data": "2026-09-02",
+      "horaInicioMin": 856.3333333333334,
+      "horaFimMin": 921.8166666666667,
+      "duracaoMin": 65.48333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER W DANTAS",
+      "data": "2026-09-02",
+      "horaInicioMin": 1040.15,
+      "horaFimMin": 1040.2166666666667,
+      "duracaoMin": 0.06666666666660603,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER AVIARIO",
+      "data": "2026-09-03",
+      "horaInicioMin": 757.0833333333334,
+      "horaFimMin": 777.4666666666667,
+      "duracaoMin": 20.383333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER VAREJÃO",
+      "data": "2026-09-03",
+      "horaInicioMin": 814.1666666666666,
+      "horaFimMin": 831.6333333333333,
+      "duracaoMin": 17.466666666666697,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER 2º DIST.",
+      "data": "2026-09-03",
+      "horaInicioMin": 858.2166666666667,
+      "horaFimMin": 903.05,
+      "duracaoMin": 44.83333333333326,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER AMAPÁ",
+      "data": "2026-09-03",
+      "horaInicioMin": 907.5333333333333,
+      "horaFimMin": 991.4666666666667,
+      "duracaoMin": 83.9333333333334,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAMIX VILA",
+      "data": "2026-09-03",
+      "horaInicioMin": 996.3,
+      "horaFimMin": 1166.7833333333333,
+      "duracaoMin": 170.48333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER FLORESTA",
+      "data": "2026-09-04",
+      "horaInicioMin": 661.15,
+      "horaFimMin": 698.9,
+      "duracaoMin": 37.75,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER SOBRAL",
+      "data": "2026-09-04",
+      "horaInicioMin": 705.9166666666666,
+      "horaFimMin": 738.7833333333333,
+      "duracaoMin": 32.866666666666674,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER BETEL",
+      "data": "2026-09-04",
+      "horaInicioMin": 745.7333333333333,
+      "horaFimMin": 785.65,
+      "duracaoMin": 39.91666666666663,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAMIX - ACRE",
+      "data": "2026-09-04",
+      "horaInicioMin": 792.3,
+      "horaFimMin": 940.4,
+      "duracaoMin": 148.10000000000002,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER TANGARÁ",
+      "data": "2026-09-04",
+      "horaInicioMin": 946.05,
+      "horaFimMin": 946.1166666666667,
+      "duracaoMin": 0.06666666666671972,
+      "motivo": "",
+      "status": "Finalizado pelo Corte"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER AVIARIO",
+      "data": "2026-09-08",
+      "horaInicioMin": 688.65,
+      "horaFimMin": 737.8833333333333,
+      "duracaoMin": 49.23333333333335,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER VAREJÃO",
+      "data": "2026-09-08",
+      "horaInicioMin": 743.2333333333333,
+      "horaFimMin": 757.7833333333333,
+      "duracaoMin": 14.549999999999955,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER 2º DIST.",
+      "data": "2026-09-08",
+      "horaInicioMin": 763.3,
+      "horaFimMin": 825.0166666666667,
+      "duracaoMin": 61.7166666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER AMAPÁ",
+      "data": "2026-09-08",
+      "horaInicioMin": 829.7166666666667,
+      "horaFimMin": 908.0666666666667,
+      "duracaoMin": 78.35000000000002,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAMIX VILA",
+      "data": "2026-09-08",
+      "horaInicioMin": 916.8333333333334,
+      "horaFimMin": 1198.9,
+      "duracaoMin": 282.0666666666667,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER PLACAS",
+      "data": "2026-09-09",
+      "horaInicioMin": 664.15,
+      "horaFimMin": 705,
+      "duracaoMin": 40.85000000000002,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAUJO ISAURA PARENTE",
+      "data": "2026-09-09",
+      "horaInicioMin": 715.2333333333333,
+      "horaFimMin": 765.5166666666667,
+      "duracaoMin": 50.2833333333333,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARASUPER TANGARÁ",
+      "data": "2026-09-09",
+      "horaInicioMin": 799.4833333333333,
+      "horaFimMin": 856.8,
+      "duracaoMin": 57.316666666666606,
+      "motivo": "",
+      "status": "Finalizado pelo Colaborador"
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "cidade": "Rio Branco",
+      "loja": "ARAMIX - ACRE",
+      "data": "2026-09-09",
+      "horaInicioMin": 859.4166666666666,
+      "horaFimMin": 1016.5666666666667,
+      "duracaoMin": 157.1500000000001,
       "motivo": "",
       "status": "Finalizado pelo Colaborador"
     }
   ],
-  "fotos": []
+  "fotos": [],
+  "ponto": []
 }
