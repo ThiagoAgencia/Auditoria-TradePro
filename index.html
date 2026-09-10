@@ -479,21 +479,22 @@ function computeScore(agg){
 function aggregatePromotores(visitas, pontoInconsistencias){
   const byColab = new Map();
   for (const v of visitas) {
-    if (!byColab.has(v.colaborador)) byColab.set(v.colaborador, { colaborador:v.colaborador, cidade:v.cidade, total:0, finalizadas:0, curtas:0, corte:0, falta:0, app:0, atestadoDias:new Set(), pontoDias:new Set() });
+    if (!byColab.has(v.colaborador)) byColab.set(v.colaborador, { colaborador:v.colaborador, cidade:v.cidade, total:0, finalizadas:0, curtas:0, corte:0, app:0, faltaDias:new Set(), atestadoDias:new Set(), pontoDias:new Set() });
     const a = byColab.get(v.colaborador);
     a.total++;
     if (v.status === STATUS_FINALIZADO) a.finalizadas++;
     if (isCurta(v)) a.curtas++;
     if (isCorte(v)) a.corte++;
-    if (isFalta(v)) a.falta++;
+    if (isFalta(v)) a.faltaDias.add(v.data); // 1 falta por dia, não por loja agendada naquele dia
     if (isApp(v)) a.app++;
     if (isAtestado(v)) a.atestadoDias.add(v.data);
     if (pontoInconsistencias && pontoInconsistencias.has(`${v.colaborador}|${v.data}`)) a.pontoDias.add(v.data);
   }
   const list = [];
   for (const a of byColab.values()) {
-    const { score, classe, pctCurtas } = computeScore(a);
-    list.push({ ...a, atestado: a.atestadoDias.size, pontoSuspeito: a.pontoDias.size, score, classe, pctCurtas });
+    const falta = a.faltaDias.size;
+    const { score, classe, pctCurtas } = computeScore({ ...a, falta });
+    list.push({ ...a, falta, atestado: a.atestadoDias.size, pontoSuspeito: a.pontoDias.size, score, classe, pctCurtas });
   }
   list.sort((x,y)=> y.score - x.score);
   return list;
@@ -554,7 +555,7 @@ function aggregatePeriodo(visitas, granularidade, pontoInconsistencias){
   const keyFn = granularidade === "semanal" ? weekKey : granularidade === "anual" ? yearKey : monthKey;
   const map = new Map();
   const getOrCreate = (k) => {
-    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, normais:0, faltas:0, corte:0, total:0, pontoSuspeito:0 });
+    if (!map.has(k)) map.set(k, { periodo:k, curtas:0, normais:0, faltaDias:new Set(), corte:0, total:0, pontoSuspeito:0 });
     return map.get(k);
   };
   for (const v of visitas) {
@@ -562,7 +563,7 @@ function aggregatePeriodo(visitas, granularidade, pontoInconsistencias){
     a.total++;
     if (isCurta(v)) a.curtas++;
     if (isNormal(v)) a.normais++;
-    if (isFalta(v)) a.faltas++;
+    if (isFalta(v)) a.faltaDias.add(`${v.colaborador}|${v.data}`); // 1 falta por pessoa+dia, não por loja
     if (isCorte(v)) a.corte++;
   }
   if (pontoInconsistencias) {
@@ -571,7 +572,9 @@ function aggregatePeriodo(visitas, granularidade, pontoInconsistencias){
       getOrCreate(keyFn(data)).pontoSuspeito++;
     }
   }
-  return Array.from(map.values()).sort((x,y)=> x.periodo.localeCompare(y.periodo));
+  return Array.from(map.values())
+    .map(a => ({ ...a, faltas: a.faltaDias.size }))
+    .sort((x,y)=> x.periodo.localeCompare(y.periodo));
 }
 
 function weekdayLabelPT(dateStr){
@@ -588,7 +591,7 @@ function aggregateDiario(visitas, semanaKey){
   const diasOrdem = ordemSemana.filter(d => diasComDado.has(d));
 
   const porDia = {};
-  diasOrdem.forEach(d => porDia[d] = { dia:d, data:null, total:0, curtas:0, normais:0, faltas:0, corte:0, rows:[] });
+  diasOrdem.forEach(d => porDia[d] = { dia:d, data:null, total:0, curtas:0, normais:0, faltaColabs:new Set(), corte:0, rows:[] });
   for (const v of visitasDaSemana) {
     const wd = weekdayLabelPT(v.data);
     if (!porDia[wd]) continue;
@@ -597,11 +600,11 @@ function aggregateDiario(visitas, semanaKey){
     a.total++;
     if (isCurta(v)) a.curtas++;
     if (isNormal(v)) a.normais++;
-    if (isFalta(v)) a.faltas++;
+    if (isFalta(v)) a.faltaColabs.add(v.colaborador); // 1 falta por pessoa naquele dia, não por loja
     if (isCorte(v)) a.corte++;
     a.rows.push(v);
   }
-  return diasOrdem.map(d => porDia[d]);
+  return diasOrdem.map(d => ({ ...porDia[d], faltas: porDia[d].faltaColabs.size }));
 }
 function diaComData(a){
   if (!a.data) return a.dia;
