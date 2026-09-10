@@ -579,13 +579,19 @@ function weekdayLabelPT(dateStr){
   return dias[new Date(dateStr).getUTCDay()];
 }
 function aggregateDiario(visitas, semanaKey){
-  const diasOrdem = ['Seg','Ter','Qua','Qui','Sex'];
+  // Só entra na grade o dia que realmente tem roteiro registrado naquela semana — não importa se é
+  // dia útil ou fim de semana. Isso garante que a soma bate com a tabela Semanal e não polui a tela
+  // com dias vazios (ex: fim de mês ainda não acontecido).
+  const ordemSemana = ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  const visitasDaSemana = visitas.filter(v => weekKey(v.data) === semanaKey);
+  const diasComDado = new Set(visitasDaSemana.map(v => weekdayLabelPT(v.data)));
+  const diasOrdem = ordemSemana.filter(d => diasComDado.has(d));
+
   const porDia = {};
   diasOrdem.forEach(d => porDia[d] = { dia:d, total:0, curtas:0, normais:0, faltas:0, corte:0, rows:[] });
-  for (const v of visitas) {
-    if (weekKey(v.data) !== semanaKey) continue;
+  for (const v of visitasDaSemana) {
     const wd = weekdayLabelPT(v.data);
-    if (!porDia[wd]) continue; // ignora sábado/domingo, a visão diária é só dias úteis
+    if (!porDia[wd]) continue;
     const a = porDia[wd];
     a.total++;
     if (isCurta(v)) a.curtas++;
@@ -950,7 +956,7 @@ function renderVisitas(main){
       <div id="semanaSelectorWrap" style="display:none;padding:14px 18px 0 18px;">
         <label for="semanaSelect" style="font-family:'Oswald',sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-right:8px;">Semana</label>
         <select id="semanaSelect"></select>
-        <span class="note" style="margin-left:10px;">mostrando segunda a sexta dessa semana</span>
+        <span class="note" style="margin-left:10px;">mostrando os dias com roteiro nessa semana (sábado/domingo só aparecem se tiverem dado)</span>
       </div>
       <div class="chart-wrap"><canvas id="visitasCanvas" height="90"></canvas></div>
     </div>
@@ -1011,9 +1017,13 @@ function redrawVisitas(todasVisitas, pontoInconsistenciasGlobal){
 }
 
 function drawDiario(visitas, pontoInconsistencias){
-  document.getElementById('visitasTituloGrafico').textContent = `Semana ${visitasSemanaSel || ''} — segunda a sexta`;
-  document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por dia — clique num dia pra ver as lojas';
   const agg = visitasSemanaSel ? aggregateDiario(visitas, visitasSemanaSel) : [];
+  const nomesCompletos = {Seg:'segunda', Ter:'terça', Qua:'quarta', Qui:'quinta', Sex:'sexta', Sáb:'sábado', Dom:'domingo'};
+  const rangeTxt = agg.length
+    ? (agg.length === 1 ? nomesCompletos[agg[0].dia] : `${nomesCompletos[agg[0].dia]} a ${nomesCompletos[agg[agg.length-1].dia]}`)
+    : 'sem roteiro nessa semana';
+  document.getElementById('visitasTituloGrafico').textContent = `Semana ${visitasSemanaSel || ''} — ${rangeTxt}`;
+  document.getElementById('visitasTituloTabela').textContent = 'Detalhamento por dia — clique num dia pra ver as lojas';
   document.getElementById('periodoHead').innerHTML = `<th>Dia</th><th class="num">Total Roteiros</th><th class="num">Visitas Curtas</th><th class="num">Normais</th><th class="num">Faltas</th><th class="num">Fech. pelo Corte</th><th class="num">Ponto x Roteiro</th>`;
   document.getElementById('periodoBody').innerHTML = agg.map((a,i)=>{
     const diasComInconsistencia = new Set(a.rows.filter(v=>pontoInconsistencias.diasInconsistentes.has(`${v.colaborador}|${v.data}`)).map(v=>v.colaborador)).size;
