@@ -10066,6 +10066,90 @@
       "data": "2026-09-09",
       "entradaMin": 599.8833333333333,
       "saidaMin": 1181.5
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "data": "2026-09-10",
+      "entradaMin": 667.8333333333334,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "Bruno Luiz dos Santos Cordeiro",
+      "data": "2026-09-11",
+      "entradaMin": 654.85,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "GIZÉLIA MONTEIRO",
+      "data": "2026-09-10",
+      "entradaMin": 615.5,
+      "saidaMin": 1174.9833333333333
+    },
+    {
+      "colaborador": "GIZÉLIA MONTEIRO",
+      "data": "2026-09-11",
+      "entradaMin": 605.6,
+      "saidaMin": 1186.4166666666667
+    },
+    {
+      "colaborador": "MILENA LEONARDO DOS PRAZERES",
+      "data": "2026-09-10",
+      "entradaMin": 574.65,
+      "saidaMin": 1186.6666666666667
+    },
+    {
+      "colaborador": "MILENA LEONARDO DOS PRAZERES",
+      "data": "2026-09-11",
+      "entradaMin": 534.6333333333333,
+      "saidaMin": 1173.8
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "data": "2026-09-10",
+      "entradaMin": 593.3666666666667,
+      "saidaMin": 1065.5833333333333
+    },
+    {
+      "colaborador": "RAFAELLA LIMA LISBOA PEREIRA",
+      "data": "2026-09-11",
+      "entradaMin": 652.4166666666666,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "data": "2026-09-10",
+      "entradaMin": 556.6333333333333,
+      "saidaMin": 1160.25
+    },
+    {
+      "colaborador": "RAYANNE PIMENTA LIMA",
+      "data": "2026-09-11",
+      "entradaMin": 542.2833333333333,
+      "saidaMin": 1123.0833333333333
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "data": "2026-09-10",
+      "entradaMin": 572.2833333333333,
+      "saidaMin": 1120.35
+    },
+    {
+      "colaborador": "ROBSON DE SOUZA",
+      "data": "2026-09-11",
+      "entradaMin": 567.3166666666667,
+      "saidaMin": 1108.1666666666667
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "data": "2026-09-10",
+      "entradaMin": 596.8833333333333,
+      "saidaMin": 1184.35
+    },
+    {
+      "colaborador": "ZÉLIA MARIA DA SILVEIRA",
+      "data": "2026-09-11",
+      "entradaMin": 609.95,
+      "saidaMin": 1173.1333333333334
     }
   ]
 }
