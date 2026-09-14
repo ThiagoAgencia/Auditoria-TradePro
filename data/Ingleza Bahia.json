@@ -35083,6 +35083,312 @@
       "colaborador": "YURI BISPO MORAES",
       "data": "2026-09-09",
       "entradaMin": 600.4333333333333,
+      "saidaMin": 1156.2333333333333
+    },
+    {
+      "colaborador": "ADRIANO SILVA SANTIAGO",
+      "data": "2026-09-10",
+      "entradaMin": 610.6833333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "data": "2026-09-10",
+      "entradaMin": 691.2833333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "data": "2026-09-11",
+      "entradaMin": 567.7833333333333,
+      "saidaMin": 1020.7
+    },
+    {
+      "colaborador": "ALANA CUNHA DA SILVA REIS",
+      "data": "2026-09-12",
+      "entradaMin": 619.9333333333333,
+      "saidaMin": 842.0333333333333
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "data": "2026-09-10",
+      "entradaMin": 618.4333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "data": "2026-09-11",
+      "entradaMin": 628.1833333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "Ana Claudia Jesus do Carmo",
+      "data": "2026-09-12",
+      "entradaMin": 622.4333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "data": "2026-09-10",
+      "entradaMin": 586.45,
+      "saidaMin": 1144.5166666666667
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "data": "2026-09-11",
+      "entradaMin": 600.1666666666666,
+      "saidaMin": 1141.0666666666666
+    },
+    {
+      "colaborador": "ANA PAULA SANTOS RAMOS",
+      "data": "2026-09-12",
+      "entradaMin": 580.1833333333333,
+      "saidaMin": 842.3666666666667
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "data": "2026-09-10",
+      "entradaMin": 529.7,
+      "saidaMin": 1146.3333333333333
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "data": "2026-09-11",
+      "entradaMin": 541.1833333333333,
+      "saidaMin": 1085.5166666666667
+    },
+    {
+      "colaborador": "ANATALIA BISPO BARRADAS",
+      "data": "2026-09-12",
+      "entradaMin": 547.7833333333333,
+      "saidaMin": 804.9166666666666
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "data": "2026-09-10",
+      "entradaMin": 633.8666666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "data": "2026-09-11",
+      "entradaMin": 658.8666666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "Brisa Peret Pereira",
+      "data": "2026-09-12",
+      "entradaMin": 716.3333333333334,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "EDCARLOS RIBEIRO DOS SANTOS",
+      "data": "2026-09-10",
+      "entradaMin": 598.6,
+      "saidaMin": 1141.85
+    },
+    {
+      "colaborador": "EDCARLOS RIBEIRO DOS SANTOS",
+      "data": "2026-09-11",
+      "entradaMin": 599.85,
+      "saidaMin": 1141.0333333333333
+    },
+    {
+      "colaborador": "EDCARLOS RIBEIRO DOS SANTOS",
+      "data": "2026-09-12",
+      "entradaMin": 595.6166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "data": "2026-09-10",
+      "entradaMin": 596.4666666666667,
+      "saidaMin": 1140.6833333333334
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "data": "2026-09-11",
+      "entradaMin": 570.45,
+      "saidaMin": 1140.5333333333333
+    },
+    {
+      "colaborador": "EVELLY KAROLINE ARAÚJO VIEIRA DA SILVA",
+      "data": "2026-09-12",
+      "entradaMin": 598.8833333333333,
+      "saidaMin": 847.3166666666667
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "data": "2026-09-10",
+      "entradaMin": 557.6,
+      "saidaMin": 1137.2833333333333
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "data": "2026-09-11",
+      "entradaMin": 557.3,
+      "saidaMin": 1127.4333333333334
+    },
+    {
+      "colaborador": "GETULIO NERI GUERRA FILHO",
+      "data": "2026-09-12",
+      "entradaMin": 567.8833333333333,
+      "saidaMin": 825.8333333333334
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "data": "2026-09-10",
+      "entradaMin": 574.6833333333333,
+      "saidaMin": 1142.6166666666666
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "data": "2026-09-11",
+      "entradaMin": 583.5333333333333,
+      "saidaMin": 1082.0833333333333
+    },
+    {
+      "colaborador": "HELAINE SANTOS DA SILVA",
+      "data": "2026-09-12",
+      "entradaMin": 616.1333333333333,
+      "saidaMin": 841.2166666666667
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "data": "2026-09-10",
+      "entradaMin": 622.1833333333333,
+      "saidaMin": 1141.8666666666666
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "data": "2026-09-11",
+      "entradaMin": 626.0333333333333,
+      "saidaMin": 1152.5333333333333
+    },
+    {
+      "colaborador": "JUVANIA FERREIRA CERQUEIRA",
+      "data": "2026-09-12",
+      "entradaMin": 623.3833333333333,
+      "saidaMin": 847.9166666666666
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "data": "2026-09-10",
+      "entradaMin": 592.2166666666667,
+      "saidaMin": 1141.05
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "data": "2026-09-11",
+      "entradaMin": 601.3833333333333,
+      "saidaMin": 1141.2666666666667
+    },
+    {
+      "colaborador": "LAIANA NASCIMENTO BONFIM",
+      "data": "2026-09-12",
+      "entradaMin": 597.9666666666667,
+      "saidaMin": 842.4
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "data": "2026-09-10",
+      "entradaMin": 752.6,
+      "saidaMin": 1231.7833333333333
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "data": "2026-09-11",
+      "entradaMin": 621.1666666666666,
+      "saidaMin": 1228.2666666666667
+    },
+    {
+      "colaborador": "LUCIANO CRISPIM DO NASCIMENTO",
+      "data": "2026-09-12",
+      "entradaMin": 622.1833333333333,
+      "saidaMin": 886.2166666666667
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "data": "2026-09-10",
+      "entradaMin": 603.3833333333333,
+      "saidaMin": 1150.9666666666667
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "data": "2026-09-11",
+      "entradaMin": 624.7333333333333,
+      "saidaMin": 1165.8
+    },
+    {
+      "colaborador": "MARCUS VINICIUS PEREIRA ROCHA",
+      "data": "2026-09-12",
+      "entradaMin": 605.9833333333333,
+      "saidaMin": 839.1166666666667
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "data": "2026-09-10",
+      "entradaMin": 610.05,
+      "saidaMin": 1161.65
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "data": "2026-09-11",
+      "entradaMin": 614.75,
+      "saidaMin": 1156.8833333333334
+    },
+    {
+      "colaborador": "RUAN LUIZ SANTOS LIMA",
+      "data": "2026-09-12",
+      "entradaMin": 608.1833333333333,
+      "saidaMin": 848.5666666666667
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "data": "2026-09-10",
+      "entradaMin": 600.1666666666666,
+      "saidaMin": 1140.6333333333334
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "data": "2026-09-11",
+      "entradaMin": 615.55,
+      "saidaMin": 1217.35
+    },
+    {
+      "colaborador": "SAMUEL DE OLIVEIRA RIOS",
+      "data": "2026-09-12",
+      "entradaMin": 631.4333333333333,
+      "saidaMin": 907.1166666666667
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "data": "2026-09-10",
+      "entradaMin": 615.9833333333333,
+      "saidaMin": 1165.0333333333333
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "data": "2026-09-11",
+      "entradaMin": 618.9666666666667,
+      "saidaMin": 1155.3
+    },
+    {
+      "colaborador": "SIDNEY JESUS DOS SANTOS",
+      "data": "2026-09-12",
+      "entradaMin": 612.95,
+      "saidaMin": 905.35
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "data": "2026-09-11",
+      "entradaMin": 626.1,
+      "saidaMin": 1167
+    },
+    {
+      "colaborador": "YURI BISPO MORAES",
+      "data": "2026-09-12",
+      "entradaMin": 609.3,
       "saidaMin": null
     }
   ]
