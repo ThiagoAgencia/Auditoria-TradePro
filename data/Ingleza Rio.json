@@ -24575,6 +24575,498 @@
       "data": "2026-09-09",
       "entradaMin": 623.0166666666667,
       "saidaMin": 1143.95
+    },
+    {
+      "colaborador": "ALESSANDRA DA SILVA ANDRADE",
+      "data": "2026-09-11",
+      "entradaMin": 684.4333333333333,
+      "saidaMin": 1040.7833333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-09-10",
+      "entradaMin": 625.7666666666667,
+      "saidaMin": 1144.0333333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-09-11",
+      "entradaMin": 608.4,
+      "saidaMin": 1156.2833333333333
+    },
+    {
+      "colaborador": "ALEX SANDER IGOR BARBOSA FERREIRA",
+      "data": "2026-09-12",
+      "entradaMin": 608.1666666666666,
+      "saidaMin": 848.5333333333333
+    },
+    {
+      "colaborador": "ALEXANDER FURTADO DE LIMA",
+      "data": "2026-09-11",
+      "entradaMin": 780.5333333333333,
+      "saidaMin": 1201.2666666666667
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-09-10",
+      "entradaMin": 627.3333333333334,
+      "saidaMin": 1192.2
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-09-11",
+      "entradaMin": 710.6666666666666,
+      "saidaMin": 1206.05
+    },
+    {
+      "colaborador": "ANA LUCIA SOUZA FRANCISCO",
+      "data": "2026-09-12",
+      "entradaMin": 680.3,
+      "saidaMin": 903.0833333333334
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-09-10",
+      "entradaMin": 720.8666666666667,
+      "saidaMin": 1211.5
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-09-11",
+      "entradaMin": 678.9166666666666,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "ANDERSON DOS REIS RIBEIRO",
+      "data": "2026-09-12",
+      "entradaMin": 707.5666666666667,
+      "saidaMin": 953
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-09-10",
+      "entradaMin": 757.5,
+      "saidaMin": 1260.6833333333334
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-09-11",
+      "entradaMin": 763.1,
+      "saidaMin": 1260.4666666666667
+    },
+    {
+      "colaborador": "ANDRE LUIZ DOS SANTOS NASCIMENTO",
+      "data": "2026-09-12",
+      "entradaMin": 870.75,
+      "saidaMin": 982.2833333333333
+    },
+    {
+      "colaborador": "ANDREZA DE SOUZA PEREIRA PEDRO DA SILVA",
+      "data": "2026-09-11",
+      "entradaMin": 656.8,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-09-10",
+      "entradaMin": 607.3333333333334,
+      "saidaMin": 1146.1833333333334
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-09-11",
+      "entradaMin": 608.9166666666666,
+      "saidaMin": 1146.8166666666666
+    },
+    {
+      "colaborador": "CARLOS EDUARDO MIGUEZ DA SILVA",
+      "data": "2026-09-12",
+      "entradaMin": 600.65,
+      "saidaMin": 843.05
+    },
+    {
+      "colaborador": "Carlos Eduardo Patalão de Carvalho",
+      "data": "2026-09-10",
+      "entradaMin": 617.9333333333333,
+      "saidaMin": 985.4166666666666
+    },
+    {
+      "colaborador": "Carlos Eduardo Patalão de Carvalho",
+      "data": "2026-09-11",
+      "entradaMin": 619.9833333333333,
+      "saidaMin": 960.45
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-09-10",
+      "entradaMin": 619.6833333333333,
+      "saidaMin": 1160.7
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-09-11",
+      "entradaMin": 604.8833333333333,
+      "saidaMin": 1157.5
+    },
+    {
+      "colaborador": "CARLOS JOSE FERNANDES",
+      "data": "2026-09-12",
+      "entradaMin": 596.6,
+      "saidaMin": 869.1666666666666
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-09-10",
+      "entradaMin": 670.3666666666667,
+      "saidaMin": 961.1666666666666
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-09-11",
+      "entradaMin": 687.7333333333333,
+      "saidaMin": 985.4666666666667
+    },
+    {
+      "colaborador": "CELINA RODRIGUES MOURA DA SILVA",
+      "data": "2026-09-12",
+      "entradaMin": 651.1166666666667,
+      "saidaMin": 968.7833333333333
+    },
+    {
+      "colaborador": "CLAUDIA MARIANO DA SILVA LEAL",
+      "data": "2026-09-10",
+      "entradaMin": 660.15,
+      "saidaMin": 961.0333333333333
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-09-10",
+      "entradaMin": 671.1166666666667,
+      "saidaMin": 958.2
+    },
+    {
+      "colaborador": "DEYVISON DIAS MEIRELES",
+      "data": "2026-09-11",
+      "entradaMin": 670.2166666666667,
+      "saidaMin": 953.75
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-09-10",
+      "entradaMin": 602.1333333333333,
+      "saidaMin": 869.2166666666667
+    },
+    {
+      "colaborador": "ESTELA MOTTA TITO DA SILVA",
+      "data": "2026-09-12",
+      "entradaMin": 625.1833333333333,
+      "saidaMin": 917.1833333333333
+    },
+    {
+      "colaborador": "FABIO CESAR DOS ANJOS ALVES",
+      "data": "2026-09-10",
+      "entradaMin": 848.25,
+      "saidaMin": 1136.6833333333334
+    },
+    {
+      "colaborador": "FELIPE CALVELLI",
+      "data": "2026-09-10",
+      "entradaMin": 641,
+      "saidaMin": 1020.45
+    },
+    {
+      "colaborador": "FELIPE CALVELLI",
+      "data": "2026-09-11",
+      "entradaMin": 696.55,
+      "saidaMin": 973.3166666666667
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-09-10",
+      "entradaMin": 604.35,
+      "saidaMin": 981.2833333333333
+    },
+    {
+      "colaborador": "GEORGE RODRIGUES LIMA",
+      "data": "2026-09-11",
+      "entradaMin": 601.0666666666667,
+      "saidaMin": 968.0666666666667
+    },
+    {
+      "colaborador": "GIOVANNI DE SOUSA PEREIRA",
+      "data": "2026-09-11",
+      "entradaMin": 714.0333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "IULLA TATIANA FERREIRA DA SILVA",
+      "data": "2026-09-11",
+      "entradaMin": 754.0333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-09-10",
+      "entradaMin": 626.7833333333333,
+      "saidaMin": 986.7833333333333
+    },
+    {
+      "colaborador": "JACIANE DE QUEIROZ PINTO",
+      "data": "2026-09-11",
+      "entradaMin": 827.6166666666667,
+      "saidaMin": 1170.4666666666667
+    },
+    {
+      "colaborador": "João Guilherme Gomes Da Silva Araujo",
+      "data": "2026-09-10",
+      "entradaMin": 621.4333333333333,
+      "saidaMin": 771.6
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-09-10",
+      "entradaMin": 690.3333333333334,
+      "saidaMin": 1027.5666666666666
+    },
+    {
+      "colaborador": "Jonathan de Almeida Araújo do Amaral",
+      "data": "2026-09-11",
+      "entradaMin": 636.7666666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-09-10",
+      "entradaMin": 573.05,
+      "saidaMin": 1168.3166666666666
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-09-11",
+      "entradaMin": 572.75,
+      "saidaMin": 1171.1666666666667
+    },
+    {
+      "colaborador": "JORGE LUIS PEREIRA DOS SANTOS",
+      "data": "2026-09-12",
+      "entradaMin": 592.75,
+      "saidaMin": 857.0833333333334
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-09-10",
+      "entradaMin": 638.3,
+      "saidaMin": 1069.8333333333333
+    },
+    {
+      "colaborador": "KAYKE BATISTA AMORIM PEREIRA",
+      "data": "2026-09-11",
+      "entradaMin": 612.6666666666666,
+      "saidaMin": 1073.9333333333334
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-09-10",
+      "entradaMin": 633.8166666666667,
+      "saidaMin": 900.7833333333333
+    },
+    {
+      "colaborador": "LUANA ADELAIDE MARQUES MOTА",
+      "data": "2026-09-11",
+      "entradaMin": 655.8,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "MAXIMILIANO DE JESUS DE SÁ",
+      "data": "2026-09-10",
+      "entradaMin": 653.5833333333334,
+      "saidaMin": 841.9833333333333
+    },
+    {
+      "colaborador": "NATHALIA FERREIRA DOS SANTOS SOUZA",
+      "data": "2026-09-10",
+      "entradaMin": 723.8833333333333,
+      "saidaMin": 1080.05
+    },
+    {
+      "colaborador": "NEUZELI PEREIRA DA COSTA",
+      "data": "2026-09-10",
+      "entradaMin": 591.0166666666667,
+      "saidaMin": 1155.7166666666667
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-09-10",
+      "entradaMin": 639.1166666666667,
+      "saidaMin": 1150.5833333333333
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-09-11",
+      "entradaMin": 626.7333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "PABLO PEREIRA FEITOSA",
+      "data": "2026-09-12",
+      "entradaMin": 656.3,
+      "saidaMin": 879.8166666666667
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-09-10",
+      "entradaMin": 651.85,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-09-11",
+      "entradaMin": 700.4666666666667,
+      "saidaMin": 1018.9
+    },
+    {
+      "colaborador": "PAULA ROBERTA SILVA DE SOUZA",
+      "data": "2026-09-12",
+      "entradaMin": 719.2,
+      "saidaMin": 1051.5333333333333
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-09-10",
+      "entradaMin": 711.4,
+      "saidaMin": 1088.8666666666666
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-09-11",
+      "entradaMin": 732.8166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE MAGALHAES COUTINHO",
+      "data": "2026-09-12",
+      "entradaMin": 679.8,
+      "saidaMin": 860.25
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-09-10",
+      "entradaMin": 600.6666666666666,
+      "saidaMin": 952.7666666666667
+    },
+    {
+      "colaborador": "PEDRO HENRIQUE SANTOS DE OLIVEIRA",
+      "data": "2026-09-11",
+      "entradaMin": 602.4,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "RAFAEL DA SILVA FERNANDES",
+      "data": "2026-09-10",
+      "entradaMin": 663.5833333333334,
+      "saidaMin": 1155.2333333333333
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-09-10",
+      "entradaMin": 641.9666666666667,
+      "saidaMin": 1013.4166666666666
+    },
+    {
+      "colaborador": "ROSIANE IELER OLIVEIRA DO NASCIMENTO",
+      "data": "2026-09-11",
+      "entradaMin": 661.3833333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-09-10",
+      "entradaMin": 666.85,
+      "saidaMin": 970.7166666666667
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-09-11",
+      "entradaMin": 604.25,
+      "saidaMin": 1018.65
+    },
+    {
+      "colaborador": "THAILAINE CÉSAR DE ARAÚJO",
+      "data": "2026-09-12",
+      "entradaMin": 730.75,
+      "saidaMin": 970.3333333333334
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-09-10",
+      "entradaMin": 579.5,
+      "saidaMin": 1130.1166666666666
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-09-11",
+      "entradaMin": 575.1,
+      "saidaMin": 1126.0333333333333
+    },
+    {
+      "colaborador": "THIAGO BANDEIRA DOS SANTOS",
+      "data": "2026-09-12",
+      "entradaMin": 543.65,
+      "saidaMin": 837.1166666666667
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-09-10",
+      "entradaMin": 661.8666666666667,
+      "saidaMin": 1224.0833333333333
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-09-11",
+      "entradaMin": 661.5333333333333,
+      "saidaMin": 1204.4333333333334
+    },
+    {
+      "colaborador": "VANIA SOUZA DA LUZ TRINDADE",
+      "data": "2026-09-12",
+      "entradaMin": 661.0166666666667,
+      "saidaMin": 923.75
+    },
+    {
+      "colaborador": "VINICIUS DE SOUSA",
+      "data": "2026-09-11",
+      "entradaMin": 641.6,
+      "saidaMin": 1001.6
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-09-10",
+      "entradaMin": 600.7833333333333,
+      "saidaMin": 935.0333333333333
+    },
+    {
+      "colaborador": "VINICIUS SILVA DA COSTA MORAES",
+      "data": "2026-09-11",
+      "entradaMin": 600.65,
+      "saidaMin": 982.45
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-09-10",
+      "entradaMin": 610.9666666666667,
+      "saidaMin": 1141.1333333333334
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-09-11",
+      "entradaMin": 626.5833333333334,
+      "saidaMin": 1132.3333333333333
+    },
+    {
+      "colaborador": "YGOR MATHEUS FERREIRA ROSA",
+      "data": "2026-09-12",
+      "entradaMin": 622.1833333333333,
+      "saidaMin": 842.4
     }
   ]
 }
