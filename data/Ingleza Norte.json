@@ -10552,6 +10552,288 @@
       "data": "2026-09-11",
       "entradaMin": 716.6666666666666,
       "saidaMin": null
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "data": "2026-09-14",
+      "entradaMin": 654.6666666666666,
+      "saidaMin": 1007.4166666666666
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "data": "2026-09-15",
+      "entradaMin": 693.4166666666666,
+      "saidaMin": 999.25
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "data": "2026-09-16",
+      "entradaMin": 703.5666666666667,
+      "saidaMin": 1002.9333333333333
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "data": "2026-09-17",
+      "entradaMin": 673.2333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "data": "2026-09-18",
+      "entradaMin": 676.7833333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "EDIMAR XAVIER DE FREITAS",
+      "data": "2026-09-21",
+      "entradaMin": 666.85,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "data": "2026-09-14",
+      "entradaMin": 511.65,
+      "saidaMin": 1051.7333333333333
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "data": "2026-09-15",
+      "entradaMin": 510.9166666666667,
+      "saidaMin": 1074.65
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "data": "2026-09-16",
+      "entradaMin": 510.8333333333333,
+      "saidaMin": 1052.3
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "data": "2026-09-17",
+      "entradaMin": 510.76666666666665,
+      "saidaMin": 1053.5833333333333
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "data": "2026-09-18",
+      "entradaMin": 511.15,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "data": "2026-09-19",
+      "entradaMin": 539.0166666666667,
+      "saidaMin": 780.9333333333333
+    },
+    {
+      "colaborador": "FRANCISCO DAS CHAGAS LOPES DA CUNHA",
+      "data": "2026-09-21",
+      "entradaMin": 515,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "data": "2026-09-14",
+      "entradaMin": 677.5166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "data": "2026-09-15",
+      "entradaMin": 692.15,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "data": "2026-09-16",
+      "entradaMin": 706,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "data": "2026-09-17",
+      "entradaMin": 772.35,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "data": "2026-09-18",
+      "entradaMin": 695.95,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "data": "2026-09-19",
+      "entradaMin": 699.6833333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JAMES FERNANDES DA SILVA",
+      "data": "2026-09-21",
+      "entradaMin": 676.5833333333334,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "data": "2026-09-14",
+      "entradaMin": 510.75,
+      "saidaMin": 1050.5666666666666
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "data": "2026-09-15",
+      "entradaMin": 512.8833333333333,
+      "saidaMin": 1075.55
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "data": "2026-09-16",
+      "entradaMin": 516.6333333333333,
+      "saidaMin": 1055.6333333333334
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "data": "2026-09-17",
+      "entradaMin": 512.3833333333333,
+      "saidaMin": 1078.0833333333333
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "data": "2026-09-18",
+      "entradaMin": 514.2333333333333,
+      "saidaMin": 1057.05
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "data": "2026-09-19",
+      "entradaMin": 513.9666666666667,
+      "saidaMin": 781.9
+    },
+    {
+      "colaborador": "JULIO CESAR SORIANO TORRES",
+      "data": "2026-09-21",
+      "entradaMin": 511.1166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "data": "2026-09-14",
+      "entradaMin": 676.9333333333333,
+      "saidaMin": 943.4
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "data": "2026-09-15",
+      "entradaMin": 664.2166666666667,
+      "saidaMin": 861.4
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "data": "2026-09-16",
+      "entradaMin": 704.4,
+      "saidaMin": 830.0333333333333
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "data": "2026-09-17",
+      "entradaMin": 674.85,
+      "saidaMin": 771.8666666666667
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "data": "2026-09-18",
+      "entradaMin": 660.2166666666667,
+      "saidaMin": 966.1
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "data": "2026-09-19",
+      "entradaMin": 672.6333333333333,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "MARIA EDUARDA PEREIRA DE OLIVEIRA",
+      "data": "2026-09-21",
+      "entradaMin": 678.0166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "RAMIZA DA SILVA TRINDADE",
+      "data": "2026-09-14",
+      "entradaMin": 665.6166666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "RAMIZA DA SILVA TRINDADE",
+      "data": "2026-09-15",
+      "entradaMin": 662.1333333333333,
+      "saidaMin": 1021.4166666666666
+    },
+    {
+      "colaborador": "RAMIZA DA SILVA TRINDADE",
+      "data": "2026-09-16",
+      "entradaMin": 671.2833333333333,
+      "saidaMin": 1020.5166666666667
+    },
+    {
+      "colaborador": "RAMIZA DA SILVA TRINDADE",
+      "data": "2026-09-17",
+      "entradaMin": 650.2333333333333,
+      "saidaMin": 1020.05
+    },
+    {
+      "colaborador": "RAMIZA DA SILVA TRINDADE",
+      "data": "2026-09-18",
+      "entradaMin": 650.7333333333333,
+      "saidaMin": 1016.9666666666667
+    },
+    {
+      "colaborador": "RAMIZA DA SILVA TRINDADE",
+      "data": "2026-09-21",
+      "entradaMin": 681.8666666666667,
+      "saidaMin": null
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "data": "2026-09-14",
+      "entradaMin": 650.4833333333333,
+      "saidaMin": 1211.5166666666667
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "data": "2026-09-15",
+      "entradaMin": 682.6166666666667,
+      "saidaMin": 1225.6166666666666
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "data": "2026-09-16",
+      "entradaMin": 649,
+      "saidaMin": 1230.1666666666667
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "data": "2026-09-17",
+      "entradaMin": 670.0333333333333,
+      "saidaMin": 1220.25
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "data": "2026-09-18",
+      "entradaMin": 679.0333333333333,
+      "saidaMin": 1221.6333333333334
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "data": "2026-09-19",
+      "entradaMin": 655.0666666666667,
+      "saidaMin": 885.5333333333333
+    },
+    {
+      "colaborador": "WANDERSON SANTOS DO NASCIMENTO",
+      "data": "2026-09-21",
+      "entradaMin": 636.0166666666667,
+      "saidaMin": null
     }
   ]
 }
